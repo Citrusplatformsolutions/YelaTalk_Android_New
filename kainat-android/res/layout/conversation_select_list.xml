@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical|center_horizontal|top"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="1px" >
+
+    <LinearLayout
+        android:id="@+particepent_select_panel/user_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/landing_discovery_bottom_featured_linearLayout"
+        android:background="@color/listcache"
+        android:visibility="gone" >
+
+        <com.kainat.app.android.uicontrol.CImageView
+            android:id="@+particepent_select_panel/other_image_top"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="2dp"
+            android:onClick="@string/onClickHandleMethodName"
+            android:scaleType="fitCenter"
+            android:src="@drawable/def2"
+            android:visibility="visible" >
+        </com.kainat.app.android.uicontrol.CImageView>
+
+        <LinearLayout
+            android:id="@+particepent_select_panel/user_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/landing_discovery_bottom_featured_linearLayout"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+particepent_select_panel/status"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/transparent_image"
+                android:gravity="left"
+                android:onClick="@string/onClickHandleMethodName"
+                android:text="Live life like king size"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+particepent_select_panel/user_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/landing_discovery_bottom_featured_linearLayout"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+cconversation_option_panel/profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="@drawable/pilgreen_selector"
+                    android:gravity="center"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:text="  Info  "
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+                <com.kainat.app.android.uicontrol.CImageView
+                    android:id="@+particepent_select_panel/me_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/soundplayicon"
+                    android:visibility="visible" >
+                </com.kainat.app.android.uicontrol.CImageView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10px"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chatconvertaionparticipant"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+message_row_right/activity_RightLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dip"
+                        android:visibility="visible" >
+
+                        <LinearLayout
+                            android:id="@+particepent_select_panel/owner_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:id="@+particepent_select_panel/owner_image_heading"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Qwner"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <com.kainat.app.android.uicontrol.CImageView
+                                android:id="@+particepent_select_panel/owner_image"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:onClick="@string/onClickHandleMethodName"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/profile"
+                                android:visibility="visible" >
+                            </com.kainat.app.android.uicontrol.CImageView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+particepent_select_panel/p1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dip"
+                        android:visibility="visible" >
+
+                        <CheckBox
+                            android:id="@+particepent_select_panel/p1_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <com.kainat.app.android.uicontrol.CImageView
+                            android:id="@+particepent_select_panel/p1_image"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/profile"
+                            android:visibility="visible" >
+                        </com.kainat.app.android.uicontrol.CImageView>
+
+                        <TextView
+                            android:id="@+particepent_select_panel/p1_username"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="ddddd"
+                            android:textColor="@color/heading"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+particepent_select_panel/p2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dip"
+                        android:visibility="visible" >
+
+                        <CheckBox
+                            android:id="@+particepent_select_panel/p2_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <com.kainat.app.android.uicontrol.CImageView
+                            android:id="@+particepent_select_panel/p2_image"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/profile"
+                            android:visibility="visible" >
+                        </com.kainat.app.android.uicontrol.CImageView>
+
+                        <TextView
+                            android:id="@+particepent_select_panel/p2_username"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="ddddd"
+                            android:textColor="@color/heading"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+particepent_select_panel/p3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dip"
+                        android:visibility="visible" >
+
+                        <CheckBox
+                            android:id="@+particepent_select_panel/p3_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <com.kainat.app.android.uicontrol.CImageView
+                            android:id="@+particepent_select_panel/p3_image"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/profile"
+                            android:visibility="visible" >
+                        </com.kainat.app.android.uicontrol.CImageView>
+
+                        <TextView
+                            android:id="@+particepent_select_panel/p3_username"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="ddddd"
+                            android:textColor="@color/heading"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+particepent_select_panel/p4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dip"
+                        android:visibility="visible" >
+
+                        <CheckBox
+                            android:id="@+particepent_select_panel/p4_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <com.kainat.app.android.uicontrol.CImageView
+                            android:id="@+particepent_select_panel/p4_image"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/profile"
+                            android:visibility="visible" >
+                        </com.kainat.app.android.uicontrol.CImageView>
+
+                        <TextView
+                            android:id="@+particepent_select_panel/p4_username"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="ddddd"
+                            android:textColor="@color/heading"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+particepent_select_panel/p5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dip"
+                        android:visibility="visible" >
+
+                        <CheckBox
+                            android:id="@+particepent_select_panel/p5_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <com.kainat.app.android.uicontrol.CImageView
+                            android:id="@+particepent_select_panel/p5_image"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/profile"
+                            android:visibility="visible" >
+                        </com.kainat.app.android.uicontrol.CImageView>
+
+                        <TextView
+                            android:id="@+particepent_select_panel/p5_username"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="ddddd"
+                            android:textColor="@color/heading"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+particepent_select_panel/p6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dip"
+                        android:visibility="visible" >
+
+                        <CheckBox
+                            android:id="@+particepent_select_panel/p6_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <com.kainat.app.android.uicontrol.CImageView
+                            android:id="@+particepent_select_panel/p6_image"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/profile"
+                            android:visibility="visible" >
+                        </com.kainat.app.android.uicontrol.CImageView>
+
+                        <TextView
+                            android:id="@+particepent_select_panel/p6_username"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="ddddd"
+                            android:textColor="@color/heading"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+particepent_select_panel/p7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dip"
+                        android:visibility="visible" >
+
+                        <CheckBox
+                            android:id="@+particepent_select_panel/p7_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <com.kainat.app.android.uicontrol.CImageView
+                            android:id="@+particepent_select_panel/p7_image"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/profile"
+                            android:visibility="visible" >
+                        </com.kainat.app.android.uicontrol.CImageView>
+
+                        <TextView
+                            android:id="@+particepent_select_panel/p7_username"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="ddddd"
+                            android:textColor="@color/heading"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+particepent_select_panel/p8"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dip"
+                        android:visibility="visible" >
+
+                        <CheckBox
+                            android:id="@+particepent_select_panel/p8_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <com.kainat.app.android.uicontrol.CImageView
+                            android:id="@+particepent_select_panel/p8_image"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/profile"
+                            android:visibility="visible" >
+                        </com.kainat.app.android.uicontrol.CImageView>
+
+                        <TextView
+                            android:id="@+particepent_select_panel/p8_username"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="ddddd"
+                            android:textColor="@color/heading"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+particepent_select_panel/p9"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dip"
+                        android:visibility="visible" >
+
+                        <CheckBox
+                            android:id="@+particepent_select_panel/p9_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <com.kainat.app.android.uicontrol.CImageView
+                            android:id="@+particepent_select_panel/p9_image"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/profile"
+                            android:visibility="visible" >
+                        </com.kainat.app.android.uicontrol.CImageView>
+
+                        <TextView
+                            android:id="@+particepent_select_panel/p9_username"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="ddddd"
+                            android:textColor="@color/heading"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+particepent_select_panel/user_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/landing_discovery_bottom_featured_linearLayout"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:text="  Notification from group on  "
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <ToggleButton
+                        android:id="@+particepent_select_panel/notification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bgtoggle"
+                        android:button="@null"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textOff=""
+                        android:textOn="" >
+                    </ToggleButton>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+particepent_select_panel/button_leave_forward"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/landing_discovery_bottom_featured_linearLayout"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <Button
+                        android:id="@+particepent_select_panel/done"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginTop="1dp"
+                        android:background="@drawable/pilgreen_selector"
+                        android:text="  Done  "
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+particepent_select_panel/cancel"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@drawable/pilgreen_selector"
+                        android:text="  Cancel  "
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

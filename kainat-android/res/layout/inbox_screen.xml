@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background = "@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+       
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title">
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dip"
+            android:layout_marginBottom="3dip"
+               android:visibility="gone"
+            android:onClick="@string/onClickHandleMethodName"
+            android:paddingBottom="3dip"
+            android:paddingTop="3dip"
+            android:src="@drawable/home">
+        </ImageView>
+         <TextView
+                android:id="@+id/inboxScreen_clearAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/clearall_new"
+                android:clickable="true"
+                 android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:visibility="gone"
+                 android:paddingBottom="3dip"
+                 android:paddingTop="3dip"
+                android:text=""
+                android:textColor="#D9DCDE" android:layout_weight="0.44">
+            </TextView>
+        <TextView
+            android:id="@+id/inboxScreen_title"
+            style="@style/HeaderFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_height"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:text="Inbox"
+           />
+        <ImageView
+            android:id="@+id/inboxScreen_componseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dip"
+            android:onClick="@string/onClickHandleMethodName"
+            android:paddingBottom="3dip"
+            android:paddingTop="3dip"
+            android:src="@drawable/compose">
+        </ImageView>
+       
+             <TextView
+                android:id="@+id/inboxScreen_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cancelnewbutton"
+                android:clickable="true"
+                 android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="3dip"
+                  android:paddingTop="3dip"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+              
+                   android:visibility="gone"
+                android:text=""
+                android:textColor="#D9DCDE" android:layout_weight="0.20">
+            </TextView>
+    </RelativeLayout>
+    <include
+        layout="@layout/notificationdiloag"        
+        android:id="@+id/notificationdiloags" />
+    <TextView
+        android:id="@+id/inboxScreen_previousIndicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="@string/onClickHandleMethodName"
+        android:padding="5dp"
+        android:text="&lt;&lt; Previous"
+        android:textSize="20dp"
+        android:visibility="gone">
+    </TextView>
+     <LinearLayout android:background="@drawable/trans_dialog_one"
+		android:id="@+id/inbox_linearLayout" android:layout_width="fill_parent"
+		android:paddingLeft="10dp" android:paddingRight="10dp"
+		android:paddingBottom="2dip"
+		 android:visibility="visible" android:layout_height="wrap_content">
+		<TextView android:id="@+id/inboxScreen_inboxPage"
+			android:layout_width="0dip" android:layout_height="39dip"
+			android:layout_marginLeft="0dip" android:layout_marginTop="1dip"
+			android:layout_weight=".90" android:background="@drawable/m11"
+			android:clickable="true" android:focusable="true" android:gravity="center"
+			android:onClick="onClick" android:text="Inbox" android:textStyle="bold"
+			android:textColor="@color/white">
+		</TextView>
+		<TextView android:id="@+id/inboxScreen_sentPage" android:layout_width="0dip"
+			android:layout_height="39dip" android:layout_marginLeft="0dip"
+			android:layout_marginTop="1dip" android:layout_weight=".80"
+			android:background="@drawable/m3" android:clickable="true"
+			android:focusable="true" android:gravity="center" android:onClick="onClick"
+			android:text="Sent" android:textStyle="bold" android:textColor="@color/white">
+		</TextView>
+		<TextView android:id="@+id/inboxScreen_outboxPage" android:layout_width="0dip"
+			android:layout_height="39dip" android:layout_marginLeft="0dip"
+			android:layout_marginTop="1dip" android:layout_weight=".80"
+			android:background="@drawable/m4" android:clickable="true"
+			android:focusable="true" android:gravity="center" android:onClick="onClick"
+			android:text="Outbox" android:textStyle="bold" android:textColor="@color/white">
+		</TextView>
+		<!--<TextView android:id="@+id/inboxScreen_bookMark"
+			android:layout_width="0dip" android:layout_height="39dip"
+			android:layout_marginLeft="0dip" android:layout_marginRight="1dip"
+			android:layout_marginTop="1dip" android:layout_weight="1"
+			android:background="@drawable/m4" android:clickable="true"
+			
+			android:focusable="true" android:gravity="center" android:onClick="onClick"
+			android:textStyle="bold" android:text="Bookmark" android:textColor="@color/white">
+		</TextView>-->
+		<TextView android:id="@+id/inboxScreen_deletePage"
+			android:layout_width="0dip" android:layout_height="35dip"
+			android:layout_marginLeft="0dip" android:layout_marginRight="1dip"
+			android:layout_marginTop="1dip" android:layout_weight=".30"
+			android:background="@drawable/deletehome" android:clickable="true"
+			  
+			android:focusable="true" android:gravity="center" android:onClick="onClick"
+			android:textStyle="bold" android:text="" android:textColor="@color/white">
+		</TextView>
+		<TextView android:id="@+id/inboxScreen_deleteSelected"
+			android:layout_width="0dip" android:layout_height="39dip"
+			android:layout_marginLeft="0dip" android:layout_marginRight="1dip"
+			android:layout_marginTop="1dip" android:layout_weight="1"
+			  android:visibility="gone"
+			android:background="@drawable/custom_button_search" android:clickable="true"
+			android:focusable="true" android:gravity="center" android:onClick="onClick"
+			android:textStyle="bold" android:text="Delete" android:textColor="@color/white">
+		</TextView>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="1dip" android:background="@color/selectedBorderColor"></LinearLayout>
+   <RelativeLayout android:layout_width="fill_parent"
+    android:layout_weight="1"
+        android:layout_height="fill_parent" >
+    <ListView
+        android:id="@+id/inboxScreen_mainList"
+        style="@style/Theme.RockeTalk.Background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:addStatesFromChildren="true"
+        android:cacheColorHint="@color/listcache"
+        android:background="@drawable/landingpagebackground"
+        android:divider="#ffB4B4B1"
+        android:dividerHeight="1px"
+        android:focusable="true" android:layout_weight="15.56">
+    </ListView>
+    <TextView
+        android:id="@+id/inboxScreen_noContent"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="No Messages!"
+        android:textStyle="bold"
+        android:visibility="gone">
+    </TextView>
+    <TextView
+        android:id="@+id/inboxScreen_nextIndicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="@string/onClickHandleMethodName"
+        android:padding="5dp"
+        android:text="Next >>"
+        android:textSize="20dp"
+        android:visibility="gone">
+    </TextView>
+   <TextView android:id="@+id/transparent_image" android:layout_width="wrap_content"
+		android:layout_height="fill_parent" android:layout_gravity="left"
+		 android:layout_weight="1"
+		android:gravity="left" 
+		android:visibility="gone"
+		android:background="@drawable/transparent_image"
+		android:textSize="15dip"
+		
+		android:textStyle="bold" android:layout_above="@+id/landing_discovery_tabBar"/>
+		</RelativeLayout>
+   <!--   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF555555"
+        android:padding="2dp">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:background="#FF555555">
+            <TextView
+                android:id="@+id/inboxScreen_inboxPage"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+               
+                android:background="@drawable/media_tabs_selected"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="2px"
+                android:paddingTop="2px"
+                android:text="Inbox"
+                android:textColor="#ffffff" android:layout_weight="0.47">
+            </TextView>
+            <TextView
+                android:id="@+id/inboxScreen_sentPage"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                
+                android:background="@drawable/media_tabs"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="2px"
+                android:paddingTop="2px"
+                android:text="Sent"
+                android:textColor="#ffffff" android:layout_weight="0.68">
+            </TextView>
+            <TextView
+                android:id="@+id/inboxScreen_outboxPage"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+               
+                android:background="@drawable/media_tabs"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="2px"
+                android:paddingTop="2px"
+                android:text="Outbox"
+                android:textColor="#D9DCDE" android:layout_weight="0.55">
+            </TextView>
+            <TextView
+                android:id="@+id/inboxScreen_deletePage"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/deletehome"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="2px"
+                android:paddingTop="2px"
+                android:text=""
+                android:textColor="#D9DCDE" android:layout_weight="0.30">
+            </TextView>
+             <TextView
+                android:id="@+id/inboxScreen_deleteSelected"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/deleteselected"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="2px"
+                android:paddingTop="2px"
+                android:visibility="gone"
+                android:text="Delete"
+                android:textColor="#D9DCDE" android:layout_weight="0.75">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>-->
+     <LinearLayout android:id="@+id/landing_discovery_tabBar"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" android:background="@drawable/bottomlanding"
+		android:orientation="horizontal">
+		<ImageView android:id="@+id/landing_discovery_BtnSlideLeft"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:padding="0px" android:layout_margin="0px"
+			android:src="@drawable/slideleft_menu" />
+		<RelativeLayout android:id="@+id/landing_discovery_tabBar1"
+			android:background="@drawable/bottomlanding" android:layout_height="wrap_content"
+			android:gravity="right" android:layout_gravity="right"
+			android:layout_width="fill_parent">
+			
+			<ImageView android:layout_width="wrap_content" android:id="@+id/landing_discovery_BtnSlideRight"
+				android:layout_height="wrap_content" android:src="@drawable/rightsearch_menu"></ImageView>
+				<LinearLayout  android:layout_height="wrap_content"
+			   android:layout_marginLeft="14dip"
+			android:paddingTop="1dip"
+			android:gravity="top|right" android:layout_gravity="right"
+			android:layout_width="wrap_content">
+				<LinearLayout  android:layout_height="wrap_content"
+			   android:layout_marginLeft="14dip"
+			
+			android:gravity="top|right" android:layout_gravity="right"
+			android:layout_width="wrap_content">
+				<TextView android:id="@+id/landing_discovery_activity_notification" android:visibility ="gone"
+				android:text="0" android:gravity="center" android:textColor="@color/black"
+				
+				android:layout_height="wrap_content" android:background="@drawable/notification_slide_count" android:layout_width="wrap_content"></TextView>
+		</LinearLayout>
+		</LinearLayout>
+		</RelativeLayout>
+		
+	</LinearLayout>
+</LinearLayout>

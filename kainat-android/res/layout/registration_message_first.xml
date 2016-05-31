@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@drawable/title" >
+
+        <TextView
+            style="@style/HeaderFontStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text = "@string/app_name" />
+
+        <Button
+                style="@style/buttonHeader"
+                android:id="@+id/skipp_all"
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+               android:drawableLeft="@drawable/line"
+               android:layout_marginRight="5dp"
+                android:onClick="@string/onClickHandleMethodName"
+                android:text="Skip"/>
+       
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight=".80"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dip"
+                android:src="@drawable/welcomert" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="You have successfully created your account"
+                android:textColor="@color/heading"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/fnln"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dip"
+                android:text="Nagendra Kumar"
+                android:textColor="@color/sub_heading"
+                android:typeface="sans"
+                android:textSize="15sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="nagendra42@gmail.com"
+                android:textColor="@color/sub_heading"
+                android:typeface="sans"
+                 android:textSize="15sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/rt_wave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/dummy"
+                android:visibility="visible" />
+            <!--
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="name"
+                android:visibility="gone"
+                android:textColor="#FF000000"
+                android:textSize="14dip"
+                android:textStyle="bold"
+                
+                android:typeface="sans"/>
+           
+            
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                
+                android:text="Your have successfully created your account."
+                android:textColor="#FF000000"
+                android:textSize="14dip"
+                android:textStyle="bold"
+                android:typeface="sans"/>
+            -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="top|center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            
+
+            <TextView
+                android:id="@+id/usernamez"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:gravity="top|center"
+                android:text="Complete your profile and make it easier for others 
+to know you"
+                android:textColor="@color/sub_heading"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:visibility="gone"
+                android:typeface="sans" />
+            <Button
+                android:id="@+id/complete_profile"
+                android:layout_width="300dp"
+                android:layout_height="40dip"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/pillgreen_sel"
+                android:onClick="onClick"
+                android:text=" Complete your profile "
+                android:textColor="#FFF"
+                android:textSize="17dp"
+                android:typeface="sans"
+                android:textStyle="normal" >
+            </Button>
+            
+            <CheckBox
+                 android:id="@+id/can_upload_contact"
+                 android:layout_width="300dp"
+                 android:layout_marginLeft="25dp"
+                 android:layout_marginTop="15dp"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/time_footnote"
+                 android:button="@drawable/checked"
+                 android:textSize="12sp"
+                 android:gravity="left"
+                 android:text="Some of your phone contacts maybe be on RockeTalk, allow access"
+                 />
+            
+            <!--  <TextView
+                android:id="@+id/usernamez"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                
+                android:gravity="center"
+                android:text="to let others know who you are"
+                android:textColor="@color/sub_heading"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:typeface="sans" /> -->
+        </LinearLayout>
+        
+         
+         
+    </LinearLayout>
+
+</LinearLayout>

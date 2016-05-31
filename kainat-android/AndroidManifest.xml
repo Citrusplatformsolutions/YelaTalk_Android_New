@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android" 
+	package="com.rocketalk.mobile.android" android:versionCode="96" android:installLocation="auto" 
+	android:versionName="7.2.6">
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kainat.app.android"
+    android:installLocation="preferExternal"
+    android:versionCode="152"
+    android:versionName="1.5.2" >
+
+    <!--
+         <supports-screens android:anyDensity="true"
+		android:largeScreens="true" android:normalScreens="true"
+		android:resizeable="true" android:smallScreens="true" />
+    -->
+    <uses-sdk
+         android:minSdkVersion="13"
+        android:targetSdkVersion="15"  />
+
+    <!-- <permission
+        android:name="com.google.android.gcm.demo.app.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" /> -->
+     <permission
+        android:name="com.kainat.app.android.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.google.android.gcm.demo.app.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- <uses-permission android:name="android.permission.FLASHLIGHT"/> -->
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- <uses-feature android:name="android.hardware.camera.front" /> -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="com.kainat.app.android.PERMISSION" />
+    <!-- Only this application can receive the messages and registration result -->
+    <uses-permission android:name="com.kainat.app.android.permission.C2D_MESSAGE" />
+    <!-- This app has permission to register and receive message -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- <uses-feature android:name="android.hardware.camera.autofocus" /> -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <!--
+          <uses-feature android:name="android.hardware.camera.autofocus"
+		android:required="false" />
+    -->
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.screen.portrait"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name="YelatalkApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/defaultrtsystem"
+        android:largeHeap="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.analytics.globalConfigResource"
+            android:resource="@xml/global_tracker" />
+
+        <provider
+            android:name=".helper.LandingPageContentProvider"
+            android:authorities="com.kainat.app.android.helper" >
+        </provider>
+        <provider
+            android:name=".helper.db.media.MediaContentProvider"
+            android:authorities="com.kainat.app.android.helper.db.media" >
+        </provider>
+
+        <activity
+            android:name="SplashActivity"
+            android:screenOrientation="portrait" 
+             android:clearTaskOnLaunch = "false"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="CommunityWebViewActivityOld"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="LanguageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+           <activity
+            android:name="CommunityTimeline"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+         <activity
+            android:name="CommunityPostActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="adjustNothing"
+            >
+        </activity>
+        <activity
+            android:name="ColourPickerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="KainatCreateProfileActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="TourActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="InterestActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.KainatHomeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|locale"
+            android:label="@string/app_name"
+              android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="video/*" />
+            </intent-filter>
+           <!--  <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="audio/*" />
+            </intent-filter> -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="video/*" />
+            </intent-filter>
+             <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="audio/*" />
+            </intent-filter> 
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.CommunityProfileNewActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|locale"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".ImageBrower"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="sensor"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="CommnetPostActivity"
+            android:configChanges="keyboard|orientation"
+            android:label="Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="VerificationActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Verification"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".URLActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Verification"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <data
+                    android:host="myactivity"
+                    android:scheme="roctetalk" />
+                <data
+                    android:host="myactivity"
+                    android:scheme="roctetalk://" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Player"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="Camcorder"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="PhotoSlideShowActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".uicontrol.StreemMultiPhotoViewer"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".uicontrol.SlideShowScreen"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="RocketalkMultipleSelectImage"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="KainatMultiImageSelection"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="ConversationsActivity.POSITION_MULTI_SELECT_PICTURE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="MediaActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="MediaActivityFeatured"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="MediaActivityMyAlbum"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="MediaActivityToFollow"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="MediaActivityUser"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="MediaActivityUserFollowering"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="MediaActivityHotPic"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="MediaActivityVideo"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="MediaActivityMore"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="MediaActivityExternal"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="MediaActivityExternalMyAlbum"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="MediaActivitySearch"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="CameraActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="InboxActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.OtherMessageActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="KainatContactActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="KainatCommunityFallowerContact"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="KainatInboxAvtivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="KainatCommunityActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="BuddyActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Friends"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="AboutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="About RockeTalk"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+         <activity
+            android:name="KainatBlockedUser"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        
+        <activity
+            android:name="CheatActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Cheat Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="InviteActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Invite"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!--
+        <activity
+            android:name="ComposeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="video/*" />
+                <data android:mimeType="image/*" />
+                <data android:mimeType="text/*" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name="MyStatus"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="My Status"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="PostActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Post"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background" >
+        </activity>
+        <activity
+            android:name="MessageActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Message"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="ContactActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Mobile Contacts"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="VideoRecorder"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="VideoPlayer"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="sensor"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="MediaVideoPlayer"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="ChatListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Chat List"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="ChatActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Chat"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="KainatSettings"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".uicontrol.MultiPhotoViewerMedia"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".uicontrol.MultiPhotoViewer"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="PhoneNumberActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="CountrySelectionActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="RegistrationMessageActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="RegistrationFriendSearch"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="InviteThreeFriend"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="CommentActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="CommunityActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="SearchCommunityActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="CreateCommunityActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name="TokenDummyActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="CommunityWebViewActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="CommunityChatActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+         <activity
+            android:name="ChannelReportActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="CommunityMemberActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="RTVideoCam"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rocketalk.mobile.android.facebook.Example"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="FbConfigActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="SignUpLoginScreen"
+            android:configChanges="keyboard|keyboardHidden|orientation|"
+            android:icon="@drawable/icon"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RockeTalk.Background"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.landingpage.LandingPageActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.landingpage.LandingPageMessageDetail"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".landingpage.DiscoveryFeaturedRtLive"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.landingpage.RtLiveListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.landingpage.FeaturedUserListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.landingpage.DiscoveryFeaturedUsersDetails"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.landingpage.FeatureCommunityList"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="RTCanvas"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <data android:scheme="path" />
+                <data android:path="path" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="RegistrationWebViewActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.rtcamera.DgCamActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.rtcamera.CameraSetting"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.BlueToothFriendRequest.BluetoothSearch"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.BlueToothFriendRequest.DeviceListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.rtAnimation.GridFunnyGif"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.rtAnimation.FullImageActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="ConversationsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+              android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="CreateGroupActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.FriendOnRT"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.ProfileViewActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.KainatProfileActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.PushNotificationActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.LikeUserActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.CommunityProfileActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.KainatInviteActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.KainatInviteSelection"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.KainatDiscoverActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="" >
+        </activity>
+        
+           <activity
+            android:name="com.kainat.app.android.KainatDiscoverNewActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="" >
+        </activity>
+        
+        <activity
+            android:name="com.kainat.app.android.KainatStatusActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.rtcamera.NoCamera"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.kainat.app.android.rtcamera.NoSDCard"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        
+         <activity
+            android:name="com.kainat.app.android.GalleryNewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+
+        <!--
+             Only C2DM servers can send messages for the app. If permission is 
+			not set - any other app can generate it
+        -->
+        <!--
+        <receiver
+            android:name=".C2DMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.kainat.app.android.engine.ComposeService" />
+
+                <category android:name="com.kainat.app.android" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.kainat.app.android.engine.RefreshService" />
+
+                <category android:name="com.kainat.app.android" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.kainat.app.android" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.kainat.app.android" />
+            </intent-filter>
+        </receiver>
+        -->
+        <receiver
+            android:name=".BootHelper"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.kainat.app.android.NetworkConnectivityListener" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <!--
+        <receiver android:name="com.rocketalk.mobile.android.core.AlarmReceiver" android:process=":remote"
+			android:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+			</intent-filter>
+		</receiver>
+        -->
+        <service
+            android:name=".PostService"
+            android:enabled="true" />
+        <service
+            android:name="com.kainat.app.android.engine.RefreshService"
+            android:enabled="true" />
+        <service
+            android:name="com.kainat.app.android.engine.ComposeService"
+            android:enabled="true" />
+        <service
+            android:name=".PushService"
+            android:enabled="true" />
+        <service
+            android:name=".C2DMRegisterService"
+            android:enabled="true" />
+
+        <receiver
+            android:name=".GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.kainat.app.android" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GcmIntentService" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="48b0844e023bfec3441cb616427d90da58f999f9" />
+    </application>
+
+</manifest>

@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SplashActivity!</string>
+    <string name="version">Version 1.5.2(Beta)</string>
+    <string name="msg_error_with_rt_help">Opps! you cannot send message to system and other user at the same time</string>
+    <string name="app_name">YelaTalk</string>
+    <!-- <string name="constraints_password">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-.</string> -->
+    <string name="constraints_name">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</string>
+    <string name="password">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$*</string>
+    <string name="constraints_FN_LN">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz</string>
+    <string name="constraints_username2">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 _-@.</string>
+    <string name="constraints_email">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-@.</string>
+    <string name="constraints_question_answer">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 .\'?</string>
+    <string name="constraints_email_or_phone">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-@.+*#</string>
+    <string name="constraints_email_or_phone_with_space">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-@.+*#</string>
+    <string name="constraints_community_create">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 _.</string>
+    <string name="constraints_digits">0123456789</string>
+    <string name="geeting_audio">Please wait while getting audio...</string>
+    <string name="error_geeting_audio">Unable to play please try later!</string>
+    <string name="constraints_phone">0123456789+*#</string>
+    <string name="network_error">Oops, RockeTalk is having trouble getting connected. Please try again or try after some time.</string>
+    <string name="invalid_user">Sorry, the RockeTalk ID &amp; password combination is incorrect.</string>
+    <string name="userid_available">This User Name is available.</string>
+    <string name="network_busy">Network busy !</string>
+    <string name="error_nocontent">Oops, RockeTalk is having trouble getting connected. Please try again!</string>
+    <string name="error_message_play">Sorry, cannot play voice. Speakers may be used by another application or your mobile may be in silent mode!</string>
+    <string name="onClickHandleMethodName">onClick</string>
+    <string name="verification_error_message">Sorry! The mobile number provided does not match with the SIM card being used. Please enter correct mobile number.</string>
+    <string name="verification_error_message_for_reg">Sorry! The mobile number provided does not match with the SIM card being used. Please enter correct mobile number for complete registration.</string>
+    <string name="reg_message">Note: To help recover your password, please set your Security Questions in Account Settings</string>
+    <string name="verification_text"></string>
+
+    <!-- <string name="verification_text">System will be sending you a self SMS to confirm your Mobile Number. Please make sure the number provided above is same as your SIM card.</string> -->
+    <string name="question">Select Question</string>
+    <string name="reg_search"><h1><b>Your Friends on RockeTalk</b></h1>\n\nSome of your friends may already be on RockeTalk.</string>
+    <string name="create_community_terms"><a href="http://google.co.in">Terms and conditions</a></string>
+    <string name="about_rocketalk">حول يﻻ توك</string>
+    <string name="when_text_is_not_enough">When text is not enough!</string>
+    <string name="copyright_message">Copyright 2013, RockeTalk Inc.</string>
+    <string name="all_right_reserved">All rights reserved.</string>
+    <string name="contact_us">تواصل معنا</string>
+    <string name="contact_only">Contact</string>
+    <string name="home_icon_text">صورة ايكون الصفحة الرئيسية</string>
+    <!-- <string name="nocontact">لا يوجد أصدقاء</string> -->
+    <string name="retrive_msg">تشبثت! /n  الرجاء الانتظار قليلا ! نقوم بجلب قائمة اصدقائك</string>
+    <string name="reported">تم الإرسال به</string>
+    <string name="and">أيضا</string>
+    <!-- <string name="more">...أكثر</string> -->
+    <string name="playing">يشغل</string>
+    <string name="sound_play_icon">ايكون تشغيل الصوت</string>
+    <string name="stop"> توقف </string>
+    <string name="pause">وقفة</string>
+    <string name="update_profile">تحديث الملف الشخصي</string>
+    <string name="skip"> تخطى </string>
+    <string name="name">اسم</string>
+    <string name="name_hint">من فضلك ادخل اسمك</string>
+    <string name="gender">الجنس</string>
+    <string name="male">ذكر</string>
+    <string name="female">أنثى</string>
+    <string name="topbuttonsixze">28px</string>
+    <string name="popular">شعبي</string>
+    <string name="tocheck">support@rocketalk.com</string>
+    <string name="autoplay">تشغيل تلقائي</string>
+    <string name="max_attachment_reached_update">تجاوز الحد! لا يمكن ارفاق أكثر من 10 ام بي</string>
+    <string name="verification_assistance_message">\nFor further assistance please call: <a href="tel://+919765266777">+919765266777</a>(*call charges apply)</string>
+    <string name="support_email_text">Email <a href="mailto://support@rocketalk.com">support@rocketalk.com</a></string>
+
+    <!--
+TELKOMSEL
+ <string name="tocheck">support.tsel@rocketalk.com</string>
+<string name="verification_assistance_message">\nFor further assistance please call: <a href="tel://+62 21 526 9244">+62 21 526 9244</a>(*call charges apply)</string>
+    <string name="support_email_text">Email <a href="mailto://support.tsel@rocketalk.com">support.tsel@rocketalk.com</a></string>
+  
+  Tap to refresh.../Users/nagendrakumar/Sandbox/Android/Rocketalk\/res/values/arrays.xml
+    -->
+    <string name="declineAlert">Friend request declined.</string>
+    <string name="igonoreAlert">This person will not be able to send you a friend request.</string>
+    <string name="acceptAlert">Friend added!</string>
+    <string name="ReportAlert">Thanks for reporting.</string>
+    <string name="Accept">Accept</string>
+    <string name="new_feed">New Feed</string>
+    <string name="Ignore">تجاهل</string>
+    <string name="send_message">بداية</string>
+    <string name="multiple_select">اختر</string>
+    <string name="done">انتهاء</string>
+    <string name="reset">إعادة تعيين</string>
+    <string name="options">بداية</string>
+    <string name="offlinemsg">s</string>
+    <string name="request">!طلب</string>
+    <string name="upload">تحميل الصور</string>
+    <string name="post">جدار المشاركة</string>
+    <string name="wait_feed">نحن في صدد نشر المحتوى الخاص بك. الرجاء الانتظار...</string>
+    <string name="delete">حذف المشاركة</string>
+    <string name="can_not_attached_video">You can either attach video or image!</string>
+    <string name="can_not_attached_image">You can either attach video or image!</string>
+    <string name="report_confirmation">هل تريد التبليغ عن هذه الرسالة؟</string>
+    <string name="facebook_on">‘On’ allows you to automatically share your Gallery posts with your friends on Facebook.</string>
+    <string name="facebook_off">By selecting ‘Off’, your posts will not get posted to Facebook automatically. You will need to share individual posts by selecting from the share options.</string>
+    <string name="facebook_desc">Rocketalk is the most popular mobile social app that allows life capture using voice, photos and video and follow and get followed.</string>
+    <string name="videoAttached_tooltips">يمكنك ارفاق فيديو بحجم ما لا يزيد عن 10 ام بي ، أو ما يعادل 20-25 ثانية. لإرسال  فيديو بأطول حجم يرجى خفض اعدادات الدقة</string>
+    <string name="test_html"><html>here nagendra Hello, click her to see here nagendra Hello, click her to see <a href="http://test.com">your gf</a> here </html></string>
+    <string name="refresh_pull_label">اسحب إلى اسفل لتحديث الصفحة...</string>
+    <string name="refresh_release_label">اضغط لتحديث الصفحة...</string>
+    <string name="refresh_refreshing_label">إعادة التحميل...</string>
+    <string name="refresh_tap_label">اضغط لإعادة التحميل...</string>
+    <string name="loading_interface">Loading activity updates...</string>
+    <string name="loading_activity">Loading activity...</string>
+    <string name="loading_discovery">Loading discovery...</string>
+    <string name="questionmark">\?!</string>
+    <string name="explenation">عذرا! .لم نتمكن من العثور على كاميرا في جهازك</string>
+    <string name="nosdcard">There is no SD card</string>
+    <string name="ptr_pull_to_refresh">Pull to refresh</string>
+    <string name="ptr_release_to_refresh">Release to refresh</string>
+    <string name="ptr_refreshing">Refreshing</string>
+    <string name="ptr_last_updated">Updated: %1$s</string>
+    <string name="sent_dual_sim">SIM التي قد سجلت بها، يجب تعيين نفس SIM كرقم افتراضي لإرسال الرسائل.</string>
+    <string name="facebook_permission_error">Your media could not be posted to Facebook since you picked ‘Allow None’ in your options.</string>
+    <string name="add_conversation_subject">Enter conversation subject</string>
+    <string name="update">تحديث</string>
+    <string name="get_voice"></string>
+    <string name="reciving_voice">تحميل...</string>
+    <string name="wait_loading">جاري التحميل، انتظر...</string>
+    <string name="refreshing_list">Refreshing list...</string>
+    <string name="update_status">تحديث الحالة</string>
+    <string name="posts">المشاركة</string>
+    <string name="postss">المشاركة</string>
+    <string name="followers">المتابعون</string>
+    <string name="followers_u">المتابعون</string>
+    <string name="wht_on_ur_mind">بم تفكر</string>
+    <string name="_140">140</string>
+    <string name="load_prevoius_message">تحميل الرسائل السابقة</string>
+    <string name="checking_conversation">تحميل المحادثة</string>
+    <string name="message_sending">إرسال...</string>
+    <string name="message_retry"> إعادة المحاولة  </string>
+    <string name="message_sent"> أرسلت  </string>
+    <string name="send">إرسال</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected: </string>
+    <string name="title_not_connected">not connected</string>
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">RockeTalk Friend List</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Tap to Refresh Device</string>
+    <string name="connect">Connect a device</string>
+    <string name="discoverable">Make discoverable</string>
+    <string name="get_video"> تحميل </string>
+    <string name="reciving_video">تحميل...</string>
+    <string name="please_wait_while_loadin">جاري التحميل، يرجى الانتظار</string>
+    <string name="no_conversation_started_yet"> اضغط لتحديث</string>
+    <string name="download_rt">Hi,\r\n\r\nI am using RockeTalk to meet like minded people &amp; share media from my mobile - I think you will like it\r\n\r\nDownload for free on http://m.rocketalk.com or from your app store.</string>
+    <string name="mail_subject">Capture life and Share with RockeTalk</string>
+    <!-- <string name="select_category">اختر فئة</string> -->
+    <string name="user_name">Username</string>
+    <string name="mobile_email">Email, Mobile number or Username</string>
+    <string name="mobile_selection">There are more than one mobile number for this contact. Select one</string>
+    <string name="email_selection">There are more than one email id. Select the one you want to send the invite to</string>
+    <string name="user_name_login_no_longer">Login option with username will be discontinued soon. Please update your email and verify to continue!</string>
+    <string name="querated">Feature it</string>
+    <string name="re_querated">Re-Feature it</string>
+    <string name="querated_remove">امحو</string>
+    <string name="search_media_not_found">لا يوجد ميديا متاحة</string>
+    <string name="search_community_not_found">لا يوجد مجموعة متاحة</string>
+    <string name="enter_media_search">إدخال اسم وسائل الإعلام للبحث</string>
+    <string name="enter_comm_search">أدخل اسم المجموعة للبحث</string>
+    <string name="result_not_found">لايوجد نتائج لبحثك !</string>
+    <string name="signing_in_status">Connecting with Google+</string>
+    <string name="signing_in_gp">Connecting with Google+...</string>
+    <string name="signing_in_fb">Connecting with Facebook...</string>
+    <string name="signing_in_rt">Connecting with RockeTalk...</string>
+    <string name="forgot"><html><i>هل نسيت كلمة المرور</i></html></string>
+    <string name="requesting">جاري العملية...</string>
+    <string name="updating">تحديث...</string>
+    <string name="requesting_done">انتهاء</string>
+    <string name="feateching_profile">تحميل...</string>
+    <string name="updating_profile">جلب الملف الشخصي</string>
+    <string name="something_went_wrong">عذرا! لا توجد التغطية ، الرجاء المحاولة مرة أخرى</string>
+    <string name="sss"><html>لم يتم تصديق استخدامك بعدُ<font color="red"> !</font></html></string>
+    <string name="choose_your_language">إختر لغتك</string>
+    <string name="choose_your_message">Discover &amp; connect with people who \n share your interests</string>
+    <string name="welcome_to_kainat">مرحبا بكم في يﻻ توك </string>
+    <string name="welcome_to_kainat2">Welcome to YelaTalk</string>
+    <string name="connect_fb">انضم بالتواصل عبر الفيس بوك             </string>
+    <string name="join">انضم</string>
+    <string name="take_tour">خذ جولة</string>
+    <string name="your_gateway">بوابتك إلى العالم</string>
+    <string name="your_phone_number">رقم الهاتف</string>
+    <string name="sent_text_confirm_msg">يرجي تأكيد رمز بلدك وأدخل رقمك- سوف يرسل الكا ئنات بينا لهذا الرقم</string>
+    <string name="sent_text_confirm_title">هذا هو الرقم الصحيح</string>
+    <string name="enter_pin">أدخل رقم التعريف الشخصي الذي أرسلنا إليك</string>
+    <string name="pin">رقم التعريف الشخصي</string>
+    <string name="pin_not_recived">لم نتلق، إعادة إرسال رمز التحقق</string>
+    <string name="verifing">تحقيق البين...</string>
+    <string name="compleate_profile">أكمل ملفك لكي يعرفك الآخرون بصورة أفضل</string>
+    <string name="update_profile_p"> حدث بياناتك حتي يتعرف عليك الاخرين بشكل افضل</string>
+    <string name="full_name">إسمك الكامل</string>
+    <string name="genter_you_belong">الجنس</string>
+    <string name="your_email">البريد الإلكتروني</string>
+    <string name="get_from_fb">       الحصول من الفيسبوك</string>
+    <string name="select_interest">قم باختيار اهتماماتك لتحصل على اقتراحات بما يناسبك</string>
+    <string name="select_gender">حدد نوع الجنس</string>
+    <string name="select_language">إختر اللغة</string>
+    <string name="select_picture">اختر الصورة</string>
+    <string name="number_successfully_verified">تم تحقيق الرقم بنجاح</string>
+    <string name="pending_request">طلب انتظار</string>
+    <string name="recommended">مجموعات مختارة</string>
+    <string name="search">بحث</string>
+    <string name="message">الرسائل</string>
+    <string name="create_group">إنشاء غرووبو</string>
+    <string name="next">التالي</string>
+    <string name="create">غرووبو</string>
+    <string name="channel_lbl">مجموعات</string>
+    <string name="edit">حرر</string>
+    <string name="status">الحالة</string>
+    <string name="status_h">الحالة \"</string>
+    <string name="confirm">أكد</string>
+    <string name="chat">دردشات</string>
+    <string name="community">مجموعة</string>
+    <string name="public_community">مجموعة عامة</string>
+    <string name="verify">تأكد</string>
+    <string name="start_chat_lbl">ابدأ دردشة</string>
+    <string name="create_group_lbl">انشاء مجموعة</string>
+
+    <!--
+    <string-array name="language">
+        <item>الإنكليزية(English)</item>
+        <item>ألعربية</item>
+        <item>الأرد ية</item>
+    </string-array>
+    -->
+    
+     <string-array name="timeline_option">
+        <item>Delete</item>
+        <item>Cancle</item>
+    </string-array>
+    
+    <string-array name="image_choose">
+        <item>كاميرا</item>
+        <item>رواق</item>
+        <item>الفيس بوك</item>
+    </string-array>
+    <string-array name="image_choose01">
+        <item>كاميرا</item>
+        <item>رواق</item>
+        <item>إزالة الصور</item>
+    </string-array>
+    <string-array name="image_choose02">
+        <item>كاميرا</item>
+        <item>رواق</item>
+    </string-array>
+    <string-array name="gender">
+        <item>ذكر</item>
+        <item>أنثى</item>
+        <item>غير محددة</item>
+    </string-array>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>صفحة رئيسية</item>
+        <item>إشعار</item>
+        <item>دردشات</item>
+        <item>اكتشف</item>
+        <item>أصدقاء</item>
+        <item>دعوة المشاركة</item>
+        <item>بحث مجموعة</item>
+        <item>الإعدادات</item>
+    </string-array>
+    <!--
+    <string-array name="audio_option_array">
+        <item>Clear audio</item>
+        <item>Play audio</item>
+        <item>Re-Record</item>
+        <item>Cancel</item>
+    </string-array>
+    -->
+
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+
+    <string name="your_notification_box_is_empty">صندوق الإخطار الخاص بك فارغ</string>
+    <string name="member">عضو</string>
+    <string name="online">اون لائن</string>
+    <string name="find_community">كشف عن مجموعة</string>
+    <string name="search_community">بحث مجموعة</string>
+    <string name="search_hint">أدخل # تعليق أو كلمة رئيسية</string>
+    <string name="you_have_new_message">رسالة جديدة</string>
+    <string name="describe_your_channel"> وصف مجموعتك</string>
+    <string name="describe_your_ytpost"> Describe your YT post</string>
+    <string name="enter_message"> أدخل رسالة</string>
+    <string name="view_description">شاهد الوصف</string>
+    <string name="edit_community">تحرير المجموعة</string>
+    <string name="view_members">شاهد الأعضاء</string>
+    <string name="delete_community">حذف المجموعات</string>
+    <string name="leave_community">ترك المجموعة</string>
+    <string name="report_community">إخبار المجموعة</string>
+    <string name="cancel">إلغاء</string>
+    <string name="type_to_search">اكتب للبحث</string>
+    <string name="create_channel">إنشاء مجموعة</string>
+    <string name="update_community">تحديث المجموعة</string>
+    <string name="please_enter_a_community_name">الرجاء إدخال اسم المجموعة!</string>
+    <string name="please_enter_min_tag">الرجاء إضافة # تاغ واحد على الأقل</string>
+    <string name="name_should_start_with_an_alphabet">الإسم يبدأ حسب الحروف  الأبجدية!</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="channel_name">اسم المجموعة</string>
+    <string name="add_tags">أدخل تعليق</string>
+    <string name="category ">فئة </string>
+    <string name="public_str">عامة</string>
+    <string name="private_str">خصوصي</string>
+    <string name="auto_accept ">القبول آليا </string>
+    <string name="by_clicking_you_accept_the_terms ">بالضغط هنا يعنى أنك قبلت شروط الاستخدام </string>
+    <string name="terms_and_conditions ">قبول شروط الاستخدام</string>
+    <string name="moderation ">الوسطية</string>
+    <string name="or">     أو     </string>
+    <string name="facbook_line">احصل على ملفك الشخصي من فيس بوك</string>
+    <string name="terms_of_service">شروط الخدمة</string>
+    <string name="look_for_conversations">ابحث عن المحادثات</string>
+    <string name="delete_account">حذف</string>
+    <string name="you_have_not_joined_any_communities">لم تنضم أي المجموعات بعدُ؟</string>
+    <string name="there_are_no_pending_requests">لا توجد طلبات منتظرة</string>
+    <string name="created_on">مكون في </string>
+    <string name="my_communities">مجموعاتي</string>
+    <string name="pending_invites">دعوات منتظرة</string>
+    <string name="info">معلومات</string>
+    <string name="yourrequesthasbeensent"> تم ارسال طلبك. سوف تتلقى ردا قريبا</string>
+    <string name="load_more">تحميل أكثر</string>
+    <string name="loading_dot">تحميل ...</string>
+    <string name="media_search_result">نتائج البحث لميديا</string>
+    <string name="advance_search">بحث متقدم</string>
+    <string name="loading_system_message">تحميل الرسالة، يرجى الانتظار ...</string>
+    <string name="add_to_conversation">أضف إلى المحادثة</string>
+    <string name="add_a_caption">أضف عنوان</string>
+    <string name="leave_conversation">ترك المحادثة</string>
+    <string name="update_subject">تحديث موضوع</string>
+    <string name="delete_conversation">حذف محادثة</string>
+    <string name="delete_message">حذف رسالة</string>
+    <string name="save_message">حفظ رسالة</string>
+    <string name="please_add_content_to_send_message">الرجاء إضافة النص لإرسال الرسالة</string>
+    <string name="friend">صديق</string>
+    <string name="yt_buddies">YT Buddies</string>
+    <string name="choose_from_library">من المكتبة</string>
+    <string name="take_photo">إلتقط صورة</string>
+    <string name="record_with_camera">سجل مع الكاميرا</string>
+    <string name="select_smiley">اختر مبتسم الوجه</string>
+    <string name="account_settings">إعدادات الحساب</string>
+    <string name="privacy_settings">إعدادات الخصوصية</string>
+    <string name="sharing_settings">مشاركة إعدادات</string>
+    <string name="push_notification_settings">إعدادات إشعار الدفع</string>
+    <string name="push_notification">إخطار رسالة جديدة</string>
+    <string name="broadcast">نشر</string>
+    <string name="on_lbl">شغل</string>
+    <string name="off_lbl">أغلق</string>
+    <string name="help">مساعدة</string>
+    <string name="notification">إشعار</string>
+    <string name="owner">يملكه</string>
+    <string name="settings">الإعدادات</string>
+    <string name="please_wait_while_getting_audio">يرجى الانتظار حين الحصول على الصوت ...</string>
+    <string name="please_enter_description">!الرجاء إدخال وصف</string>
+    <string name="please_enter_community_name">!الرجاء إدخال اسم المجموعة</string>
+    <string name="play">تشغيل</string>
+    <string name="clear">مسح</string>
+    <string name="preview">عرض</string>
+    <string name="do_you_really_want_to_delete_this_community">هل حقا تريد حذف هذه المجموعة؟</string>
+    <string name="do_you_really_want_to_leave_this_community">هل تريد حقا أن تترك هذه المجموعة؟</string>
+    <string name="do_you_really_want_to_report_this_community">هل تريد الإبلاغ هذه المجموعة؟ </string>
+    <string name="error">خطأ</string>
+    <string name="search_by_community_name">بحث بإسم المجموعة</string>
+    <string name="search_by_community_creator">بحث بإسم صاحب المجموعة</string>
+    <string name="slectc_contact_to_start_chat">يرجى اختيار جهات الاتصال</string>
+    <string name="creating_account">إنشاء حسابك</string>
+    <string name="about_app_version">1.5.2 الإصدار</string>
+    <!-- <string name="about_app_text1">Discover people and posts around your interests. Share your thoughts in interest-specific channels and talk to people who share your interest.</string> -->
+    <string name="about_app_text1">قم باكتشاف الناس والمشاركات عن ما تهتم بها. تشارك خواطرك في مجموعات محددة الاهتمامات و تتكلم مع الناس يشاركون في ما تهتم به.</string>
+    <string name="about_app_text2">تاريخ الإصدار ديسمبر 13 2014</string>
+    <string name="go">واصل</string>
+    <string name="community_tab">مجموعات</string>
+    <string name="comeing_soon">!قريبا</string>
+    <string name="cat1">الرياضة</string>
+    <string name="cat2">أخبار</string>
+    <string name="cat3">تسلية</string>
+    <string name="cat4">روحانية</string>
+    <string name="term_of_use">شروط الاستخدام</string>
+    <string name="privacy_police">سياسة الخصوصية</string>
+    <string name="synch_contact">مزامنة جهات الاتصال</string>
+    <string name="no_entry">ممنوع الدخول</string>
+    <string name="gallert">انتهاء</string>
+    <string name="days_ago">days ago</string>
+    <!--
+         <string name="h_and">قبل ساعة</string>
+    <string name="m_ago">قبل دقائق</string>
+    <string name="s_ago">قبل ثواني</string>
+    <string name="ago">منذ</string>
+    -->
+    <string name="h_and">h and</string>
+    <string name="m_ago">m ago</string>
+    <string name="s_ago">s ago</string>
+    <string name="ago">ago</string>
+    <string name="unable_to_retrieve">غير قادر على استرداد</string>
+    <string name="recording_audio">تسجيل الصوت</string>
+    <string name="secs_left">بقيت ثوان</string>
+    <string name="select_choice">حدد الاختيار</string>
+    <string name="gallery">رواق</string>
+    <string name="selected">تم التحديد</string>
+    <string name="max_count">أقصى عدد</string>
+    <string name="max_size_MB_Current_attached_size">الحجم الأقصي  ميغا بايت - الحجم الحالي المرفق</string>
+    <string name="kainat_coming_soon">الكا ئنات تطلع قريبا</string>
+    <string name="leave">تابع</string>
+    <string name="follow">تابع</string>
+    <string name="unfollow">لايتابع</string>
+    <string name="checking">يشيك</string>
+    <string name="available">متاح</string>
+    <string name="profile">ملف شخصي</string>
+    <string name="max_attachment_reached">لقد وصلت للحد الأقصى من المرفقات . لايمكنك اضافة مرفقات</string>
+    <string name="feedback">ردود الفعل</string>
+    <string name="authenticating_with_server">تصديق من الخادم ...</string>
+    <string name="sending_code_on_this_number">يُرسل رمز التحقق على هذا الرقم...</string>
+    <string name="verification_code_sent">رمز التحقق أرسلت، يرجى المراجعة.</string>
+    <string name="enter_pin_number">إدخال رمز التحقق</string>
+    <string name="verifing_code">تصديق رمز التحقق ...</string>
+    <string name="check_net_connection">يُرجى التأكد من تغطية إنترنت</string>
+    <string name="your_email_will_never_be_displayed_publicly">(بريدك الإلكتروني يكون محفوظة ولن يُعرض على الناس علنا)</string>
+    <string name="smiley">مبتسم</string>
+    <string name="pencil">قلم رصاص</string>
+    <string name="erase">محو</string>
+    <string name="color">اللون</string>
+    <string name="more">أكثر</string>
+    <string name="exit_canvas">هل تريد إغلاق المحادثة</string>
+    <string name="started_conversation">بدأت المحادثة</string>
+    <string name="ok">حسنا</string>
+    <string name="emboss">زخرفي</string>
+    <string name="blur">ضبابي</string>
+    <string name="background_color">لون الخلفية</string>
+    <string name="_2px">2بكسل</string>
+    <string name="_4px">4بكسل</string>
+    <string name="_6px">6بكسل</string>
+    <string name="_8px">8بكسل</string>
+    <string name="_10px">10بكسل</string>
+    <string name="_12px">12بكسل</string>
+    <string name="rub">فرك</string>
+    <string name="clear_all">امسح جميعا</string>
+    <string name="clear_all_msg">هل تريد مسح المحادثة</string>
+    <string name="draw_something">أرسم شيئا لترفق</string>
+    <string name="add_more">إضافة المزيد</string>
+    <string name="click_more">انقر على المزيد</string>
+    <string name="play_audio">تشغيل الصوت</string>
+    <string name="clear_audio">مسح الصوت</string>
+    <string name="re_record">إعادة التسجيل</string>
+    <string name="conversation_delete">سيحذف هذا جميع الرسائل من هذه المحادثة. هل تريد المتابعة؟</string>
+    <string name="add_participants">+ إضافة مشاركين</string>
+    <string name="participants">المشاركين</string>
+    <string name="all_left">ترك جميع المشاركين المحادثة</string>
+    <string name="you_left">قد تركت هذه المجموعة</string>
+    <string name="name_this_group">اسم هذا الغروبو</string>
+    <string name="change_group_name">تغيير اسم الغروبو</string>
+    <string name="leave_group_confiramation_message">عندما تترك المجموعة، قد لا تنضم مرة أخرى. هل تريد أن تترك هذه المجموعة؟</string>
+    <string name="leave_group">ترك مجموعة</string>
+    <string name="please_enter_valid_email">الرجاء إدخال بريد إلكتروني صحيح</string>
+    <string name="enter_email">أدخل البريد الإلكتروني</string>
+    <string name="enter_gender">حدد نوع الجنس</string>
+    <string name="enter_name">أدخل الإسم</string>
+    <string name="PleaseIntrest">Select intrest</string>
+    <string name="start">إبدأ</string>
+    <string name="enter_mobile">من فضلك ادخل رقم هاتفك المحمول</string>
+    <!-- <string name="month_ago">قبل شهر</string> -->
+    <string name="month_ago">month ago</string>
+    <string name="information">معلومات</string>
+    <string name="picture">صور</string>
+    <string name="video">فيديو</string>
+    <string name="doodle">خربش</string>
+    <string name="audio">الصوت</string>
+    <string name="camera">كاميرا</string>
+    <string name="talking_pic">صور متكلمة</string>
+    <string name="sending_request_wait">إرسال طلب يرجى الانتظار</string>
+    <!-- <string name="you_have_successfully_deleted_this_message">لقد تم حذف هذه الرسالة بنجاح</string> -->
+    <string name="buddy_added_conversation">أضيف الأصدقاء في المحادثة</string>
+    <!-- <string name="you_have_successfully_left_this_conversation">كنت قد تركت بنجاح هذا الحوار</string> -->
+    <string name="you_successfully_changed_add_subject_this_conversation">قمت بتغيير / إضافة الموضوع بنجاح لهذه المحادثة</string>
+    <string name="you_have_successfully_deleted_this_conversation">قمت بحذف هذه المحادثة بنجاح</string>
+    <string name="enter_subject_text">أدخل نص الموضوع</string>
+    <string name="comm_creat_sucess">تم إنشاء مجموعتك بنجاح</string>
+    <string name="comm_update_success">تمّ تحديث مجموعتك بنجاح</string>
+    <string name="comm_name_already_taken">وقد  أخذ اسم هذه المجموعة بأحد آخر</string>
+    <string name="please_try_after_some_times">هناك بعض المشاكل على جانب الخادم. يرجى المحاولة بعد قليل</string>
+    <string name="subject_changed">تغير الموضوع</string>
+    <string name="code_not_match">رمز التحقق غير مطابق للتصديق</string>
+    <string name="you_have_successfully_left_this_conversation">خليت هذه المحادثة بنجاح</string>
+    <string name="buddy_added">أضيف عضو جديد </string>
+    <string name="image_size_too_small">حجم الصورة صغير جدا، يحتاج إلى 300×300</string>
+    <string name="change_pic">تغيير صورة</string>
+    <string name="pick">اختيار</string>
+    <string name="enter_number">أدخل رقم هاتفك</string>
+    <string name="select_category">اختر فئة</string>
+    <string name="select_country">United Arab Emirates</string>
+    <!-- <string name="a_moment_ago">قبل لحظة</string> -->
+    <string name="a_moment_ago">a moment ago</string>
+    <string name="unable_to_connect_pls_try_later">لا يقدر على الاتصال، يرجى المحاولة في وقت لاحق.</string>
+    <string name="text_copied">تمّ نسخ النص</string>
+    <string name="nothing_to_copy">لا يُوجد أيّ نص للنسخ</string>
+    <string name="sms_arrive_xseconds">سوف تصل رسالتك النصية القصيرة في	</string>
+    <string name="xseconds">ثوان </string>
+    <string name="contact">دعوة جهات الاتصال</string>
+    <string name="whatsapp">دعوة جهات الاتصال من واتس اب</string>
+    <string name="facebook">دعوة اﻵخرين</string>
+    <string name="copy">للنسخ</string>
+    <string name="share_label">شارك</string>
+    <string name="invite_text">Hi,\nJoin me on YelaTalk – a new app that let you discover people and posts around your interests. Create your own interest-specific channel, invite friends and start sharing your thoughts.\nhttp://www.yelatalkprod.com/yt/download.html</string>
+    <string name="delete_confirmation">هل حقا تريد حذف هذه الرسالة؟</string>
+    <!-- <string name="information">معلومات</string> -->
+    <string name="you_have_successfully_deleted_this_message">قد حذفت هذه الرسالة بنجاح</string>
+    <!-- <string name="no_entry">بدأ المشاركة</string> -->
+    <string name="add_lbl">أضف</string>
+    <string name="featured_lbl">مكوّن</string>
+    <string name="trending_lbl">وضع اتجاهات</string>
+    <string name="facebook_lbl"> Facebook</string>
+    <string name="twitter_lbl"> Twitter</string>
+    <string name="whatsapp_lbl"> WhatsApp</string>
+    <string name="email_lbl"> Email</string>
+    <!-- TOUR -->
+    <string name="feel">feel</string>
+    <string name="feel_at_home">تشعر كأنك في منزلك مع يلا توك.  يلا توك يسمح لك بالاتصال والتواصل مع الجميع بطريقة سهلة و ممتعة جدا</string>
+    <string name="talk">Talk</string>
+    <string name="start_a_converstion">ابدأ دردشة مع أي شخص في قائمة أصدقائك المتواجدة في هاتفك. أنشئ مجموعة خاصة بك وأرسل دعوة إلى أصدقائك للمشاركة. عبّرعن نفسك بالصور و الملفات الصوتية و الفيديوهات</string>
+    <string name="discover">اكتشف</string>
+    <string name="select_ineterest_lbl">حدّد اهتماماتك</string>
+    <string name="discover_converstions">اكتشف دردشات، مجموعات و طموحات بما يناسبك أنت و أصدقاءك روحيا و ثقافيا.</string>
+    <string name="connect_tour">تواصل</string>
+    <string name="bond_over">Bond over shared interest and spirituality. Go find the community, group or someone with shared interest.</string>
+    <string name="invite">دعوة المشاركة</string>
+    <string name="invite_your_contacts">دعوة جهات اتصالك إلى يﻻ توك</string>
+    <!-- <string name="invite_your_contacts">Hello TEST </string> -->
+    <string name="Send_upto_invite">أرسل الدعوة إالى عشرة أشخاص على الأكثر</string>
+    <string name="Send_upto_invite_20">أرسل الدعوة إالى عشرة أشخاص على الأكثر</string>
+    <string name="Owner">مالك</string>
+    <string name="community_create_private_str">المجموعات الخاصة لا تظهر في بحث عام.  لو شغلتَ زر " الخاصة"، لا يُمكن للمستخدمين متابعة المجموعة. ويُمكن انضمامه بعد ما تُضيفه في المجموعة</string>
+    <string name="add_member">أضف اعضاء</string>
+    <string name="broadcast_alert">عند تشغيل وضع النشر، لن يتمكن المتابعون من النشر و التعليق على المنشورات. يجب اطفاء وضع النشر حتى يتمكنوا من النشر مجددا.</string>
+    <string name="broadcast_mode">القناة في وضع النشر</string>
+    <string name="please_enter_status_message"> الرجاء ادخال أي شيء لتحديث الحالة</string>
+    <string name="enter_10_digit">الرجاء ادخال رقم صالح</string>
+    <string name="single_tag_length_alert">الرجاء ادخال تاغ في فراغات متاحة محددة لـ 15 فواصل!</string>
+    <string name="total_tag_count">الرجاء ادخال 10 رسائل تاغ على حد أقصى !</string>
+    <string name="talking_pic_alert">أضف ملف صوتي -  هذه صورة متكلمة</string>
+    <string name="muc_welcome_msg">مرحبا، قد أنشئت مجموعة </string>
+    <string name="suggested_channel">المجموعات المقترحة</string>
+    <string name="contct_sync_aaha">هيا!</string>
+    <string name="contct_sync_count">من قائمة أصدقائك يستخدمون يلا توك ، يمكنك العثور عليهم في صفحة الأصدقاء ما أن تتقدم</string>
+    <string name="no_request_pending"> لا يوجد دعوات معلقة !\n\n\n  يمكنك إضافة الأصدقاء بالذهاب إلى صفحة البيانات الخاصة بهم، وإرسال طلب صداقة لهم..</string>
+    <string name="no_buddies">No friends as yet! \n Why not invite your friends to join you? \n\n\n You can also add friends by going to their profile and sending them a friend request.</string>
+    <string name="nocontact">No contacts on YelaTalk as yet! \n Why not invite your phone contacts to join you on YelaTalk?</string>
+    <string name="contct_sync_zero"> أنت الأول من بين أصدقائك في استخدام يلا توك، يمكنك أن ترسل دعوة إلى أصدقائك من قائمة جهات الاتصال ما أن تتقدم لتنهي التسجيل</string>
+    <string name="network_fail">عذرا! لا توجد التغطية ، الرجاء المحاولة مرة أخرى</string>
+    <string name="profile_voice_alert">قد تم تحديث ملفك الصوتي الشخصي بنجاح.</string>
+    <string name="no_internet_connection">الإنترنت غير متاح، الرجاء محاولة الارسال في وقت لاحق عند تواجد الإنترنت !</string>
+    <string name="system_message">رسالة الجهاز</string>
+    <string name="channel_name_validation_alert">ادخال الفواصل والرموز الخاصة غير مسموحة، الرجاء مسحها</string>
+    <string name="reported_message">رسالة مبلغة عنها ,اضغط هنا لمشاهدة الرسالة</string>
+    <string name="already_download_in_progress">يرجى الإنتظار! مقاطع فيديو في مجرى التحميل</string>
+    <string name="save_unsaved">هل تريد حفظ التغيرات؟</string>
+    <string name="verified">التحقق</string>
+    <string name="channel_tag_validation_alert">غير مسموح به في التعليق</string>
+    <string name="channel_tag_one_hash">يسمح بعلامة # واحدة فقط</string>
+    <string name="channel_tag_hash_allowed_in_between"> علامة # غير مسموح بين التعليقات</string>
+    <string name="multiimage_selection">يمكنك نشر ٥ صور كحد أقصى. هل تريد نشر الصور؟</string>
+    <string name="multivideo_selection">يمكنك نشر مقطع فيديو واحد. هل أنت واثق من رغبتك في نشر هذا الفيديو؟</string>
+    <string name="multiaudio_selection">يمكنك نشر مقطع صوتي واحد. هل أنت واثق من رغبتك في نشر هذا المقطع الصوتي</string>
+    <string name="check_for_update">بحث عن تحديث</string>
+    <string name="block_confirmation">لا يمكن للمستخدمين المحظورين إرسال الرسائل إليك.</string>
+    <string name="block_confirmation_html"><![CDATA[<b> هل أنت متأكد من أنك تريد منع هذا المستخدم؟?</b><ul style="list-style-type:disc"><li> لن تتلقى أي رسالة من هذا المستخدم.</li><li> هذا المستخدم لن يكون قادراً على إرسال طلب صداقة لك.</li><li> --هذا المستخدم لن يتمكن من الانضمام إلى القنوات التي تم إنشاؤها بواسطة لك.</li></ul>]]></string>
+    <string name="autoplay_on">تشغيل مكونات التشغيل التلقائي لقنوات البث</string>
+    <string name="autoplay_off">ايقاف مكونات التشغيل التلقائي لقنوات البث</string>
+    <string name="backpress"> هل أنت متأكد من أنك تريد تجاهل هذا المنشور ؟</string>
+    <string name="postpress"> الرجاء إدخال النص أو إرفاق بعض المحتويات للنشر.</string>
+
+    <string-array name="report_options">
+        <item>ضع عﻻمة كونه آمن</item>
+        <item>حذف المشاركة</item>
+    </string-array>
+
+    <string name="block_user">قائمة المحظورين</string>
+    <string name="block"> حظر الاستخدام </string>
+    <string name="unblock"> إلغاء </string>
+    <string name="no_blocked_user">ليس معك مستخدمين محظورين</string>
+    <string name="feature_channels">ميزة قنوات</string>
+    <string name="sugested">تم الاقتراح قنوات </string>
+    <string name="all_channels">جميع الفئات</string>
+    <string name="featured">Feature</string>
+    <string name="unfeatured">Un-Feature</string>
+    <string name="add_friend">Add Friend</string>
+    <string name="start_chat">Chat</string>
+    <string name="interests">المصالح</string>
+    <string name="my_friends">My Friends</string>
+    <string name="requests">الطلبات</string>
+
+</resources>

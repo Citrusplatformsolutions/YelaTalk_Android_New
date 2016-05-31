@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SplashActivity!</string>
+    <string name="version">Version 1.5.2(Beta)</string>
+    <string name="msg_error_with_rt_help">Opps! you cannot send message to system and other user at the same time</string>
+    <string name="app_name">YelaTalk</string>
+    <!-- <string name="constraints_password">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-.</string> -->
+    <string name="constraints_name">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</string>
+    <string name="password">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$*</string>
+    <string name="constraints_FN_LN">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz</string>
+    <string name="constraints_username2">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 _-@.</string>
+    <string name="constraints_email">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-@.</string>
+    <string name="constraints_question_answer">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 .\'?</string>
+    <string name="constraints_email_or_phone">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-@.+*#</string>
+    <string name="constraints_email_or_phone_with_space">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-@.+*#</string>
+    <string name="constraints_community_create">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 _.</string>
+    <string name="constraints_digits">0123456789</string>
+    
+     <string name="geeting_audio">Please wait while getting audio...</string>
+     <string name="error_geeting_audio">Unable to play please try later!</string>
+    <string name="constraints_phone">0123456789+*#</string>
+   
+       <string name="retrive_msg">Hang on! \n Fetching your friend list ……</string>
+    <string name="Owner">Owner</string>
+    <string name="network_error">Oops, RockeTalk is having trouble getting connected. Please try again or try after some time.</string>
+    <string name="invalid_user">Sorry, the RockeTalk ID &amp; password combination is incorrect.</string>
+    <string name="userid_available">This User Name is available.</string>
+    <string name="network_busy">Network busy !</string>
+    <string name="error_nocontent">Oops, RockeTalk is having trouble getting connected. Please try again!</string>
+    <string name="error_message_play">Sorry, cannot play voice. Speakers may be used by another application or your mobile may be in silent mode!</string>
+    <string name="onClickHandleMethodName">onClick</string>
+    <string name="verification_error_message">Sorry! The mobile number provided does not match with the SIM card being used. Please enter correct mobile number.</string>
+    <string name="verification_error_message_for_reg">Sorry! The mobile number provided does not match with the SIM card being used. Please enter correct mobile number for complete registration.</string>
+    <string name="reg_message">Note: To help recover your password, please set your Security Questions in Account Settings</string>
+    <string name="verification_text"></string>
+<string name="max_attachment_reached_update">Limit exceeded! can not attach more than 10 MB</string>
+    <!-- <string name="verification_text">System will be sending you a self SMS to confirm your Mobile Number. Please make sure the number provided above is same as your SIM card.</string> -->
+    <string name="question">Select Question</string>
+    <string name="reg_search"><h1><b>Your Friends on RockeTalk</b></h1>\n\nSome of your friends may already be on RockeTalk.</string>
+    <string name="create_community_terms"><a href="http://google.co.in">Terms and conditions</a></string>
+    <string name="about_rocketalk">About YelaTalk</string>
+    <string name="block_user">Blocked list</string>
+    <string name="block"> Block </string>
+    <string name="unblock"> Unblock </string>
+    <string name="when_text_is_not_enough">When text is not enough!</string>
+    <string name="copyright_message">Copyright 2013, RockeTalk Inc.</string>
+    <string name="all_right_reserved">All rights reserved.</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="contact_only">Contact</string>
+    <string name="home_icon_text">Home Icon Image</string>
+    <string name="playing">Playing</string>
+    <string name="sound_play_icon">Sound Play Icon</string>
+    <string name="stop"> Stop </string>
+    <string name="pause">Pause</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="skip"> Skip </string>
+    <string name="name">Name</string>
+    <string name="name_hint">Please enter your name</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="topbuttonsixze">28px</string>
+    <string name="tocheck">support@rocketalk.com</string>
+    <string name="verification_assistance_message">\nFor further assistance please call: <a href="tel://+919765266777">+919765266777</a>(*call charges apply)</string>
+    <string name="support_email_text">Email <a href="mailto://support@rocketalk.com">support@rocketalk.com</a></string>
+
+    <!--
+TELKOMSEL
+ <string name="tocheck">support.tsel@rocketalk.com</string>
+<string name="verification_assistance_message">\nFor further assistance please call: <a href="tel://+62 21 526 9244">+62 21 526 9244</a>(*call charges apply)</string>
+    <string name="support_email_text">Email <a href="mailto://support.tsel@rocketalk.com">support.tsel@rocketalk.com</a></string>
+  
+  Tap to refresh.../Users/nagendrakumar/Sandbox/Android/Rocketalk\/res/values/arrays.xml
+    -->
+    <string name="declineAlert">Friend request declined.</string>
+    <string name="igonoreAlert">This person will not be able to send you a friend request.</string>
+    <string name="acceptAlert">Friend added!</string>
+    <string name="ReportAlert">Thanks for reporting.</string>
+    <string name="send_message">Start</string>
+    <string name="invite">Invite</string>
+    <string name="update_status">Update Status</string>
+    <string name="wht_on_ur_mind">What\'s on your mind :)</string>
+    <string name="posts">Post</string>
+    <string name="postss">Posts</string>
+    <string name="invite_your_contacts">Invite your contact to YelaTalk</string>
+    <string name="multiple_select">Select</string>
+    <string name="done">Done</string>
+    <string name="reset">Reset</string>
+    <string name="options">Start</string>
+    <string name="Accept">Accept</string>
+    <string name="Ignore">Ignore</string>
+    <string name="start">Start</string>
+    <string name="offlinemsg">s</string>
+    <string name="request">Request!</string>
+    <string name="upload">Upload Photo</string>
+    <string name="post">Wall Post!</string>
+    <string name="delete">Delete Post</string>
+    <string name="can_not_attached_video">You can either attach video or image!</string>
+    <string name="can_not_attached_image">You can either attach video or image!</string>
+    <string name="facebook_on">‘On’ allows you to automatically share your Gallery posts with your friends on Facebook.</string>
+    <string name="facebook_off">By selecting ‘Off’, your posts will not get posted to Facebook automatically. You will need to share individual posts by selecting from the share options.</string>
+    <string name="facebook_desc">Rocketalk is the most popular mobile social app that allows life capture using voice, photos and video and follow and get followed.</string>
+    <string name="videoAttached_tooltips">You can attach video of up to 10MB, about 20-25 seconds. For longer videos, please use a lower resolution setting.</string>
+    <string name="test_html"><html>here nagendra Hello, click her to see here nagendra Hello, click her to see <a href="http://test.com">your gf</a> here </html></string>
+    <string name="refresh_pull_label">Pull down to refresh...</string>
+    <string name="refresh_release_label">Release to refresh...</string>
+    <string name="refresh_refreshing_label">Refreshing...</string>
+    <string name="refresh_tap_label">Tap to refresh...</string>
+    <string name="loading_interface">Loading activity updates...</string>
+    <string name="loading_activity">Loading activity...</string>
+    <string name="loading_discovery">Loading discovery...</string>
+    <string name="questionmark">\?!</string>
+    <string name="explenation">Sorry, but i could not find a camera on your device.</string>
+    <string name="nosdcard">There is no SD card</string>
+    <string name="ptr_pull_to_refresh">Pull to refresh</string>
+    <string name="ptr_release_to_refresh">Release to refresh</string>
+    <string name="ptr_refreshing">Refreshing</string>
+    <string name="ptr_last_updated">Updated: %1$s</string>
+    <string name="facebook_permission_error">Your media could not be posted to Facebook since you picked ‘Allow None’ in your options.</string>
+    <string name="add_conversation_subject">Enter conversation subject</string>
+    <string name="update">Update</string>
+    <string name="get_voice"></string>
+    <string name="reciving_voice">Downloading...</string>
+    <string name="wait_loading">Wait loading...</string>
+     <string name="wait_feed">We are posting your content. Please wait…</string>
+    <string name="refreshing_list">Refreshing list...</string>
+    <string name="load_prevoius_message">Load previous messages</string>
+    <string name="checking_conversation">Loading conversations</string>
+    <string name="message_sending">Sending...</string>
+    <string name="message_retry"> Retry  </string>
+    <string name="message_sent"> Sent  </string>
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected: </string>
+    <string name="title_not_connected">not connected</string>
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">RockeTalk Friend List</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Tap to Refresh Device</string>
+    <string name="connect">Connect a device</string>
+    <string name="discoverable">Make discoverable</string>
+    <string name="get_video"> Download </string>
+    <string name="reciving_video">Downloading...</string>
+    <string name="no_conversation_started_yet"> Tap to refresh</string>
+    <string name="download_rt">Hi,\r\n\r\nI am using RockeTalk to meet like minded people &amp; share media from my mobile - I think you will like it\r\n\r\nDownload for free on http://m.rocketalk.com or from your app store.</string>
+    <string name="mail_subject">Capture life and Share with RockeTalk</string>
+    <!-- <string name="select_category">Select category</string> -->
+    <string name="user_name">Username</string>
+    <string name="mobile_email">Email, Mobile number or Username</string>
+    <string name="mobile_selection">There are more than one mobile number for this contact. Select one</string>
+    <string name="email_selection">There are more than one email id. Select the one you want to send the invite to</string>
+    <string name="user_name_login_no_longer">Login option with username will be discontinued soon. Please update your email and verify to continue!</string>
+    <string name="querated">Feature it</string>
+    <string name="re_querated">Re-Feature it</string>
+    <string name="querated_remove">Remove</string>
+    <string name="search_media_not_found">No Media Available</string>
+    <string name="search_community_not_found">No channel Available</string>
+    <string name="enter_media_search">Enter media name to search</string>
+    <string name="enter_comm_search">Enter channel name to search</string>
+    <string name="channel_lbl">Channels</string>
+    <string name="result_not_found">No result found!</string>
+    <string name="signing_in_status">Connecting with Google+</string>
+    <string name="signing_in_gp">Connecting with Google+...</string>
+    <string name="signing_in_fb">Connecting with Facebook...</string>
+    <string name="signing_in_rt">Connecting with RockeTalk...</string>
+    <string name="forgot"><html><i>Forgot Password</i></html></string>
+    <string name="requesting">Processing...</string>
+    <string name="updating">Updating...</string>
+    <string name="requesting_done">Done</string>
+    <string name="feateching_profile">Loading...</string>
+    <string name="updating_profile">Fetching profile</string>
+    <string name="something_went_wrong">Ooops! Network just went blank. Give it a second try.</string>
+    <string name="sss"><html>Your account is still not verified<font color="red"> !</font></html></string>
+    <string name="choose_your_language">Choose your language</string>
+    <string name="choose_your_message">Discover &amp; connect with people who \n share your interests</string>
+    <string name="welcome_to_kainat">Welcome to YelaTalk</string>
+    <string name="welcome_to_kainat2">Welcome to YelaTalk</string>
+    <string name="connect_fb">      Connect with Facebook</string>
+    <string name="join">Join</string>
+    <string name="take_tour">Take a Tour</string>
+    <string name="your_gateway">Your gateway to sunns world</string>
+    <string name="your_phone_number">Your phone number</string>
+    <string name="sent_text_confirm_msg">Please confirm your country code and enter your number. YelaTalk will send a pin to this number.</string>
+    <string name="sent_text_confirm_title">Is this number correct</string>
+    <string name="sent_dual_sim">SIM with which you have registered, the same SIM should be set as the default number for sending messages</string>
+    <string name="enter_pin">Enter the pin we just texted you</string>
+    <string name="pin">PIN</string>
+    <string name="pin_not_recived">لم نتلق، إعادة إرسال رمز التحقق</string>
+    <string name="verifing">Verifying...</string>
+    <string name="compleate_profile">Complete your profile to let others know you better</string>
+    <string name="update_profile_p">Update your profile to let others know you better</string>
+    <string name="full_name">Your full name</string>
+    <string name="genter_you_belong">Gender you belong to</string>
+    <string name="your_email">Your email id for update</string>
+    <string name="get_from_fb">       Get from Facebook</string>
+    <string name="select_interest">Select your interests to get suggestions around them</string>
+    <string name="select_gender">Select gender</string>
+    <string name="select_language">Select language</string>
+    <string name="select_picture">Select picture</string>
+    <string name="option">Options</string>
+    <string name="number_successfully_verified">Number successfully verified</string>
+    <string name="pending_request">Pending Requests</string>
+    <string name="recommended">Recommended</string>
+    <string name="search">Search</string>
+    <string name="message">Message</string>
+    <string name="create_group">Create Group</string>
+    <string name="next">Next</string>
+    <string name="create">Create</string>
+    <string name="prev">Prev</string>
+    <string name="edit">Edit</string>
+    <string name="status">Status</string>
+    <string name="status_h">Status \"</string>
+    <string name="confirm">Confirm</string>
+    <string name="chat">Chats</string>
+    <string name="community">Channel</string>
+    <string name="public_community">Public Channel</string>
+    <string name="start_chat_lbl">Start a chat</string>
+    <string name="create_group_lbl">Create a group</string>
+    <string name="no_blocked_user">You have no blocked users</string>
+
+    <!--
+    <string-array name="language">
+        <item>English</item>
+        <item>Arabic</item>
+        <item>Urdu</item>
+    </string-array>
+    -->
+
+    <string-array name="image_choose">
+        <item>Camera</item>
+        <item>Gallery</item>
+        <item>Facebook</item>
+    </string-array>
+    <string-array name="image_choose01">
+        <item>Camera</item>
+        <item>Gallery</item>
+        <item>Remove Picture</item>
+     </string-array>
+    <string-array name="image_choose02">
+        <item>Camera</item>
+        <item>Gallery</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Not Specified</item>
+    </string-array>
+    
+       <string-array name="report_options">
+        <item>Mark as safe</item>
+        <item>Delete</item>
+    </string-array>
+    
+       <string-array name="timeline_option">
+        <item>Delete</item>
+        <item>Cancle</item>
+    </string-array>
+    
+    <!-- Nav Drawer Menu Items -->
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Notification</item>
+        <item>Chats</item>
+        <item>Friends</item>
+        <item>Find Channel</item>
+        <item>Invite</item>
+        <item>Discover</item>
+        <item>Settings</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/left_menu_home</item>
+        <item>@drawable/leftmenubell</item>
+        <item>@drawable/leftmenuchat</item>
+        <item>@drawable/left_menu_contact</item>
+        <item>@drawable/find_channel</item>
+        <item>@drawable/left_menu_invite</item>
+        <item>@drawable/discover</item>
+        <item>@drawable/left_menu_setting</item>
+    </array>
+
+    <string name="your_notification_box_is_empty">Your notification box is empty</string>
+    <string name="member"> Followers</string>
+    <string name="online">Online</string>
+    <string name="find_community">Find Channel</string>
+    <string name="search_community">Search</string>
+    <string name="search_hint">Enter #word or word to search</string>
+    <string name="you_have_new_message"> you have new message</string>
+    <string name="describe_your_channel"> Describe your channel</string>
+    <string name="describe_your_ytpost"> Describe your YT post</string>
+    <string name="enter_message"> Enter message</string>
+    <string name="view_description">View Description</string>
+    <string name="edit_community">Edit Channel</string>
+    <string name="view_members">Followers</string>
+    <string name="delete_community">Delete Channel</string>
+    <string name="leave_community">Leave Channel</string>
+    <string name="report_community">Report Channel</string>
+    <string name="cancel">Cancel</string>
+    <string name="please_wait_while_loadin">Loading, please wait..</string>
+    <string name="type_to_search">Type to search</string>
+    <string name="create_channel">Create Channel</string>
+    <string name="please_enter_a_community_name">Please enter a channel name!</string>
+    <string name="please_enter_min_tag">Please add minimum of 1 #Tag!</string>
+    <string name="name_should_start_with_an_alphabet">Name should start with an alphabet!</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="channel_name">Channel name </string>
+    <string name="add_tags">Add tags</string>
+    <string name="category ">Category </string>
+    <string name="public_str">Public</string>
+    <string name="private_str">Private</string>
+    <string name="auto_accept ">Auto accept </string>
+    <string name="by_clicking_you_accept_the_terms ">By clicking you accept the terms </string>
+    <string name="terms_and_conditions ">Accept terms of service</string>
+    <string name="moderation ">Moderation</string>
+    <string name="about_app">About YelaTalk</string>
+    <string name="or">    or     </string>
+    <string name="facbook_line">Why fill in, get your Facebook profile</string>
+    <string name="terms_of_service">Terms of service</string>
+    <string name="look_for_conversations">Search</string>
+    <string name="delete_account">Delete</string>
+    <string name="you_have_not_joined_any_communities">You have not joined any Channels!</string>
+    <string name="there_are_no_pending_requests">There are no pending requests!</string>
+    <string name="created_on">Created On </string>
+    <string name="my_communities">My Channels</string>
+    <string name="pending_invites">Pending Invites</string>
+    <string name="info">Info</string>
+    <string name="yourrequesthasbeensent">Your request has been sent! You will receive a response shortly</string>
+    <string name="load_more">Load More</string>
+    <string name="loading_dot">Loading...</string>
+    <string name="media_search_result">Media Search Result</string>
+    <string name="advance_search">Advance search</string>
+    <string name="loading_system_message">Loading system message...</string>
+    <string name="add_to_conversation">Add to Conversation.</string>
+    <string name="add_a_caption">Add a caption</string>
+    <string name="featured_lbl">Featured</string>
+    <string name="trending_lbl">Trending</string>
+    <string name="add_lbl">Add</string>
+    <string name="leave_conversation">Leave Conversation</string>
+    <string name="update_subject">Update Subject</string>
+    <string name="delete_conversation">Delete Conversation</string>
+    <string name="delete_message">Delete Message</string>
+    <string name="save_message">Save Message</string>
+    <string name="please_add_content_to_send_message">Please add content to send messagey</string>
+    <string name="friend">Friends</string>
+    <string name="yt_buddies">YT Buddies</string>
+    <string name="choose_from_library">Choose from library</string>
+    <string name="take_photo">Take a photo</string>
+    <string name="record_with_camera">Record with camera</string>
+    <string name="select_smiley">Select Smiley</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="privacy_settings">Privacy Settings</string>
+    <string name="sharing_settings">Sharing Settings</string>
+    <string name="share_label">Share</string>
+    <string name="push_notification_settings">Push Notification Settings</string>
+    <string name="help">Help</string>
+    <string name="notification">Notification</string>
+    <string name="settings">Settings</string>
+    <string name="please_wait_while_getting_audio">Please wait while getting audio...</string>
+    <string name="please_enter_description">Please enter a description!</string>
+    <string name="please_enter_community_name">Please enter a channel name!</string>
+    <string name="play">Play</string>
+    <string name="clear">Clear</string>
+    <string name="preview">Preview</string>
+    <string name="update_community"> Update Channel </string>
+    <string name="do_you_really_want_to_delete_this_community"> Do you really want to delete this Channel? </string>
+    <string name="do_you_really_want_to_leave_this_community"> Do you really want to leave this Channel? </string>
+    <string name="do_you_really_want_to_report_this_community">Do you want to report this Channel? </string>
+    <string name="error">Error</string>
+    <string name="search_by_community_name">Search by Channel name</string>
+    <string name="search_by_community_creator">Search by name of owner/creator</string>
+    <string name="slectc_contact_to_start_chat">Please select friends to start a group conversation!</string>
+    <string name="creating_account">Creating your account</string>
+    <string name="about_app_version">Version 1.5.2</string>
+    <string name="about_app_text1">Discover people and posts around your interests. Share your thoughts in interest-specific channels and talk to people who share your interest.</string>
+    <string name="about_app_text2">Release Date December 13 2014</string>
+    <string name="go">Go</string>
+    <string name="community_tab">Channels</string>
+    <string name="comeing_soon">Coming soon!</string>
+    <string name="cat1">Sports</string>
+    <string name="cat2">News</string>
+    <string name="cat3">Entertainment</string>
+    <string name="cat4">Spirituality</string>
+    <string name="term_of_use">Terms of use</string>
+    <string name="privacy_police">Privacy Policy</string>
+    <string name="synch_contact">Synching your contacts</string>
+    <string name="gallert">منتهي</string>
+    <string name="days_ago">days ago</string>
+    <string name="h_and">h and</string>
+    <string name="m_ago">m ago</string>
+    <string name="s_ago">s ago</string>
+    <string name="ago">ago</string>
+    <string name="unable_to_retrieve">Unable to retrieve</string>
+    <string name="recording_audio">Recording audio</string>
+    <string name="secs_left">Secs left</string>
+    <string name="select_choice">Select Choice</string>
+    <string name="gallery">Gallery</string>
+    <string name="max_count">Max count</string>
+    <string name="max_size_MB_Current_attached_size">Max size MB. Current attached size</string>
+    <string name="kainat_coming_soon">YelaTalk coming soon</string>
+    <string name="leave">Follow</string>
+    <string name="follow">Follow</string>
+    <string name="followers">Followers</string>
+    <string name="followers_u">Followers</string>
+    <string name="unfollow">Following</string>
+    <string name="checking">checking</string>
+    <string name="available">Available</string>
+    <string name="profile">Profile</string>
+    <string name="selected">Selected</string>
+    <string name="max_attachment_reached">Max attachment reached. Can not attach more!</string>
+    <string name="feedback">Feedback</string>
+    <string name="authenticating_with_server">Authenticating with server...</string>
+    <string name="sending_code_on_this_number">Sending code on this number...</string>
+    <string name="verification_code_sent">Verification code sent, please check.</string>
+    <string name="enter_pin_number">Enter verification code</string>
+    <string name="verifing_code">Verifying code...</string>
+    <string name="check_net_connection">Please check network connection!</string>
+    <string name="your_email_will_never_be_displayed_publicly">(Your email id will never be publicly displayed)</string>
+    <string name="smiley">Smiley</string>
+    <string name="pencil">Pencil</string>
+    <string name="erase">Erase</string>
+    <string name="color">Color</string>
+    <string name="more">More</string>
+    <string name="exit_canvas">Do you want to close Canvas?</string>
+    <string name="started_conversation">Started the Conversation</string>
+    <string name="ok">OK</string>
+    <string name="verify">Verify</string>
+    <string name="emboss">Emboss</string>
+    <string name="blur">Blur</string>
+    <string name="background_color">Background Color</string>
+    <string name="_2px">2px</string>
+    <string name="_4px">4px</string>
+    <string name="_6px">6px</string>
+    <string name="_8px">8px</string>
+    <string name="_10px">10px</string>
+    <string name="_12px">12px</string>
+    <string name="rub">Rub</string>
+    <string name="clear_all">Clear all</string>
+    <string name="clear_all_msg">Do you want to clear canvas?</string>
+    <string name="draw_something">Please draw something to attach</string>
+    <string name="add_more">Add More</string>
+    <string name="click_more">Click More</string>
+    <string name="play_audio">Play audio</string>
+    <string name="clear_audio">Clear audio</string>
+    <string name="re_record">Re-Record</string>
+    <string name="conversation_delete">This will delete all messages from this conversation. Do you want to proceed?</string>
+    <string name="add_participants">+ Add participants</string>
+    <string name="participants">Participants</string>
+    <string name="all_left">All participants have left the conversation!</string>
+    <string name="you_left">You have left this group!</string>
+    <string name="name_this_group">Name this group</string>
+    <string name="change_group_name">Change group name</string>
+    <string name="group_name">Group name</string>
+    <string name="leave_group_confiramation_message">Once you leave the group, you may not join back. Do you want to leave this group?</string>
+    <string name="leave_group">Leave group</string>
+    <string name="please_enter_valid_email">Please enter a valid email!</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_gender">Select gender</string>
+    <string name="PleaseIntrest">Select intrest</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_mobile">Please enter your mobile number!</string>
+    <string name="month_ago">month ago</string>
+    <string name="information">Information</string>
+    <string name="picture">Photo</string>
+    <string name="video">Video</string>
+    <string name="doodle">Doodle</string>
+    <string name="audio">Audio</string>
+    <string name="talking_pic">Talking pic</string>
+    <string name="camera">Camera</string>
+    <string name="sending_request_wait">Sending request please wait</string>
+    <string name="you_have_successfully_deleted_this_message">You have successfully deleted this message</string>
+    <string name="buddy_added_conversation">Buddy added in conversation</string>
+    <!-- <string name="you_have_successfully_left_this_conversation">You have successfully left this conversation</string> -->
+    <string name="you_successfully_changed_add_subject_this_conversation">You successfully changed/add subject to this conversation</string>
+    <string name="you_have_successfully_deleted_this_conversation">You have successfully deleted this conversation</string>
+    <string name="enter_subject_text">Enter subject text</string>
+    <string name="comm_creat_sucess">Your Channel has been created successfully</string>
+    <string name="comm_update_success">Your Channel has been updated successfully</string>
+    <string name="comm_name_already_taken">This Channel name has already been taken by someone</string>
+    <string name="please_try_after_some_times">There is some problem on server. Please try after some times</string>
+    <string name="subject_changed">Subject changed</string>
+    <string name="code_not_match">Code does not match for the verification</string>
+    <string name="you_have_successfully_left_this_conversation">You have successfully left this conversation!</string>
+    <string name="buddy_added">Buddy added</string>
+    <string name="image_size_too_small">Image size is too small need 300x300</string>
+    <string name="change_pic">Change Picture</string>
+    <string name="pick">Pick</string>
+    <string name="enter_number">Enter your number!</string>
+    <string name="select_category">Select category</string>
+    <string name="select_country">United Arab Emirates</string>
+    <string name="a_moment_ago">a moment ago</string>
+    <string name="_140">140</string>
+    <string name="unable_to_connect_pls_try_later">Unable to connect. Please try after some time.</string>
+    <string name="view_all">View All</string>
+    <string name="suggested_for_you">Suggested for you</string>
+    <string name="text_copied">Text copied</string>
+    <string name="nothing_to_copy">Nothing to copy</string>
+    <string name="sms_arrive_xseconds">Your SMS should arrive in </string>
+    <string name="xseconds"> secs</string>
+    <string name="facebook_lbl"> Facebook</string>
+    <string name="twitter_lbl"> Twitter</string>
+    <string name="whatsapp_lbl"> WhatsApp</string>
+    <string name="email_lbl"> Email</string>
+    <string name="contact">Invite phone contacts</string>
+    <string name="whatsapp">Invite whatsapp contacts</string>
+    <string name="facebook">Invite to others</string>
+    <string name="popular">Popular</string>
+    <string name="copy">Copy</string>
+    <string name="new_feed">New Feed</string>
+    <string name="invite_text">Hi,\nJoin me on YelaTalk – a new app that let you discover people and posts around your interests. Create your own interest-specific channel, invite friends and start sharing your thoughts.\nhttp://www.yelatalkprod.com/yt/download.html</string>   
+    <string name="Send_upto_invite">Send upto 10 invite</string>
+    <string name="Send_upto_invite_20">Send upto 20 invite</string>
+    <string name="delete_confirmation">Do you really want to delete this message?</string>
+    <string name="report_confirmation">Do you really want to report this message?</string>
+      <string name="block_confirmation">Blocked Contacts will no longer be able to Send you messages?</string>
+      <!-- <string name="block_confirmation_html"><b>Are you sure you want to block this user?</b><ul style="list-style-type:disc"><li>You will not receive any message from this user.</li><li>This user will not be able to send you friend request.</li><li>This user will not be able to join the channels created by you.</li></ul>!</string> -->
+    <string name="block_confirmation_html">Are you sure you want to block this user?\n You will not receive any message from this user.\n This user will not be able to send you friend request.\n This user will not be able to join the channels created by you.</string>
+    <string name="no_entry">Start post</string>
+    <string name="owner">Owned by</string>
+    <string name="reported">Reported by :</string>
+      <string name="and">and</string>
+    <!-- <string name="more">more...</string> -->
+    <string name="community_create_private_str">Private channel do not appear in public search. Once you turn the channel private, users will not be able to follow the channel and can only join if you add them.</string>
+    <!-- TOUR -->
+    <string name="feel">Feel</string>
+    <string name="feel_at_home">Feel at home with YelaTalk \n\n YelaTalk lets you connect and communicate with the Ummah and people beyond</string>
+    <string name="talk">Talk</string>
+    <string name="start_a_converstion">Start a converstion with  anyone on your mobile. Form your own group and invite friends to join in. Express yourself with pics, audio and videos.</string>
+    <string name="discover">Discover</string>
+    <string name="select_ineterest_lbl">Select Interests</string>
+    <string name="discover_converstions">Discover converstions, Channels and Inspiration; culturally and spiritually relevant to you and your friends.</string>
+    <string name="connect_tour">Connect</string>
+    <string name="bond_over">Bond over shared interest and spirituality. Go find the Channel, group or someone with shared interest.</string>
+    <string name="push_notification">Push Notification: </string>
+    <string name="broadcast">Broadcast: </string>
+    <string name="autoplay">Auto Play</string>
+    <string name="on_lbl">On</string>
+    <string name="off_lbl">Off</string>
+    <string name="add_member">Add Members</string>
+    <string name="broadcast_alert">With Broadcast mode on followers will not be able to post and comment for the duration. You will need to put the broadcast off to allow posting again.</string>
+    <string name="broadcast_mode">Channel is in broadcast mode</string>
+    <string name="please_enter_status_message">Please enter something for status.</string>
+    <string name="enter_10_digit">Please enter 10 digit mobile number!</string>
+    <string name="single_tag_length_alert">Please enter tags in within limit of 15 characters!</string>
+    <string name="total_tag_count">Please enter maximum of 10 tags only!</string>
+    <string name="talking_pic_alert">Add audio - this is talking picture</string>
+    <string name="muc_welcome_msg">Hi, I have created this group </string>
+    <string name="suggested_channel">Suggested Channels</string>
+    <string name="contct_sync_aaha">Aha!</string>
+    <string name="contct_sync_count">of your contacts are on YelaTalk. You can find them in friends section, once you proceed ahead.</string>
+    <string name="no_request_pending">No pending invites! \n Why not invite your friends to join you? \n\n\n You can add friends by going to their profile and sending them a friend request.</string>
+    <string name="no_buddies">No friends as yet! \n Why not invite your friends to join you? \n\n\n You can also add friends by going to their profile and sending them a friend request.</string>
+       <string name="nocontact">No contacts on YelaTalk as yet! \n Why not invite your phone contacts to join you on YelaTalk?</string>
+    <string name="contct_sync_zero">You are the first among your peer to try out YelaTalk. You can invite your phone contacts once you proceed ahead.</string>
+    <string name="network_fail">Ooops! Network just went blank. Give it a second try</string>
+    <string name="profile_voice_alert">Your profile voice has been updated successfully!</string>
+    <string name="no_internet_connection">No Internet Connection. Please try sending later when internet is available!</string>
+    <string name="system_message">System message \nClick here to view</string>
+    <string name="channel_name_validation_alert">Invalid character entered, please remove : </string>
+    <string name="reported_message">Reported message \nClick here to view message</string>
+    <string name="already_download_in_progress">Please wait, a video download is in progress…</string>
+    <string name="save_unsaved"> Do you want to save the changes?</string>
+    <string name="backpress">Are you sure you want to discard this post?</string>
+    <string name="postpress"> Please enter some content or text to post.</string>
+    
+    
+    <string name="self_verify">Self Verify by SMS</string>
+	<string name="resend">Resend</string>
+	<string name="didnt_receive_pin">Didn\'t receive verification code?</string>
+	<string name="invalid_pin_please_try_again">INVALID PIN PLEASE TRY AGAIN</string>
+	<string name="confirm_txt">Confirm</string>
+	<string name="please_make_sure">Please make sure your mobile phone is active</string>
+	<string name="pin_not_entered">Pin not entered.</string>
+	<string name="lbl_server_not_responding">Server is not responding, Please try after some time.</string>
+	<string name="self_verify_phone_number_msg">Unable to verify this time, please try after sometime.</string>
+	<string name="country_mobile_validation">Please select your country and enter mobile number.</string>
+	<string name="mobile_validation">Please enter your mobile number.</string>
+	<string name="verified">Verified</string>
+	<string name="channel_tag_validation_alert">not allowed in tag.</string>
+	<string name="channel_tag_one_hash">Only single # allowed</string>
+	<string name="channel_tag_hash_allowed_in_between"># is not allowed in between tag.</string>
+    <string name="multiimage_selection">You can share max 5 images. Are you want to share ?</string>
+      <string name="multivideo_selection">You can share only 1 video. Are you want to share ?</string>
+       <string name="multiaudio_selection">You can share only 1 Audio. Are you want to share ?</string>
+       <string name="check_for_update">Check for update</string>
+       <string name="autoplay_on">Turning ON the auto play feature for your Broadcast channels</string>
+       <string name="autoplay_off">Turning OFF the auto play feature for your Broadcast channels</string>
+    
+       <string name="feature_channels">Featured channels</string>
+      <string name="sugested">Suggested channels</string>
+       <string name="all_channels">All Categories</string>
+       
+       <string name="featured">Feature</string>
+       <string name="unfeatured">Un-Feature</string>
+       
+       
+       <string name="add_friend">Add Friend</string>
+        <string name="delete_friend">Delete Friend</string>
+       <string name="start_chat">Chat</string>
+       <string name="interests">Interests</string>
+       <string name="my_friends">My Friends</string>
+       <string name="requests">Requests</string>
+       <string name="create_prof_intrest_tag">Edit your interests for suggested channels</string>
+       
+         <string name="recent">Recent</string>
+           <string name="featuredd">Featured</string>
+             <string name="most_viewed">Most Viewed</string>
+               <string name="most_liked">Most Liked</string>
+    
+    <!-- <string name="play_audio">Play audio</string> -->
+
+
+    <!--
+    <string-array name="community_category">
+        <item>Sports</item>
+        <item>News</item>
+        <item>Entertainment</item>
+        <item>Spirituality</item>
+    </string-array>
+    -->
+
+</resources>

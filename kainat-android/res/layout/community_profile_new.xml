@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_new"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@drawable/title" >
+
+        <TextView
+            android:id="@+id/prev_communites"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/x_arrows_left"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <com.rockerhieu.emojicon.EmojiconTextView
+            android:id="@+id/title_community"
+            style="@style/HeaderFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_height"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:text="community " />
+
+        <Button
+            android:id="@+id/invite_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="2dip"
+            android:background="@drawable/search_icon"
+            android:onClick="@string/onClickHandleMethodName"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/relative_report"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_height"
+            android:layout_toLeftOf="@+id/edit_community"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true" >
+
+            <ImageButton
+                android:id="@+id/edit_report"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/header_height"
+                android:layout_toLeftOf="@+id/edit_community"
+                android:background="@null"
+                android:gravity="right"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/chat_option_report"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/report_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bell_counter"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/edit_community"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="@string/onClickHandleMethodName"
+            android:src="@drawable/edit" />
+
+        <Button
+            android:id="@+id/web_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dip"
+            android:background="@drawable/roundedredbutton"
+            android:onClick="@string/onClickHandleMethodName"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:scrollbarStyle="insideOverlay" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/com_channel_bg"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/community_pic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="220dp"
+                    android:gravity="center"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/ll_back"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_post"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/post_comm"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:visibility="gone" >
+                    </Button>
+
+                    <Button
+                        android:id="@+id/btn_join_leave"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:visibility="visible" >
+                    </Button>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lll_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/channel_profile_patch"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:weightSum="1" >
+
+                    <LinearLayout
+                        android:id="@+id/layout_post_btn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.50"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/txt_postcount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/txt_post"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/postss"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="normal" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:alpha=".30"
+                        android:background="@color/white_new"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_follow_btn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.50"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/txt_follow_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_follow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/followers"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="normal" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/channel_detail_progress"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white_new" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/txt_owner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/owner"
+                            android:textColor="#919191"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/txt_owner_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name"
+                            android:textColor="#4c716a"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <com.rockerhieu.emojicon.EmojiconTextView
+                        android:id="@+id/txt_comm_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="TextView"
+                        android:textColor="#696969"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tag_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="12dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:text=""
+                        android:textSize="13sp"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_push"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center|right"
+        android:paddingBottom="5dp"
+        android:paddingRight="50dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/push_notification_caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="@string/push_notification"
+            android:textColor="@color/heading" />
+
+        <TextView
+            android:id="@+id/push_toggle_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="@string/off_lbl"
+            android:textColor="@color/sub_heading" />
+
+        <ToggleButton
+            android:id="@+id/toggel_btn_pushnotification"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/toggle_selector"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textOff=""
+            android:textOn="" />
+
+        <TextView
+            android:id="@+id/push_toggle_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/on_lbl"
+            android:textColor="@color/sub_heading" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_broadcast"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center|right"
+        android:paddingBottom="5dp"
+        android:paddingRight="50dp" >
+
+        <TextView
+            android:id="@+id/broadcast_caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="@string/broadcast"
+            android:textColor="@color/heading" />
+
+        <TextView
+            android:id="@+id/broadcast_toggle_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="@string/off_lbl"
+            android:textColor="@color/sub_heading" />
+
+        <ToggleButton
+            android:id="@+id/toggel_btn_broadcast"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/toggle_selector"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textOff=""
+            android:textOn="" />
+
+        <TextView
+            android:id="@+id/broadcast_toggle_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/on_lbl"
+            android:textColor="@color/sub_heading" />
+    </LinearLayout>
+
+</LinearLayout>

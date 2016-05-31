@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:paddingLeft="20dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/pushicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@drawable/pushicon"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="60"
+                    android:paddingLeft="2dip"
+                    android:singleLine="true"
+                    android:text = "@string/app_name"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="60"
+                    android:paddingLeft="2dip"
+                    android:singleLine="true"
+                    android:text = "@string/app_name"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/media_upload"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:progressDrawable="@drawable/seekbarprogress_notification" >
+                </ProgressBar>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--
+        <ProgressBar
+            android:id="@+id/media_upload"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:progressDrawable="@drawable/seekbarprogress_notification" >
+        </ProgressBar>
+        -->
+    </LinearLayout>
+
+</LinearLayout>

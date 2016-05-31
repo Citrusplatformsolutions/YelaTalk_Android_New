@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:id="@+id/linearLayout1"
+		android:orientation="horizontal"
+		android:layout_gravity="right"
+		android:layout_height="wrap_content"
+		
+		android:gravity="right">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:background="@drawable/msgbox_self_iphone"
+			android:id="@+id/datacontainer"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" android:baselineAligned="true">
+			<TextView
+			
+			android:visibility="visible"
+			android:text="34:23:24"
+			android:id="@+id/time"
+			android:textColor = "@color/darkgray"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="right"
+			android:textStyle = "italic"
+			android:textSize = "10dp"
+			
+			android:layout_gravity="right"
+			
+			/>
+			<TextView
+			android:visibility = "gone"	
+				android:gravity="right"
+				android:text="nasd asdfasdfasdfas fasdfasdfasdfas asf asdfasdfads asd asdfads fasdf sdf "
+				android:id="@+id/payloadText"
+				android:textStyle="bold"
+				android:textColor = "@color/black"
+				android:textSize = "12dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:autoLink = "all"
+				
+				android:layout_gravity="right"></TextView>
+			<ScrollView
+			
+			android:gravity="right"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_gravity="right">
+				<LinearLayout android:visibility = "gone"
+				android:gravity="right"
+				android:layout_gravity="right"
+					android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:id="@+id/payloadMedia"
+					android:layout_height="wrap_content">
+					
+						
+				</LinearLayout>
+			</ScrollView>
+		</LinearLayout>
+		<ImageView
+		android:layout_gravity="bottom"
+					android:background = "@drawable/im_avatar_picture_border_normal"
+						android:layout_height="50dp"
+						android:src="@drawable/placeholder"
+						android:layout_width="50dp"
+						android:id="@+id/sender"
+						/>						
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+login/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title"
+        android:visibility="visible" >
+
+        <TextView
+            style="@style/HeaderFontStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/header_height"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Sign Up" />
+
+        <Button
+            android:id="@+id/back"
+            style="@style/buttonHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dip"
+            android:drawableLeft="@drawable/arrowleft"
+            android:drawableRight="@drawable/line"
+            android:gravity="center"
+            android:onClick="@string/onClickHandleMethodName"
+            android:paddingBottom="3dip"
+            android:paddingTop="3dip"
+            android:text="Back"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+login/header0"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+login/header0"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+login/header"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dip"
+                            android:text="Welcome to RockeTalk"
+                            android:textColor="#FF000000"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:typeface="sans"
+                            android:visibility="gone" >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="10dip"
+                            android:layout_marginTop="5dip"
+                            android:text="Registration for a new account"
+                            android:textColor="@color/heading"
+                            android:textSize="15sp"
+                            android:textStyle="bold" >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile Number"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/signup_mobileBox"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:hint="Mobile number"
+                            android:inputType="phone"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:paddingBottom="10dip"
+                            android:singleLine="true"
+                            android:visibility="gone" >
+                        </EditText>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLength="127"
+                            android:text="Email"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/signup_emailBox"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_holo_light"
+                            android:hint="Email address"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="50"
+                            android:paddingBottom="10dip"
+                            android:textSize="15sp"
+                            android:visibility="visible" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/signup_passwordBox"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:background="@drawable/edit_text_holo_light"
+                            android:digits="@string/password"
+                            android:hint="Choose password"
+                            android:imeOptions="actionNext"
+                            android:maxLength="30"
+                            android:paddingBottom="10dip"
+                            android:singleLine="true"
+                            android:textSize="15sp" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/signup_conf_passwordBox"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:background="@drawable/edit_text_holo_light"
+                            android:digits="@string/password"
+                            android:hint="Re-enter password"
+                            android:imeOptions="actionNext"
+                            android:maxLength="30"
+                            android:paddingBottom="10dip"
+                            android:singleLine="true"
+                            android:textSize="15sp" >
+                        </EditText>
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dip"
+                            android:text="Some basic info to setup your profile"
+                            android:textColor="@color/heading"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:typeface="sans" >
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/signup_firstNameBox"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:background="@drawable/edit_text_holo_light"
+                            android:digits="@string/constraints_name"
+                            android:hint="First name"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapSentences|textFilter"
+                            android:maxLength="15"
+                            android:paddingBottom="10sp"
+                            android:singleLine="true"
+                            android:textSize="15sp" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/signup_lastNameBox"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:background="@drawable/edit_text_holo_light"
+                            android:digits="@string/constraints_name"
+                            android:hint="Last name"
+                            android:imeOptions="actionDone"
+                            android:inputType="textCapSentences|textFilter"
+                            android:maxLength="15"
+                            android:paddingBottom="10dip"
+                            android:singleLine="true"
+                            android:textSize="15sp" >
+                        </EditText>
+
+                        <TextView
+                            android:id="@+id/signup_dob"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:background="@drawable/edit_text_holo_light"
+                            android:digits="@string/constraints_name"
+                            android:hint="DOB"
+                            android:inputType="textCapSentences|textFilter"
+                            android:maxLength="15"
+                            android:paddingBottom="10dip"
+                            android:singleLine="true"
+                            android:textSize="15sp" >
+                        </TextView>
+
+                        <LinearLayout
+                            android:id="@+login/header0"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="fill_parent"
+                                android:gravity="center|left"
+                                android:text="Gender"
+                                android:textColor="@color/heading"
+                                android:textSize="16dp"
+                                android:textStyle="normal"
+                                android:visibility="visible" />
+
+                            <RadioGroup
+                                android:id="@+id/radioSex"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <RadioButton
+                                    android:id="@+id/radioMale"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/male"
+                                    android:textColor="@color/heading" />
+
+                                <RadioButton
+                                    android:id="@+id/radioFemale"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="false"
+                                    android:text="@string/female"
+                                    android:textColor="@color/heading" />
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/gender_text"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:background="@drawable/edit_text_holo_light"
+                            android:digits="@string/constraints_name"
+                            android:editable="false"
+                            android:hint="Select gender"
+                            android:imeOptions="actionDone"
+                            android:inputType="textCapSentences|textFilter"
+                            android:maxLength="15"
+                            android:paddingBottom="10dip"
+                            android:singleLine="true"
+                            android:textSize="15sp"
+                            android:visibility="gone" >
+                        </EditText>
+
+                        <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select your gender"
+                android:textStyle="bold">
+            </TextView>
+            <Spinner
+                android:id="@+id/signup_gender_dropBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                
+                android:entries="@array/gender"
+                
+                android:paddingBottom="10dip">
+            </Spinner>
+                        -->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date of Birth"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+                        <!--
+            <DatePicker
+                android:id="@+id/signup_dobBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+               
+                android:onClick="@string/onClickHandleMethodName"
+                android:paddingBottom="10dip"
+                android:startYear="1951">
+            </DatePicker>
+                        -->
+
+                        <LinearLayout
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="5dip" >
+
+                            <Button
+                                android:id="@+id/signup_signupButton"
+                                android:layout_width="300dp"
+                                android:layout_height="@dimen/button_height"
+                                android:layout_weight="1"
+                                android:background="@drawable/pillred_sel"
+                                android:onClick="@string/onClickHandleMethodName"
+                                android:text="Sign Up!"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="@dimen/button_text"
+                                android:textStyle="normal" >
+                            </Button>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="bottom|center_horizontal"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom|center_horizontal"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/terms_conditions0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:onClick="onClick"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="By tapping signup, you are agreeing to RockeTalk"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/terms_conditions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:onClick="onClick"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="5dp"
+                            android:text="Terms of Service &amp; Privacy Policy"
+                            android:textColor="@color/hyperlink"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

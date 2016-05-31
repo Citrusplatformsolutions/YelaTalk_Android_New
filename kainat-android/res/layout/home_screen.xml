@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+		android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/title"> 
+		<ImageView android:id="@+id/home_mute" android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" android:layout_centerVertical="true" 
+		android:src="@drawable/sound_mute" android:visibility="gone"> </ImageView> 
+		<ImageView android:id="@+id/rocketalk_image" android:layout_width="wrap_content" 
+		android:layout_height="22dip" android:layout_alignBottom="@+id/homeScreen_userName" 
+		android:layout_toLeftOf="@+id/homeScreen_userName" android:src="@drawable/logo_titlebar" 
+		android:layout_marginRight="2dip"/> <Button android:id="@+id/homeScreen_userName" 
+		android:layout_width="wrap_content" android:layout_height="25dip" android:layout_alignParentRight="true" 
+		android:layout_centerVertical="true" android:layout_margin="3dip" android:background="@drawable/status" 
+		android:fadeScrollbars="true" android:onClick="@string/onClickHandleMethodName" 
+		android:text=" RT(Online)" android:textColor="#ffF8FAE8" android:textSize="14dip"/> 
+		<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" 
+		android:id="@+id/adgoogle"/> </RelativeLayout> -->
+	<RelativeLayout 
+		android:id="@+id/top_featured_relativeLayout3" android:layout_width="fill_parent"
+		android:layout_height="@dimen/header_height" android:background="@drawable/title">
+		<ImageView android:id="@+id/home_mute" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_centerVertical="true"
+			android:src="@drawable/sound_mute" android:visibility="gone">
+		</ImageView>
+		<LinearLayout 
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="horizontal" android:layout_marginLeft="70dp" android:weightSum="1">
+			<TextView android:id="@+id/rocketalk_image"
+				android:layout_width="wrap_content" 
+				android:text = "@string/app_name"
+				android:layout_marginRight="2dip"
+				android:gravity="center"				
+				style="@style/HeaderFontStyle"            
+				android:layout_gravity="center_vertical|center_horizontal|center" android:layout_weight="0.47" android:layout_height="@dimen/header_height"/>
+		</LinearLayout>
+		<Button android:id="@+id/homeScreen_userName"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentRight="true" android:layout_centerVertical="true"
+			android:layout_margin="3dip" android:background="@drawable/downarrow"
+			android:fadeScrollbars="true" android:onClick="@string/onClickHandleMethodName"
+			android:text="" android:textColor="#ffF8FAE8" android:textSize="14dip" />
+	</RelativeLayout>
+	<include layout="@layout/notificationdiloag" android:id="@+id/notificationdiloags" />
+	<LinearLayout android:id="@+id/notification_bar"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/notoficationbar" android:gravity="center"
+		android:visibility="gone">
+		<TextView android:id="@+id/notification_text"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="center" android:text="Hello" android:textColor="#fff"
+			android:textStyle="bold" android:typeface="sans">
+		</TextView>
+	</LinearLayout>
+	<com.kainat.app.android.uicontrol.Ticker
+		android:id="@+id/homeScreen_newMessageTicker" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:singleLine="true"
+		android:text="You have new message(s) available in inbox."
+		android:textSize="11dip" android:typeface="sans" android:visibility="invisible">
+	</com.kainat.app.android.uicontrol.Ticker>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:gravity="center"
+		android:orientation="horizontal">
+		<LinearLayout android:layout_width="0dip"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:gravity="center_horizontal">
+			<ImageView android:id="@+id/home_thinking"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center" android:layout_marginBottom="10dip"
+				android:layout_marginTop="10dip" android:src="@drawable/home_thinking">
+			</ImageView>
+		</LinearLayout>
+	</LinearLayout>
+	<GridView android:id="@+id/home_gridView"
+		android:layout_width="fill_parent" android:layout_height="0dip"
+		android:layout_marginBottom="5dip" android:layout_weight="1"
+		android:columnWidth="90dip" android:gravity="center"
+		android:numColumns="3" android:stretchMode="spacingWidthUniform"
+		android:listSelector="@color/transprent"
+		android:drawSelectorOnTop="true"
+		android:verticalSpacing="15dip">
+	</GridView>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:gravity="bottom">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:background="@color/darkgray"
+			android:clickable="true" android:focusable="true" android:gravity="center"
+			android:orientation="horizontal">
+			<RelativeLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginLeft="5dip"
+				android:gravity="center_horizontal">
+				<ImageView android:id="@+id/home_notification"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:visibility="invisible"
+					android:src="@drawable/home_friend_notification">
+				</ImageView>
+				<TextView android:id="@+id/home_notification_count"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:paddingBottom="8dip"
+					android:visibility="invisible"
+					android:gravity="center"
+					 android:text="0"
+					android:textColor="@color/black" android:textSize="14dip">
+				</TextView>
+			</RelativeLayout>
+			<TextView android:id="@+id/home_notificationText"
+				android:layout_width="fill_parent" android:layout_height="35dip"
+				android:layout_marginLeft="5dip" android:gravity="center_vertical"
+				android:singleLine="true" android:text="No new notifications!"
+				android:textColor="#fff">
+			</TextView>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

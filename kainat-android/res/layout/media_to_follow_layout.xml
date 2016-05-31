@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/mediaLayout" android:gravity="center_vertical|center_horizontal"
+	android:padding = "4dp"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<com.kainat.app.android.uicontrol.CImageView android:id="@+id/user_thumb" 
+	    xmlns:rocketalk="http://schemas.android.com/apk/res/com.kainat.app.android"
+rocketalk:imagetype="THUMB"
+		android:layout_width="@dimen/thumb_height"
+                android:layout_height="@dimen/thumb_widht"
+		android:gravity="top" android:onClick="@string/onClickHandleMethodName"
+		android:scaleType="fitCenter" android:src="@drawable/def2">
+	</com.kainat.app.android.uicontrol.CImageView>
+	<TextView android:id="@+id/loadmore_layout" android:textSize="15dp"
+		android:visibility="gone" android:text="Loading..." android:textStyle="bold"
+		android:gravity="center" android:layout_width="fill_parent"
+		android:textColor="@color/heading" android:layout_height="fill_parent"></TextView>
+	<LinearLayout 
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout android:orientation="horizontal"
+			android:padding = "2dp"
+			android:layout_width="fill_parent" android:layout_gravity="center_vertical|center_horizontal"
+			 android:layout_height="wrap_content">
+			<ProgressBar android:id="@+id/progressbarfeed"
+				android:indeterminateDrawable="@drawable/circulor_progressbar"
+				android:layout_gravity="center_vertical|center_horizontal" style="?android:attr/progressBarStyleSmall"
+				android:visibility="gone" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			<TextView android:id="@+id/username" android:textSize="12sp"
+				android:text="Media" android:textStyle="normal" android:layout_weight="1"
+				android:onClick="@string/onClickHandleMethodName" android:gravity="left|center"
+				android:layout_width="fill_parent" android:textColor="@color/heading"
+				android:layout_marginLeft="5dp"
+				android:layout_height="fill_parent"></TextView>
+			<TextView android:background="@drawable/follow"
+				
+				android:visibility="visible" android:text="Follow" android:id="@+id/mediaplay_follows"
+				android:textStyle="bold" android:gravity="center_vertical|center_horizontal"
+				android:textColor="@color/white"
+				android:onClick="@string/onClickHandleMethodName" 
+				android:layout_width="65dp" android:layout_height="30dp"></TextView>
+		</LinearLayout>
+		<LinearLayout 
+			android:gravity="center_vertical|center_horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<LinearLayout 
+				android:id="@+id/mediaLayout_1" android:gravity="center_vertical|center_horizontal"
+				android:orientation="vertical" android:layout_width="fill_parent"
+				android:layout_marginTop="1dp" android:layout_marginBottom="1dp"
+				android:layout_marginLeft="5dp" android:layout_height="fill_parent">
+				<include layout="@layout/media_followinger" android:id="@+id/notification90099090diloags" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

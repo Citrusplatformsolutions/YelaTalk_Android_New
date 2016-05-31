@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:gravity="fill_vertical"
+	android:orientation="vertical" style="@style/Bold_Button_Style">
+
+	
+	<Button
+					android:layout_width="wrap_content"
+					android:layout_height="43dip"
+					android:id="@+id/categories_buttons"	
+					android:textColor="@color/white"					
+					android:layout_weight="1"
+					android:textSize="12dip"
+					android:text="Bollywood"
+					android:background="@drawable/darkblue"
+					android:typeface="sans" android:onClick="@string/onClickHandleMethodName"/>
+
+</LinearLayout>

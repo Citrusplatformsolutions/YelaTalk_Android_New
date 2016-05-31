@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="ga_sessionTimeout">300</integer>
+    <bool name="ga_autoActivityTracking">true</bool>
+    <screenName name="com.kainat.app.android.KainatHomeActivity">
+        Home
+    </screenName>
+   <screenName name="com.kainat.app.android.CommunityChatActivity">
+        Channel Post
+    </screenName>
+   <screenName name="com.kainat.app.android.KainatCommunityActivity">
+        Channel List
+    </screenName>
+   <screenName name="com.kainat.app.android.KainatInboxAvtivity">
+        Chat List
+    </screenName>
+   <screenName name="com.kainat.app.android.CommunityProfileNewActivity">
+        Channel Profile
+    </screenName>
+   <screenName name="com.kainat.app.android.CreateCommunityActivity">
+        Create Channel
+    </screenName>
+   <screenName name="com.kainat.app.android.KainatContactActivity">
+        Contact Screen
+    </screenName>
+    <string name="ga_trackingId">UA-66920320-1</string>
+</resources>

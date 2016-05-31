@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_link">#FF0000FA</color>
+    <color name="red">#980001</color>
+    <color name="green">#00ff00</color>
+    <color name="blue">#0000ff</color>
+    <color name="disale">#FFCCCCCC</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="list_devider_color">#a0a0a0</color>
+    <color name="maroon">#A50B02</color>
+    <color name="darkgray">#3B3B3B</color>
+    <color name="lightblue">#66ccff</color>
+    <color name="black">#FF000000</color>
+    <color name="listcache">#DEDEDE</color>
+    <color name="yellow1">#3B3B3B</color>
+    <color name="yellow2">#66ccff</color>
+    <color name="grey05">#3B3B3B</color>
+    <color name="orange4">#DEDEDE</color>
+    <color name="orange5">#DEDEDE</color>
+    <color name="blue2">#DEDEDE</color>
+    <color name="blue25">#DEDEDE</color>
+    <color name="opaque_red">#f00</color>
+    <color name="translucent_red">#80ff0000</color>
+    <color name="lime">#00FF00</color>
+    <color name="lime_green">#32CD32</color>
+    <color name="listcolor">#6C6C6C</color>
+    <color name="panel">#D9D6D6</color>
+    <color name="transprent">#66000000</color>
+    <color name="fully_transparent">#00000000</color>
+     <color name="transparent">#66000000</color>
+    <color name="translucent_black">#80000000</color>
+    <color name="coverpagetextblue">#8091B0</color>
+    <color name="advancetapunselect">#30bbc0</color>
+     <color name="advancetapselect">#9cd9da</color>
+    <color name="focusstart">#6E7490</color>
+     <color name="discoveryHeader">#ECECEC</color>
+    <color name="discoveryborder">#F7F7F7</color>
+    <color name="focusend">#000B3D</color>
+    <color name="bluetext">#00b2f0</color>
+    <color name="greenpillstart">#2c7a7e</color>
+    <color name="greenpillend">#2c7a7e</color>
+    
+    <color name="tag_bg_color">#d5dddc</color>
+    <color name="tag_text_color">#4c716b</color>
+    
+    <color name="home_tab">#5c6085</color>
+    <color name="home_tab_bar">#939ac6</color>
+    
+    <color name="nag_green">#569FA6</color>
+    <color name="titleredstart">#b6b3b3</color>
+    <color name="titleredend">#CD2626</color>
+    <drawable name="translucent_background">#e0000000</drawable>
+    <color name="app_background">#ffffff</color>
+    <color name="mpillstart">#7BCACD</color>
+    <color name="mpillend">#60B8BC</color>
+    <color name="bar_separator">#8B1A1A</color>
+    <color name="gray">#c8c8c8</color>
+    <color name="gray_dark">#919292</color>
+    <color name="gray_dialog">#bfd7d9</color>
+    <color name="dialog_back">#e9f5f6</color>
+    <color name="graylight">#e4e4e4</color> 
+    <color name="notification">#33CCC4</color>
+    <color name="selectedBorderColor">#66000000</color>
+      <color name="audioColor">#404040</color>
+      
+      
+      <color name="heading_text_green">#70c0b3</color>
+       <color name="hyper_link_text_color">#4c716b</color>
+       <color name="heading_text">#5e5e8d</color>
+      <color name="heading">#696969</color>
+      <color name="tips_color">#b0b0b0</color>
+      <color name="sub_heading">#919191</color>
+      <color  name="descovery_heading">#7b7b7b</color>
+      <color name="time_footnote">#ffa6a6a6</color>
+      <color name="hyperlink">#ff4c989c</color>
+      <color name="cancel_button">#ff4c989c</color>
+      <color name="gray_headband_bgcolor">#ffe8e8e8</color>
+      <color name="aqua_headband_bgcolor">#ffb4dddf</color>
+      <color name="headband_font_color">#ff7b7b7b</color>
+       <color name="leftmenu_box">#dddddd</color>
+         <color name="leftmenu_list">#3c3c3c</color>
+         <color name="message_notification_color">#ff868686</color>
+          <color name="chat_tab_div_color">#828188</color>
+         
+      <color name="trans_color">#66000000</color>
+          <color name="new_message_color">#f2f2f2</color>
+          <color name="white_new">#f1f1f1</color>
+          <color name="transparent_new">#66000000</color>
+          
+          <color name="login_button_color_start">#aa0001</color>
+          <color name="login_button_color_end">#980001</color>
+          <color name="pink">#ecd2d2</color>
+          
+          <color name="app_text_color">#669900</color>
+    
+      
+     <color name ="refresh_1">#CC0000</color>
+   <color name ="refresh_2">#669900</color>
+   <color name ="refresh_3">#9933CC</color>
+   <color name ="refresh_4">#32687c</color>
+   
+   <color name ="left_menu_bg_colcoe">#303030</color>
+   <color name ="left_menu_divider_colcoe">#272727</color>
+          
+     <color name="list_item_title">#ffffff</color>
+    <color name="list_background">#f7f7f7</color>
+    <color name="left_menu_background">#c8c8c8</color>
+    <color name="list_background_pressed">#c1bbbb</color>
+    <color name="list_divider">#a0a0a0</color>
+    <color name="discover_list_divider">#a0a0a0</color>
+    <color name="discover_row_color">#f1f1f1</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    
+    <color name="app_blue_txt_color">#322d4b</color>
+    
+    <color name ="nav_sel">#7d7d7d</color>
+    <color name ="nav">#c2c2c2</color>
+    
+    <color name ="attachmetn_bg">#5b6084</color>
+    
+    
+    <color name ="kainat_text_color">#13b7f1</color>
+    
+    
+    <color name="left_menu_bg">#2795bb</color>
+    <color name="tab">#4e5279</color>
+    
+    <color name="chat_bubble_name">#60747b</color>
+    <color name="chat_bubble_msg">#3c4e54</color>
+    <color name="chat_bubble_date">#ff868686</color>
+
+    <color name="audio_progress_bar_color">#4e9e9f</color>
+    
+    <color name="play_screen_bg">#a2a2a2</color>
+    <color name="header_color">#fff2750f</color>
+	<color name="text_color_grayblack">#ff6d6e71</color>
+	<color name="orange_color">#ffFF8C00</color>
+	<color name="cyan_color">#ff00BFFF</color>
+	<color name="green_color">#ff00CED1</color>
+    
+  
+</resources>
+

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_new"
+        android:paddingBottom="18dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="8dp"
+        android:paddingTop="18dp"
+        android:visibility="visible" >
+
+        <com.kainat.app.android.uicontrol.CircleImageView
+            xmlns:rocketalk="http://schemas.android.com/apk/res/com.kainat.app.android"
+            android:id="@+conversation_list/thumb"
+            android:layout_width="@dimen/thumb_width_medium"
+            android:layout_height="@dimen/thumb_height_medium"
+            android:layout_centerVertical="true"
+            android:onClick="@string/onClickHandleMethodName"
+            android:scaleType="centerCrop"
+            android:src="@drawable/groupicon"
+            android:visibility="visible"
+            rocketalk:imagetype="THUMB" >
+
+        </com.kainat.app.android.uicontrol.CircleImageView>
+
+        <LinearLayout
+            android:id="@+id/layout_items"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+conversation_list/thumb"
+            android:gravity="center_vertical|bottom"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/layout_01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <com.rockerhieu.emojicon.EmojiconTextView
+                    android:id="@+conversation_list/source"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+conversation_list/datetime"
+                    android:gravity="bottom|left"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:paddingRight="20dp"
+                    android:singleLine="true"
+                    android:text="@string/app_name"
+                    android:textColor="@color/audioColor"
+                    android:textSize="15sp"
+                    android:textStyle="bold" >
+                </com.rockerhieu.emojicon.EmojiconTextView>
+
+                <TextView
+                    android:id="@+conversation_list/datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+conversation_list/source"
+                    android:layout_alignParentRight="true"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#707070"
+                    android:textSize="10sp"
+                    android:textStyle="normal" >
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <LinearLayout
+                    android:id="@+id/msg_type_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+conversation_list/unread_count"
+                    android:gravity="center_vertical|left"
+                    android:orientation="horizontal" >
+
+                    <com.rockerhieu.emojicon.EmojiconTextView
+                        android:id="@+conversation_list/message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|left"
+                        android:paddingRight="20dp"
+                        android:singleLine="true"
+                        android:text="Hi how are you, I am good. I hope you are also doing well. Hi how are you, I am good. I hope you are also doing well"
+                        android:textColor="@color/sub_heading"
+                        android:textSize="11sp"
+                        android:textStyle="normal"
+                        android:visibility="visible" >
+                    </com.rockerhieu.emojicon.EmojiconTextView>
+
+                    <com.kainat.app.android.uicontrol.CImageView
+                        android:id="@+conversation_list/image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buddy_image"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:visibility="gone" />
+
+                    <com.kainat.app.android.uicontrol.CImageView
+                        android:id="@+conversation_list/video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/buddy_video"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:visibility="gone" />
+
+                    <com.kainat.app.android.uicontrol.CImageView
+                        android:id="@+conversation_list/voice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/buddy_voice"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:visibility="gone" />
+
+                    <com.kainat.app.android.uicontrol.CImageView
+                        android:id="@+conversation_list/animicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/animtagicon"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+conversation_list/unread_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+conversation_list/source"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bell_counter"
+                    android:gravity="center"
+                    android:text="9"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="visible" >
+                </TextView>
+                
+                
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="12dp"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip"
+    android:paddingTop="12dp" >
+
+    <com.kainat.app.android.uicontrol.CircleImageView
+        android:id="@+community_memberlist_row/memberImage_test"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:src="@drawable/attachicon" >
+    </com.kainat.app.android.uicontrol.CircleImageView>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingBottom="3dip"
+        android:paddingLeft="3dp" >
+
+        <TextView
+            android:id="@+community_memberlist_row/memberName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textColor="@color/heading"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+    </LinearLayout>
+
+   <!--  <ImageView
+        android:id="@+community_memberlist_row/user_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:clickable="true"
+        android:onClick="@string/onClickHandleMethodName"
+        android:src="@drawable/communityowner"
+        android:visibility="gone" >
+    </ImageView> -->
+<!-- <Button
+        android:id="@+community_memberlist_row/unblock_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/arrow"
+        android:visibility="visible" >
+    </Button> -->
+    <Button
+             android:id="@+community_memberlist_row/unblock_user"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_weight=".33"
+                android:background="@drawable/rounded_yellow"
+                android:text="@string/unblock"
+                android:onClick="btnChoosePhotosClick"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+</LinearLayout>

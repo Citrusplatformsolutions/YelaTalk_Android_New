@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:id="@+id/discovery_rtlive_list_rows"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+  <LinearLayout android:layout_width="fill_parent"
+			android:id="@+id/discoveryRow_FeatureUserLive_loading"
+			android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal"
+			android:visibility="visible" android:orientation="horizontal"
+			android:gravity="center">
+			<ProgressBar android:layout_width="wrap_content"			
+				android:layout_gravity="center_vertical|center_horizontal"
+				android:layout_height="wrap_content" android:id="@+id/feature_user_list_loading" />
+		</LinearLayout>
+		
+    <LinearLayout android:layout_width="fill_parent"
+     android:id="@+id/discovery_rtlive_list_rows2"
+     android:visibility="visible"
+		android:layout_height="wrap_content" android:gravity="left"
+		android:orientation="vertical">
+		
+		<LinearLayout android:visibility="visible" android:id="@+id/discovery_rtlive_list_newrow"
+							android:layout_height="wrap_content"
+							
+							android:layout_marginBottom ="1dp"
+							android:layout_marginTop ="1dp"
+							android:scrollbars ="none"
+							android:layout_gravity="left" android:layout_width="fill_parent">
+		<LinearLayout android:layout_width="wrap_content"
+		android:id="@+id/discovery_rtlive_list_newrowvalue"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:visibility="visible"
+			android:orientation="horizontal"
+			android:gravity="center_horizontal">
+				<LinearLayout android:layout_width="130dip"
+		android:id="@+id/discovery_rtlive_list_imageLayout"
+			android:layout_height="130dip" 
+			android:visibility="visible"
+			android:layout_marginLeft="5dip"
+			android:orientation="horizontal"
+			android:layout_gravity="center"
+			android:gravity="center">
+			<com.kainat.app.android.uicontrol.CImageView android:id="@+id/discovery_rtlive_list_image"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center" android:layout_marginBottom="1dip"
+			
+				android:layout_marginTop="1dip" android:background="@drawable/border">
+			</com.kainat.app.android.uicontrol.CImageView>
+			</LinearLayout>
+			<LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5.5"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="3dip"
+                
+                android:layout_marginLeft="3dip"
+                android:orientation="vertical">
+                 
+                <TextView
+                    android:id="@+id/discovery_rtlive_list_row_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   
+                    android:singleLine="true"
+                    android:textColor="@color/sub_heading"
+                     android:text="Social Sad Poetry"
+                    android:textStyle="normal">
+                </TextView>
+                <LinearLayout  android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              
+                android:orientation="horizontal">
+                  <TextView
+                    android:id="@+id/discovery_rtlive_list_row_hostedbyhost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:paddingBottom="5dip"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:text="Host: "
+                     android:textColor="@color/sub_heading"
+                    android:textSize="10dip">
+                    </TextView>
+                 <TextView
+                    android:id="@+id/discovery_rtlive_list_row_hostedby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textStyle="normal"
+                    android:paddingBottom="5dip"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:text="nag nag"
+                     android:textColor="@color/hyperlink"
+                    android:textSize="10dip">
+                </TextView>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/discovery_rtlive_list_row_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingBottom="5dip"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:text="13-13-2013:9.30IST"
+                    android:textColor="@color/time_footnote"
+                    android:textSize="10dip">
+                </TextView>
+              <TextView
+                    android:id="@+id/discovery_rtlive_list_row_postedby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                     android:visibility="gone"
+                    android:paddingBottom="5dip"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:text=" By akmmaurya"
+                     android:textColor="@color/sub_heading"
+                    android:textSize="10dip">
+                </TextView>
+                <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+             android:id="@+id/discovery_rtlive_list_row_Owner"
+            android:orientation="horizontal" android:layout_height="fill_parent">
+                <!--  <com.kainat.app.android.uicontrol.CImageView
+            android:id="@+id/discovery_rtlive_list_row_OwnerImage"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+           android:layout_marginBottom="6dip"
+            android:cropToPadding="true"
+            android:padding="2dip"
+            android:scaleType="fitXY"
+            android:onClick="@string/onClickHandleMethodName"
+            android:background="@drawable/border">
+        </com.kainat.app.android.uicontrol.CImageView>-->
+        <LinearLayout android:id="@+id/discovery_rtlive_list_row_OwnerImagefdd"
+				android:layout_width="50dip" android:layout_height="50dip"
+		
+				 	 
+				  android:padding="5dip"
+			      android:gravity="center"
+				android:layout_alignParentLeft="true" android:orientation="horizontal" android:layout_alignParentTop="true">
+			
+			
+				<com.kainat.app.android.uicontrol.CImageView
+					android:id="@+id/discovery_rtlive_list_row_OwnerImage"										 
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:onClick="@string/onClickHandleMethodName"
+					android:visibility="visible"
+					android:src="@drawable/profile"
+					
+					android:scaleType="fitCenter">
+				</com.kainat.app.android.uicontrol.CImageView>
+				
+			</LinearLayout>
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingBottom="3dip"
+             android:layout_below="@+id/discovery_rtlive_list_row_Ownerxx"
+            android:orientation="vertical">
+            <LinearLayout  android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/discovery_rtlive_list_row_communitynameBy"
+                    android:layout_width="wrap_content"
+                    android:gravity="bottom"
+                   
+                    android:paddingRight="0dip"
+                    android:paddingLeft="0dip"
+                    android:singleLine="true"
+                    android:visibility="visible"
+                    android:text="By: "
+                      android:textColor="@color/sub_heading"
+                    android:textSize="12dip" android:layout_height="wrap_content">
+                </TextView>
+         <TextView
+                    android:id="@+id/discovery_rtlive_list_row_communityname"
+                    android:layout_width="wrap_content"
+                    android:gravity="bottom"
+                   
+                    android:paddingRight="0dip"
+                    android:paddingLeft="0dip"
+                    android:singleLine="true"
+                     android:onClick="@string/onClickHandleMethodName"
+                    android:visibility="visible"
+                    android:text="akm"
+                      android:textColor="@color/hyperlink"
+                    android:textSize="12dip" android:layout_height="wrap_content">
+                </TextView>
+                
+                 </LinearLayout>
+                <LinearLayout  android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/discovery_rtlive_list_row_ownerby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:paddingBottom="1dip"
+                    android:paddingRight="0dip"
+                    android:paddingLeft="0dip"
+                    android:singleLine="true"
+                    android:text="Owner: "
+                     android:textColor="@color/sub_heading"
+                    android:textSize="12dip">
+                     </TextView>
+         <TextView
+                    android:id="@+id/discovery_rtlive_list_row_ownername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:paddingBottom="1dip"
+                    android:paddingRight="0dip"
+                   android:paddingLeft="0dip"
+                     android:onClick="@string/onClickHandleMethodName"
+                    android:singleLine="true"
+                    android:text="nanbynag"
+                     android:textColor="@color/hyperlink"
+                    android:textSize="12dip">
+                </TextView>
+                 </LinearLayout>
+                   </LinearLayout>
+            </LinearLayout>
+              </LinearLayout>
+          
+
+        </LinearLayout>
+		</LinearLayout>
+		
+		
+		</LinearLayout>	
+		<LinearLayout android:id="@+id/dividerlanding"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				 android:layout_margin="10dip"
+				android:orientation="horizontal">
+		<TextView android:id="@+activity_list_row/line"
+					android:layout_width="wrap_content" android:layout_height="2dip"
+					
+			android:background="@drawable/hor_line"
+					android:textSize="10dip">
+				</TextView>
+						</LinearLayout>
+		</LinearLayout>
+</LinearLayout>
+

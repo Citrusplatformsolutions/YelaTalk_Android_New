@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/googleplayservicesliberary"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="E:/Project_KAINAT/kainat-android/kainat-android/libs/android-async-http-1.4.8.jar"/>
+	<classpathentry kind="lib" path="E:/Project_KAINAT/kainat-android/kainat-android/libs/apache-mime4j-0.5.jar"/>
+	<classpathentry kind="lib" path="E:/Project_KAINAT/kainat-android/kainat-android/libs/commons-codec-1.7.jar"/>
+	<classpathentry kind="lib" path="E:/Project_KAINAT/kainat-android/kainat-android/libs/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="E:/Project_KAINAT/kainat-android/kainat-android/libs/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="E:/Project_KAINAT/kainat-android/kainat-android/libs/httpclient-4.0-beta2.jar"/>
+	<classpathentry kind="lib" path="E:/Project_KAINAT/kainat-android/kainat-android/libs/httpcore-4.0-beta3.jar"/>
+	<classpathentry kind="lib" path="E:/Project_KAINAT/kainat-android/kainat-android/libs/httpmime-4.0-beta2.jar"/>
+	<classpathentry kind="lib" path="E:/Project_KAINAT/kainat-android/kainat-android/libs/slider.jar"/>
+	<classpathentry kind="lib" path="E:/Project_KAINAT/kainat-android/kainat-android/libs/universal-image-loader-1.9.4.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

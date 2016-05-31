@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="73dp" >
+
+    <LinearLayout
+        android:id="@+id/mediaLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_selector_ontap"
+        android:onClick="@string/onClickHandleMethodName"
+        android:orientation="horizontal"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp" >
+
+        <RelativeLayout
+            android:layout_width="85dip"
+            android:layout_height="85dip"
+            android:layout_gravity="center_vertical|center_horizontal|center" >
+
+            <com.kainat.app.android.uicontrol.CImageView
+                android:id="@+id/mediaLayout_mediaImage"
+                android:layout_width="73dp"
+                android:layout_height="73dp"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:onClick="@string/onClickHandleMethodName"
+                android:scaleType="fitXY"
+                android:src="@drawable/media2" >
+            </com.kainat.app.android.uicontrol.CImageView>
+
+            <com.kainat.app.android.uicontrol.CImageView
+                android:id="@+id/m_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="bottom"
+                android:onClick="@string/onClickHandleMethodName"
+                android:paddingBottom="10dp"
+                android:paddingLeft="2dp"
+                android:paddingTop="2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/m_play"
+                android:visibility="gone" >
+            </com.kainat.app.android.uicontrol.CImageView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/mediaLayout_mediaImage2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/mediaLayout_mediaName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
+                        android:text="RockeTalk Media"
+                        android:textColor="#ff000000"
+                        android:textSize="16dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/mediaLayout_postByName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#ff000000"
+                        android:textSize="14dip" >
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/mediaLayout_thumbUpCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dip"
+                            android:layout_marginTop="3dip"
+                            android:text="100"
+                            android:textColor="#ff575859"
+                            android:textSize="12dip" >
+                        </TextView>
+
+                        <com.kainat.app.android.uicontrol.CImageView
+                            android:id="@+id/mediaLayout_thumbUpCount_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dip"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="3dip"
+                            android:src="@drawable/thumbup2" >
+                        </com.kainat.app.android.uicontrol.CImageView>
+
+                        <TextView
+                            android:id="@+id/mediaLayout_thumbDownCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dip"
+                            android:layout_marginLeft="30dip"
+                            android:layout_marginTop="3dip"
+                            android:text="0"
+                            android:textColor="#ff575859"
+                            android:textSize="12dip" >
+                        </TextView>
+
+                        <com.kainat.app.android.uicontrol.CImageView
+                            android:id="@+id/mediaLayout_thumbDownCount_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dip"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="3dip"
+                            android:src="@drawable/thumbdown2" >
+                        </com.kainat.app.android.uicontrol.CImageView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.kainat.app.android.uicontrol.CImageView
+                    android:id="@+id/mediaLayout_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dip"
+                    android:src="@drawable/nextarrow" >
+                </com.kainat.app.android.uicontrol.CImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/mediaLayout_viewCount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingRight="5dip"
+                    android:text="1000 Views"
+                    android:textColor="#ff575859"
+                    android:textSize="12dip"
+                    android:typeface="sans" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/mediaLayout_commentCount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/comment"
+                    android:gravity="center"
+                    android:paddingBottom="4dip"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    android:textSize="12dip" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/mediaLayout_mediaTime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingLeft="5dip"
+                    android:text="09-Apr-2010 11:05 AM"
+                    android:textColor="#ff575859"
+                    android:textSize="12dip"
+                    android:typeface="sans" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/media_layout_auto_load"
+        android:layout_width="fill_parent"
+        android:layout_height="73dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@color/white"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/loadmore_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="Loading..."
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:visibility="visible" >
+        </TextView>
+        <!--
+            <ProgressBar android:id="@+id/progressBar1"
+			android:layout_width="wrap_content" android:indeterminateDrawable="@drawable/circulor_progressbar"
+			android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall"
+			android:layout_gravity="center_vertical|center_horizontal"></ProgressBar>
+        -->
+    </LinearLayout>
+
+</AbsoluteLayout>

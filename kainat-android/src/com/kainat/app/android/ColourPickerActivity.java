@@ -1,0 +1,69 @@
+package com.kainat.app.android;
+
+import com.kainat.app.android.colorpicker.ColourPickerDialog;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class ColourPickerActivity extends Activity {
+	TextView text1;
+	int color = 0xffffff00;
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.colourpicker_layout);
+
+		final View button1 = findViewById(R.id.button1);
+		final View button2 = findViewById(R.id.button2);
+		final View button3 = findViewById(R.id.button3);
+		text1 = (TextView) findViewById(R.id.text1);
+		displayColor();
+
+		button1.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				openDialog(false);
+			}
+		});
+
+		button2.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				openDialog(true);
+			}
+		});
+
+		button3.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(getApplicationContext(), ColourPickerPrefActivity.class));
+			}
+		});
+	}
+
+	void openDialog(boolean supportsAlpha) {
+		ColourPickerDialog dialog = new ColourPickerDialog(ColourPickerActivity.this, color, supportsAlpha, new ColourPickerDialog.OnAmbilWarnaListener() {
+			@Override
+			public void onOk(ColourPickerDialog dialog, int color) {
+				Toast.makeText(getApplicationContext(), "ok", Toast.LENGTH_SHORT).show();
+				ColourPickerActivity.this.color = color;
+				displayColor();
+			}
+
+			@Override
+			public void onCancel(ColourPickerDialog dialog) {
+				Toast.makeText(getApplicationContext(), "cancel", Toast.LENGTH_SHORT).show();
+			}
+		});
+		dialog.show();
+	}
+
+	void displayColor() {
+		text1.setText(String.format("Current color: 0x%08x", color));
+	}
+}

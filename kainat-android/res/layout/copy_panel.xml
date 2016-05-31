@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="36dip"
+    android:layout_gravity="center_vertical|center_horizontal|top"
+  
+    android:orientation="vertical"
+     >
+<!-- android:background="@drawable/dialpad_btn_add_normal" -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:gravity="bottom" >
+
+        <Button
+            android:id="@+bubble_long_press/copy"
+            android:layout_width="100dp"
+            android:layout_height="36dip"
+            android:layout_weight="1"
+            android:background="@drawable/popup"
+            android:gravity="center"
+            android:onClick="@string/onClickHandleMethodName"
+            android:text="@string/copy"
+            android:padding="0dp"
+            android:textColor="@color/black"
+            android:textSize="16dip"
+            android:textStyle="normal" >
+        </Button>
+ <Button
+            android:id="@+bubble_long_press/forward"
+            android:layout_width="100dp"
+            android:layout_height="36dip"
+            android:layout_weight="1"
+            android:background="@drawable/dialpad_btn_delete_normal"
+            android:gravity="center"
+            android:onClick="@string/onClickHandleMethodName"
+            android:paddingLeft="2px"
+            android:paddingRight="2px"
+            android:text=" Forward "
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="16dip"
+            android:textStyle="normal" >
+        </Button>
+        
+       <!--  <Button
+            android:id="@+bubble_long_press/forward"
+            android:layout_width="100dp"
+            android:layout_height="36dip"
+            android:layout_weight="1"
+            android:background="@drawable/dialpad_btn_call_normal"
+            android:gravity="center"
+            android:onClick="@string/onClickHandleMethodName"
+            android:paddingLeft="2px"
+            android:paddingRight="2px"
+            android:text=" Forward "
+            android:textColor="@color/white"
+            android:textSize="16dip"
+            android:textStyle="normal" >
+        </Button> -->
+
+        <!-- <Button
+            android:id="@+bubble_long_press/share"
+            android:layout_width="100dp"
+            android:layout_height="36dip"
+            android:layout_weight="1"
+            android:background="@drawable/dialpad_btn_delete_normal"
+            android:gravity="center"
+            android:onClick="@string/onClickHandleMethodName"
+            android:text=" Share "
+            android:textColor="@color/white"
+            android:textSize="16dip"
+            android:textStyle="normal" >
+        </Button> -->
+    </LinearLayout>
+
+</LinearLayout>

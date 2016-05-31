@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/HeaderFontStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       
+        android:background="@drawable/title" >
+
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:onClick="@string/onClickHandleMethodName"
+            android:src="@drawable/home"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dip"
+            android:background="@drawable/roundedredbutton"
+            android:onClick="@string/onClickHandleMethodName"
+            android:paddingBottom="3dip"
+            android:paddingTop="3dip"
+            android:text=" Back "
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/HeaderFontStyle"
+            
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/header_height"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/linearLayout1"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:text="Friends"
+            android:textSize="20dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <LinearLayout
+            android:id="@+id/sendOrMutipleSelectlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            
+            android:background="@drawable/selectbuttonback"
+            android:gravity="right" >
+
+              <TextView
+                android:id="@+id/sendOrMutipleSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:layout_marginLeft="5dip"
+                android:layout_gravity="center"
+               android:paddingRight="10dip"
+               android:textSize="18dip"
+                android:layout_marginRight="5dip"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/multiple_select"
+                android:textColor="#4c989c"
+                android:textStyle="bold"
+                android:visibility="visible" >
+           
+            </TextView>
+            
+              <TextView
+                android:id="@+id/skip_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@string/onClickHandleMethodName"
+                android:layout_marginLeft="5dip"
+                android:layout_gravity="center"
+                android:paddingRight="10dip"
+                android:textSize="18dip"
+                android:layout_marginRight="5dip"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+               
+                android:text="@string/skip"
+                android:textColor="#4c989c"
+                android:textStyle="bold"
+                android:visibility="gone" >
+           
+            </TextView>
+            
+             </LinearLayout>
+            <!--
+          <Button
+            android:id="@+id/options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dip"
+            android:text=""
+            android:textColor="@color/white"
+           android:gravity="right"
+            android:onClick="@string/onClickHandleMethodName"
+            android:paddingBottom="3dip"
+            android:background="@drawable/option_tap"           
+            android:paddingTop="3dip"
+            >
+        </Button>
+            -->
+ <LinearLayout
+          
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            
+         
+            android:gravity="right" >
+            <Button
+                android:id="@+id/options_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="3dip"
+                android:background="@drawable/done_button"
+                android:gravity="right"
+                android:onClick="@string/onClickHandleMethodName"
+                android:paddingBottom="3dip"
+                android:paddingTop="3dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:visibility="gone" >
+            </Button>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include
+        layout="@layout/notificationdiloag"        
+        android:id="@+id/notificationdiloags" />
+        <LinearLayout
+        android:id="@+id/bottom_tab_layout"
+        android:layout_width="fill_parent"
+   
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroundbuddy"
+        android:padding="4dp">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            >
+           <TextView
+                android:id="@+id/blockuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_marginRight="3dip"
+                android:background="@drawable/blockuser"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+              <TextView
+                android:id="@+id/bottom_tab_friends"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"                
+                android:layout_weight=".5"
+                android:background="@drawable/pil_leftselector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                 android:textStyle = "bold"
+                android:onClick="onClick"
+                android:text="Friends"
+                android:state_enabled="true"
+                android:textColor="@color/white"
+                android:state_selected="true"
+                android:visibility="visible">
+            </TextView>
+            <TextView
+                android:id="@+id/bottom_tab_contacts"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight=".5"
+                android:background="@drawable/pil_rightselector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                 android:textStyle = "bold"
+                android:state_enabled= "true"
+                android:text="Contacts"
+                android:textColor="@color/white">
+            </TextView>
+           
+
+          
+            <ImageView
+			android:background="@drawable/pendinginvite"
+			android:id="@+id/pending_image"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:adjustViewBounds="true"
+			android:layout_marginLeft="3dip"
+			android:clickable="true"
+			android:focusable="true"
+			android:layout_gravity="center_vertical"
+			android:onClick="@string/onClickHandleMethodName"
+			android:scaleType="fitXY"
+			>
+		</ImageView>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/buddyScreen_searchBoxlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:gravity="center"
+        android:background = "@drawable/pendinginviteback"
+        android:orientation="horizontal"
+        android:paddingTop="2dip">
+         <Button
+            android:id="@+id/options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:gravity="center"
+           android:layout_marginLeft="5dip"
+            android:textStyle="bold"
+            android:text="To all"
+            
+          android:textColor="#4c989c"
+            android:onClick="@string/onClickHandleMethodName"
+           
+            android:background="@drawable/toall"           
+           
+            >
+        </Button>
+        <EditText
+            android:id="@+id/buddyScreen_searchBox"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:paddingLeft="5dip"
+            android:background="@drawable/roundedrect"
+            android:textSize="15dip"
+            android:hint="Type to search"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:maxLength="30"
+            >
+        </EditText>
+    </LinearLayout>
+    <!--   <LinearLayout
+        android:id="@+id/pending_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       	android:onClick="@string/onClickHandleMethodName"
+        android:background = "@drawable/pendinginviteback"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:paddingTop="2dip">
+        <ImageView
+			android:background="@drawable/pendinginvite"
+			android:id="@+id/pending_image1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:adjustViewBounds="true"
+			android:layout_marginLeft="5dip"
+			android:clickable="true"
+			android:focusable="true"
+			android:layout_gravity="center_vertical"
+			android:onClick="@string/onClickHandleMethodName"
+			android:scaleType="fitXY"
+			>
+		</ImageView>
+		 <TextView
+                android:id="@+id/pending_Invite"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+               android:paddingBottom="3dip"
+                android:layout_marginLeft = "1dp"
+                android:layout_weight="1"
+              	android:paddingLeft="5dip"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="left|bottom"
+                android:onClick="onClick"
+                android:textStyle = "bold"
+                android:textColor="@color/heading"
+                android:text="Pending Invite">
+            </TextView>
+            
+    </LinearLayout>-->
+   <!--  <LinearLayout android:layout_width="fill_parent" android:layout_height="1dip" android:background="@color/selectedBorderColor"></LinearLayout>-->
+  
+   <RelativeLayout  android:layout_width="fill_parent"
+     android:layout_weight="1"    
+        android:layout_height="fill_parent">
+       
+    <ListView
+        android:id="@+id/buddyScreen_mainList"
+        style="@style/Theme.RockeTalk.Background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         android:background="@drawable/landingpagebackground"
+        android:layout_weight="1"        
+        android:addStatesFromChildren="true"
+        android:cacheColorHint="@color/listcache"   
+         
+        android:dividerHeight="-1dip"/>
+       
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="1dip" android:background="@color/selectedBorderColor"></LinearLayout>
+  
+   
+     <TextView android:id="@+id/transparent_image" android:layout_width="wrap_content"
+		android:layout_height="fill_parent" android:layout_gravity="left"
+		 android:layout_weight="1"
+		android:gravity="left" 
+		android:visibility="gone"
+		android:background="@drawable/transparent_image"
+		android:textSize="15dip"
+		
+		android:textStyle="bold" />
+     
+		</RelativeLayout>
+		 <LinearLayout
+        android:id="@+id/buddy_recommendCommunity_buttonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+      
+        android:layout_marginBottom="2dip"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/buddy_recommendCommunity"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:background="@drawable/custom_button_search"
+            android:onClick="@string/onClickHandleMethodName"
+            android:text=" Recommend "
+            android:textColor="@color/white"
+            android:textSize="18dip"
+            android:textStyle="bold">
+        </Button>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/landing_discovery_tabBar"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" android:background="@drawable/bottomlanding"
+		android:orientation="horizontal">
+		<ImageView android:id="@+id/landing_discovery_BtnSlideLeft"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:padding="0px" android:layout_margin="0px"
+			android:src="@drawable/slideleft_menu" />
+		<RelativeLayout android:id="@+id/landing_discovery_tabBar1"
+			android:background="@drawable/bottomlanding" android:layout_height="wrap_content"
+			android:gravity="right" android:layout_gravity="right"
+			android:layout_width="fill_parent">
+			
+			<ImageView android:layout_width="wrap_content" android:id="@+id/landing_discovery_BtnSlideRight"
+				android:layout_height="wrap_content" android:src="@drawable/rightsearch_menu"></ImageView>
+				<LinearLayout  android:layout_height="wrap_content"
+			   android:layout_marginLeft="14dip"
+			android:paddingTop="1dip"
+			
+			android:gravity="top|right" android:layout_gravity="right"
+			android:layout_width="wrap_content">
+				<LinearLayout  android:layout_height="wrap_content"
+			   android:layout_marginLeft="14dip"
+			
+			android:gravity="top|right" android:layout_gravity="right"
+			android:layout_width="wrap_content">
+				<TextView android:id="@+id/landing_discovery_activity_notification" android:visibility ="gone"
+				android:text="0" android:gravity="center" android:textColor="@color/black"
+				
+				android:layout_height="wrap_content" android:background="@drawable/notification_slide_count" android:layout_width="wrap_content"></TextView>
+		</LinearLayout>
+		</LinearLayout>
+		</RelativeLayout>
+		
+	</LinearLayout>
+</LinearLayout>

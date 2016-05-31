@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="110dp"
+    android:background="@drawable/border"
+    android:orientation="vertical" >
+  
+    <LinearLayout android:layout_width="wrap_content"
+    android:layout_gravity="center"
+		android:layout_height="fill_parent" android:gravity="center"
+		android:orientation="vertical">
+    
+<!-- 	<HorizontalScrollView
+	    android:id="@+id/discoveryRow_ImageFeatureCommunityLayout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="left"
+	    android:scrollbars="none"
+	    android:visibility="visible" > -->
+
+		<LinearLayout android:layout_width="wrap_content"
+		android:id="@+id/discoveryRow_featureCommunity"
+			android:layout_height="wrap_content" 
+			android:visibility="visible"
+			
+			android:orientation="horizontal"
+			android:gravity="center">
+					 <RelativeLayout
+			          android:layout_width="100dp"
+			          android:layout_height="100dp"
+			          android:layout_gravity="bottom|left"
+			          android:layout_margin="5dp"
+			          android:gravity="bottom"
+			          android:orientation="horizontal"
+			          android:visibility="visible" >
+
+				    <LinearLayout
+			    android:id="@+id/discoveryRow_FeatureUserdemo"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_gravity="bottom"
+			    android:gravity="bottom"
+			    android:orientation="horizontal"
+			    android:visibility="visible" >
+					<LinearLayout
+					    android:id="@+id/discoveryRow_imageLayout"
+					    android:layout_width="fill_parent"
+					    android:layout_height="fill_parent"
+					    android:layout_gravity="bottom"
+					    android:layout_marginLeft="0dp"
+					    android:gravity="bottom"
+					    android:orientation="horizontal"
+					    android:visibility="visible" >
+
+			<com.kainat.app.android.uicontrol.CImageView
+			    android:id="@+id/discoveryRow_communityImage"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_gravity="center"
+			    android:layout_marginBottom="1dip"
+			    android:layout_marginTop="1dip"
+			    android:background="@drawable/border"
+			    android:onClick="@string/onClickHandleMethodName"
+			    android:scaleType="fitXY"
+			    >
+
+			</com.kainat.app.android.uicontrol.CImageView>
+			</LinearLayout>
+				</LinearLayout>
+			</RelativeLayout>
+			<LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top"
+            android:layout_weight="5.5"
+            android:orientation="vertical">
+
+          <!-- <LinearLayout
+                android:layout_width="150dp"
+                android:id="@+id/mainlayout"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                 
+                <TextView
+                    android:id="@+id/discovery_messageDisplay_communityName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="1dip"
+                    android:layout_weight="1"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:singleLine="true"
+                    android:text="Mehfil"
+                    android:textColor="@color/hyperlink"
+                    android:textStyle="normal" >
+
+                </TextView>
+                  <TextView
+                    android:id="@+id/discovery_messageDisplay_createdOn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                   android:visibility="gone"
+                    android:singleLine="true"
+                    android:text="Created On 13-13-2013:9.30IST"
+                    android:textColor="@color/time_footnote"
+                    android:textSize="12dip" >
+
+                </TextView>
+
+              <TextView
+                  android:id="@+id/discovery_messageDisplay_communityMember"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="5dp"
+                  android:gravity="right"
+                  android:singleLine="true"
+                  android:text="Member:3300"
+               android:textColor="@color/sub_heading"
+                  android:textSize="12dip" >
+
+                </TextView>
+
+                 <TextView
+                     android:id="@+id/discovery_messageDisplay_communityMessage"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="5dp"
+                     android:gravity="right"
+                     android:singleLine="true"
+                     android:text="Message:234000"
+                    android:textColor="@color/sub_heading"
+                    android:textSize="12dip" >
+
+                </TextView>
+                 </LinearLayout>-->
+                   
+                 <RelativeLayout
+                android:layout_width="150dip"
+                android:layout_height="fill_parent"
+                 android:layout_gravity="bottom|left"
+                android:layout_marginLeft="0dp"
+                android:gravity="bottom"
+                android:orientation="vertical" >
+              
+              <!--  <LinearLayout android:id="@+activity_list_row/activity_LeftLayout"
+				android:layout_width="50dip" android:layout_height="50dip"
+		
+				 	 
+				  android:padding="5dip"
+			      android:gravity="center"
+				android:layout_alignParentLeft="true" android:orientation="horizontal" android:layout_alignParentTop="true">
+			
+  			<com.kainat.app.android.uicontrol.CImageView
+            android:id="@+id/discovery_messageDisplay_communityOwnerImage"
+            android:layout_width="30dip"
+            android:layout_marginLeft="5dp"
+             
+             
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:padding="2dip"
+           
+            android:scaleType="fitXY"
+            
+            android:onClick="@string/onClickHandleMethodName"
+            android:src="@drawable/profile" android:layout_height="wrap_content">
+        </com.kainat.app.android.uicontrol.CImageView>
+             </LinearLayout>-->z
+               <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="bottom"
+                android:id="@+activity_list_row/activity_LeftLayout"
+              android:orientation="vertical">
+              <LinearLayout
+                android:layout_width="150dip"
+                android:id="@+id/mainlayout"
+                android:gravity="bottom"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                 
+                <TextView
+                    android:id="@+id/discovery_messageDisplay_communityName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="1dip"
+                    android:layout_weight="1"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:singleLine="true"
+                    android:text="Mehfil"
+                    android:textColor="@color/hyperlink"
+                    android:textStyle="normal" >
+
+                </TextView>
+                  <TextView
+                    android:id="@+id/discovery_messageDisplay_createdOn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                   android:visibility="gone"
+                    android:singleLine="true"
+                    android:text="Created On 13-13-2013:9.30IST"
+                    android:textColor="@color/time_footnote"
+                    android:textSize="12dip" >
+
+                </TextView>
+
+              <TextView
+                  android:id="@+id/discovery_messageDisplay_communityMember"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="5dp"
+                  android:gravity="right"
+                  android:singleLine="true"
+                  android:text="Member:3300"
+               android:textColor="@color/sub_heading"
+                  android:textSize="12dip" >
+
+                </TextView>
+
+                 <TextView
+                     android:id="@+id/discovery_messageDisplay_communityMessage"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="5dp"
+                     android:gravity="right"
+                     android:singleLine="true"
+                     android:text="Message:234000"
+                    android:textColor="@color/sub_heading"
+                    android:textSize="12dip" >
+
+                </TextView>
+                 </LinearLayout>
+             <RelativeLayout 
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:gravity="bottom"
+				 
+				android:orientation="horizontal" >
+			 <LinearLayout 
+				android:layout_width="50dip" android:layout_height="50dip"
+					
+				 	 
+				  android:padding="5dip"
+			      android:gravity="center"
+				android:layout_alignParentLeft="true" android:orientation="horizontal" android:layout_alignParentTop="true" android:id="@+id/linearLayout1">
+			
+				<com.kainat.app.android.uicontrol.CImageView
+					android:id="@+id/discovery_messageDisplay_communityOwnerImage"										 
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:onClick="@string/onClickHandleMethodName"
+					android:visibility="visible"
+					android:src="@drawable/profile"
+					
+					android:scaleType="fitCenter">
+				</com.kainat.app.android.uicontrol.CImageView>
+				 </LinearLayout>
+				  <LinearLayout
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+             
+              android:orientation="vertical" android:layout_width="fill_parent" android:layout_toRightOf="@+id/linearLayout1">
+           
+           
+           <TextView
+                  android:id="@+id/discovery_messageDisplay_communityOwner"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="5dp"
+                 
+                android:layout_marginTop="7dp"
+                  android:gravity="right|bottom"
+                  android:singleLine="true"
+                  android:text="Owner:"
+               android:textColor="@color/heading"
+                  android:textSize="13sp" >
+
+                </TextView>
+
+                 <TextView
+                     android:id="@+id/discovery_messageDisplay_communityWonername"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="5dp"
+                      android:onClick="@string/onClickHandleMethodName"
+                     android:gravity="right|bottom"
+                     android:singleLine="true"
+                     android:paddingBottom="3dp"
+                     android:text="Message:234000"
+                    android:textColor="@color/hyperlink"
+                    android:textSize="12sp" >
+
+                </TextView>
+                  </LinearLayout>
+				</RelativeLayout>
+				
+				 </LinearLayout>
+           
+
+        </RelativeLayout>
+         
+         </LinearLayout>
+               
+            
+		</LinearLayout>
+		
+		
+		<!-- </HorizontalScrollView> -->		
+</LinearLayout>
+</LinearLayout>

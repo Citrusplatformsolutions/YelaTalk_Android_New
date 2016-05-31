@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/landingpagebackground"
+    
+    android:orientation="vertical"
+    android:paddingTop="5dip" >
+
+    <LinearLayout
+        android:id="@+id/buddyrow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="0dip" >
+
+        <LinearLayout
+            android:id="@+buddy_option_panel/p1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dip"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+buddy_option_panel/p1x"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dip"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="0dip"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:id="@+id/top_featured_relativeLayout3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:id="@+buddy_option_panel/activity_LeftLayout"
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <com.kainat.app.android.uicontrol.CImageView
+                            xmlns:rocketalk="http://schemas.android.com/apk/res/com.kainat.app.android"
+                            android:id="@+id/buddyLayout_buddyImage"
+                            android:layout_width="@dimen/thumb_height"
+                            android:layout_height="@dimen/thumb_widht"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5dp"
+                            android:adjustViewBounds="true"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:scaleType="fitCenter"
+                            
+                            rocketalk:imagetype="THUMB" >
+                        </com.kainat.app.android.uicontrol.CImageView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+conversation_option_panel/online_offline_layout1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="right"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/buddyLayout_onlineStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            
+                            android:onClick="@string/onClickHandleMethodName" >
+                        </ImageView>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:layout_weight="0.89"
+            android:orientation="vertical"
+            android:paddingLeft="1dip"
+            android:paddingTop="7dip" >
+
+            <TextView
+                android:id="@+id/buddyLayout_buddyName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="Nagedra Kumar"
+                android:textColor="@color/heading"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/buddyLayout_buddyInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="Nagedra1020"
+                android:textColor="@color/sub_heading"
+                android:textSize="14dip"
+                android:textStyle="bold"
+                android:visibility="gone" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/buddy_ststus_row"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:id="@+id/buddyrow"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".80"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:paddingLeft="1dip"
+                    android:paddingRight="2dp" >
+
+                    <TextView
+                        android:id="@+id/buddy_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/sub_heading"
+                        android:textSize="13dip"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buddy_ststus_row"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.89"
+                    android:orientation="vertical"
+                    android:paddingLeft="1dip"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/buddy_status_time"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="none"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="12dip"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.89"
+                    android:orientation="vertical"
+                    android:paddingRight="2dip" >
+
+                    <LinearLayout
+                        android:id="@+id/buddyrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:paddingRight="2dp" >
+
+                        <ImageView
+                            android:id="@+id/buddy_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:adjustViewBounds="true"
+                            android:clickable="false"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/buddy_image"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/buddyLayout_voice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/buddy_voice"
+                            android:clickable="false"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/buddy_video"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/buddy_video"
+                            android:clickable="false"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip" >
+
+                            <ImageView
+                                android:id="@+id/buddyLayout_spclIcon1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="2dp"
+                                android:src="@drawable/sp_0"
+                                android:visibility="gone" >
+                            </ImageView>
+
+                            <ImageView
+                                android:id="@+id/buddyLayout_spclIcon2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="2dp"
+                                android:src="@drawable/sp_10"
+                                android:visibility="gone" >
+                            </ImageView>
+
+                            <ImageView
+                                android:id="@+id/buddyLayout_gender"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/buddy_male"
+                                android:visibility="gone" >
+                            </ImageView>
+
+                            <ImageView
+                                android:id="@+id/buddyLayout_voicenotuse"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dip"
+                                android:src="@drawable/buddy_voice"
+                                android:visibility="gone" >
+                            </ImageView>
+
+                            <ImageView
+                                android:id="@+id/buddyLayout_bookmark"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:src="@drawable/bookmark"
+                                android:visibility="gone" >
+                            </ImageView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+buddy/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="7dip"
+                android:background="@drawable/plusadd"
+                android:gravity="right|top"
+                android:onClick="@string/onClickHandleMethodName"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/buddyLayout_profileArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:paddingLeft="18dip"
+                android:src="@drawable/arrow_chat_new"
+                android:visibility="visible" >
+            </ImageView>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/buddyLayout_check"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_gravity="center_vertical"
+            android:button="@drawable/checked"
+            android:focusable="false"
+            android:onClick="@string/onClickHandleMethodName"
+            android:visibility="gone" >
+        </CheckBox>
+
+        <!-- <CheckBox
+            android:id="@+id/buddyLayout_check"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/checkbox"
+            android:button="@drawable/checkbox"
+            android:focusable="false"
+            android:onClick="@string/onClickHandleMethodName"
+            android:visibility="gone" >
+        </CheckBox> -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dividerlanding"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="7dip"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+activity_list_row/line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/newline"
+            android:textSize="2px" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

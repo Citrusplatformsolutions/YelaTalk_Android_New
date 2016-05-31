@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+chat_panel/chat_panel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0dip"
+    android:background="@color/white"
+    android:fitsSystemWindows="false"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+chat_panel/info_new_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+chat_panel/chat_panel"
+        android:background="#66000000"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:padding="4dip"
+        android:visibility="visible"
+        android:weightSum="1" >
+        <LinearLayout
+            android:id="@+id/dividerlanding"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+            <TextView
+                android:id="@+conversation/new_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+chat_panel/new_message_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="3dip"
+                android:gravity="center"
+                android:onClick="@string/onClickHandleMethodName"
+                android:singleLine="true"
+                android:text=" you have new message"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/dividerlanding"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+            <com.kainat.app.android.uicontrol.CImageView
+                android:id="@+chat_panel/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buddy_image"
+                android:onClick="@string/onClickHandleMethodName"
+                android:visibility="visible" />
+            <com.kainat.app.android.uicontrol.CImageView
+                android:id="@+chat_panel/video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/buddy_video"
+                android:onClick="@string/onClickHandleMethodName"
+                android:visibility="visible" />
+            <com.kainat.app.android.uicontrol.CImageView
+                android:id="@+chat_panel/voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/buddy_voice"
+                android:onClick="@string/onClickHandleMethodName"
+                android:visibility="visible" />
+            <com.kainat.app.android.uicontrol.CImageView
+                android:id="@+chat_panel/animicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/animtagicon"
+                android:onClick="@string/onClickHandleMethodName"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+chat_panel/more_option_emo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="4dip"
+        android:visibility="gone"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+chat_panel/more_emo_prev"
+                android:layout_width="wrap_content"
+                android:layout_height="36dip"
+                android:layout_gravity="right"
+                android:background="@drawable/btn_back"
+                android:gravity="right|center"
+                android:onClick="@string/onClickHandleMethodName"
+                android:textColor="#fff"
+                android:textSize="16dip"
+                android:textStyle="bold"
+                android:visibility="gone" >
+            </Button>
+
+            <com.kainat.app.android.util.GalleryNavigator
+                android:id="@+id/count"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                android:layout_weight="1"
+                android:hint="Enter Message"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="300"
+                android:singleLine="false"
+                android:textSize="15sp"
+                android:visibility="gone" >
+            </com.kainat.app.android.util.GalleryNavigator>
+
+            <Button
+                android:id="@+chat_panel/more_emo_next"
+                android:layout_width="wrap_content"
+                android:layout_height="36dip"
+                android:layout_gravity="right"
+                android:background="@drawable/btn_next"
+                android:gravity="right|center"
+                android:onClick="@string/onClickHandleMethodName"
+                android:textColor="#fff"
+                android:textSize="16dip"
+                android:textStyle="bold"
+                android:visibility="gone" >
+            </Button>
+        </LinearLayout>
+
+        <ViewFlipper
+            android:id="@+id/imageFrames"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:gravity="center_vertical|center_horizontal"
+            android:outAnimation="@anim/fade"
+            android:visibility="visible" >
+        </ViewFlipper>
+     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/new_message_color"
+        android:clipChildren="false"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dip"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+chat_panel/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginBottom="3dip"
+                android:background="@drawable/chat_up"
+                android:gravity="right|center"
+                android:onClick="@string/onClickHandleMethodName"
+                android:textColor="#fff"
+                android:textSize="16dip"
+                android:textStyle="bold"
+                android:visibility="gone" >
+            </Button>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingTop="2px" >
+
+                <ImageView
+                    android:id="@+id/voice_record"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="0dip"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:src="@drawable/audio_new" />
+
+                <TextView
+                    android:id="@+id/voice_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:background="@drawable/attachednotification"
+                    android:clickable="false"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:paddingBottom="0px"
+                    android:paddingTop="0px"
+                    android:text="4"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/chat_smiley"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="0dip"
+            android:onClick="@string/onClickHandleMethodName"
+            android:src="@drawable/icon_smile"
+            android:visibility="visible" />
+        <com.rockerhieu.emojicon.EmojiconEditText
+            android:id="@+community_chat/msgBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/apptheme_edit_text_holo_light"
+            android:hint="@string/enter_message"
+            android:includeFontPadding="true"
+            android:inputType="textCapSentences|textMultiLine"
+            android:lines="5"
+            android:maxLength="5000"
+            android:minLines="1"
+            android:onClick="@string/onClickHandleMethodName"
+            android:paddingLeft="10dip"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textSize="15sp" >
+        </com.rockerhieu.emojicon.EmojiconEditText>
+        <TextView
+            android:id="@+community_chat/left"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#f9f9f9"
+            android:gravity="center"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="300"
+            android:singleLine="false"
+            android:text="Left"
+            android:textColor="#d51414"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="gone" >
+        </TextView>
+        <ImageView
+            android:id="@+chat_panel/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:onClick="@string/onClickHandleMethodName"
+            android:scaleType="center"
+            android:src="@drawable/send_icon"
+            android:textStyle="bold" >
+        </ImageView>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/emojicons"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:visibility="gone" />
+</LinearLayout>

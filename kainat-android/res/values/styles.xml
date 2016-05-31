@@ -1,0 +1,163 @@
+<resources>
+    <style name="Theme.RockeTalk.Background" parent="android:Theme.Light">
+        <!-- <item name="android:windowBackground">@drawable/main_bct</item> -->
+    </style>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    
+    
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+     <style name="button">
+        <item name="android:background">@drawable/button_xml</item>
+    </style>
+    <style name="MediaButton">
+        <item name="android:background">@drawable/media_button_background</item>
+    </style>
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="DialogText">
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="DialogText.Title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    	<style name="Animations" />
+
+	
+	<style name="Animations.PopDownMenu" />
+	
+	<style name="Animations.PopDownMenu.Left">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+	</style>
+	
+	<style name="Animations.PopDownMenu.Right">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+	</style>
+	
+	<style name="Animations.PopDownMenu.Center">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_top</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottom</item>
+	</style>
+	
+	 <style name="ThemeDialogCustom">
+    <item name="android:windowFrame">@null</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    <item name="android:windowBackground">@color/fully_transparent</item>
+    <item name="android:textColor">@color/heading_text</item>
+    <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    <item name="android:colorBackgroundCacheHint">@null</item>
+</style>
+	<style name="Animations.PopUpMenu" />
+	
+	<style name="Animations.PopUpMenu.Left">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+	</style>
+	
+	<style name="Animations.PopUpMenu.Right">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+		<item name="@android:windowExitAnimation">@anim/grow_from_bottomright_to_topleft</item>
+	</style>
+	
+	<style name="Animations.PopUpMenu.Center">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+	</style>
+	<style name="Animations.PopUpMenu.down">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+		<item name="@android:windowExitAnimation">@anim/grow_from_bottom</item>
+	</style>
+    <style name="media_player_control_button">
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingRight">20.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style
+	name="DialogAnimation">
+	<item
+		name="android:windowBackground">@null</item>
+	<item
+		name="android:windowFrame">@null</item>
+	<item
+		name="android:windowNoTitle">true</item>
+	<item
+		name="android:windowEnterAnimation">@anim/slide_up_dialog</item>
+	<item
+		name="android:windowExitAnimation">@anim/slide_out_down</item>
+</style>
+<style name="button_black">
+        <item name="android:background">@drawable/menu_button_black</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3sp</item>
+    </style>
+    
+    <style name="tab" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_height">50px</item>
+    </style>
+    <style
+    name="Theme_Dialog_Translucent"
+    parent="@android:style/Theme.Dialog">
+    <item
+        name="android:windowBackground">@null</item>
+          <item name="android:windowNoTitle">true</item>   
+</style>
+<style name="ActivityDialog" parent="@android:style/Theme.Dialog">      
+    <item name="android:windowBackground">@drawable/menu_button_black</item>
+    <item name="android:windowNoTitle">true</item>   
+     <item name="android:textColor">#ffffff</item>
+        <item name="android:typeface">sans</item>   
+    </style>
+    
+  <style name="theam_new_dialog" parent="android:Theme">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:backgroundDimEnabled">false</item>
+    <item name="android:layout_width">fill_parent</item>
+  <item name="android:layout_height">wrap_content</item>
+   <item name="android:adjustViewBounds">true</item>
+        
+  </style>
+  
+  <style name="CustomDialog" parent="android:Theme.Dialog">
+
+      <item name="android:layout_width">fill_parent</item>
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:windowIsFloating">true</item>
+      <item name="android:windowNoTitle">true</item>
+
+    </style> 
+ <!--    
+  <style name="CustomProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+   <item name="android:indeterminateOnly">false</item>
+          <item name="android:progressDrawable">@drawable/custom_progress_bar_horizontal</item>
+          <item name="android:minHeight">8dip</item>
+          <item name="android:maxHeight">16dip</item>
+ </style>
+ -->
+</resources>

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@drawable/title"
+        android:orientation="horizontal"
+        android:text="Logoutfffffffffffffff" >
+
+        <TextView
+            android:id="@+id/inboxScreen_title"
+            style="@style/HeaderFontStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Post To Gallery" >
+        </TextView>
+
+        <Button
+            android:id="@+id/post_sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="3dip"
+            android:background="@drawable/send_icon"
+            android:onClick="@string/onClickHandleMethodName"
+            android:text=""
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/notificationdiloags"
+        layout="@layout/notificationdiloag" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="7.5"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/roundedrect"
+                android:orientation="horizontal" >
+
+                <ScrollView
+                    android:id="@+id/composeScreen_msgBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="1" >
+
+                            <ImageView
+                                android:id="@+id/pencil"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left|top"
+                                android:layout_margin="4dp"
+                                android:paddingLeft="5dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/pencil" />
+
+                            <EditText
+                                android:id="@+id/composeScreen_msgBox"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginRight="2dp"
+                                android:background="@drawable/edit_text_holo_light"
+                                android:gravity="center_vertical|top"
+                                android:hint="About this post"
+                                android:imeOptions="actionDone"
+                                android:inputType="textCapSentences|textMultiLine"
+                                android:text=""
+                                android:maxLength="1000"
+                                android:textSize="14dip" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/my_avatar"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="right|center"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/im_avatar_picture_border_normal"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/attachicon"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </ScrollView>
+
+                <ImageButton
+                    android:id="@+id/composeScreen_doodle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="1dip"
+                    android:background="@drawable/doodle"
+                    android:onClick="@string/onClickHandleMethodName" >
+                </ImageButton>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/buddy_menuLayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/roundedrect"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+                        android:id="@+id/composeScreen_voiceLayout"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".20"
+                        android:clickable="true"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:drawableTop="@drawable/location"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:padding="0dp"
+                            android:text="Location"
+                            android:textColor="@color/black"
+                            android:textSize="11dp" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".20"
+                        android:clickable="true"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/category"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight=".20"
+                            android:clickable="true"
+                            android:drawableTop="@drawable/category"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:padding="0dp"
+                            android:text="Category"
+                            android:textColor="@color/black"
+                            android:textSize="11dp" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/mode"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".20"
+                        android:clickable="true"
+                        android:drawableTop="@drawable/lock_open"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:padding="0dp"
+                        android:text="Everyone"
+                        android:textColor="@color/black"
+                        android:textSize="11dp" >
+                    </TextView>
+
+                    <LinearLayout
+                        android:id="@+id/composeScreen_voiceLayout"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".20"
+                        android:clickable="true"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:drawableTop="@drawable/tag_big"
+                            android:ellipsize="end"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:padding="1dp"
+                            android:text="Title"
+                            android:textColor="@color/black"
+                            android:textSize="11dp" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    
+                    android:background="@drawable/roundedrect"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/composeScreen_voiceLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/media_button"
+                        android:layout_margin="1dip"
+                        android:clickable="true"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/composeScreen_recordVoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:adjustViewBounds="true"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:src="@drawable/composescreen_audioicon" >
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/composeScreen_availableVoice"
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:layout_gravity="center_vertical"
+                            android:adjustViewBounds="true"
+                            android:clickable="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/soundplayicon"
+                            android:visibility="gone" >
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/composeScreen_addaudio"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:clickable="true"
+                            android:gravity="center_horizontal"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:text="Tap to record" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dip"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:background="#ffDCDAD9" >
+                    </View>
+
+                    <LinearLayout
+                        android:id="@+id/composeScreen_photoLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/media_button"
+                        android:layout_margin="1dip"
+                        android:clickable="true"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/composeScreen_photoButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:adjustViewBounds="true"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:src="@drawable/composescreen_photoicon" >
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/composeScreen_addPhotoText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:text="Tap to attach" >
+                        </TextView>
+
+                        <HorizontalScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical" >
+
+                            <LinearLayout
+                                android:id="@+id/composeScreen_attachedImageLayout" android:orientation="horizontal"
+                                android:layout_width="50dip"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical">
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dip"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:background="#ffDCDAD9" >
+                    </View>
+
+                    <LinearLayout
+                        android:id="@+id/composeScreen_videoLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/media_button"
+                        android:layout_margin="1dip"
+                        android:clickable="true"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/composeScreen_recordVideo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:adjustViewBounds="true"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:src="@drawable/composescreen_videoiconfinal" >
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/composeScreen_addVideoText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_horizontal"
+                            android:text="Tap to attach" >
+                        </TextView>
+
+                        <HorizontalScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical" >
+
+                            <LinearLayout
+                                android:id="@+id/composeScreen_attachedVideoLayout" android:orientation="horizontal"
+                                android:layout_width="50dip"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical">
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/post_sendButton"
+                    style="@style/setting_font_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/header_button_height"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_margin="1dip"
+                    android:background="@drawable/custom_button_search"
+                    android:gravity="center"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:text="Post Media"
+                    android:textColor="#ffffffff"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

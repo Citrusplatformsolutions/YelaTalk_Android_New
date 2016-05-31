@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+   <RelativeLayout
+		
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/title">
+		<TextView
+			android:id="@+id/postfbScreen_title"
+			style="@style/HeaderFontStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/header_height"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:layout_weight="1"
+			android:text="One Touch Share"
+			/>
+		<Button
+			android:id="@+id/postfbScreen_doneButton"
+			android:layout_width="wrap_content"
+			android:layout_height="35dip"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="2dip"
+			android:background="@drawable/roundedredbutton"
+			android:clickable="true"
+			android:onClick="@string/onClickHandleMethodName"
+			android:text="Done"
+			android:textColor="#fff"
+			android:textStyle="bold">
+		</Button>
+	</RelativeLayout>
+    <include
+        layout="@layout/notificationdiloag"        
+        android:id="@+id/notificationdiloags" />
+           <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                 		android:layout_marginTop="10dip"
+                        android:gravity="center"
+                       
+                        android:text="Share your photos, videos and more with a single touch"
+                        android:textColor="#ff000000"
+                        android:textStyle="bold">
+                    </TextView>
+        
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="20dip"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dip"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:background="@drawable/roundedrectgradient"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Facebook"
+                        android:textColor="#ff000000"
+                        android:textStyle="bold">
+                    </TextView>
+	<RadioGroup android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_column="0"
+		android:layout_gravity="center_vertical|center_horizontal"
+		android:orientation="horizontal">
+		<ToggleButton 
+		android:checked="true"
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" 
+		android:visibility="gone"
+		android:text="ToggleButton" 
+		android:id="@+id/toggleButton1">
+		</ToggleButton>
+		<TextView 
+		android:text="Configuration"
+		android:textColor="@color/blue"
+		android:layout_height="wrap_content" 
+		
+		android:layout_width="wrap_content" 
+		android:visibility="visible"
+		android:id="@+id/configtext">
+		</TextView>
+	</RadioGroup>
+                </LinearLayout>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dip"
+                    android:background="#FF9E9D9C">
+                </View>
+               <!--   <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:layout_weight="1"
+                        android:text="Only friends can message you if you select &apos;OFF&apos;"
+                        android:textColor="#ff000000"
+                        android:textSize="12dip">
+                    </TextView>
+                </LinearLayout>-->
+            </LinearLayout>
+            
+            
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

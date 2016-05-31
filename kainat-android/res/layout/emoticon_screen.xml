@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="300dp"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:orientation="vertical" >
+<!-- <GridView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grid"
+        android:columnWidth="35dp"
+        android:padding="2dp"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp"
+        android:scrollbars="horizontal"
+        android:stretchMode="spacingWidthUniform"/> -->
+
+<GridView 
+		android:visibility="visible" android:id="@+id/grid"
+		android:numColumns="auto_fit" android:gravity="center"
+		android:verticalSpacing="2dip" android:horizontalSpacing="2dip"
+		android:columnWidth="25dp" android:layout_weight="1"
+		android:addStatesFromChildren="true" android:stretchMode="spacingWidthUniform"
+		android:focusable="true" android:layout_width="fill_parent"
+		
+		android:layout_height="fill_parent" />
+   
+</LinearLayout>

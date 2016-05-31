@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout 
+		android:layout_width="fill_parent" android:gravity="center_vertical|center_horizontal"
+		android:layout_height="fill_parent">
+		<SurfaceView android:id="@+id/camcorder_preview"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:gravity="center_vertical|center_horizontal" android:enabled="false"
+			android:focusable="true" android:clickable="true" />
+	</LinearLayout>
+	<RelativeLayout android:id="@+id/InnerRelativeLayout"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true">
+		<LinearLayout 
+			android:background="#33FFFFFF" android:layout_width="fill_parent"
+			android:gravity = "center"
+			android:layout_height="wrap_content">
+			<ImageView android:gravity="right"
+		
+				android:id="@+id/record" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:onClick="onClick"
+				android:background="@drawable/recordvideo0" />
+			
+				<LinearLayout 
+			android:layout_width="fill_parent"
+			android:gravity = "center|right"
+			android:layout_height="wrap_content">
+			<ImageView 
+				
+				android:id="@+id/setting" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:onClick="onClick"
+				android:background="@drawable/settings" />
+			<TextView android:text="" android:id="@+id/timer"
+				android:textColor="@color/red" 
+				android:gravity = "center|right"
+				android:layout_alignParentRight="true" android:layout_width="wrap_content"
+				android:layout_height="wrap_content"></TextView>
+				</LinearLayout>
+		</LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

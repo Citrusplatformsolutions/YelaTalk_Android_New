@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+login/header0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+login/header"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/header_height"
+            android:background="@drawable/title"
+            android:visibility="visible" >
+
+            <TextView
+                style="@style/HeaderFontStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/header_height"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text=" Verification "
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+email_verify/back"
+                style="@style/buttonHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                
+                android:background="@null"
+                android:drawableLeft="@drawable/arrowleft"
+                android:drawableRight="@drawable/line"
+                android:gravity="center"
+                android:onClick="@string/onClickHandleMethodName"
+               
+                android:text="Back"
+                android:textColor="@color/black"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:textColor="@color/black" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+password_dialog/msg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="@string/onClickHandleMethodName"
+                android:text="message"
+                android:textColor="@color/red"
+                android:textSize="14dip"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+verify/message2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="40dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingBottom="30dp"
+                android:text="@string/sss"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+verify/message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingBottom="0dp"
+                android:text="Verifying the email id secures your account. Verification email has been send to your account. Email id :"
+                android:textColor="@color/heading"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+verify/email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="0dp"
+                android:text="rocketalk@rocketalk.com"
+                android:textColor="@color/heading"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+verify/email_latout"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="20dp" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+password_dialog/dummy_latout"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+password_dialog/login_forgotPasswordLink"
+                android:layout_width="300dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dip"
+                android:clickable="true"
+                android:gravity="right"
+                android:onClick="@string/onClickHandleMethodName"
+                android:paddingLeft="12dip"
+                android:text="Forgot Password"
+                android:textColor="@color/heading"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+email_verify/verify"
+                android:layout_width="250dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="30dip"
+                android:background="@drawable/pillgreen_sel"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Resend verification email"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+password_dialog/login_forgotPasswordLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="15dip"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="@string/onClickHandleMethodName"
+                android:paddingLeft="5dip"
+                android:text="To edit your email id, go to"
+                android:textColor="@color/sub_heading"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+email_verify/account_setting"
+                android:layout_width="300dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="8dip"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="@string/onClickHandleMethodName"
+                android:paddingLeft="12dip"
+                android:text="Account Settings"
+                android:textColor="@color/hyperlink"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+login/header0a"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+login/header0sa"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:id="@+id/textViews1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2px"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/time_footnote" >
+                    </View>
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:text=". . . "
+                        android:textColor="@color/sub_heading"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:typeface="sans" />
+
+                    <View
+                        android:id="@+id/textViews1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2px"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/time_footnote" >
+                    </View>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+password_dialog/messages"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:text="Why verify your account"
+                android:textColor="@color/sub_heading"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+password_dialog/messages"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:text="- Send friend request"
+                android:textColor="@color/sub_heading"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+password_dialog/messages"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:text="- Comment on media &amp; profile"
+                android:textColor="@color/sub_heading"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+password_dialog/messages"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:text="- Create communities"
+                android:textColor="@color/sub_heading"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+password_dialog/messages"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:text="- Join and participate in communities"
+                android:textColor="@color/sub_heading"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+password_dialog/messages"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:text="- Share media with friends &amp; on other social media sites"
+                android:textColor="@color/sub_heading"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

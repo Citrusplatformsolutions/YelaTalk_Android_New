@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@color/white" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+<RelativeLayout
+	
+		android:id="@+id/top_featured_relativeLayout3"
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/header_height"
+		android:background="@drawable/title">
+		
+    
+    <ImageView android:id="@+id/back_arrow_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/x_arrows_left"/>
+		
+		<Button
+			android:id="@+id/media_backButton"
+			android:layout_width="wrap_content"
+			android:layout_height="35dip"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:layout_margin="3dip"
+			android:background="@drawable/roundedredbutton"
+			android:onClick="@string/onClickHandleMethodName"
+			android:text=" Back "
+			android:textColor="@color/white"
+			android:visibility="gone"/>
+		<TextView
+			android:id="@+id/media_screenTitle"
+			style="@style/HeaderFontStyle"
+			android:layout_width="198dip"
+			android:layout_height="@dimen/header_height"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:layout_weight="1"
+			android:ellipsize="end"
+			android:singleLine="true"
+			android:text="@string/gallery"
+			/>
+		<Button
+			android:id="@+id/selectBtn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_margin="3dip"
+			android:background="@null"
+			android:onClick="@string/onClickHandleMethodName"
+			android:text="@string/done"
+			android:visibility="gone"
+			android:textColor="@color/heading"/>
+	</RelativeLayout>
+	
+	<TextView android:id="@+id/info" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/select_picture" android:gravity="center"
+		android:background="@color/orange4"
+		android:textColor ="@color/black"
+		android:textStyle ="normal"
+		android:textSize = "15dp"
+		android:layout_centerHorizontal="true"  />
+		
+		<GridView
+		
+		android:visibility="visible"
+		android:id="@+id/PhoneImageGrid"
+		
+		android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:numColumns="3"
+    android:verticalSpacing="1dp"
+    android:horizontalSpacing="1dp"
+    android:scrollbarStyle="outsideOverlay"
+    android:verticalScrollbarPosition="right"
+    android:scrollbars="vertical"/>
+		
+	
+</LinearLayout>

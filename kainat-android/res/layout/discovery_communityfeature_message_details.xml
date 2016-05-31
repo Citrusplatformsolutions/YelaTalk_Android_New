@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:background="@drawable/landingpagebackground" android:orientation="vertical">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal" android:id="@+id/discovery_message_linearLayout1">
+		<TextView android:id="@+id/discovery_message_messageDisplay_title"
+			style="@style/HeaderFontStyle" android:layout_width="0dip"
+			android:layout_height="@dimen/header_height" android:layout_gravity="center"
+			
+			android:background="@drawable/tab_background"
+			android:textColor="@color/headband_font_color" 
+			android:layout_weight="1" android:ellipsize="start" android:gravity="center"
+			android:singleLine="true" android:text="Details">
+		</TextView>
+
+	</LinearLayout>
+	<!--  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/activity_messageDisplay_one" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:layout_below="@+id/linearLayout1">
+		
+			<ImageView android:id="@+id/activity_messageDisplay_senderImage"
+			android:layout_width="0dip" android:layout_height="50dip"
+			android:layout_weight="1" android:adjustViewBounds="true"
+			android:cropToPadding="true" android:padding="2dip"
+			android:scaleType="fitXY"
+			android:onClick="@string/onClickHandleMethodName"
+			android:src="@drawable/profile"> </ImageView>
+		
+		<LinearLayout android:id="@+id/activity_messageDisplay_sender"
+			android:layout_width="50dip" android:layout_height="50dip"
+
+
+			android:padding="5dip" android:gravity="center"
+			android:layout_alignParentLeft="true" android:orientation="horizontal"
+			android:layout_alignParentTop="true">
+
+
+			<com.kainat.app.android.uicontrol.CImageView
+				android:id="@+id/activity_messageDisplay_senderImage"
+
+
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:onClick="@string/onClickHandleMethodName" android:src="@drawable/profile"
+				android:scaleType="fitCenter">
+			</com.kainat.app.android.uicontrol.CImageView>
+
+		</LinearLayout>
+		<LinearLayout android:layout_width="0dip"
+			android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+			android:layout_weight="1" android:orientation="vertical">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginTop="0dip"
+				android:orientation="vertical">
+
+				<TextView android:id="@+id/activity_messageDisplay_senderName"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_weight="1" android:singleLine="true"
+					android:textColor="#FFFF0000" android:text="NAG NAG"
+					android:textStyle="bold">
+				</TextView>
+
+				<TextView android:id="@+id/activity_messageDisplay_receivedTime"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:gravity="right" android:paddingBottom="5dip"
+					android:paddingRight="5dip" android:singleLine="true" android:text="13-13-2013:9.30IST"
+					android:textColor="#ff494B4A" android:textSize="10dip">
+				</TextView>
+
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginTop="5dip"
+				android:layout_gravity="left"
+		
+				android:gravity="left"
+				android:orientation="horizontal">
+				<TextView android:id="@+id/activity_messageDisplay_viewCount"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:textColor="#ff494B4A" android:layout_weight=".25"
+					android:textStyle="bold"
+						
+					android:text="300 views" android:textSize="10dip">
+				</TextView>
+				<TextView android:id="@+id/activity_messageDisplay_thumbUp"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:drawableLeft="@drawable/thumbup2" android:textColor="#ff494B4A"
+					android:textStyle="bold"
+					android:layout_weight=".25" android:text="200" android:textSize="10dip">
+				</TextView>
+				<TextView android:id="@+id/activity_messageDisplay_thumbDown"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:textColor="#ff494B4A" android:drawableLeft="@drawable/thumbdown2"
+					android:textStyle="bold"
+					android:layout_weight=".25" android:text="200" android:textSize="10dip">
+				</TextView>
+				<TextView android:id="@+id/activity_messageDisplay_comment"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:textColor="#ff494B4A" android:drawableLeft="@drawable/trans_dialog"
+					android:textStyle="bold"
+					android:layout_weight=".25" android:text="200" android:textSize="10dip">
+				</TextView>
+			</LinearLayout>
+			<TextView android:id="@+id/activity_messageDisplay_FriendHeader"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:gravity="left" android:paddingBottom="5dip"
+				android:paddingRight="5dip" android:singleLine="false"
+				android:textColor="#ff494B4A" android:textStyle="bold"
+				android:visibility="visible" android:textSize="10dip">
+			</TextView>
+		</LinearLayout>
+	</LinearLayout>-->
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:layout_above="@+id/discovery_message_message_menuLayout2"
+		android:orientation="vertical" android:layout_below="@+id/discovery_message_linearLayout1">
+		
+		<ScrollView android:id="@+id/activity_messageDisplay_textContainer"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:fadeScrollbars="false" android:orientation="vertical">
+			
+			<LinearLayout android:id="@+id/activity_messageDisplay_contentTextmsgp"
+				
+				android:layout_width="fill_parent" android:orientation="vertical" android:layout_height="wrap_content">
+  
+  	<HorizontalScrollView android:visibility="visible"
+					android:id="@+id/discovery_message_ImageHLayout"
+					android:layout_height="wrap_content" android:layout_gravity="center"
+				
+					android:layout_width="wrap_content">
+					<LinearLayout android:id="@+id/discovery_message_Image"
+
+						android:layout_height="wrap_content" android:visibility="gone"
+						android:layout_width="wrap_content">
+
+
+						<LinearLayout android:id="@+id/discovery_message_messageDisplay_gallery"
+							android:visibility="visible"
+							android:layout_height="wrap_content" 
+							 android:layout_width="wrap_content">
+
+						</LinearLayout>
+
+					</LinearLayout>
+				</HorizontalScrollView>
+
+				<LinearLayout android:id="@+id/discovery_message_media_play_layout"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_weight=".95" android:background="@color/audioColor"
+					android:gravity="center_vertical|center_horizontal"
+					android:layout_margin="5dip"
+					android:orientation="horizontal" android:visibility="gone"
+					android:layout_alignParentRight="false">
+
+					<com.kainat.app.android.uicontrol.CImageView
+						android:id="@+id/discovery_message_message_media_play" android:layout_width="35dp"
+						android:layout_height="35dp" android:layout_marginLeft="5dp"
+						android:layout_weight="1" android:adjustViewBounds="true"
+						android:background="@drawable/addplay" android:onClick="@string/onClickHandleMethodName" />
+
+					<AbsoluteLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:layout_weight="20"
+						android:layout_marginTop="8.0dip" android:addStatesFromChildren="true"
+						android:orientation="horizontal" android:paddingLeft="8.0dip"
+						android:paddingRight="8.0dip">
+
+						<SeekBar android:id="@+id/discovery_message_message_mediavoicePlayingDialog_progressbar"
+							android:layout_width="fill_parent" android:layout_height="wrap_content"
+							android:layout_weight="1.0" android:paddingLeft="8.0dip"
+							android:paddingRight="8.0dip" android:progress="0"
+							android:progressDrawable="@drawable/seekbarprogress"
+							android:thumb="@drawable/seekthumb" android:thumbOffset="0.0dip" />
+
+						<LinearLayout android:layout_width="fill_parent"
+							android:layout_height="20dp" android:gravity="center_vertical|center_horizontal"
+							android:orientation="horizontal" android:visibility="visible">
+
+							<TextView android:id="@+id/discovery_message_message_streemStatus"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:paddingLeft="35dp" android:text="Please wait while getting audio..."
+								   android:textColor="@color/sub_heading" android:textSize="9dp"
+								android:visibility="visible" />
+						</LinearLayout>
+						<LinearLayout android:layout_width="fill_parent"
+							android:layout_height="49dp" android:gravity="bottom"
+
+							android:orientation="vertical" android:visibility="visible">
+							<TextView android:id="@+id/discovery_message_message_audio_counter_time"
+								android:layout_height="20dip" android:textSize="9dp"
+								android:text="00:00" android:layout_gravity="bottom"
+								   android:textColor="@color/sub_heading" android:visibility="visible"
+								android:layout_width="wrap_content">
+
+							</TextView>
+
+						</LinearLayout>
+						<LinearLayout android:layout_width="fill_parent"
+							android:layout_height="49dp" android:gravity="bottom|right"
+
+							android:orientation="vertical" android:visibility="visible">
+							<TextView android:id="@+id/discovery_message_message_audio_counter_max"
+								android:layout_height="20dip" android:textSize="9dp"
+								android:text="00:00"    android:textColor="@color/sub_heading"
+								android:visibility="visible" android:layout_width="wrap_content">
+							</TextView>
+						</LinearLayout>
+					</AbsoluteLayout>
+
+
+				</LinearLayout>
+				<LinearLayout android:id="@+id/discovery_message_message_video_overlay"
+					android:layout_width="wrap_content"
+					android:visibility="gone" 
+					android:layout_gravity="center"
+				
+						android:layout_margin="10dip"
+					android:scrollingCache="false" android:background="@drawable/rounded_small_view"
+					android:layout_height="wrap_content">
+					<com.kainat.app.android.uicontrol.CImageView
+						android:id="@+id/discovery_message_message_video_overlay_image"
+						 
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:adjustViewBounds="true" android:src="@drawable/video_overlay">
+					</com.kainat.app.android.uicontrol.CImageView>
+				</LinearLayout>
+  
+  <LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:gravity="left"
+		
+		android:orientation="vertical">
+		
+		<LinearLayout android:visibility="visible" android:id="@+id/discovery_message_details_rtlive_list_newrow"
+							android:layout_height="wrap_content"
+							
+							android:layout_marginBottom ="5dp"
+							android:layout_marginTop ="5dp"
+							android:scrollbars ="none"
+							android:layout_gravity="left" android:layout_width="fill_parent">
+		<LinearLayout android:layout_width="wrap_content"
+		android:id="@+id/discovery_message_details_rtlive_list_newrowvalue"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:visibility="visible"
+			android:orientation="horizontal"
+			android:gravity="center_horizontal">
+			<LinearLayout android:layout_width="wrap_content"
+		android:id="@+id/discovery_details_rtlive_list_imageLayout"
+			android:layout_height="wrap_content" 
+			android:visibility="visible"
+			android:orientation="horizontal"
+			android:layout_gravity="center"
+			android:gravity="center">
+			<com.kainat.app.android.uicontrol.CImageView android:id="@+id/discovery_message_details_rtlive_list_image"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center" android:layout_marginBottom="1dip"
+				android:layout_marginTop="1dip" android:background="@drawable/icon">
+			</com.kainat.app.android.uicontrol.CImageView>
+			</LinearLayout>
+			<LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5.5"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:orientation="vertical">
+                 
+                <TextView
+                    android:id="@+id/discovery_message_details_rtlive_list_row_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                   android:textColor="@color/sub_heading"
+                     android:text="Social Sad Poetry"
+                    android:textStyle="bold">
+                </TextView>
+                 <TextView
+                    android:id="@+id/discovery_message_details_rtlive_list_row_hostedby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:paddingBottom="5dip"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:text="hosted by nag nag"
+                  android:textColor="@color/sub_heading"
+                    android:textSize="10dip">
+                </TextView>
+                <TextView
+                    android:id="@+id/discovery_message_details_rtlive_list_row_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingBottom="5dip"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:text="13-13-2013:9.30IST"
+                    android:textColor="@color/time_footnote"
+                    android:textSize="10dip">
+                </TextView>
+              <TextView
+                    android:id="@+id/discovery_message_details_rtlive_list_row_postedby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingBottom="5dip"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:text=" By akmmaurya"
+                    android:textColor="@color/sub_heading"
+                    android:textSize="10dip">
+                </TextView>
+                <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+             android:id="@+id/discovery_rtlive_list_row_Owner"
+            android:orientation="horizontal">
+                  <com.kainat.app.android.uicontrol.CImageView
+            android:id="@+id/discovery_message_details_rtlive_list_row_OwnerImage"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:padding="2dip"
+            android:scaleType="fitXY"
+            android:onClick="@string/onClickHandleMethodName"
+            android:background="@drawable/dummy_picture">
+        </com.kainat.app.android.uicontrol.CImageView>
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+             android:layout_below="@+id/discovery_message_details_rtlive_list_row_Owner"
+            android:orientation="vertical">
+         <TextView
+                    android:id="@+id/discovery_message_details_rtlive_list_row_rating"
+                    android:layout_width="wrap_content"
+                    android:gravity="right"
+                    android:paddingBottom="5dip"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:text="rating ****"
+                   android:textColor="@color/sub_heading"
+                    android:textSize="12dip" android:layout_height="wrap_content">
+                </TextView>
+               
+         <TextView
+                    android:id="@+id/discovery_message_details_rtlive_list_row_owner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:paddingBottom="5dip"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:text="Owner:nanbynag"
+                    android:textColor="@color/sub_heading"
+                    android:textSize="12dip">
+                </TextView>
+                 </LinearLayout>
+            </LinearLayout>
+              </LinearLayout>
+          
+
+        </LinearLayout>
+		</LinearLayout>
+		
+		
+		</LinearLayout>	
+		</LinearLayout>
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="0dip" android:background="@drawable/backgr" />
+				<TextView android:id="@+id/discovery_message_messageDisplay_contentTextmsg"
+					android:autoLink="all" android:layout_width="fill_parent"
+					android:background="@null" android:padding="5dip"
+					android:textColor="@color/sub_heading" android:textSize="12dip"
+					android:text="The fact that it was anopen platform allowing for lot of innovation and choice made the developer world and the mobile OEMs vouch for it and the inroads it madeinto the market was significant – significant enough for Apple to stand up, take note and even file a law suit J"
+					android:visibility="visible" android:layout_height="wrap_content">
+				</TextView>
+				<TextView android:id="@+id/discovery_message_messageDisplay_addmessage"
+					android:autoLink="all" android:layout_width="fill_parent"
+					android:background="@null" android:padding="5dip"
+					android:textColor="@color/sub_heading" android:textSize="12dip"
+					android:text="please join this communities for add click to button"
+					android:visibility="visible" android:layout_height="wrap_content">
+				</TextView>
+					<TextView android:id="@+id/discovery_message_messageDisplay_addButton"
+					android:layout_width="wrap_content"
+					android:background="@drawable/deleteselected" android:padding="5dip"
+						android:layout_gravity="center"
+						android:gravity="center"
+					   android:textSize="15dip"
+				       android:text="Join"
+				     android:textColor="@color/sub_heading"
+				   android:textStyle="bold"
+					android:visibility="visible" android:layout_height="wrap_content">
+				</TextView>
+				
+					
+				
+				<!--
+					<LinearLayout android:id="@+id/activity_messageDisplay_threes"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:gravity="bottom|center_horizontal"
+					android:orientation="vertical"> <Gallery
+					android:id="@+id/activity_messageDisplay_gallery"
+					android:layout_width="fill_parent" android:layout_height="300dp"
+
+					android:visibility="false"> </Gallery> </LinearLayout>
+				-->
+			
+
+				<!-- <HorizontalScrollView android:visibility="visible"
+					android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+					android:layout_width="wrap_content">
+					<LinearLayout android:id="@+id/activity_ImageLayout"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:visibility="gone" android:padding="5dp">
+					</LinearLayout>
+				</HorizontalScrollView> -->
+			<!-- 	<TextView android:id="@+activity_list_row/activity_date_time_message"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:paddingTop="0dip" android:gravity="left" android:text="9:30::2-10-2013"
+					android:textSize="10dip">
+				</TextView>-->
+					<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:layout_margin="5dip"
+					android:background="@color/nag_green" >
+					<TextView android:id="@+id/discovery_message_messageDisplay_numberOfComments"
+					
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_weight="1" android:singleLine="true"
+									android:textColor="@color/sub_heading" android:text="30 Comments"
+									android:textStyle="bold">
+								</TextView>
+					</LinearLayout>
+				<LinearLayout android:id="@+id/discovery_message_message_menulayout"
+					 android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:visibility="visible">
+
+					<LinearLayout 
+						android:id="@+id/discovery_message_messageDisplay_comment"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:visibility="visible" android:orientation="horizontal">
+						<ImageView android:id="@+id/discovery_message_messageDisplay_commentsenderImage"
+							android:layout_width="0dip" android:layout_height="50dip"
+							android:layout_weight="1" android:adjustViewBounds="true"
+							android:cropToPadding="true" android:padding="2dip"
+							android:scaleType="fitXY" android:onClick="@string/onClickHandleMethodName"
+							android:src="@drawable/dummy_picture">
+						</ImageView>
+						<LinearLayout android:layout_width="0dip"
+							android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+							android:layout_weight="5.5" android:orientation="vertical">
+							<LinearLayout android:layout_width="fill_parent"
+								android:layout_height="wrap_content" android:layout_marginTop="3dip"
+								android:orientation="vertical">
+
+								<TextView android:id="@+id/discovery_message_messageDisplay_commentsenderName"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_weight="1" android:singleLine="true"
+									android:textColor="@color/sub_heading" android:text="NAG NAG"
+									android:textStyle="bold">
+								</TextView>
+
+								<TextView android:id="@+id/discovery_message_messageDisplay_commentreceivedTime"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:gravity="right" android:paddingBottom="5dip"
+									android:paddingRight="5dip" android:singleLine="true"
+									android:text="13-13-2013:9.30IST" android:textColor="@color/time_footnote"
+									android:textSize="10dip">
+								</TextView>
+								<TextView android:id="@+id/discovery_message_messageDisplay_commentText"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:gravity="right" android:paddingBottom="5dip"
+									android:paddingRight="5dip" android:singleLine="true"
+									android:text="This is ajay Kumar maurya hello guy's how r u"
+									android:textColor="@color/sub_heading" android:textSize="10dip">
+								</TextView>
+							</LinearLayout>
+
+
+							<TextView android:id="@+id/discovery_message_messageDisplay_commentFriendHeader"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:gravity="left" android:paddingBottom="5dip"
+								android:paddingRight="5dip" android:singleLine="false"
+								android:textColor="@color/sub_heading" android:textStyle="bold"
+								android:visibility="visible" android:textSize="10dip">
+							</TextView>
+						</LinearLayout>
+					</LinearLayout>
+					
+				</LinearLayout>
+
+			</LinearLayout>
+
+
+
+		</ScrollView>
+	</LinearLayout>
+	<LinearLayout 
+		android:layout_width="fill_parent" android:background="#ffffff"
+		android:id="@+id/discovery_message_message_menuLayout2" android:visibility="visible"
+		android:gravity="bottom" android:layout_alignParentBottom="true"
+		android:orientation="horizontal" android:layout_height="wrap_content">
+
+		<TextView android:padding="2dp"
+
+			android:id="@+id/discovery_message_message_bottomThimbDown"
+			android:layout_width="0dip" android:layout_height="fill_parent"
+			android:layout_weight=".25" android:background="#252525"
+			android:clickable="true" android:drawableTop="@drawable/thumbdown_disable"
+			android:focusable="true" android:gravity="center" android:onClick="onClick"
+			android:textSize="11dp" android:textStyle="bold" android:textColor="@color/sub_heading">
+		</TextView>
+		<ImageView android:id="@+id/discovery_message_messagedivider1"
+			android:layout_width="1dip" android:layout_height="fill_parent"
+			android:layout_gravity="center_vertical" android:background="#252525"
+			android:onClick="@string/onClickHandleMethodName" android:src="@drawable/sepratormenu">
+		</ImageView>
+		<TextView android:padding="2dp" android:id="@+id/discovery_message_message_UpThimbDown"
+			android:layout_width="0dip" android:layout_height="fill_parent"
+			android:layout_weight=".25" android:background="#252525"
+			android:clickable="true" android:drawableTop="@drawable/thumbup_disable"
+			android:focusable="true" android:gravity="center" android:onClick="onClick"
+			android:textSize="11dp" android:textStyle="bold" android:textColor="@color/sub_heading">
+		</TextView>
+		<ImageView android:id="@+id/discovery_message_messagedivider2"
+			android:layout_width="1dip" android:layout_height="fill_parent"
+			android:layout_gravity="center_vertical" android:background="#252525"
+			android:onClick="@string/onClickHandleMethodName" android:src="@drawable/sepratormenu">
+		</ImageView>
+		<TextView android:padding="2dp"
+
+			android:id="@+id/discovery_message_message_bottomComment"
+			android:layout_width="0dip" android:layout_height="fill_parent"
+			android:layout_weight=".25" android:background="#252525"
+			android:clickable="true" android:drawableTop="@drawable/home_friend_notification"
+			android:focusable="true" android:gravity="center" android:onClick="onClick"
+			android:textSize="11dp" android:textStyle="bold" android:textColor="@color/sub_heading">
+		</TextView>
+		<ImageView android:id="@+id/discovery_message_messagedivider3"
+			android:layout_width="1dip" android:layout_height="fill_parent"
+			android:layout_gravity="center_vertical" android:background="#252525"
+			android:onClick="@string/onClickHandleMethodName" android:src="@drawable/sepratormenu">
+		</ImageView>
+		<TextView android:padding="2dp" android:id="@+id/discovery_message_message_bottomMenu"
+			android:layout_width="0dip" android:layout_height="fill_parent"
+			android:layout_weight=".25" android:background="#252525"
+			android:clickable="true" android:drawableTop="@drawable/b_report"
+			android:focusable="true" android:gravity="center" android:onClick="onClick"
+			android:textSize="11dp" android:textStyle="bold" android:textColor="@color/sub_heading">
+		</TextView>
+		
+
+
+	</LinearLayout>
+	
+
+
+
+</RelativeLayout>

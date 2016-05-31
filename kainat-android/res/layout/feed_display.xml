@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical|center_horizontal"    
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"       
+        android:orientation="vertical"
+        android:background="@drawable/rounded_small_view" >
+
+        <ScrollView
+            android:id="@+id/main_scroll_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp"
+         >
+
+            <LinearLayout
+                android:id="@+id/feed_dynamic_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+             </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ad_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:onClick="@string/onClickHandleMethodName"
+        android:src="@drawable/rtaddclose" />
+
+</RelativeLayout>

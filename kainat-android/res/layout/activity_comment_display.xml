@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/activity_messageDisplay_comment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+activity_list_row/activity_LeftLayout"
+            android:layout_width="@dimen/thumb_height"
+            android:layout_height="@dimen/thumb_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+           android:layout_marginLeft="5dp"
+           android:layout_marginTop="5dp"
+            >
+
+            <com.kainat.app.android.uicontrol.CImageView
+                android:id="@+id/activity_messageDisplay_commentsenderImage"
+                android:layout_width="@dimen/thumb_height"
+                android:layout_height="@dimen/thumb_height"
+                android:onClick="@string/onClickHandleMethodName"
+                android:scaleType="fitCenter"
+                android:src="@drawable/profile"
+                android:visibility="gone" >
+            </com.kainat.app.android.uicontrol.CImageView>
+        </LinearLayout>
+        <!--
+                        <com.kainat.app.android.uicontrol.CImageView
+						    android:id="@+id/activity_messageDisplay_commentsenderImage"
+						    android:layout_width="50dp"
+						    android:layout_height="50dp"
+						    android:adjustViewBounds="true"
+						    android:cropToPadding="true"
+						    android:onClick="@string/onClickHandleMethodName"
+						    android:padding="2dip"
+						    android:scaleType="fitXY"
+						    android:src="@drawable/profile" >
+
+						</com.kainat.app.android.uicontrol.CImageView>
+        -->
+
+        <LinearLayout
+            android:id="@+id/activity_messagedisplayCommentLayout"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5.5"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/activity_messagedisplayCommentLayoutOne"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/activity_messageDisplay_commentsenderName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:singleLine="true"
+                   
+                    android:textColor="@color/hyperlink"
+                    android:textStyle="normal" >
+                </TextView>
+
+                <!--
+                                <TextView
+								    android:id="@+id/activity_messageDisplay_commentreceivedTime"
+								    android:layout_width="wrap_content"
+								    android:layout_height="wrap_content"
+								    android:layout_marginLeft="10dp"
+								    android:gravity="right"
+								    android:paddingRight="5dip"
+								    android:singleLine="true"
+								    android:text="13-13-2013:9.30IST"
+								    android:textColor="@color/time_footnote"
+								    android:textSize="10dip" >
+
+								</TextView>
+                -->
+
+                <TextView
+                    android:id="@+id/activity_messageDisplay_commentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="0dip"
+                    android:paddingRight="5dip"
+                    android:singleLine="false"
+                    android:text="Rt Comment"
+                    android:textColor="@color/sub_heading"
+                    android:textSize="12dip" >
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activity_messageDisplay_commentFriendHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="0dip"
+                android:paddingRight="5dip"
+                android:singleLine="false"
+                android:textColor="#ff494B4A"
+                android:textSize="10dip"
+                android:textStyle="bold"
+                android:visibility="gone" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/activity_pictureMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dip"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <com.kainat.app.android.uicontrol.CImageView
+                    android:id="@+id/activity_messagecommentpicture"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dip"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/border"
+                    android:cropToPadding="true"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:paddingLeft="2dip"
+                    android:scaleType="fitXY"
+                    android:visibility="gone" >
+                </com.kainat.app.android.uicontrol.CImageView>
+
+                <com.kainat.app.android.uicontrol.CImageView
+                    android:id="@+id/activity_messagecommentAudio"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dip"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/border"
+                    android:cropToPadding="true"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:paddingLeft="2dip"
+                    android:scaleType="fitXY"
+                    android:visibility="gone" >
+                </com.kainat.app.android.uicontrol.CImageView>
+
+                <com.kainat.app.android.uicontrol.CImageView
+                    android:id="@+id/activity_messagecommentvideo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="2dip"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/border"
+                    android:cropToPadding="true"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:paddingLeft="2dip"
+                    android:scaleType="center"
+                    android:visibility="gone" >
+                </com.kainat.app.android.uicontrol.CImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/stats_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/commnet_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="15dp"
+                    android:drawableLeft="@drawable/likeaqua"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:text="0"
+                    android:textColor="@color/hyperlink"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/commnet_unlike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="15dp"
+                    android:drawableLeft="@drawable/dislikeaqua"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:text="0"
+                    android:textColor="@color/heading"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/commnet_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:drawableLeft="@drawable/reportaqua"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:paddingLeft="5dip"
+                    android:text=""
+                    android:textColor="@color/heading"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/commnet_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:drawableLeft="@drawable/delete_comment"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:paddingLeft="5dip"
+                    android:text=""
+                    android:textColor="@color/heading"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activity_messageDisplay_commentreceivedTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dip"
+                android:gravity="right"
+                android:paddingRight="5dip"
+                android:singleLine="true"
+                android:text="13-13-2013:9.30IST"
+                android:textColor="@color/time_footnote"
+                android:textSize="10dip" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+activity_list_row/line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/hor_line"
+        android:visibility="gone" >
+    </TextView>
+
+</LinearLayout>

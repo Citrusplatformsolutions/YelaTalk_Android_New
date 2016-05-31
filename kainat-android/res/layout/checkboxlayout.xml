@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+   <CheckBox
+                android:id="@+id/bes_checkbox"
+                android:text="dvfsdvsd kfhsdhfkjsdh fjsdhfkj sdkjfksdf dvsdfsdfdsfsdfsdfdsfsdf jhjfjjh kjjkj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="10"
+                android:lines="10"
+                android:ellipsize="marquee"
+                android:singleLine="false"
+             />  
+
+</LinearLayout>

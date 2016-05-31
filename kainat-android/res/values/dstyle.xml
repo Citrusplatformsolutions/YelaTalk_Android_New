@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style
+		name="myBackgroundStyle"
+		parent="@android:style/Theme.Dialog">
+		<item
+			name="android:background">#293755</item>
+	</style>
+</resources>

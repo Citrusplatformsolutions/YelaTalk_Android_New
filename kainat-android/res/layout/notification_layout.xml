@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/imagenotileft"
+        android:layout_width="58.0dip"
+        android:layout_height="58.0dip"
+        android:padding="2.0dip"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/chat_person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imagenotileft"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:maxLines="1"
+        android:text="Kainat"
+        android:textColor="@color/black"
+        android:textSize="18.0sp" />
+
+    <com.rockerhieu.emojicon.EmojiconTextView
+        android:id="@+id/chat_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chat_person_name"
+        android:layout_toRightOf="@id/imagenotileft"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:text="Hello World!"
+        android:textColor="@color/darkgray"
+        android:textSize="14.0sp" />
+
+</RelativeLayout>

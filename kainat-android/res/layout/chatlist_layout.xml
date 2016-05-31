@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="50dp"
+	android:orientation="horizontal"
+	android:paddingLeft="5dip"
+	android:paddingRight="5dip"
+	android:id="@+id/availableChat"
+	>
+	<ImageView
+	android:visibility = "gone"
+		android:background="@drawable/im_avatar_picture_border_normal"
+		android:layout_height="50dp"
+		android:src="@drawable/placeholder"
+		android:layout_width="50dp"
+		android:id="@+id/sender"/>
+	<ImageView
+		android:layout_marginLeft="5dip"
+		android:layout_marginRight="5dip"
+		android:layout_gravity="center_vertical|center_horizontal"
+		android:id="@+id/chatLayout_statusIcon"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background = "@drawable/offline_icon"
+		>
+	</ImageView>
+	<!-- <ImageView android:id="@+id/chatLayout_buddyIcon" android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:layout_toRightOf="@+id/chatLayout_statusIcon" 
+		android:src="@drawable/dummy_picture"> </ImageView> -->
+	<LinearLayout
+	android:layout_weight  = "1"
+	android:layout_height="50dp"
+	android:id="@+id/linearLayout1"
+	android:orientation = "vertical"
+	android:layout_width="wrap_content">
+	<TextView
+		android:id="@+id/chatLayout_BuddyName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dip"
+		android:layout_weight  = "1"
+		android:textStyle = "bold"
+		android:text="Chatter" android:layout_gravity="center_vertical">
+	</TextView>
+	<TextView
+		android:id="@+id/chatLayout_BuddyUName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dip"
+		android:layout_weight  = "1"
+		android:text="username" android:layout_gravity="center_vertical">
+	</TextView>
+	</LinearLayout>
+	 
+	<TextView
+	android:visibility = "visible"
+		android:layout_gravity="center_vertical|center_horizontal"
+		android:id="@+id/chatLayout_ChatCount"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/call_dialing"
+		android:gravity="right"
+		android:text="  +1   "
+		android:textStyle = "bold"
+		android:textColor="@color/white"/>
+<ImageView
+	 android:id="@+id/arrow"
+	 android:layout_marginLeft = "5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:src="@drawable/arrow">
+                </ImageView>
+</LinearLayout>

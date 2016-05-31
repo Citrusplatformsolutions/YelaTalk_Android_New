@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/landingpagebackground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@drawable/title"
+        android:orientation="horizontal"
+        android:text="Logoutfffffffffffffff" >
+
+        <TextView
+            android:id="@+id/inboxScreen_title"
+            style="@style/HeaderFontStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="New Post" >
+        </TextView>
+
+        <Button
+            android:id="@+id/post_sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="3dip"
+            android:background="@drawable/send_icon"
+            android:onClick="@string/onClickHandleMethodName"
+            android:text=""
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/mystatus_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_margin="5dip"
+        android:layout_weight="7.5"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Capture the way you want"
+                android:textColor="@color/sub_heading" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/composeScreen_voiceLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/composeScreen_recordVoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:adjustViewBounds="true"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:src="@drawable/audiopostred" >
+                    </ImageView>
+
+                    <LinearLayout
+                        android:id="@+id/composeScreen_voiceLayoutxxx"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dottedbackground"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dip" >
+
+                        <ImageView
+                            android:id="@+id/composeScreen_availableVoice"
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:layout_gravity="center_vertical"
+                            android:adjustViewBounds="true"
+                            android:clickable="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/soundplayicon"
+                            android:visibility="gone" >
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/composeScreen_addaudio"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:clickable="true"
+                            android:gravity="left"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:text="length max 5 mins"
+                            android:textColor="@color/time_footnote" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dip"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="3dp"
+                        android:background="#ffDCDAD9" >
+                    </View>
+                -->
+
+                <LinearLayout
+                    android:id="@+id/composeScreen_photoLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/composeScreen_photoButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:adjustViewBounds="true"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:src="@drawable/imagepostred" >
+                    </ImageView>
+
+                    <LinearLayout
+                        android:id="@+id/composeScreen_photoLayoutxxx"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dottedbackground"
+                        android:clickable="true"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp" >
+
+                        <TextView
+                            android:id="@+id/composeScreen_addPhotoText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="left"
+                            android:text="Attach up to 10 pictures"
+                            android:textColor="@color/time_footnote" >
+                        </TextView>
+
+                        <HorizontalScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical" >
+
+                            <LinearLayout
+                                android:id="@+id/composeScreen_attachedImageLayout"
+                                android:layout_width="50dip"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal" >
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dip"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="3dp"
+                        android:background="#ffDCDAD9" >
+                    </View>
+                -->
+
+                <LinearLayout
+                    android:id="@+id/composeScreen_videoLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/composeScreen_recordVideo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:adjustViewBounds="true"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:src="@drawable/videopostred" >
+                    </ImageView>
+
+                    <LinearLayout
+                        android:id="@+id/composeScreen_videoLayoutxxx"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dip"
+                        android:background="@drawable/dottedbackground"
+                        android:clickable="true"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp" >
+
+                        <TextView
+                            android:id="@+id/composeScreen_addVideoText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left"
+                            android:text="Attach your video upto 10 MB"
+                            android:textColor="@color/time_footnote" >
+                        </TextView>
+
+                        <HorizontalScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical" >
+
+                            <LinearLayout
+                                android:id="@+id/composeScreen_attachedVideoLayout"
+                                android:layout_width="50dip"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal" >
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/base_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:onClick="onClick"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/base_titlemedia"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:onClick="onClick"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/base_title_media"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:digits="@string/constraints_name"
+                                android:gravity="center"
+                                android:onClick="onClick"
+                                android:singleLine="true"
+                                android:text="Title"
+                                android:textColor="@color/heading"
+                                android:textSize="15sp"
+                                android:textStyle="bold" >
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/base_title_mediaxxx"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:digits="@string/constraints_name"
+                                android:drawableLeft="@drawable/posttitle"
+                                android:gravity="center"
+                                android:paddingLeft="40dp"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="@color/sub_heading"
+                                android:textSize="15sp" >
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/tag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:layout_marginLeft="12dp"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:digits="@string/constraints_FN_LN"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:gravity="left"
+                                android:hint="within 100 characters"
+                                android:imeOptions="actionDone"
+                                android:maxLength="100"
+                                android:onClick="@string/onClickHandleMethodName"
+                                android:singleLine="false"
+                                android:text=""
+                                android:textColor="@color/heading"
+                                android:textSize="14sp" >
+                            </EditText>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/composeScreen_doodle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="1dip"
+                        android:background="@drawable/doodle"
+                        android:onClick="@string/onClickHandleMethodName" >
+                    </ImageButton>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@drawable/newline" />
+
+                <LinearLayout
+                    android:id="@+id/doplayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/doplayoutsecond"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/dobdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:digits="@string/constraints_name"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapSentences|textFilter"
+                            android:singleLine="true"
+                            android:text="Category"
+                            android:textColor="@color/heading"
+                            android:textSize="15sp"
+                            android:textStyle="bold" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/dobdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:digits="@string/constraints_name"
+                            android:drawableLeft="@drawable/postcateg"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapSentences|textFilter"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/sub_heading"
+                            android:textSize="15sp" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:digits="@string/constraints_name"
+                            android:gravity="left|center"
+                            android:hint="select from list"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapSentences|textFilter"
+                            android:maxLength="50"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:singleLine="true"
+                            android:textColor="@color/heading"
+                            android:textSize="14sp" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@drawable/newline" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/post_sendButton"
+                style="@style/setting_font_style"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/header_button_height"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/pillgreen_sel"
+                android:gravity="center"
+                android:onClick="@string/onClickHandleMethodName"
+                android:text="Next"
+                android:textColor="#ffffffff"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

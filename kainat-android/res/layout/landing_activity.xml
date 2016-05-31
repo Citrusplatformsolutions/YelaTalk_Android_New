@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+activity_list_row/activity_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+ 
+    android:onClick="@string/onClickHandleMethodName"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+activity_list_row/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+activity_list_row/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/circulor_progressbar"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:visibility="gone" >
+        </ProgressBar>
+
+        <RelativeLayout
+            android:id="@+activity_list_row/activity_LeftLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+activity_list_row/activity_LeftLayout"
+                android:layout_width="@dimen/thumb_height"
+                android:layout_height="@dimen/thumb_widht"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.kainat.app.android.uicontrol.CImageView
+                    xmlns:rocketalk="http://schemas.android.com/apk/res/com.kainat.app.android"
+                    android:id="@+activity_list_row/activity_Image_Left"
+                    android:layout_width="@dimen/thumb_height"
+                    android:layout_height="@dimen/thumb_widht"
+                    android:adjustViewBounds="true"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:scaleType="fitCenter"
+                    
+                    android:visibility="visible"
+                    rocketalk:imagetype="THUMB" >
+                </com.kainat.app.android.uicontrol.CImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+activity_list_row/activity_InfoLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+activity_list_row/activity_LeftLayout"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="0dip" >
+
+                <TextView
+                    android:id="@+activity_list_row/activity_Name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dip"
+                    android:singleLine="true"
+                    android:text="Name"
+                    android:textColor="@color/sub_heading"
+                    android:textSize="12dip"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:visibility="gone" >
+                </TextView>
+
+                <TextView
+                    android:id="@+activity_list_row/activity_fn_ln"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dip"
+                    android:singleLine="true"
+                    android:textSize="14dip"
+                    android:visibility="gone" >
+                </TextView>
+
+                 <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toLeftOf="@+activity_list_row/activity_RightLayout"
+                    android:layout_toRightOf="@+activity_list_row/activity_LeftLayout"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="0dip"
+                    android:paddingRight="@dimen/thumb_widht" >
+
+                    <TextView
+                        android:id="@+activitylist_row/activity_Info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dip"
+                        android:layout_marginTop="0dip"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:ellipsize="marquee"
+                        android:lineSpacingMultiplier="1.3"
+                        android:linksClickable="true"
+                        android:singleLine="false"
+                        android:text="Rocketalk message Rocketalk message  Rocketalk message  Rocketalk message  Rocketalk message  Rocketalk message  Rocketalk message  Rocketalk message  Rocketalk message "
+                        android:textColor="@color/heading"
+                        android:textSize="9dip"
+                        android:minHeight="@dimen/thumb_height"
+                        android:visibility="visible" >
+                    </TextView>
+                </LinearLayout> 
+
+               
+                
+
+                <HorizontalScrollView
+                    android:id="@+id/landing_activity_ImageHLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="9dp"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+                        android:id="@+id/landing_activity_Image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:visibility="visible" >
+
+                        <LinearLayout
+                            android:id="@+id/landing_activity_ImageLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible" >
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+               
+
+                <!-- <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:layout_marginTop="5dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+activity_list_row/activity_Label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="10dip"
+                        android:autoLink="all"
+                        android:lineSpacingMultiplier="1.3"
+                        android:text="sdfasdfasdf"
+                        android:textColor="@color/sub_heading"
+                        android:textColorLink="@color/hyperlink"
+                        android:textSize="14dip"
+                        android:textStyle="normal"
+                        android:visibility="gone" >
+                    </TextView>
+                </LinearLayout> -->
+
+                <!-- <TextView
+                    android:id="@+activity_list_row/activity_date_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="6dip"
+                    android:paddingRight="10dip"
+                    android:text="9:30::2-10-2013"
+                    android:textColor="@color/time_footnote"
+                    android:textSize="10dip"
+                    android:textStyle="normal" >
+                </TextView> -->
+            </LinearLayout>
+
+            
+            <!-- gallery -->
+            <LinearLayout
+                android:id="@+activity_list_row/activity_RightLayout"
+                android:layout_width="@dimen/thumb_height"
+                android:layout_height="@dimen/thumb_widht"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                 android:layout_marginRight="5dp"
+                android:orientation="horizontal"
+                android:padding="0dip" >
+
+                <com.kainat.app.android.uicontrol.CImageView
+                    xmlns:rocketalk="http://schemas.android.com/apk/res/com.kainat.app.android"
+                    android:id="@+activity_list_row/activity_Image_Right"
+                    android:layout_width="@dimen/thumb_height"
+                    android:layout_height="@dimen/thumb_widht"
+                    android:layout_marginBottom="5dp"
+                    
+                    android:adjustViewBounds="true"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:scaleType="fitCenter"
+                    
+                    android:visibility="gone"
+                    rocketalk:imagetype="THUMB" >
+                </com.kainat.app.android.uicontrol.CImageView>
+            </LinearLayout>
+            
+          
+       
+        </RelativeLayout>
+
+          <LinearLayout
+            android:id="@+id/dividerlandings"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+         
+            android:layout_below="@+activity_list_row/activity_RightLayout"
+            android:orientation="vertical" >
+                
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:layout_marginTop="5dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+activity_list_row/activity_Label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="10dip"
+                        android:autoLink="all"
+                        
+                        android:text="sdfasdfasdf"
+                        android:textColor="@color/sub_heading"
+                        android:textColorLink="@color/hyperlink"
+                        android:textSize="14dip"
+                        android:textStyle="normal"
+                        android:visibility="visible" >
+                    </TextView>
+                </LinearLayout>
+            <Gallery
+                    android:id="@+landingpage/images_gallery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:spacing="1px"
+                    android:layout_margin="0dp"
+                    >
+                </Gallery>
+                <LinearLayout
+                    android:id="@+id/landing_activity_video_play_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_below="@+id/landing_activity_voice_play_layout"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="0dip"
+                    android:layout_toRightOf="@+activity_list_row/activity_LeftLayout"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="0dp"
+                    android:visibility="gone" >
+
+                    <com.kainat.app.android.uicontrol.CImageView
+                        android:id="@+id/landing_activity_video_overlay_image"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        
+                         >
+                    </com.kainat.app.android.uicontrol.CImageView>
+                </LinearLayout>
+
+                
+
+                <HorizontalScrollView
+                    android:id="@+id/landing_activity_ImageHLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="9dp"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+                        android:id="@+id/landing_activity_Image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:visibility="visible" >
+
+                        <LinearLayout
+                            android:id="@+id/landing_activity_ImageLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible" >
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:id="@+id/landing_activity_voice_play_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_below="@+id/landing_activity_image_layout"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+activity_list_row/activity_LeftLayout"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:paddingRight="4dip"
+                    android:visibility="gone"
+                    android:weightSum="1" >
+
+                    <com.kainat.app.android.uicontrol.CImageView
+                        android:id="@+id/landing_activity_media_play"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight="0.62"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/audio_activity" />
+                </LinearLayout>
+
+               <!--  <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:layout_marginTop="5dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+activity_list_row/activity_Label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="10dip"
+                        android:autoLink="all"
+                        android:lineSpacingMultiplier="1.3"
+                        android:text="sdfasdfasdf"
+                        android:textColor="@color/sub_heading"
+                        android:textColorLink="@color/hyperlink"
+                        android:textSize="14dip"
+                        android:textStyle="normal"
+                        android:visibility="gone" >
+                    </TextView>
+                </LinearLayout> -->
+
+                <TextView
+                    android:id="@+activity_list_row/activity_date_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="6dip"
+                    android:paddingRight="10dip"
+                    android:text="9:30::2-10-2013"
+                    android:textColor="@color/time_footnote"
+                    android:textSize="10dip"
+                    android:textStyle="normal" >
+                </TextView>
+            </LinearLayout>
+            
+        <LinearLayout
+            android:id="@+id/dividerlanding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+activity_list_row/line"
+                android:layout_width="wrap_content"
+                android:layout_height="2dip"
+                android:background="@drawable/hor_line"
+                android:textSize="10dip" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

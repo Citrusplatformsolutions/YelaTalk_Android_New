@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <com.kainat.app.android.uicontrol.CircleImageView
+        android:id="@+id/invite_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="@string/onClickHandleMethodName"
+        android:scaleType="centerCrop"
+        android:src="@drawable/attachicon" >
+    </com.kainat.app.android.uicontrol.CircleImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="@color/heading"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/mobile_invite"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/sub_heading"
+            android:textSize="14sp"
+            android:textStyle="normal" >
+        </TextView>
+    </LinearLayout>
+
+    <ProgressBar
+            android:id="@+id/loading_progress"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            />
+    <ImageView
+        android:id="@+id/add_btn_invite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/xx_plus_invite" />
+
+</LinearLayout>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Theme.RockeTalk.Background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/Theme.RockeTalk.Background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/header_height"
+            android:background="@drawable/title" >
+
+            <ImageView
+                android:id="@+id/home_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:onClick="@string/onClickHandleMethodName"
+                android:src="@drawable/home"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="58dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/roundedredbutton"
+                android:onClick="@string/onClickHandleMethodName"
+                android:text=" Back "
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/HeaderFontStyle"
+                android:layout_width="198dip"
+                android:layout_height="@dimen/header_height"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/notificationdiloags"
+            layout="@layout/notificationdiloag" />
+
+        <LinearLayout
+            android:id="@+id/media_play_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/media_play"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/play"
+                android:onClick="@string/onClickHandleMethodName" >
+            </ImageView>
+
+            <AbsoluteLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:addStatesFromChildren="true"
+                android:orientation="horizontal"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip" >
+
+                <SeekBar
+                    android:id="@+id/mediavoicePlayingDialog_progressbar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:paddingLeft="8.0dip"
+                    android:paddingRight="8.0dip"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/seekbarprogress"
+                    android:thumb="@drawable/seekthumb"
+                    android:thumbOffset="0.0dip" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/streemStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="35dp"
+                        android:text="@string/please_wait_while_getting_audio"
+                        android:textColor="#6AABB4"
+                        android:textSize="9dp"
+                        android:visibility="visible" >
+                    </TextView>
+                </LinearLayout>
+            </AbsoluteLayout>
+
+            <ImageView
+                android:id="@+id/media_close"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/rtaddclose"
+                android:onClick="@string/onClickHandleMethodName"
+                android:visibility="visible" >
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/time_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/total_autio_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:text="--:--"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:visibility="visible" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/dummyp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:visibility="visible" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/played_autio_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="48dp"
+                android:text="--:--"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:visibility="visible" >
+            </TextView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/landingpagebackground" >
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/landing_discovery_tabBar"
+                android:layout_marginBottom="45dp"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbars="vertical"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/loading_linearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="45dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <ProgressBar
+                    android:id="@+id/loading_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminateDrawable="@drawable/circulor_progressbar" />
+
+                <TextView
+                    android:id="@+id/loading_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center"
+                    android:text="@string/please_wait_while_loadin"
+                    android:textColor="#000000"
+                    android:textSize="12dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/transparent_image"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/landing_discovery_tabBar"
+                android:layout_gravity="left"
+                android:background="@drawable/transparent_image"
+                android:gravity="left"
+                android:textSize="15dip"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/landing_discovery_tabBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="@drawable/bottomlanding"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/landing_discovery_BtnSlideLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0px"
+            android:padding="0px"
+            android:src="@drawable/slideleft_menu" />
+
+        <RelativeLayout
+            android:id="@+id/landing_discovery_tabBar1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/bottomlanding"
+            android:gravity="right" >
+
+            <ImageView
+                android:id="@+id/landing_discovery_BtnSlideRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rightsearch_menu" >
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="14dip"
+                android:gravity="top|right"
+                android:paddingTop="1dip" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="14dip"
+                    android:gravity="top|right" >
+
+                    <TextView
+                        android:id="@+id/landing_discovery_activity_notification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/notification_slide_count"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:visibility="gone" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

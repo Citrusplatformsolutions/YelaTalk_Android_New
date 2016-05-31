@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@drawable/title">
+        <TextView
+            style="@style/HeaderFontStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/header_height"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text = "@string/app_name"
+            />
+        <Button
+            android:id="@+id/cancel_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dip"
+            android:background="@drawable/skip_button"
+            android:onClick="@string/onClickHandleMethodName"
+            android:text=""
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+    <include
+        layout="@layout/notificationdiloag"        
+        android:id="@+id/notificationdiloags" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="20dip"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dip"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:text="It is just more fun with friends and family."
+                android:textColor="#FF000000"
+                android:textSize="18dip"
+                android:typeface="sans"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/roundedrectgradient"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dip"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/invite_username1"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dip"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="Name of friend"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapSentences"
+                        android:maxLength="15"
+                        android:enabled = "false"
+                        android:gravity = "center_vertical"
+                        android:layout_gravity = "center_vertical"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:textSize="15dip">
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/invite_user1AddButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:background="@drawable/add"
+                        android:onClick="@string/onClickHandleMethodName">
+                    </ImageButton>
+                </LinearLayout>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dip"
+                    android:background="#ffDCDAD9">
+                </View>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dip"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/invite_phone1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dip"
+                    android:layout_marginLeft="10dip"
+                    android:background="@null"
+                    android:hint="Email/phone number"
+                    android:imeOptions="actionDone"
+                    android:inputType="textFilter"
+                    android:maxLength="30"
+                    android:editable = "false"
+                    android:gravity = "center_vertical"
+                    android:layout_gravity = "center_vertical"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:textSize="15dip">
+                </TextView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:background="@drawable/roundedrectgradient"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dip"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/invite_username2"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dip"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="Name of friend"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapSentences"
+                        android:maxLength="15"
+                        android:editable = "false"
+                        android:gravity = "center_vertical"
+                    android:layout_gravity = "center_vertical"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:textSize="15dip">
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/invite_user2AddButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:background="@drawable/add"
+                        android:onClick="@string/onClickHandleMethodName">
+                    </ImageButton>
+                </LinearLayout>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dip"
+                    android:background="#ffDCDAD9">
+                </View>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dip"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                
+                <TextView
+                    android:id="@+id/invite_phone2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dip"
+                    android:layout_marginLeft="10dip"
+                    
+                    android:background="@null"
+                    android:hint="Email/phone number"
+                    android:imeOptions="actionDone"
+                    android:inputType="textFilter"
+                    android:maxLength="30"
+                    android:editable = "false"
+                    android:gravity = "center_vertical"
+                    android:layout_gravity = "center_vertical"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:textSize="15dip">
+                </TextView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="20dip"
+                android:background="@drawable/roundedrectgradient"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dip"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/invite_username3"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dip"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="Name of friend"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapSentences"
+                        android:maxLength="15"
+                        android:gravity = "center_vertical"
+                    android:layout_gravity = "center_vertical"
+                        android:editable = "false"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:textSize="15dip">
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/invite_user3AddButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:background="@drawable/add"
+                        android:gravity = "center_vertical"
+                    android:layout_gravity = "center_vertical"
+                        android:onClick="@string/onClickHandleMethodName">
+                    </ImageButton>
+                </LinearLayout>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dip"
+                    android:background="#ffDCDAD9">
+                </View>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dip"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/invite_phone3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dip"
+                    android:layout_marginLeft="10dip"
+                    android:background="@null"
+                    android:hint="Email/phone number"
+                    android:imeOptions="actionDone"
+                    android:inputType="textFilter"
+                    android:maxLength="30"
+                    android:editable = "false"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:textSize="15dip">
+                </TextView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility = "visible"
+                android:layout_margin="10dip">
+                <TextView
+                    android:id="@+id/invite3_sendButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/header_button_height"
+                    android:background="@drawable/pillgreen_sel"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:text="Invite"
+                    android:textColor="#ffffff"
+                    android:textSize="18dip"
+                    android:textStyle="bold">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

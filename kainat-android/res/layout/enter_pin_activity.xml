@@ -1,0 +1,285 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white_new" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/app_blue_txt_color"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/prev"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/x_arrows_left"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="@string/prev"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/x_arrows_right"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="@string/edit"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/header_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/header_logo"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <!--
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/list_background"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="7dp"
+            android:background="@null"
+            android:src="@drawable/previous_disable"
+            android:visibility="gone" />
+        Verifying...
+
+        <TextView
+            style="@style/HeaderFontStyle"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_height"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/verifing"/>
+        
+             <ImageButton
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_alignParentRight="true"
+            android:visibility="visible"         
+            android:src="@drawable/next_disable" />
+       
+
+    </RelativeLayout>
+    -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/enter_pin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/enter_pin"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/app_text_color"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_height"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/verifing"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/heading_text"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/pin"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/your_phone_number"
+        android:textColor="@color/heading_text"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+	   <LinearLayout
+	       android:id="@+id/enter_pin_linear"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:gravity="center"
+	       android:layout_marginTop="40dp"
+	       android:layout_below="@+id/linearLayout2"
+	       android:orientation="vertical">
+	    <EditText
+	        android:id="@+id/pin"
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content"
+	        android:editable="true"
+	        android:background="@null"
+	        android:maxLength="4"
+	        android:ems="10"
+	        android:focusable="false"
+	        android:gravity="center"
+	        android:hint="@string/pin"
+	        android:inputType="number"
+	        android:textSize="16sp" >
+	    </EditText>
+	     <ImageView
+	          android:id="@+id/line_iv"
+	          android:layout_width="200dp"
+	          android:layout_height="1dp"
+	          android:layout_below="@+id/pin"
+	          android:src="#8c90a9" />
+       </LinearLayout>                  
+                       
+    <TextView
+        android:id="@+id/pin_not_recived"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/check_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="@string/pin_not_recived"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/heading"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/donekk"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@color/refresh_2"
+        android:src="@drawable/verified_icon"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/timer_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/check_code"
+        android:layout_marginTop="49dp"
+        android:gravity="center"
+        android:text="" />
+
+    <LinearLayout
+        android:id="@+id/feedback_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/check_code"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/pencil"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|bottom"
+            android:text="@string/feedback"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/hyper_link_text_color"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/check_code"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@+id/enter_pin_linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_yellow"
+        android:text="@string/verify"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

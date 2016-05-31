@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/menu"
+    android:orientation="vertical" android:background="#ffffffff" android:layout_width="1dp" android:layout_height="1dp">
+    <TextView android:text="The Menu" android:background="#ffffffff" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ListView android:id="@+id/list" android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:background="#ffffffff" android:cacheColorHint="#ffffffff" android:scrollbars="none">
+    </ListView>
+   <!--  <ListView android:id="@+id/list1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:background="#80ffffff" android:cacheColorHint="#fffffff0" android:scrollbars="none">
+    </ListView>--> 
+</LinearLayout>

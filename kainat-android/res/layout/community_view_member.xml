@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@drawable/title" >
+
+        <TextView
+            android:id="@+id/prev_communites"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/x_arrows_left"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <com.rockerhieu.emojicon.EmojiconTextView
+            android:id="@+id/title"
+            style="@style/HeaderFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_height"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:text="Kainat" />
+
+        <Button
+            android:id="@+id/invite_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="2dip"
+            android:background="@drawable/search_icon"
+            android:onClick="@string/onClickHandleMethodName"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/add_member_community"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/addfriend" />
+
+        <Button
+            android:id="@+id/web_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dip"
+            android:background="@drawable/roundedredbutton"
+            android:onClick="@string/onClickHandleMethodName"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/dummy_latout"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <include
+        android:id="@+id/notificationdiloags"
+        layout="@layout/notificationdiloag" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/pendinginviteback"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+community_member/searchBox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/chattextbox"
+            android:clickable="true"
+            android:hint="@string/type_to_search"
+            android:imeOptions="actionSearch"
+            android:maxLength="30"
+            android:onClick="@string/onClickHandleMethodName"
+            android:paddingLeft="5dip" >
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+community_member/noContent"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:background="#d4d0c8"
+        android:gravity="center"
+        android:text="@string/no_entry"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/landing_discovery_tabBar"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/landing_discovery_tabBar"
+            android:orientation="vertical" >
+<LinearLayout
+                    android:id="@+id/search_bar_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/menu"
+                    android:gravity="left|center_vertical"
+                    android:paddingRight="10dp" >
+
+                    <EditText
+                        android:id="@+id/communitymemeberserch"
+                        android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:completionThreshold="1"
+            android:drawableLeft="@drawable/search_new"
+            android:drawableBottom="@drawable/search_line"
+            android:hint="@string/look_for_conversations"
+            android:imeOptions="actionNext"
+            android:inputType="textFilter"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLength="50"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:visibility="visible"  />
+
+                    <ImageView
+                        android:id="@+id/clean_search_iv_member"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/canclemenu" />
+                </LinearLayout>
+            <ListView
+                android:id="@+community_member/mainList"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:addStatesFromChildren="true"
+                android:cacheColorHint="@color/listcache"
+                android:divider="@color/list_divider"
+                android:dividerHeight="1px" >
+            </ListView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/transparent_image"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/landing_discovery_tabBar"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:background="@drawable/transparent_image"
+            android:gravity="left"
+            android:textSize="15dip"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/landing_discovery_tabBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottomlanding"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/landing_discovery_BtnSlideLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0px"
+                android:padding="0px"
+                android:src="@drawable/slideleft_menu" />
+
+            <RelativeLayout
+                android:id="@+id/landing_discovery_tabBar1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/bottomlanding"
+                android:gravity="right" >
+
+                <ImageView
+                    android:id="@+id/landing_discovery_BtnSlideRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rightsearch_menu" >
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="14dip"
+                    android:gravity="top|right"
+                    android:paddingTop="1dip" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="14dip"
+                        android:gravity="top|right" >
+
+                        <TextView
+                            android:id="@+id/landing_discovery_activity_notification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/notification_slide_count"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:visibility="gone" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

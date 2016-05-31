@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Theme.RockeTalk.Background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white_new"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@drawable/title" >
+        
+        
+        
+
+        <Button
+            android:id="@+id/web_back_button"
+            android:layout_width="58dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/roundedredbutton"
+            android:onClick="@string/onClickHandleMethodName"
+            android:text=" Back "
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/HeaderFontStyle"
+            android:layout_width="198dip"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:text="@string/app_name" />
+        
+        
+        <ImageView android:id="@+id/back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            android:src="@drawable/x_arrows_left"/>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/notificationdiloags"
+        layout="@layout/notificationdiloag" />
+
+    <WebView
+        android:id="@+id/community_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#E0E2E5"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/loading_linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@color/white_new"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <ProgressBar
+            android:id="@+id/loading_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:indeterminateDrawable="@drawable/circulor_progressbar" />
+
+        <!-- android:text="Please wait while loading" -->
+        <TextView
+            android:id="@+id/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:scrollbars="horizontal"
+            android:text="@string/kainat_coming_soon"
+            android:textColor="#000000"
+            android:textSize="12dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="#84c4c6"
+    android:orientation="vertical" >
+
+    <ScrollView android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+left_menu/menu_container"
+        android:layout_width="250dp"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+         android:background="#84c4c6" >
+
+        
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

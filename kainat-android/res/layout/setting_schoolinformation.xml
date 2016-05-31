@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/landingpagebackground"
+    android:orientation="vertical">
+    <TextView
+        style="@style/HeaderFontStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@drawable/title"
+        android:text="School/Work Information"
+        >
+    </TextView>
+    <include
+        layout="@layout/notificationdiloag"        
+        android:id="@+id/notificationdiloags" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/roundedrectgradient"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="@string/onClickHandleMethodName"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:gravity="left"
+                android:text="You have not added yet any info!"
+                android:textColor="@color/heading"
+                android:textSize="16dip">
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/roundedrectgradient"
+        android:fillViewport="true">
+        <LinearLayout
+            android:id="@+id/tap_for_school_info"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="@string/onClickHandleMethodName"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:gravity="left"
+                android:text="Tap to add school/work info"
+                android:textColor="@color/heading"
+                android:textSize="16dip">
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

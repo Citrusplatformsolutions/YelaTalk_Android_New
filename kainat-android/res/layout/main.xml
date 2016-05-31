@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background ="#000000"
+    >
+<TextView android:text="Website:" 
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content"
+          android:textSize="14dip"
+          android:paddingBottom="2dip"
+          android:background="#ffffff"
+          android:textColor="#577dbe" />              
+<TextView android:text="http://www.mysite.com/"
+android:textAppearance="?android:attr/textAppearanceLarge"
+android:textSize="13dp"
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content"
+          android:paddingBottom="6dip"
+          android:textColor="#ffffff"
+          android:id="@+id/text" />            
+<TextView android:text="http://www.mysite.com/"
+android:textAppearance="?android:attr/textAppearanceLarge"
+android:textSize="14dp"
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content"
+          android:paddingBottom="6dip"
+          android:textColor="#ffffff"
+          android:id="@+id/text1" />  
+</LinearLayout>

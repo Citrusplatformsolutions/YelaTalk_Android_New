@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<getConversationMessagesResponse>
+
+    <hasNext>
+false
+    </hasNext>
+
+    <rTMessages>
+        <clientTransactionId>
+0
+        </clientTransactionId>
+
+        <contentBitMap>
+TEXT,VIDEO,MEDIA
+        </contentBitMap>
+
+        <conversationId>
+200000
+        </conversationId>
+
+        <datetime>
+2013-12-10T15:04:27Z
+        </datetime>
+
+        <datetimeInMillis>
+1386687867000
+        </datetimeInMillis>
+
+        <destination>
+qts
+        </destination>
+
+        <drmFlags>
+        </drmFlags>
+
+        <hasBeenViewed>
+false
+        </hasBeenViewed>
+
+        <hasBeenViewedBySIP>
+false
+        </hasBeenViewedBySIP>
+
+        <messageAttribute>
+DELETE
+        </messageAttribute>
+
+        <messageId>
+2150108572
+        </messageId>
+
+        <messageType>
+0
+        </messageType>
+
+        <mfuId>
+187198
+        </mfuId>
+
+        <msgOp>
+0
+        </msgOp>
+
+        <msgTxt>
+  Fwd:  Fwd: Hi
+        </msgTxt>
+
+        <notificationFlags>
+0
+        </notificationFlags>
+
+        <participants>
+            <participantInfo>
+                <firstName>
+Mohammad
+                </firstName>
+
+                <lastName>
+Tariq
+                </lastName>
+
+                <sender>
+true
+                </sender>
+
+                <userName>
+tariqfzb
+                </userName>
+            </participantInfo>
+            <participantInfo>
+                <firstName>
+Qts
+                </firstName>
+
+                <lastName>
+S
+                </lastName>
+
+                <sender>
+false
+                </sender>
+
+                <userName>
+qts
+                </userName>
+            </participantInfo>
+        </participants>
+
+        <refMessageId>
+2150108263
+        </refMessageId>
+
+        <senderUserId>
+10256147
+        </senderUserId>
+
+        <source>
+tariqfzb
+        </source>
+
+        <targetUserId>
+10253730
+        </targetUserId>
+
+        <videos>
+            <rTMedias>
+                <mediaSize>
+6307235
+                </mediaSize>
+
+                <mediaUrl>
+http://devst.onetouchstar.com/get/54761_1_3_C_V_V2_dmnaaqv69n.mp4
+                </mediaUrl>
+
+                <thumbnailUrl>
+http://media-rtd3.onetouchstar.com/get/54761_1_3_C_V_V2_dmnaaqv69n.jpg
+                </thumbnailUrl>
+            </rTMedias>
+        </videos>
+    </rTMessages>
+    <rTMessages>
+        <clientTransactionId>
+0
+        </clientTransactionId>
+
+        <contentBitMap>
+TEXT
+        </contentBitMap>
+
+        <conversationId>
+200000
+        </conversationId>
+
+        <datetime>
+2013-12-10T15:04:28Z
+        </datetime>
+
+        <datetimeInMillis>
+1386687868000
+        </datetimeInMillis>
+
+        <destination>
+tariqfzb
+        </destination>
+
+        <drmFlags>
+        </drmFlags>
+
+        <messageId>
+2150108573
+        </messageId>
+
+        <messageType>
+1
+        </messageType>
+
+        <msgOp>
+0
+        </msgOp>
+
+        <msgTxt>
+Auto Response : Gud day all
+        </msgTxt>
+
+        <notificationFlags>
+32
+        </notificationFlags>
+
+        <participants>
+            <participantInfo>
+                <firstName>
+Mohammad
+                </firstName>
+
+                <lastName>
+Tariq
+                </lastName>
+
+                <sender>
+false
+                </sender>
+
+                <userName>
+tariqfzb
+                </userName>
+            </participantInfo>
+            <participantInfo>
+                <firstName>
+Qts
+                </firstName>
+
+                <lastName>
+S
+                </lastName>
+
+                <sender>
+true
+                </sender>
+
+                <userName>
+qts
+                </userName>
+            </participantInfo>
+        </participants>
+
+        <refMessageId>
+2150108572
+        </refMessageId>
+
+        <senderUserId>
+10253730
+        </senderUserId>
+
+        <source>
+qts
+        </source>
+
+        <targetUserId>
+10253730
+        </targetUserId>
+    </rTMessages>
+
+</getConversationMessagesResponse>

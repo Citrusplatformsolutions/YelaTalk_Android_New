@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<ImageView
+					android:background = "@drawable/im_avatar_picture_border_normal"
+						android:layout_height="50dp"
+						
+						android:src="@drawable/placeholder"
+						android:layout_width="50dp"
+						android:id="@+id/sender"
+						android:layout_gravity="bottom"/>
+		<LinearLayout
+			android:orientation="vertical"
+			android:background="@drawable/msgbox_other_iphone"
+			android:layout_width="wrap_content"
+			android:id="@+id/datacontainer"
+			android:layout_height="wrap_content">
+			<TextView
+			android:visibility = "visible"	
+			android:text="34:23:24"
+				android:id="@+id/time"
+				android:textColor = "@color/darkgray"
+				android:textStyle = "italic"
+			android:textSize = "10dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"></TextView>
+			<TextView 
+			android:visibility = "gone"	
+				android:text="nagendra"
+				android:textStyle="bold"
+				android:id="@+id/payloadText"
+				android:textSize = "12dp"
+				android:textColor = "@color/black"
+				android:layout_width="wrap_content"
+				android:autoLink = "all"
+				android:layout_height="wrap_content"></TextView>
+			<ScrollView
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent">
+			
+			<LinearLayout
+			android:visibility = "gone"	
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:id="@+id/payloadMedia"
+				android:layout_height="wrap_content">
+				
+			</LinearLayout>
+			
+			</ScrollView>
+		</LinearLayout>
+	</LinearLayout>
+	
+</LinearLayout>

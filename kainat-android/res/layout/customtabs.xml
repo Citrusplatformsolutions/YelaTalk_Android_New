@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/tab"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginTop="0px"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:background="@drawable/tab_indicator_gen" 
+    android:layout_gravity="center"
+    android:gravity="center"
+     >
+
+    <ImageView
+        android:id="@+id/icon"
+        style="?android:attr/tabWidgetStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/x_chat_creation_selected"
+        android:visibility="visible" />
+    <!-- android:layout_below="@+id/icon" -->
+
+    <TextView
+        android:id="@+id/title"
+        style="?android:attr/tabWidgetStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        
+        android:gravity="center"
+        android:text="Chat"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/refresh_loader"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="20dp"
+        android:layout_height="20dp" 
+        android:visibility="gone"
+        android:layout_marginLeft="15dp"/>
+
+</LinearLayout>

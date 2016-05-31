@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+         
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="1px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="Advanced Search"
+                android:textColor="@color/darkgray"
+                android:textSize="20dip"
+                android:textStyle="bold"
+                android:typeface="sans"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:orientation ="vertical"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <EditText
+                    android:id="@+id/medai_search_tag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                   android:gravity="center_vertical"
+                    android:hint="By tag"
+                    android:singleLine = "true"
+                    android:imeOptions="actionSearch"
+                    android:textSize="12dip"
+                    android:typeface="sans">
+                </EditText>
+                <EditText
+                    android:id="@+id/medai_search_username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:hint="By username or first &amp; last name"
+                    android:imeOptions="actionSearch"
+                    android:textSize="12dip"
+                    android:typeface="sans">
+                </EditText>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dip"
+                android:gravity="center_vertical"
+                android:orientation="vertical" 
+                android:background="@color/graylight">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center"
+                    android:text="Refine your search"
+                    android:textColor="@color/darkgray"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_marginBottom="5dip"
+                    android:layout_weight="0"
+                    android:gravity="center"
+                    android:orientation="horizontal" 
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <Button
+                        android:id="@+id/media_search_text"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/header_button_height"
+                        android:layout_weight="1"
+                        android:background="@drawable/roundgraycolor"
+                        android:onClick="onClick"
+                        android:text="Text"
+                        android:textColor="@color/darkgray"
+                        android:textSize="12dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <Button
+                        android:id="@+id/media_search_voice"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/header_button_height"
+                        android:layout_marginLeft="5px"
+                        android:layout_weight="1"
+                             android:background="@drawable/roundgraycolor"
+                        android:onClick="onClick"
+                        android:text="Voice"
+                        android:textColor="@color/darkgray"
+                        android:textSize="12dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <Button
+                        android:id="@+id/media_search_picture"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/header_button_height"
+                        android:layout_marginLeft="5px"
+                        android:layout_weight="1"
+                          android:background="@drawable/roundgraycolor"
+                        android:onClick="onClick"
+                        android:text="Picture"
+                        android:textColor="@color/darkgray"
+                        android:textSize="12dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <Button
+                        android:id="@+id/media_search_video"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/header_button_height"
+                        android:layout_marginLeft="5px"
+                        android:layout_weight="1"
+                             android:background="@drawable/roundgraycolor"
+                        android:onClick="onClick"
+                        android:text="Video"
+                        android:textColor="@color/darkgray"
+                        android:textSize="12dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dip"
+                    android:layout_marginTop="1dip"
+                    android:gravity="center"
+                    android:text="Search by media Category"
+                    android:textColor="@color/black"
+                    android:textSize="12dip"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:orientation="horizontal" >
+
+
+                    <Spinner
+                        android:id="@+id/category"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:entries="@array/community_category" />
+                </LinearLayout>
+            </LinearLayout>
+                
+            <!-- <TextView  android:id="@+id/category"
+						android:layout_width="fill_parent" android:layout_height="fill_parent"
+						android:clickable="true"
+						android:drawableTop="@drawable/category" android:focusable="true"
+						android:textSize="11dp" android:gravity="center"
+						android:maxLines = "1"						
+						android:onClick="@string/onClickHandleMethodName" android:text="Category"
+						android:textColor="@color/hyperlink">
+			</TextView> -->
+			
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="2dip">
+                <Button
+                    android:id="@+id/media_search_cat_button_1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/header_button_height"
+                    android:layout_margin="0dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/black_butn"
+                    android:text="Bollywood"
+                    android:textColor="@color/white"
+                    android:textSize="11dip"
+                    android:textStyle="bold"
+                    android:typeface="sans"/>
+                <Button
+                    android:id="@+id/media_search_cat_button_2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/header_button_height"
+                    android:layout_marginLeft="1px"
+                    android:layout_marginRight="1px"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:background="@drawable/black_butn"
+                    android:text="Hollywood"
+                    android:textColor="@color/white"
+                    android:textSize="11dip"
+                    android:typeface="sans"/>
+                <Button
+                    android:id="@+id/media_search_cat_button_3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/header_button_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/black_butn"
+                    android:text="Cricket &amp; Sports"
+                    android:textColor="@color/white"
+                    android:textSize="11dip"
+                    android:textStyle="bold"
+                    android:typeface="sans"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                  android:visibility="gone"
+                android:layout_marginTop="1px">
+                <Button
+                    android:id="@+id/media_search_cat_button_4"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/header_button_height"
+                    android:layout_margin="0px"
+                    android:layout_weight="1"
+                    android:background="@drawable/black_butn"
+                    android:text="Nature-Travel"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="11dip"
+                    android:typeface="sans"/>
+                <Button
+                    android:id="@+id/media_search_cat_button_5"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/header_button_height"
+                    android:layout_marginLeft="1px"
+                    android:layout_marginRight="1px"
+                    android:layout_weight="1"
+                    android:background="@drawable/black_butn"
+                    android:text="RockeTalk Star"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="11dip"
+                    android:typeface="sans"/>
+                <Button
+                    android:id="@+id/media_search_cat_button_6"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/header_button_height"
+                    android:layout_margin="0px"
+                    android:layout_weight="1"
+                    android:background="@drawable/black_butn"
+                    android:text="Jokes"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="11dip"
+                    android:typeface="sans"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                  android:visibility="gone"
+                android:layout_marginTop="5dip">
+                <Button
+                    android:id="@+id/media_search_cat_button_7"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/header_button_height"
+                    android:layout_margin="0dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/black_butn"
+                    android:text="Shaayari"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="11dip"
+                    android:typeface="sans"/>
+                <Button
+                    android:id="@+id/media_search_cat_button_8"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/header_button_height"
+                    android:layout_marginLeft="1px"
+                    android:layout_marginRight="1px"
+                    android:layout_weight="1"
+                    android:background="@drawable/black_butn"
+                    android:text="People"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="11dip"
+                    android:typeface="sans"/>
+                <Button
+                    android:id="@+id/media_search_cat_button_9"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/header_button_height"
+                    android:layout_margin="0px"
+                    android:layout_weight="1"
+                    android:background="@drawable/black_butn"
+                    android:text="Others"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="11dip"
+                    android:typeface="sans"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                
+                android:gravity="center_horizontal">
+                
+                <Button
+                    android:id="@+id/media_search_button"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/header_button_height"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button1"
+                    android:onClick="onClick"
+                    android:text=" Search "
+                    android:textColor="#fff"
+                    android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/media_cancel_button"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/header_button_height"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/custombutton2"
+                    android:onClick="onClick"
+                    android:text="Cancel"
+                    android:textColor="#fff"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

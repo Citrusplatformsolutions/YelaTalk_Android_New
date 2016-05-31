@@ -1,0 +1,1412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/landingpagebackground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@drawable/title"
+        android:orientation="horizontal"
+        android:text="Logoutfffffffffffffff" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/HeaderFontStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text = "@string/app_name" >
+        </TextView>
+        <!--
+              <com.kainat.app.android.uicontrol.CImageView android:layout_width="1dp" android:layout_height="fill_parent"
+			android:layout_gravity="center_vertical|center_horizontal"
+			android:layout_weight="0" android:background="@color/bar_separator"
+			android:clickable="false" android:focusable="true"
+			android:layout_marginRight="5dp" />
+        -->
+
+        <com.kainat.app.android.uicontrol.CImageView
+            android:id="@+id/media_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0"
+            android:background="@drawable/sharemedia"
+            android:clickable="false"
+            android:focusable="true"
+            android:onClick="@string/onClickHandleMethodName" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/notificationdiloags"
+        layout="@layout/notificationdiloag" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <com.kainat.app.android.util.VerticalScrollview
+            android:id="@+id/mediaVideoPlay_scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="0dip"
+            android:fadeScrollbars="true"
+            android:scrollbarFadeDuration="5" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:addStatesFromChildren="true"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/mediaLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/landingpagebackground"
+                    android:gravity="top|center_horizontal"
+                    android:visibility="visible" >
+
+                    <com.kainat.app.android.uicontrol.CImageView
+                        xmlns:rocketalk="http://schemas.android.com/apk/res/com.kainat.app.android"
+                        android:id="@+id/userImage"
+                        android:layout_width="@dimen/thumb_height"
+                        android:layout_height="@dimen/thumb_widht"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:adjustViewBounds="true"
+                        android:gravity="top"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/def2"
+                        rocketalk:imagetype="THUMB" >
+                    </com.kainat.app.android.uicontrol.CImageView>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/media_by"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="left"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:text = "@string/app_name"
+                            android:textColor="@color/heading"
+                            android:textSize="15dp"
+                            android:textStyle="bold" >
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|center_horizontal" >
+
+                            <LinearLayout
+                                android:id="@+id/mediaLayout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="1dp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:orientation="vertical" >
+
+                                <!--
+                                    <Button android:id="@+id/mediaCount" android:background="@drawable/media" 
+									android:layout_weight=".40" android:text="" android:gravity="center" android:textStyle="bold" 
+									android:onClick="@string/onClickHandleMethodName" android:textSize="15dp" 
+									android:textColor="@color/white" android:layout_width="70dip" android:layout_height="fill_parent"></Button>
+                                -->
+
+                                <include
+                                    android:id="@+id/notification90099090diloags"
+                                    layout="@layout/media_followinger" />
+                            </LinearLayout>
+                            <!--
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+								android:id="@+id/mediaLayout" android:gravity="center_vertical|center_horizontal" 
+								android:orientation="vertical" android:layout_width="70dip" android:layout_marginTop="1dp" 
+								android:layout_marginBottom="1dp" android:layout_marginLeft="5dp" android:layout_height="fill_parent"> 
+								<Button android:id="@+id/followers" android:background="@drawable/followers" 
+								android:layout_weight=".40" android:text="" android:gravity="center" android:textStyle="bold" 
+								android:onClick="@string/onClickHandleMethodName" android:textSize="15dp" 
+								android:textColor="@color/white" android:layout_width="70dip" android:layout_height="fill_parent"></Button> 
+								</LinearLayout> <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+								android:id="@+id/mediaLayout" android:gravity="center_vertical|center_horizontal" 
+								android:orientation="vertical" android:layout_width="70dip" android:layout_marginTop="1dp" 
+								android:layout_marginBottom="1dp" android:layout_marginLeft="5dp" android:layout_height="fill_parent"> 
+								<Button android:id="@+id/following" android:background="@drawable/following" 
+								android:layout_weight=".40" android:text="" android:gravity="center" android:textStyle="bold" 
+								android:onClick="@string/onClickHandleMethodName" android:textSize="15dp" 
+								android:textColor="@color/white" android:layout_width="70dip" android:layout_height="fill_parent"></Button> 
+								</LinearLayout>
+                            -->
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TableLayout
+                    android:id="@+id/tableLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/landingpagebackground" >
+
+                    <TableRow
+                        android:id="@+id/st"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dip" >
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/st"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="0dip" >
+
+                        <!--
+                        <TextView
+                            android:id="@+id/views"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/details_view"
+                            android:gravity="left"
+                            android:paddingLeft="5dip"
+                            android:text=""
+                            android:textColor="@color/heading"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/mediaLayout_thumbUpCount"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/details_smalllike"
+                            android:gravity="left"
+                            android:paddingLeft="5dip"
+                            android:text="0"
+                            android:textColor="@color/heading"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/mediaLayout_thumbDownCount"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/details_smalldislike"
+                            android:gravity="left"
+                            android:paddingLeft="5dip"
+                            android:text="0"
+                            android:textColor="@color/heading"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                        -->
+
+                        <Button
+                            android:id="@+id/mediaplay_follows"
+                            android:layout_width="50dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/follow"
+                            android:height="23dp"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:text="Follow"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/mediaplay_follow"
+                            android:layout_width="70dip"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/follow"
+                            android:height="30dp"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:text="Follow"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableRow
+                    android:id="@+id/st2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:paddingBottom="0dip" >
+
+                    <Button
+                        android:id="@+id/querated"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/follow"
+                        android:height="30dp"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:padding="2dp"
+                        android:text="@string/querated"
+                        android:textColor="@color/white"
+                        android:textSize="9sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/removecuratedmedia"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/unfollow"
+                        android:height="30dp"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:padding="2dp"
+                        android:text="@string/querated_remove"
+                        android:textColor="@color/white"
+                        android:textSize="9sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/loction_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:paddingLeft="5dip"
+                        android:text="currently featured for Country: India. featured it for Sub Continent: Southerly Region"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+                </TableRow>
+                <!--
+                    <View android:layout_width="fill_parent" android:layout_height="1dp" 
+					/> <View android:layout_width="fill_parent" android:layout_height="1px" android:background="#6AABB4"> 
+					</View>
+                -->
+
+                <LinearLayout
+                    android:id="@+id/media_mainText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:addStatesFromChildren="true"
+                    android:background="@drawable/tc"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/media_main"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:addStatesFromChildren="true"
+                    android:background="@drawable/landingpagebackground"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <!--
+ <com.kainat.app.android.uicontrol.CImageView android:id="@+id/mediaVideoPlay_galleryImage" 
+						android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal" 
+						android:adjustViewBounds="true" android:background="@color/blue" android:src="@drawable/media"> 
+						</com.kainat.app.android.uicontrol.CImageView>
+                    -->
+                    <!--
+ <AbsoluteLayout 
+						android:id="@+id/media_main2" android:layout_width="fill_parent" android:layout_height="wrap_content" 
+						android:addStatesFromChildren="true" android:orientation="horizontal"> <Gallery 
+						android:id="@+id/messageDisplay_gallery" android:layout_width="fill_parent" 
+						android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal" 
+						android:layout_weight="1" android:adjustViewBounds="true" android:spacing="100dp" 
+						android:visibility="visible" android:nextFocusLeft="@drawable/btn_back" android:nextFocusRight="@drawable/btn_back"> 
+						</Gallery> <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+						android:orientation="horizontal" android:paddingTop="90dp"> <com.kainat.app.android.uicontrol.CImageView android:id="@+id/mediaVideoPlay_galleryImage_prev" 
+						android:layout_width="wrap_content" android:layout_height="wrap_content" 
+						android:layout_gravity="left" android:visibility="invisible" android:onClick="@string/onClickHandleMethodName" 
+						android:src="@drawable/btn_back"> </com.kainat.app.android.uicontrol.CImageView> <com.kainat.app.android.uicontrol.CImageView android:id="@+id/mediaVideoPlay_galleryImage_next" 
+						android:layout_width="wrap_content" android:layout_height="wrap_content" 
+						android:layout_gravity="right" android:paddingLeft="200dp" android:onClick="@string/onClickHandleMethodName" 
+						android:visibility="invisible" android:src="@drawable/btn_next"> </com.kainat.app.android.uicontrol.CImageView> 
+						</LinearLayout> </AbsoluteLayout>
+                    -->
+
+                    <RelativeLayout
+                        android:id="@+id/media_main2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight=".95"
+                        android:background="@drawable/landingpagebackground"
+                        android:orientation="vertical"
+                        android:visibility="visible" >
+
+                        <RelativeLayout
+                            android:id="@+id/media_main22"
+                            android:layout_width="fill_parent"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight=".95"
+                            android:background="@drawable/landingpagebackground"
+                            android:orientation="vertical"
+                            android:visibility="visible" >
+
+                            <ViewFlipper
+                                android:id="@+id/imageFrames"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_centerHorizontal="false"
+                                android:layout_centerVertical="false"
+                                android:background="@drawable/landingpagebackground"
+                                android:gravity="center_vertical|center_horizontal" >
+                            </ViewFlipper>
+
+                            <LinearLayout
+                                android:id="@+id/media_navigation"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:orientation="horizontal" >
+
+                                <TableRow
+                                    android:id="@+id/st"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="0dip" >
+
+                                    <com.kainat.app.android.uicontrol.CImageView
+                                        android:id="@+id/mediaVideoPlay_galleryImage_prev"
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:background="@drawable/btn_back"
+                                        android:gravity="left"
+                                        android:onClick="@string/onClickHandleMethodName"
+                                        android:paddingLeft="5dip"
+                                        android:scaleType="fitXY"
+                                        android:textSize="14dp"
+                                        android:visibility="gone" />
+
+                                    <com.kainat.app.android.uicontrol.CImageView
+                                        android:id="@+id/dummy"
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/btn_next"
+                                        android:gravity="center"
+                                        android:textSize="14dp"
+                                        android:visibility="invisible" />
+
+                                    <com.kainat.app.android.uicontrol.CImageView
+                                        android:id="@+id/mediaVideoPlay_galleryImage_next"
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:layout_gravity="right"
+                                        android:background="@drawable/btn_next"
+                                        android:gravity="right"
+                                        android:onClick="@string/onClickHandleMethodName"
+                                        android:textSize="14dp"
+                                        android:visibility="gone" />
+                                </TableRow>
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <com.kainat.app.android.uicontrol.CImageView
+                            android:id="@+id/slideShowBtn1"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/stop"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:visibility="gone" >
+                        </com.kainat.app.android.uicontrol.CImageView>
+
+                        <RelativeLayout
+                            android:id="@+id/slideShowBtn"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:visibility="visible" >
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="#33FFFFFF"
+                                android:gravity="center"
+                                android:paddingLeft="0dp"
+                                android:paddingRight="0dp"
+                                android:paddingTop="0dp" >
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:background="#66000000"
+                                    android:gravity="center" >
+
+                                    <com.kainat.app.android.util.GalleryNavigator
+                                        android:id="@+id/count"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:gravity="center" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/media_play_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/black"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal"
+                        android:visibility="visible" >
+
+                        <com.kainat.app.android.uicontrol.CImageView
+                            android:id="@+id/media_play"
+                            android:layout_width="35dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/play"
+                            android:onClick="@string/onClickHandleMethodName" >
+                        </com.kainat.app.android.uicontrol.CImageView>
+
+                        <AbsoluteLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="20"
+                            android:addStatesFromChildren="true"
+                            android:orientation="horizontal"
+                            android:paddingLeft="8.0dip"
+                            android:paddingRight="8.0dip" >
+
+                            <SeekBar
+                                android:id="@+id/mediavoicePlayingDialog_progressbar"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:paddingLeft="8.0dip"
+                                android:paddingRight="8.0dip"
+                                android:progress="0"
+                                android:progressDrawable="@drawable/seekbarprogress"
+                                android:thumb="@drawable/seekthumb"
+                                android:thumbOffset="0.0dip" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="20dp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:orientation="horizontal"
+                                android:visibility="visible" >
+
+                                <TextView
+                                    android:id="@+id/streemStatus"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="3dp"
+                                    android:paddingLeft="35dp"
+                                    android:text="Please wait while getting audio..."
+                                    android:textColor="#6AABB4"
+                                    android:textSize="9dp"
+                                    android:visibility="visible" >
+                                </TextView>
+                            </LinearLayout>
+                        </AbsoluteLayout>
+
+                        <com.kainat.app.android.uicontrol.CImageView
+                            android:id="@+id/media_pause_play"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/pause"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:visibility="invisible" >
+                        </com.kainat.app.android.uicontrol.CImageView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/time_panel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/black"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/total_autio_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="50dp"
+                            android:text="--:--"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            android:visibility="visible" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/dummyp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            android:visibility="visible" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/played_autio_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:paddingRight="48dp"
+                            android:text="--:--"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            android:visibility="visible" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <!--
+                        <TextView android:id="@+id/mediatime" android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal" 
+						android:text="00:20" android:textColor="@color/red" android:visibility="gone"> 
+						</TextView>
+                    -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingTop="0dp"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/s_loc"
+                        android:gravity="left|center"
+                        android:paddingLeft="0dip"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/postdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0"
+                        android:drawableLeft="@drawable/watch"
+                        android:drawablePadding="5dp"
+                        android:gravity="right|center"
+                        android:paddingRight="5dp"
+                        android:text="date"
+                        android:textColor="@color/sub_heading"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/stats_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/mediaLayout_thumbUpCount2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:drawablePadding="3dp"
+                        android:gravity="center"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:text="Liked by "
+                        android:textColor="@color/hyperlink"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/mediaLayout_thumbUpCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:drawableLeft="@drawable/details_smalllike"
+                        android:drawablePadding="3dp"
+                        android:gravity="center"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:text="0"
+                        android:textColor="@color/hyperlink"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/views"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="15dp"
+                        android:drawableLeft="@drawable/details_view"
+                        android:drawablePadding="3dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/heading"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/mediaLayout_thumbDownCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="15dp"
+                        android:drawableLeft="@drawable/details_smalldislike"
+                        android:drawablePadding="3dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/heading"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/mediaLayout_commentCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:drawableLeft="@drawable/details_comments"
+                        android:drawablePadding="3dp"
+                        android:gravity="center"
+                        android:paddingLeft="5dip"
+                        android:text="0"
+                        android:textColor="@color/heading"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/landingpagebackground"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/view_more_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:paddingLeft="5dip"
+                        android:text="Tap on button to view more details"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <com.kainat.app.android.uicontrol.CImageView
+                        android:id="@+id/mediaLayout_click"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:layout_weight="0"
+                        android:src="@drawable/arrow_down_double"
+                        android:visibility="gone" >
+                    </com.kainat.app.android.uicontrol.CImageView>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/byuser"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="0dip"
+                    android:layout_toRightOf="@+id/progressbar"
+                    android:background="@color/black"
+                    android:gravity="left"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"
+                    android:textSize="16dip"
+                    android:textStyle="bold"
+                    android:typeface="sans"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/landingpagebackground"
+                    android:fitsSystemWindows="true"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tc" >
+
+                        <!--
+                            <com.kainat.app.android.uicontrol.CImageView android:id="@+id/userImage" android:layout_width="80dip" 
+							android:layout_height="80dip" android:onClick="@string/onClickHandleMethodName" 
+							android:scaleType="fitXY" android:src="@drawable/dummy_picture"> </com.kainat.app.android.uicontrol.CImageView>
+                        -->
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dip"
+                            android:background="@drawable/landingpagebackground"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/landingpagebackground"
+                                android:orientation="horizontal" >
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical" >
+
+                                    <!--
+                                        <TextView android:id="@+id/media_by" android:layout_width="wrap_content" 
+										android:layout_height="wrap_content" android:clickable="true" android:ellipsize="marquee" 
+										android:onClick="@string/onClickHandleMethodName" android:text="" android:textColor="@color/maroon" 
+										android:textStyle="bold" android:typeface="sans"> </TextView>
+                                    -->
+
+                                    <TextView
+                                        android:id="@+id/postdate"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/landingpagebackground"
+                                        android:ellipsize="marquee"
+                                        android:text=""
+                                        android:textSize="10dip" >
+                                    </TextView>
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/landingpagebackground"
+                                        android:gravity="center_vertical"
+                                        android:orientation="vertical" >
+
+                                        <!--
+                                            <TextView android:id="@+id/views" android:layout_width="wrap_content" 
+											android:layout_height="fill_parent" android:text="" android:textStyle="bold" 
+											android:typeface="sans"> </TextView>
+                                        -->
+
+                                        <TextView
+                                            android:id="@+id/summary"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp"
+                                            android:autoLink="all"
+                                            android:background="@drawable/landingpagebackground"
+                                            android:ellipsize="marquee"
+                                            android:singleLine="true"
+                                            android:text=""
+                                            android:textColor="@color/black"
+                                            android:textSize="14sp"
+                                            android:typeface="sans" >
+                                        </TextView>
+                                        <!--
+                                            <Button android:id="@+id/mediaplay_follow" android:layout_width="wrap_content" 
+											android:layout_height="wrap_content" android:background="@drawable/greenbutt" 
+											android:onClick="@string/onClickHandleMethodName" android:paddingLeft="5dp" 
+											android:paddingRight="5dp" android:visibility="gone" android:text="Follow" 
+											android:textColor="@color/white" android:typeface="sans" />
+                                        -->
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/mediaLayout_tag1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/roundedwhitebutton"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:text=""
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/slide"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <!--
+                        <TextView
+                            android:id="@+id/mediaplay_category"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dip"
+                            android:layout_marginTop="5dip"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:text="Category"
+                            android:textColor="@color/black"
+                            android:textSize="18dip"
+                            android:textStyle="bold"
+                            android:typeface="sans"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/mediaplay_catname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/black_butn"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:padding="7dip"
+                            android:text="Report"
+                            android:textColor="@color/white"
+                            android:typeface="sans"
+                            android:visibility="gone" />
+                        -->
+                        <!--
+                             <TextView
+                            android:id="@+id/mediaplay_tag"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dip"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:text="Tag"
+                            android:textColor="@color/black"
+                            android:textSize="18dip"
+                            android:textStyle="bold"
+                            android:typeface="sans"
+                            android:visibility="gone" />
+                        -->
+
+                        <LinearLayout
+                            android:id="@+id/add_selected_items"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+
+                        <!--
+                             <GridView
+                            android:id="@+id/mediaplay_tag_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:columnWidth="90dp"
+                            android:gravity="center"
+                            android:horizontalSpacing="10dp"
+                            android:numColumns="auto_fit"
+                            android:stretchMode="columnWidth"
+                            android:verticalSpacing="10dp"
+                            android:visibility="gone" />
+                        -->
+
+                        <LinearLayout
+                            android:id="@+id/mediaplay_xxx"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="horizontal"
+                            android:padding="5dip"
+                            android:visibility="gone" >
+
+                            <Button
+                                android:id="@+id/mediaplay_usethis"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/header_button_height"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginBottom="5dip"
+                                android:layout_marginRight="5dip"
+                                android:layout_marginTop="5dip"
+                                android:background="@drawable/pillgreen_sel"
+                                android:onClick="@string/onClickHandleMethodName"
+                                android:padding="7dip"
+                                android:text="Use this"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+                            <!--
+                                 <Button
+                                android:id="@+id/mediaplay_report"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginBottom="5dip"
+                                android:layout_marginRight="5dip"
+                                android:layout_marginTop="5dip"
+                                android:background="@drawable/red_butn"
+                                android:onClick="@string/onClickHandleMethodName"
+                                android:padding="7dip"
+                                android:text="Report"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+                            -->
+
+                            <Button
+                                android:id="@+id/mediaplay_delete"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/header_button_height"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginBottom="5dip"
+                                android:layout_marginRight="5dip"
+                                android:layout_marginTop="5dip"
+                                android:background="@drawable/pillred_sel"
+                                android:onClick="@string/onClickHandleMethodName"
+                                android:padding="7dip"
+                                android:text="Delete"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/make"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="horizontal"
+                            android:padding="5dip"
+                            android:visibility="gone" >
+
+                            <Button
+                                android:id="@+id/mediaplay_make_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/header_button_height"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginBottom="5dip"
+                                android:layout_marginRight="5dip"
+                                android:layout_marginTop="5dip"
+                                android:background="@drawable/pillgreen_sel"
+                                android:onClick="@string/onClickHandleMethodName"
+                                android:padding="7dip"
+                                android:text="Make Public"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+                            <Button
+                                android:id="@+id/mediaplay_make_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/header_button_height"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginBottom="5dip"
+                                android:layout_marginRight="5dip"
+                                android:layout_marginTop="5dip"
+                                android:background="@drawable/pillgreen_sel"
+                                android:onClick="@string/onClickHandleMethodName"
+                                android:padding="7dip"
+                                android:text="Make For Friends"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/comment_grid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/comment_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_tag_sel"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:singleLine="true"
+                        android:text="Comment"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:typeface="sans"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/grid_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_tag_unsel"
+                        android:gravity="center"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:singleLine="true"
+                        android:text="More Media"
+                        android:textColor="@color/hyperlink"
+                        android:textSize="16sp"
+                        android:typeface="sans"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/morem"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/more"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="More media by "
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/sub_heading"
+                            android:textSize="16dip"
+                            android:textStyle="bold"
+                            android:typeface="sans" />
+
+                        <ProgressBar
+                            android:id="@+id/progressbar"
+                            style="?android:attr/progressBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_weight="0"
+                            android:indeterminateDrawable="@drawable/circulor_progressbar" />
+                    </LinearLayout>
+
+                    <GridView
+                        android:id="@+id/media_gridView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="250dip"
+                        android:layout_weight="1"
+                        android:addStatesFromChildren="true"
+                        android:columnWidth="70dip"
+                        android:gravity="center"
+                        android:horizontalSpacing="2dip"
+                        android:numColumns="auto_fit"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="2dip"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/loadmore"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/header_button_height"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/pillgreen_sel"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:text="Load more"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:typeface="sans"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <!--
+                     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+					android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15dip" 
+					android:background="@drawable/tc" android:id="@+id/moremedia_layout" android:gravity="center_horizontal" 
+					android:minHeight="?android:attr/listPreferredItemHeight"> <ProgressBar android:id="@+id/progressbar" 
+					android:layout_width="40dp" android:layout_height="40dp" android:layout_centerVertical="true" 
+					android:visibility="gone" /> <TextView android:id="@+id/more" android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" android:layout_centerVertical="true" 
+					android:layout_toRightOf="@+id/progressbar" android:gravity="center" android:padding="10dip" 
+					android:text="More media by " android:textAppearance="?android:attr/textAppearanceLarge" 
+					android:textColor="@color/maroon" android:textSize="16dip" android:textStyle="bold" 
+					android:typeface="sans" /> </RelativeLayout> <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+					android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15dip" 
+					android:gravity="center_horizontal" android:minHeight="?android:attr/listPreferredItemHeight"> 
+					<ProgressBar android:id="@+id/progressbar" android:layout_width="40dp" android:layout_height="40dp" 
+					android:layout_centerVertical="true" android:visibility="gone" /> <TextView 
+					android:id="@+id/more" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					android:layout_centerVertical="true" android:layout_toRightOf="@+id/progressbar" 
+					android:gravity="center" android:padding="10dip" android:text="More media 
+					by " android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#ff000000" 
+					android:textSize="18px" android:textStyle="bold" android:visibility="gone" 
+					/> </RelativeLayout>
+                -->
+
+                <LinearLayout
+                    android:id="@+id/comment_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:id="@+id/comment_loading_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:visibility="visible" >
+
+                        <ProgressBar
+                            android:id="@+id/comment_loading_progress_bar"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:gravity="center"
+                            android:indeterminateDrawable="@drawable/circulor_progressbar" />
+
+                        <TextView
+                            android:id="@+id/comment_not_found"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_marginTop="0dip"
+                            android:gravity="center"
+                            android:text="Be the first to comment on this"
+                            android:textColor="@color/heading"
+                            android:textSize="16dip"
+                            android:textStyle="normal"
+                            android:typeface="sans"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/comment_list"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="10dip"
+                        android:addStatesFromChildren="true"
+                        android:cacheColorHint="#00000000"
+                        android:dividerHeight="1dp"
+                        android:fadeScrollbars="false"
+                        android:listSelector="@drawable/transparent_image"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:scrollbars="vertical" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:orientation="horizontal" >
+
+                            <Button
+                                android:id="@+id/prev"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".50"
+                                android:background="@drawable/previous_comment"
+                                android:onClick="@string/onClickHandleMethodName"
+                                android:paddingLeft="2dp"
+                                android:singleLine="true"
+                                android:textColor="@color/sub_heading"
+                                android:textStyle="bold"
+                                android:visibility="visible" >
+                            </Button>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:orientation="horizontal" >
+
+                            <Button
+                                android:id="@+id/next"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/next_comment"
+                                android:onClick="@string/onClickHandleMethodName"
+                                android:singleLine="true"
+                                android:textColor="@color/sub_heading"
+                                android:textStyle="bold"
+                                android:visibility="visible" >
+                            </Button>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.kainat.app.android.util.VerticalScrollview>
+
+        <Gallery
+            android:id="@+id/image_media_gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dip"
+            android:spacing="10dip"
+            android:visibility="gone" >
+        </Gallery>
+    </LinearLayout>
+
+    <include layout="@layout/play_layout" />
+
+    <LinearLayout
+        android:id="@+id/bottom_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/commentfor_landingdetails"
+            android:gravity="center_vertical"
+            android:stretchColumns="*" >
+
+            <TableRow>
+
+                <!--
+                    <com.kainat.app.android.uicontrol.CImageView android:id="@+id/media_share" android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal" 
+					android:layout_weight="0" android:background="@drawable/share_media" android:clickable="false" 
+					android:focusable="true" android:onClick="@string/onClickHandleMethodName" 
+					/>
+                -->
+
+                <LinearLayout
+                    android:id="@+id/prev_media_liner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:orientation="vertical" >
+
+                    <com.kainat.app.android.uicontrol.CImageView
+                        android:id="@+id/previous_media"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_weight="0"
+                        android:background="@drawable/previous_disable"
+                        android:clickable="false"
+                        android:focusable="true" />
+                </LinearLayout>
+
+                <com.kainat.app.android.uicontrol.CImageView
+                    android:id="@+id/thumbup_media"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="@string/onClickHandleMethodName" />
+
+                <com.kainat.app.android.uicontrol.CImageView
+                    android:id="@+id/thumbdown_media"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="@string/onClickHandleMethodName" />
+
+                <TextView
+                    android:id="@+id/comment_media"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0"
+                    android:background="@drawable/comment_sel"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:paddingBottom="4dip"
+                    android:textColor="@color/hyperlink" />
+
+                <com.kainat.app.android.uicontrol.CImageView
+                    android:id="@+id/report_media"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0"
+                    android:background="@drawable/report_ena"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="@string/onClickHandleMethodName" />
+
+                <LinearLayout
+                    android:id="@+id/next_media_liner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:orientation="vertical" >
+
+                    <com.kainat.app.android.uicontrol.CImageView
+                        android:id="@+id/next_media"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/next_disable"
+                        android:clickable="false"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

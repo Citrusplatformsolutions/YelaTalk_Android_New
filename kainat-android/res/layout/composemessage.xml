@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	  android:background="@drawable/landingpagebackground"
+	android:orientation="vertical">
+	<RelativeLayout
+	
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/header_height"
+		android:id="@+id/titlel"
+		android:background="@drawable/title"><!--
+		<ImageView
+			android:id="@+id/home_icon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_margin="5dip"
+			android:onClick="@string/onClickHandleMethodName"
+			android:src="@drawable/home">
+		</ImageView>
+		-->
+		 <ImageButton
+        android:id="@+id/btnSpeak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:onClick="@string/onClickHandleMethodName"
+       android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+         android:background="@drawable/voicetotext"/>
+		<TextView
+			android:id="@+id/title"
+			style="@style/HeaderFontStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:layout_weight="1"
+			android:text="Compose Message"
+			/>
+			
+		<Button
+			android:id="@+id/compose_sendButton"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/header_button_height"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_margin="5dip"
+			android:background="@drawable/send_icon"
+			android:onClick="@string/onClickHandleMethodName"
+			android:text=""
+			android:textStyle = "bold"
+			android:textColor="@color/white"/>
+	</RelativeLayout>
+	<include
+        layout="@layout/notificationdiloag"        
+        android:id="@+id/notificationdiloags" />
+	<LinearLayout
+		android:id="@+id/dummy_latout"
+		android:layout_width="fill_parent"
+		android:layout_height="0px"
+		android:orientation="horizontal"
+		android:focusable="true"
+		android:focusableInTouchMode="true"/>
+	<ScrollView
+		android:layout_below="@+id/titlel"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginLeft="10dip">
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_marginRight="10dip"
+			android:layout_marginTop="5dip"
+			android:orientation="vertical">
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="50dip"
+				android:layout_marginBottom="3dip"
+				android:layout_marginTop="5dip"
+				
+				android:gravity="center_vertical"
+				android:id="@+id/composeScreen_toBoxLayout"
+				android:orientation="horizontal">
+				
+				<com.kainat.app.android.util.EditTextCursorWatcher
+					android:id="@+id/composeScreen_toBox"
+					android:layout_width="wrap_content"
+					android:layout_height="fill_parent"
+					android:layout_weight="8"
+					android:completionThreshold="1"
+					android:imeOptions="actionDone"
+					android:textColor="@color/black"
+					android:paddingLeft="5dp"
+					android:hint=""					
+					android:clickable="true"
+					android:editable="true"
+					android:textSize="14dip"
+					android:fitsSystemWindows="true"
+					android:cursorVisible="true"
+					android:drawableRight = "@drawable/add"
+					android:scrollbars="vertical" android:scrollbarStyle="outsideOverlay"/>
+				
+				<!--<ImageButton
+					android:id="@+id/composeScreen_addContactButton"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_margin="5dip"
+					android:background="@drawable/plusbutton"
+					android:onClick="@string/onClickHandleMethodName">
+				</ImageButton>-->
+			</LinearLayout>
+			
+			<TextView
+				android:layout_below="@+id/composeScreen_toBoxLayout"
+				android:id="@+id/composeScreen_forwardedMsgTxt"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="2dp"
+				android:layout_marginTop="5dp"
+				android:text="Forwarded message attached."
+				android:textColor="#FF0000FF"
+				android:visibility="gone"/>
+				
+				
+				
+			<LinearLayout
+				android:visibility="visible"
+				android:layout_below="@+id/composeScreen_forwardedMsgTxt"
+				android:id="@+id/composeScreen_msglayout"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				
+				android:orientation="horizontal">
+			
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="3dip"
+					android:layout_weight="1"
+					android:background="@drawable/roundedrectgradient">
+				<ScrollView 
+				android:id="@+id/composeScreen_msgBox1"
+				 android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+				android:padding="20dip"
+				android:background="@drawable/roundedrectgradient"
+				>
+					<EditText
+						android:id="@+id/composeScreen_msgBox"
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:layout_margin="5dip"
+						android:background="@drawable/roundedtextbox"
+						android:hint="Tap to enter the message"
+						android:imeOptions="actionDone"
+						android:scrollbars="vertical"
+					    android:scrollbarAlwaysDrawVerticalTrack="true"
+					    
+					   
+						
+						android:inputType="textCapSentences|textMultiLine"
+						android:singleLine="false"
+						android:textColor="@color/black"
+						android:textSize="14dip">
+					</EditText>
+				</ScrollView>
+				</LinearLayout>
+	
+				<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="fill_parent" android:orientation="vertical" android:layout_marginLeft="2dip">
+				<ImageButton
+					android:id="@+id/composeScreen_addSmiley"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dip"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="5dip"
+					android:background="@drawable/smilybg"
+					android:onClick="@string/onClickHandleMethodName">
+				</ImageButton>
+				<ImageButton
+					android:id="@+id/composeScreen_doodle"
+					android:layout_marginTop="1dip"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="5dip"
+					android:background="@drawable/doodle"
+					android:onClick="@string/onClickHandleMethodName">
+				</ImageButton>
+				</LinearLayout>
+			</LinearLayout>
+		
+			<LinearLayout
+				android:visibility="visible"
+				android:layout_below="@+id/composeScreen_msglayout"
+				android:id="@+id/compose_media_layout"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="3dip"
+				
+				android:gravity="center_vertical|center_horizontal">
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:background="@drawable/roundedrectgradient"
+					android:orientation="vertical">
+					<LinearLayout
+						android:id="@+id/composeScreen_voiceLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="50dip"
+						android:layout_margin="5dip"
+						android:clickable="true"
+						android:onClick="@string/onClickHandleMethodName"
+						android:orientation="horizontal">
+						<ImageView
+							android:id="@+id/composeScreen_recordVoice"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_vertical"
+							android:adjustViewBounds="true"
+							android:onClick="@string/onClickHandleMethodName"
+							android:src="@drawable/composescreen_audioicon">
+						</ImageView>
+						<ImageView
+							android:id="@+id/composeScreen_availableVoice"
+							android:layout_width="40dip"
+							android:layout_height="40dip"
+							android:layout_gravity="center_vertical"
+							android:adjustViewBounds="true"
+							android:clickable="true"
+							android:scaleType="fitXY"
+							android:src="@drawable/soundplayicon"
+							android:visibility="gone">
+						</ImageView>
+						<TextView
+							android:id="@+id/composeScreen_addaudio"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_vertical"
+							android:clickable="true"
+							android:gravity="center_horizontal"
+							android:onClick="@string/onClickHandleMethodName"
+							android:text="Tap to record">
+						</TextView>
+					</LinearLayout>
+					<View
+						android:layout_width="fill_parent"
+						android:layout_height="2dip"
+						android:layout_marginLeft="2dip"
+						android:layout_marginRight="2dip"
+						android:background="#ffDCDAD9">
+					</View>
+					<LinearLayout
+						android:id="@+id/composeScreen_photoLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="50dip"
+						android:orientation="horizontal"
+						android:layout_margin="5dip"
+						android:clickable="true"
+						android:onClick="@string/onClickHandleMethodName">
+						<ImageView
+							android:id="@+id/composeScreen_photoButton"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_vertical"
+							android:adjustViewBounds="true"
+							android:onClick="@string/onClickHandleMethodName"
+							android:src="@drawable/composescreen_photoicon">
+						</ImageView>
+						<TextView
+							android:id="@+id/composeScreen_addPhotoText"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center"
+							android:gravity="center_horizontal"
+							android:text="Tap to attach">
+						</TextView>
+						<HorizontalScrollView
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:layout_gravity="center_vertical">
+							<LinearLayout
+								android:id="@+id/composeScreen_attachedImageLayout"
+								android:layout_width="70dip"
+								android:layout_height="wrap_content"
+								android:orientation="horizontal"
+                                android:layout_gravity="center_vertical"
+								android:padding="5dp">
+							</LinearLayout>
+						</HorizontalScrollView>
+					</LinearLayout>
+					<View
+						android:layout_width="fill_parent"
+						android:layout_height="2dip"
+						android:layout_marginLeft="2dip"
+						android:layout_marginRight="2dip"
+						android:background="#ffDCDAD9">
+					</View>
+					<LinearLayout
+						android:id="@+id/composeScreen_videoLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="50dip"
+						android:layout_margin="5dip"
+						android:clickable="true"
+						android:onClick="@string/onClickHandleMethodName"
+						android:orientation="horizontal">
+						<ImageView
+							android:id="@+id/composeScreen_recordVideo"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_vertical"
+							android:adjustViewBounds="true"
+							android:onClick="@string/onClickHandleMethodName"
+							android:src="@drawable/composescreen_videoiconfinal">
+						</ImageView>
+						<TextView
+							android:id="@+id/composeScreen_addVideoText"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_vertical"
+							android:gravity="center_horizontal"
+							android:text="Tap to attach">
+						</TextView>
+						<HorizontalScrollView
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:layout_gravity="center_vertical">
+							<LinearLayout
+								android:id="@+id/composeScreen_attachedVideoLayout"
+								android:layout_width="50dip"
+								android:layout_height="wrap_content"
+								android:orientation="horizontal"
+                                android:layout_gravity="center_vertical">
+							</LinearLayout>
+						</HorizontalScrollView>
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/compose_media_layout"
+				android:layout_marginTop="5dip">
+				<Button
+					android:visibility="visible"
+					android:id="@+id/composeScreen_sendButton"
+					android:layout_width="fill_parent"
+					android:layout_height="44dip"
+					android:layout_marginTop="10dip"
+					 android:background="@drawable/pillgreen_sel"
+					android:onClick="onClick"
+					android:text="Send My Message"
+					android:textColor="#fff"
+					android:textSize="15dip"
+					android:textStyle="bold">
+				</Button>
+			</LinearLayout>
+			<LinearLayout 
+				android:visibility="gone"
+				android:layout_below="@+id/composeScreen_toBoxLayout"
+				android:id="@+id/nomatchfound"
+				android:background = "@drawable/roundedrectgradient_gray"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+				<TextView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:gravity = "center_vertical|center_horizontal"
+					android:text="No Match Found"
+					android:textStyle = "bold"
+					android:textColor="@color/red"
+					/>
+				<TextView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:gravity = "center_vertical|center_horizontal"
+					android:text="This person is not on your friend list. Please select from friends or phone book or enter valid phone number or email."
+					android:textColor="@color/black"
+					/>
+			</LinearLayout>
+		</RelativeLayout>
+		
+	</ScrollView>
+	<!--  <LinearLayout android:id="@+id/landing_discovery_tabBar"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" android:background="@drawable/bottomlanding"
+		android:orientation="horizontal">
+		<ImageView android:id="@+id/landing_discovery_BtnSlideLeft"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:padding="0px" android:layout_margin="0px"
+			android:src="@drawable/slideleft_menu" />
+		<LinearLayout android:id="@+id/landing_discovery_tabBar1"
+			android:background="@drawable/bottomlanding" android:layout_height="wrap_content"
+			android:gravity="right" android:layout_gravity="right"
+			android:layout_width="fill_parent">
+			<ImageView android:layout_width="wrap_content" android:id="@+id/landing_discovery_BtnSlideRight"
+				android:layout_height="wrap_content" android:src="@drawable/rightsearch_menu"></ImageView>
+
+		</LinearLayout>
+		
+
+	</LinearLayout>-->
+</RelativeLayout>

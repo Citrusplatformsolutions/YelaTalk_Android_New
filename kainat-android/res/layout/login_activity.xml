@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/list_background" >
+
+    <RelativeLayout
+        android:id="@+id/rt_login"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/list_background"
+        android:visibility="invisible" >
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter user name(use RT user name)"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="10dp"
+            android:editable="true"
+            android:hint="Enter user pass(use RT pass)"
+            android:text=""
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="296dip"
+            android:layout_height="@dimen/button_height"
+            android:layout_below="@+id/pass"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/greenpillend"
+            android:onClick="@string/onClickHandleMethodName"
+            android:text="@string/join"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text"
+            android:textStyle="normal"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rt_login"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="90dp"
+        android:background="@color/list_background"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/join"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/join"
+            android:gravity="center"
+            android:text="@string/join"
+            android:textSize="17dp"
+            android:textStyle="normal"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+             android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="10dp" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="false"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray" >
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="0dp"
+                android:gravity="center"
+                android:background="@color/list_background"
+                android:text="@string/or" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+login/login_fb"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/facebook_new"
+                android:gravity="center"
+                android:inputType="textCapSentences"
+                android:text="@string/connect_fb"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:textStyle="normal" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/take_tour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+login/login_fb"
+                android:layout_centerHorizontal="true"
+                android:text="@string/take_tour"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/terms_condition_link"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:autoLink="email"
+            android:clickable="true"
+            android:onClick="@string/onClickHandleMethodName"
+            android:text="@string/terms_of_service"
+            android:textColor="@color/heading_text_green"
+            android:gravity="center"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

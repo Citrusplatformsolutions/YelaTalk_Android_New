@@ -1,0 +1,9 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView  
+    	android:id="@+id/notificationdiloag"
+        android:layout_width="fill_parent" 
+        android:layout_height="1px" 
+    
+        android:scaleType="center"/>
+   </merge>

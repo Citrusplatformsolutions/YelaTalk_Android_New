@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<EditText android:layout_height="wrap_content" android:id="@+id/editText1" 
+		xmlns:android="http://schemas.android.com/apk/res/android" 
+		android:scrollbars="vertical" android:scrollbarSize="10dp" 
+		android:layout_width="fill_parent" android:text="EditText">
+</EditText>

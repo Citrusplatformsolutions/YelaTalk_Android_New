@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	 android:background="@drawable/landingpagebackground"
+	android:orientation="vertical">
+	<RelativeLayout
+		
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/title">
+		<ImageButton
+        android:id="@+id/btnSpeak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:onClick="@string/onClickHandleMethodName"
+       android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+        android:background="@drawable/voicetotext" />
+		<TextView
+			android:id="@+id/chatScreen_title"
+			style="@style/HeaderFontStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/header_height"
+			android:singleLine="true"
+			android:layout_centerVertical="true"
+			android:layout_weight="1"
+			android:text="Sender"
+			android:layout_toLeftOf="@+id/chatScreen_closeButton" android:layout_toRightOf="@+id/btnSpeak"/>
+		<Button
+			android:id="@+id/chatScreen_closeButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_gravity="center_vertical"
+			android:layout_marginRight="2dip"
+			android:background="@drawable/chat_close"
+			android:clickable="true"
+			android:onClick="@string/onClickHandleMethodName"
+			android:text=""
+			
+			android:textStyle="bold">
+		</Button>
+	</RelativeLayout>
+	<include
+        layout="@layout/notificationdiloag"        
+        android:id="@+id/notificationdiloags" />
+	<ListView
+        android:id="@+id/chatScreen_mainList"
+       
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:addStatesFromChildren="true"
+        android:cacheColorHint="@color/listcache"
+        android:divider="#ffB4B4B1"
+        android:dividerHeight="0dip"
+        android:focusable="true">
+    </ListView>
+	<!-- <ScrollView android:layout_width="fill_parent" android:layout_height="0dip" 
+		android:layout_weight="1" android:fillViewport="true" android:paddingLeft="3dip" 
+		android:paddingTop="5dip"> <LinearLayout android:id="@+id/chatScreen_mainLayout" 
+		android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" 
+		android:paddingRight="6dip"> <ListView android:id="@+id/listView1" android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"></ListView> </LinearLayout> </ScrollView> -->
+	
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background ="@color/white"
+		android:padding="4dip"
+		
+		android:gravity="bottom" android:weightSum="1">
+		<ImageButton
+			android:id="@+id/chatScreen_recordVideo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_margin="4dip"
+			android:padding="1dip"
+			android:background="@drawable/chat_record"
+			android:onClick="@string/onClickHandleMethodName">
+		</ImageButton>
+		<ImageButton
+			android:id="@+id/chatScreen_capturePhoto"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_margin="4dip"
+			android:padding="1dip"
+			android:background="@drawable/chat_cam"
+			android:onClick="@string/onClickHandleMethodName">
+		</ImageButton>
+		  <ImageButton
+                    android:id="@+id/chatScreen_recordVideoChat"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_margin="4dip"
+			android:padding="1dip"
+		    android:background="@drawable/recordvideo2"
+			android:onClick="@string/onClickHandleMethodName">
+			</ImageButton>
+		
+		
+		<ImageButton
+			android:id="@+id/chatScreen_smiley"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="4dip"
+			android:padding="1dip"
+			android:background="@drawable/smilybg"
+			android:onClick="@string/onClickHandleMethodName">
+		</ImageButton>
+		<ImageButton
+			android:id="@+id/chatScreen_doodle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="4dip"
+			android:padding="1dip"
+			android:background="@drawable/doodle"
+			android:onClick="@string/onClickHandleMethodName">
+		</ImageButton>
+		<!--  <EditText
+			android:id="@+id/chatScreen_msgBox"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="4dip"
+			android:layout_marginRight="4dip"
+			android:layout_weight="1"
+			android:inputType="textCapSentences"
+			android:background = "@drawable/text_entry_bubble"
+			android:singleLine="true">
+		</EditText>-->
+		<LinearLayout
+		android:layout_height="wrap_content"
+		android:background ="@color/white"
+		android:paddingRight="10dp"
+		android:layout_gravity="right"
+		android:gravity="bottom|right" android:layout_width="fill_parent">
+		<Button
+			android:id="@+id/chatScreen_sendButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="right"
+			android:layout_gravity="right"
+			android:background="@drawable/chatscreensendbutton"
+			android:onClick="@string/onClickHandleMethodName"
+			
+			android:textColor="#fff"
+			android:textSize="16dip"
+			android:textStyle="bold" >
+		</Button>
+		</LinearLayout>
+	</LinearLayout>
+		<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background ="@color/white"
+		android:gravity="bottom">
+		
+		
+		
+		<EditText
+			android:id="@+id/chatScreen_msgBox"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="4dip"
+			android:layout_marginRight="4dip"
+			android:layout_weight="1"
+			  android:hint="Enter Message"
+			android:maxLength="300"
+			android:inputType="textCapSentences|textMultiLine"
+			android:background = "@drawable/text_entry_bubble"
+			android:singleLine="false">
+		</EditText>
+	
+	</LinearLayout>
+</LinearLayout>

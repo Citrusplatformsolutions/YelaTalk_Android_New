@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/landingpagebackground"
+    android:orientation="vertical" >
+    <LinearLayout android:layout_width="fill_parent"
+		android:layout_height="@dimen/header_height" android:background="@drawable/title"
+		android:orientation="horizontal" android:text="Logoutfffffffffffffff" >
+		<TextView android:id="@+id/inboxScreen_title" style="@style/HeaderFontStyle"
+			android:layout_width="wrap_content" android:layout_height="@dimen/header_height"
+			android:layout_gravity="center_vertical" android:layout_weight="1"
+			android:gravity="center" android:text="New Post">
+		</TextView>
+		<Button android:id="@+id/facebook_done" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignParentRight="true"
+			 android:background="@drawable/done_button"
+			 android:visibility="gone"
+		 android:text=""  
+			android:textColor="@color/white" android:textStyle="bold" />
+	</LinearLayout>
+	  <ScrollView
+        android:id="@+id/mystatus_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_margin="5dip"
+        android:layout_weight="7.5"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+    
+<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+               
+                android:orientation="horizontal" >
+
+                <ScrollView
+                    android:id="@+id/composeScreen_msgBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content" android:background="@drawable/postboxbackground" 
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="1" >
+
+                            <ImageView
+                                android:id="@+id/pencil"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left|top"
+                                android:layout_margin="4dp"
+                                android:paddingLeft="5dp"
+                                android:visibility="gone"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/pencil" /> 
+
+                            <EditText
+                                android:id="@+id/composeScreen_msgBox"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginRight="2dp"
+                                android:background="@drawable/postboxbackground"
+                                android:gravity="center_vertical|top"
+                                android:hint="   Describe your post (optional)"
+                                android:imeOptions="actionDone"
+                                android:inputType="textCapSentences|textMultiLine"
+                                android:text=""
+                                android:maxLength="1000"
+                                android:textSize="14dip" />
+                        </LinearLayout>
+ <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                              android:layout_alignParentBottom="true"
+                         android:layout_alignParentRight="true"
+                     
+                                >
+                        <TextView
+                            android:id="@+id/my_avatar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|bottom"
+                        android:background="@color/white"
+                       android:layout_marginRight="5dp"
+                       android:padding="3dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="4dp"
+                      
+                            android:scaleType="fitXY"
+                           android:text="1000"
+                            android:visibility="visible" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </ScrollView>
+
+                
+            </LinearLayout>
+            
+<LinearLayout
+                    android:id="@+id/buddy_menuLayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                   android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    
+
+                   
+
+                    <TextView
+                        android:id="@+id/mode"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:drawableRight="@drawable/lock_open"
+                        android:focusable="true"
+                        android:gravity="left|center"
+                        android:maxLines="1"
+                       
+                        android:padding="0dp"
+                        android:text="Everyone"
+                        android:textStyle="bold"
+                                android:textColor="@color/heading"
+                        android:textSize="15dp" >
+                    </TextView>
+<LinearLayout
+                        android:id="@+id/composeScreen_voiceLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/location"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:drawableRight="@drawable/location"
+                            android:focusable="true"
+                           android:gravity="left|center"
+                            android:maxLines="1"
+                          
+                            android:padding="0dp"
+                            android:text="Location"
+                             android:textStyle="bold"
+                                android:textColor="@color/heading"
+                            android:textSize="15dp" >
+                        </TextView>
+                    </LinearLayout>
+                   
+                </LinearLayout>
+<View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dip"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#ffDCDAD9" >
+                    </View>
+                     <TextView
+                                android:id="@+id/simpletext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                               android:layout_marginTop="10dp"
+                               android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"
+                                
+                              android:visibility="gone"
+                                android:gravity="center"
+                                android:hint="Share your moment"
+                               
+                               
+                                android:textColor="@color/heading"
+                                android:textSize="14sp" >
+                            </TextView>
+            <LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_margin="5dip"
+			android:orientation="vertical">
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginBottom="20dip"
+				
+				android:orientation="vertical">
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_margin="5dip"
+					android:layout_weight="1" android:background="@drawable/fb_selector_ontap"
+					android:gravity="center_vertical" android:orientation="horizontal">
+
+					<ImageView android:background="@drawable/facebookiconnew"
+						android:paddingLeft="0dp" android:layout_width="wrap_content"
+					
+						android:layout_height="wrap_content" android:id="@+id/facebookicon">
+					</ImageView>
+					<TextView android:id="@+id/fbcheckbook" android:textStyle="bold"
+						android:text="" android:paddingLeft="5dp"
+						android:visibility="visible" android:gravity="left|center_vertical|center_horizontal"
+						android:textColor="@color/black" android:layout_width="wrap_content"
+						android:layout_weight="1" android:textSize="18dp"
+						android:layout_height="wrap_content"></TextView>
+					<RadioGroup android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_column="0"
+						android:layout_gravity="center_vertical|center_horizontal"
+						android:orientation="horizontal">
+						<ToggleButton android:checked="true"
+							android:layout_height="wrap_content" android:layout_width="wrap_content"
+							android:background="@drawable/fbonoff" android:textOff=""  
+     						android:textOn=""
+							android:visibility="gone" android:text="ToggleButton" android:id="@+id/facebook_toggle">
+						</ToggleButton>
+						<TextView android:text="" android:layout_height="wrap_content"
+							android:layout_width="wrap_content" android:textSize="15dp"
+							android:gravity="center" android:textColor="@color/black"
+							android:background="@drawable/location" android:visibility="visible"
+							android:id="@+id/facebook_configure">
+						</TextView>
+					</RadioGroup>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		
+            <Button
+                    android:id="@+id/facebook_done_post"
+                    style="@style/setting_font_style"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="45dp"
+                    
+                    android:layout_height="@dimen/header_button_height"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    
+                   android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+            android:background="@drawable/pillgreen_sel"
+                    android:gravity="center"
+                  
+                    android:text="Post"
+                    android:textColor="#ffffffff"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+            	</LinearLayout>
+            </ScrollView>
+</LinearLayout>

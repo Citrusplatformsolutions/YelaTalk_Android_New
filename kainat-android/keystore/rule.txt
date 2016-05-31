@@ -1,0 +1,4 @@
+    android:minSdkVersion="13"
+        android:targetSdkVersion="15" 
+
+progaurd.cgf needed to remove

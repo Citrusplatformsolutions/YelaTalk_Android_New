@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="country">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>American Samoa</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Anguilla</item>
+        <item>Antarctica</item>
+        <item>Antigua and Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Aruba</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Bermuda</item>
+        <item>Bhutan</item>
+        <item>Bolivia</item>
+        <item>Bosnia and Herzegovina</item>
+        <item>Botswana</item>
+        <item>Bouvet Island</item>
+        <item>Brazil</item>
+        <item>British Indian Ocean Territory</item>
+        <item>British Virgin Islands</item>
+        <item>Brunei</item>
+        <item>Bulgaria</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+        <item>Cape Verde</item>
+        <item>Cayman Islands</item>
+        <item>Central African Republic</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Christmas Island</item>
+        <item>Cocos (Keeling) Islands</item>
+        <item>Colombia</item>
+        <item>Comoros</item>
+        <item>Congo</item>
+        <item>Cook Islands</item>
+        <item>Costa Rica</item>
+        <item>Cote d\'Ivoire</item>
+        <item>Croatia</item>
+        <item>Cuba</item>
+        <item>Cyprus</item>
+        <item>Czech Republic</item>
+        <item>Democratic Republic of the Congo</item>
+        <item>Denmark</item>
+        <item>Djibouti</item>
+        <item>Dominica</item>
+        <item>Dominican Republic</item>
+        <item>East Timor</item>
+        <item>Ecuador</item>
+        <item>Egypt</item>
+        <item>El Salvador</item>
+        <item>Equatorial Guinea</item>
+        <item>Eritrea</item>
+        <item>Estonia</item>
+        <item>Ethiopia</item>
+        <item>Faeroe Islands</item>
+        <item>Falkland Islands</item>
+        <item>Fiji</item>
+        <item>Finland</item>
+        <item>Former Yugoslav Republic of Macedonia</item>
+        <item>France</item>
+        <item>French Guiana</item>
+        <item>French Polynesia</item>
+        <item>French Southern Territories</item>
+        <item>Gabon</item>
+        <item>Georgia</item>
+        <item>Germany</item>
+        <item>Ghana</item>
+        <item>Gibraltar</item>
+        <item>Greece</item>
+        <item>Greenland</item>
+        <item>Grenada</item>
+        <item>Guadeloupe</item>
+        <item>Guam</item>
+        <item>Guatemala</item>
+        <item>Guinea</item>
+        <item>Guinea-Bissau</item>
+        <item>Guyana</item>
+        <item>Haiti</item>
+        <item>Heard Island and McDonald Islands</item>
+        <item>Honduras</item>
+        <item>Hong Kong</item>
+        <item>Hungary</item>
+        <item>Iceland</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Ireland</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        <item>Jamaica</item>
+        <item>Japan</item>
+        <item>Jordan</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kiribati</item>
+        <item>Kuwait</item>
+        <item>Kyrgyzstan</item>
+        <item>Laos</item>
+        <item>Latvia</item>
+        <item>Lebanon</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Libya</item>
+        <item>Liechtenstein</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        <item>Macau</item>
+        <item>Madagascar</item>
+        <item>Malawi</item>
+        <item>Malaysia</item>
+        <item>Maldives</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Marshall Islands</item>
+        <item>Martinique</item>
+        <item>Mauritania</item>
+        <item>Mauritius</item>
+        <item>Mayotte</item>
+        <item>Mexico</item>
+        <item>Micronesia</item>
+        <item>Moldova</item>
+        <item>Monaco</item>
+        <item>Mongolia</item>
+        <item>Montenegro</item>
+        <item>Montserrat</item>
+        <item>Morocco</item>
+        <item>Mozambique</item>
+        <item>Myanmar</item>
+        <item>Namibia</item>
+        <item>Nauru</item>
+        <item>Nepal</item>
+        <item>Netherlands</item>
+        <item>Netherlands Antilles</item>
+        <item>New Caledonia</item>
+        <item>New Zealand</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>Niue</item>
+        <item>Norfolk Island</item>
+        <item>North Korea</item>
+        <item>Northern Marianas</item>
+        <item>Norway</item>
+        <item>Oman</item>
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>Panama</item>
+        <item>Papua New Guinea</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Philippines</item>
+        <item>Pitcairn Islands</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Puerto Rico</item>
+        <item>Qatar</item>
+        <item>Reunion</item>
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Rwanda</item>
+        <item>Sqo Tome and Principe</item>
+        <item>Saint Helena</item>
+        <item>Saint Kitts and Nevis</item>
+        <item>Saint Lucia</item>
+        <item>Saint Pierre and Miquelon</item>
+        <item>Saint Vincent and the Grenadines</item>
+        <item>Samoa</item>
+        <item>San Marino</item>
+        <item>Saudi Arabia</item>
+        <item>Senegal</item>
+        <item>Serbia</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Singapore</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Solomon Islands</item>
+        <item>Somalia</item>
+        <item>South Africa</item>
+        <item>South Georgia and the South Sandwich Islands</item>
+        <item>South Korea</item>
+        <item>South Sudan</item>
+        <item>Spain</item>
+        <item>Sri Lanka</item>
+        <item>Sudan</item>
+        <item>Suriname</item>
+        <item>Svalbard and Jan Mayen</item>
+        <item>Swaziland</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Syria</item>
+        <item>Taiwan</item>
+        <item>Tajikistan</item>
+        <item>Tanzania</item>
+        <item>Thailand</item>
+        <item>The Bahamas</item>
+        <item>The Gambia</item>
+        <item>Togo</item>
+        <item>Tokelau</item>
+        <item>Tonga</item>
+        <item>Trinidad and Tobago</item>
+        <item>Tunisia</item>
+        <item>Turkey</item>
+        <item>Turkmenistan</item>
+        <item>Turks and Caicos Islands</item>
+        <item>Tuvalu</item>
+        <item>Virgin Islands</item>
+        <item>Uganda</item>
+        <item>Ukraine</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+        <item>United States Minor Outlying Islands</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+        <item>Vanuatu</item>
+        <item>Vatican City</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+        <item>Wallis and Futuna</item>
+        <item>Western Sahara</item>
+        <item>Yemen</item>
+        <item>Yugoslavia</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+    </string-array>
+    <string-array name="status">
+        <item>Online</item>
+        <item>Offline</item>
+    </string-array>
+    <string-array name="postto">
+        <item>Public Gallery</item>
+        <item>Private Gallery</item>
+        <item>Post To Friends</item>
+    </string-array>
+    <string-array name="category">
+        <item>Bollywood</item>
+        <item>Hollywood</item>
+        <item><![CDATA[Cricket & Sports]]></item>
+        <item>Nature-Travel</item>
+        <item>RockeTalk Star</item>
+        <item>Jokes</item>
+        <item>Shaayari</item>
+        <item>People</item>
+        <item>Others</item>
+        <!-- <item>Cancel</item> -->
+    </string-array>
+    <string-array name="age_range">
+        <item>18-24</item>
+        <item>25-34</item>
+        <item>35-50</item>
+        <item>Above 50</item>
+    </string-array>
+    <string-array name="community_profile_photo_options">
+        <item>Attach from file system</item>
+        <item>Click using camera</item>
+    </string-array>
+    <string-array name="community_profile_photo_options_delete">
+        <item>Preview</item>
+        <item>clear</item>
+    </string-array>
+    <!--
+    <string-array name="community_category">
+        <item>Activities</item>
+        <item>Alumni &amp; Schools</item>
+        <item>Arts &amp; Entertainment</item>
+        <item>Automotive</item>
+        <item>Business</item>
+        <item>Cities  &amp;  Neighborhoods</item>
+        <item>Company</item>
+        <item>Countries &amp; Regional</item>
+        <item>Cultures &amp; Community</item>
+        <item>Family &amp; Home</item>
+        <item>Fashion &amp; Beauty</item>
+        <item>Food &amp; Drink &amp; Wine</item>
+        <item>Games</item>
+        <item>Gay &amp; Lesbian &amp; Bi</item>
+        <item>Government &amp; Politics</item>
+        <item>Health &amp; Wellness &amp; Fitness</item>        
+        <item>Hobbies &amp; Crafts</item>
+        <item>Individuals</item>
+        <item>Music</item>
+        <item>Pets &amp; Animals</item>
+        <item>Politics</item><item>Recreation &amp; Sports</item>
+        <item>Religion &amp; Beliefs</item>
+        <item>Romance &amp; Relationships</item>
+        <item>Schools &amp; Education</item>
+        <item>Science &amp; History</item>
+        <item>Travel</item>
+        <item>Computers &amp; Internet</item>
+        <item>Other</item>
+    </string-array>
+    -->
+
+    <string-array name="cs12">
+        <item>http://app00.rocketalk-production.com/rocketalk/im</item>
+        <item>http://app02.rocketalk-production.com/rocketalk/im</item>
+        <item>http://cs.rocketalk.web.id:8088/rocketalk/im</item>
+        <item>http://cs.rocketalk.web.id:8088/rocketalk/im</item>
+        <item>http://124.153.95.185/rocketalk/im</item>
+        <item>http://124.153.95.132/rocketalk/im</item>
+        <item>http://124.153.95.168:9088/rocketalk/im</item>
+        <item>http://124.153.95.165:8088/rocketalk/im</item>
+        <item>http://124.153.95.174:8088/rocketalk/im</item>
+        <item>http://124.153.95.166:8085/rocketalk/im</item>
+        <item>http://124.153.95.158:8085/rocketalk/im</item>
+        <item>http://124.153.95.173:8088/rocketalk/im</item>
+        <item>http://124.153.95.161:8088/rocketalk/im</item>
+    </string-array>
+    <string-array name="wap">
+        <item>android.rocketalk.com</item>
+        <item>iphone.rocketalk.com</item>
+        <item>android.rocketalk.web.id</item>
+        <item>android-stag.onetouchstar.com</item>
+        <item>android-dev1.onetouchstar.com</item>
+        <item>124.153.95.171</item>
+        <item>android-rtd5.onetouchstar.com</item>
+        <item>android-rtd4.onetouchstar.com</item>
+        <item>android-rtd3.onetouchstar.com</item>
+        <item>android-rtd7.onetouchstar.com</item>
+        <item>android-rtd6.onetouchstar.com</item>
+    </string-array>
+    <string-array name="tejas">
+        <item>api.rocketalk-production.com</item>
+        <item>tejas.rocketalk.web.id:28088</item>
+        <item>124.153.95.129</item>
+        <item>124.153.95.188</item>
+        <item>124.153.95.166:28080</item>
+        <item>124.153.95.168:28080</item>
+        <item>124.153.95.165:28080</item>
+        <item>124.153.95.174:28080</item>
+        <item>124.153.95.168:28080</item>
+        <item>124.153.95.158:28080</item>
+        <item>124.153.95.173:28080</item>
+        <item>124.153.95.161:28080</item>
+    </string-array>
+    <string-array name="community_category">
+        <item>Activities</item>
+        <item>Alumni &amp; Schools</item>
+        <item>Arts &amp; Entertainment</item>
+        <item>Automotive</item>
+        <item>Business</item>
+        <item>Cities  &amp;  Neighborhoods</item>
+        <item>Company</item>
+        <item>Countries &amp; Regional</item>
+        <item>Cultures &amp; Community</item>
+        <item>Family &amp; Home</item>
+        <item>Fashion &amp; Beauty</item>
+        <!-- <item>Food &amp; Drink &amp; Wine</item> -->
+        <item>Games</item>
+        <!-- <item>Gay &amp; Lesbian &amp; Bi</item> -->
+        <item>Government &amp; Politics</item>
+        <item>Health &amp; Wellness &amp; Fitness</item>
+        <item>Hobbies &amp; Crafts</item>
+        <item>Individuals</item>
+        <item>Music</item>
+        <item>Pets &amp; Animals</item>
+        <item>Politics</item>
+        <item>Recreation &amp; Sports</item>
+        <item>Religion &amp; Beliefs</item>
+        <!-- <item>Romance &amp; Relationships</item> -->
+        <item>Schools &amp; Education</item>
+        <item>Science &amp; History</item>
+        <item>Travel</item>
+        <item>Computers &amp; Internet</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="community_recomendad">
+        <item name="cat1">الرياضة</item>
+        <item name="cat2">أخبار</item>
+        <item name="cat3">تسلية</item>
+        <item name="cat4">روحانية</item>
+        <item name="cat4">مجموعات شعبية<string></string></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="language">
+        <item>إختر لغتك</item>
+        <item>English</item>
+        <item>العربية</item>
+    </string-array>
+    <string-array name="audio_option_array">
+        <item>Clear audio</item>
+        <item>Play audio</item>
+        <item>Cancel</item>
+        <item>Re-Record</item>
+    </string-array>
+    
+     <string-array name="community_new">
+        <item name="cat1">الرياضة</item>
+        <item name="cat2">أخبار</item>
+        <item name="cat3">تسلية</item>
+        <item name="cat4">روحانية</item>
+    </string-array>
+    <string-array name="community_new_select">
+        <item name="cat0">@string/select_category</item>
+        <item name="cat1">الرياضة</item>
+        <item name="cat2">أخبار</item>
+        <item name="cat3">تسلية</item>
+        <item name="cat4">نمط الحياة</item>
+         <item name="cat5">روحانية</item>
+    </string-array>
+</resources>

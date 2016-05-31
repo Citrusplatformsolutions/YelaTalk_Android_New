@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+
+	android:layout_height="wrap_content">
+
+
+
+	<LinearLayout android:id="@+id/LinearLayout_discoveryRow"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:visibility="gone" android:orientation="horizontal"
+		android:weightSum="1">
+		<TextView android:id="@+id/discoveryRow_textOnly" style="?android:attr/dropDownItemStyle"
+			android:background="@color/focusstart" android:layout_width="fill_parent"
+			android:layout_height="60dip" android:ellipsize="marquee"
+			android:padding="1dip" android:singleLine="false" android:textStyle="bold"
+			   android:textColor="@color/sub_heading" android:textSize="18dp"
+			android:text="Inbox" android:drawableRight="@drawable/arrow" />
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:gravity="left"
+
+		android:orientation="horizontal">
+
+		<!-- <HorizontalScrollView android:visibility="visible" android:id="@+id/discoveryRow_ImageFeatureUserLayout" 
+			android:layout_height="wrap_content" android:background ="@color/white" android:layout_marginBottom 
+			="5dp" android:layout_marginTop ="5dp" android:scrollbars ="none" android:layout_gravity="left" 
+			android:layout_width="wrap_content"> -->
+		<LinearLayout android:layout_width="fill_parent"
+			android:id="@+id/discoveryRow_FeatureUserLive_loading"
+			android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal"
+			android:visibility="visible" android:orientation="horizontal"
+			android:gravity="center">
+			<ProgressBar android:layout_width="wrap_content"			
+				android:layout_gravity="center_vertical|center_horizontal"
+				android:layout_height="wrap_content" android:id="@+id/feature_user_list_loading" />
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:id="@+id/discoveryRow_FeatureUserLive" android:layout_height="wrap_content"
+
+			android:visibility="gone" android:orientation="horizontal"
+			android:gravity="left">
+			<LinearLayout android:layout_width="130dip"
+				android:id="@+id/discoveryRow_FeatureUser_imageLayout"
+				android:layout_height="130dip" android:visibility="visible"
+
+				android:layout_marginLeft="5dip" android:orientation="horizontal"
+				android:layout_gravity="center" android:gravity="center">
+				<com.kainat.app.android.uicontrol.CImageView
+					android:id="@+id/discoveryRow_FeatureUserIcon"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_gravity="center" android:layout_marginBottom="1dip"
+					android:onClick="@string/onClickHandleMethodName"
+					android:background="@drawable/border" android:layout_marginTop="1dip">
+				</com.kainat.app.android.uicontrol.CImageView>
+
+			</LinearLayout>
+			<RelativeLayout android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:layout_gravity="center_vertical"
+				android:layout_weight="5.5" android:layout_margin="5dip"
+				android:orientation="vertical">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:orientation="vertical" android:id="@+id/linearLayout1">
+					
+					<TextView android:id="@+id/discovery_messageDisplay_FeatureUserName"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_weight="1" android:singleLine="true"
+						android:onClick="@string/onClickHandleMethodName"
+						   android:textColor="@color/hyperlink" android:text="Alen Code"
+						android:textStyle="normal">
+					</TextView>
+					
+
+				</LinearLayout>
+		<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="fill_parent" android:layout_gravity="left"
+						android:gravity="bottom"
+						 android:orientation="vertical" android:layout_weight="20.78" android:layout_alignParentBottom="true" android:layout_below="@+id/linearLayout1">
+						<TextView android:id="@+id/discovery_messageDisplay_UserPost"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:gravity="left" android:paddingBottom="5dip"
+							android:paddingRight="5dip" android:singleLine="true"
+							android:text="MediaPost:2345"    android:textColor="@color/sub_heading"
+							android:textSize="12dip">
+						</TextView>
+						<TextView android:id="@+id/discovery_messageDisplay_UserFollower"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:gravity="left" android:paddingBottom="5dip"
+							android:paddingRight="5dip" android:singleLine="true"
+							android:text="followers:3444"    android:textColor="@color/sub_heading"
+							android:textSize="12dip">
+						</TextView>
+						<TextView android:id="@+id/discovery_messageDisplay_UserFeatureComment"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:gravity="right" android:paddingBottom="5dip"
+							android:paddingRight="5dip" android:singleLine="true"
+							android:text="member Communty:444"    android:textColor="@color/sub_heading"
+							android:textSize="12dip">
+						</TextView>
+					</LinearLayout>
+
+
+			</RelativeLayout>
+
+		</LinearLayout>
+
+
+		<!-- </HorizontalScrollView> -->
+	</LinearLayout>
+	<LinearLayout android:id="@+id/dividerlanding"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_margin="10dip" android:orientation="horizontal">
+		<TextView android:id="@+activity_list_row/line"
+			android:layout_width="wrap_content" android:layout_height="2dip"
+
+			android:background="@drawable/hor_line" android:textSize="10dip">
+		</TextView>
+	</LinearLayout>
+</LinearLayout>

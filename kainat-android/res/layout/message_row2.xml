@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+message_row/activity_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:onClick="@string/onClickHandleMethodName"
+    android:orientation="vertical" >
+
+     <TextView
+            android:id="@+conversation/subject"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+         
+            android:gravity="center"
+            android:onClick="@string/onClickHandleMethodName"
+            android:text="TAG"
+            android:textColor="@color/nag_green"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    <include layout="@layout/bubble_left2"/>
+    <include layout="@layout/bubble_right2"/>
+    
+</LinearLayout>

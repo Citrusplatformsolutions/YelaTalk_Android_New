@@ -1,0 +1,80 @@
+package com.kainat.app.android.util;
+
+public class DMKeys {
+
+	public static final String USER_PROFILE = "USER_PROF";
+	public static final String TICKER_MESSAGE = "TICKER_MESSAGE";
+	public static final String XHTML_URL = "XHTML_URL";
+	public static final String TERMS_CONDITIONS = "TERMS_CONDITIONS";
+	public static final String INBOX_REPLY_REPLYALL = "INBOX_REPLY_REPLYALL";
+	public static final String INBOX_REPLY_ALL = "INBOX_REPLY_ALL";
+	public static final String INBOX_FORWARD = "INBOX_FORWARD";
+	public static final String MY_PAGE = "MYPAGE";
+	public static final String NOTIFICATIONS = "NOTIFICATIONS";
+	public static final String UPLOAD_PRIVATE_MEDIA = "UPLOAD_PRIVATE_MEDIA";
+	public static final String RETRIEVED_GROUP_DETAILS = "RETRIEVED_GROUP_DETAILS";
+	public static final String FROM_REGISTRATION = "FROM_REGISTRATION";
+	public static final String TOT_COMMUNITE = "TOT_COMMUNITE";
+	public static final String BUZZ_FROM = "BUZZ_FROM";
+	public static final String BUZZ_COMMUNITY_FROM = "BUZZ_COMMUNITY_FROM";
+	public static final String BUZZ_TIME = "BUZZ_TIME";
+	public static final String PREVIOUS_USERNAME = "PREVIOUS_USERNAME";
+	public static final String LOGIN_AS_INVISIBLE = "LOGIN_AS_INVISIBLE";
+	public static final String PAYLOAD_TO_PLAY = "PAYLOAD_TO_PLAY";
+	public static final String REGISTRATION_USER_NAME = "REGISTRATION_USER_NAME";
+	public static final String REGISTRATION_USER_FNAME = "REGISTRATION_USER_FNAME";
+	public static final String REGISTRATION_USER_LNAME = "REGISTRATION_USER_LNAME";
+	public static final String COMPOSE_INBOX_MESSAGE_CURRENT_STATUS = "COMPOSE_INBOX_MESSAGE_CURRENT_STATUS";
+	public static final String COMPOSE_TEXT_MESSAGE = "COMPONSE_TEXT_MESSAGE";
+	public static final String COMPOSE_VOICE_MESSAGE = "COMPONSE_VOICE_MESSAGE";
+	public static final String COMPOSE_PICTURE_MESSAGE = "COMPOSE_PICTURE_MESSAGE";
+	public static final String CAMERA_IMAGE_PATH = "CAMERA_IMAGE_PATH";
+	public static final String CAMERA_VIDEO_PATH = "CAMERA_VIDEO_PATH";
+	public static final String VOICE_PATH = "VOICE_PATH";
+	public static final String COMPOSE_VIDEO_MESSAGE = "COMPOSE_VIDEO_MESSAGE";
+	public static final String COMPONSE_TAG_MESSAGE = "COMPONSE_TAG_MESSAGE";
+	public static final String SELECTED_CONTACT_ON_CONTACT = "SELECTED_CONTACT_ON_CONTACT";
+	public static final String CURRENT_CHAT_USER_NAME = "CURRENT_CHAT_USER_NAME";
+	public static final String CHAT_SCREEN_USER_NAME = "CHAT_SCREEN_USER_NAME";
+	public static final String CHAT_INSERT_AT = "CHAT_INSERT_AT";
+	public static final String COMPOSE_DESTINATION_CONTACTS = "COMPONSE_DESTINATION_CONTACTS";
+	public static final String COMPOSE_DESTINATION_CONTACTS_IDS = "COMPOSE_DESTINATION_CONTACTS_IDS";
+	public static final String COMPOSE_REFERENCE_MESSAGE_ID = "COMPONSE_REFERENCE_MESSAGE_ID";
+	public static final String COMPOSE_MESSAGE_OP = "COMPONSE_MESSAGE_OP";
+	public static final String COMPOSE_MESSAGE_PARAM = "COMPOSE_MESSAGE_PARAM";
+	public static final String COMPOSE_SHARE_DESTINATION = "COMPOSE_SHARE_DESTINATION";
+	public static final String COMPOSE_SHARE_COMMAND = "COMPOSE_SHARE_COMMAND";
+	public static final String COMPOSE_SHARE_COSTRAINTS = "COMPOSE_SHARE_COSTRAINTS";
+	public static final String VIDEO_DATA = "VIDEO_DATA";
+	public static final String VIDEO_DATA_TYPE = "VIDEO_DATA_TYPE";
+	public static final String ENTRY = "ENTRY";
+	public static final String LANDING_ACTIVITY="LANDING_ACTIVITY";
+	public static final String DISCOVERY_COMMUNITY="DISCOVERY_COMMUNITY";
+	public static final String NEW_INTENT = "NEW_INTENT";
+	public static final String MULTI_IMAGES = "MULTI_IMAGES";
+	public static final String ENTRY_STATS = "ENTRY_STATS";
+	public static final String MEDIA_TITLE = "MEDIA_TITLE";
+	public static final String FEED = "FEED";
+	public static final String FEED_MY_ALBUM_PLUS = "FEED_MY_ALBUM_PLUS";
+	public static final String RESPONSEDATA = "mResponseData";
+	public static final String IS_CHAT_ACTIVE = "isChatActive";
+	public static final String IS_VERIFIED = "isVerified";
+	public static final String COMMUNITY_DELETED = "COMM_DELETED";
+	public static final String CURRENT_INDEX = "CURRENT_INDEX";
+	public static final String CONVERSATION_SELECTED_LIST = "CONVERSATION_SELECTED_LIST";
+	public static final String PENDING_INVITE="PENDING_INVITE";
+	public static final String PENDING_TEXT="Pending invite";
+	public static final String GO_TO_SCREEN = "GO_TO_SCREEN";
+
+	public static final String RELOAD_SCREEN = "RELOAD_SCREEN";
+	public static final String FEED_BY_SPECIFIED_USER = "BY_USER";
+	public static final String FEED_MEDIAVISEO = "BY_USER_MORE";
+	public static final String TOP_MESSAGE_ID_FOR_ALL_DELETE = "TOP_MESSAGE_ID_FOR_ALL_DELETE";
+	public static final String BOTTOM_MESSAGE_ID_FOR_ALL_DELETE = "BOTTOM_MESSAGE_ID_FOR_ALL_DELETE";
+	public static final String FEED_COMMUNITY_SEARCH = "FEED_COMMUNITY_SEARCH";
+	public static final String TEST_RTML = "<rtml version=\"1.50\"><card bgimg=\"pict/1><font size=\"3\">For better use, please allow permissions for data access from the application access in options -</font><\\br><font size=\"2\" color=\"rgb(0,0,255)\">1. Select Data access-> Read user data then select Always allowed.</font><\\br><font size=\"2\" color=\"rgb(0,0,255)\">2. Select Data access-> Add and Edit data then select Always allowed.</font></card></rtml>";
+	public static final String KAINAT_MULTI_IMAGES = "KAINAT_MULTI_IMAGES";
+	public static final String USER_STATUS = "USER_STATUS";
+	
+
+}

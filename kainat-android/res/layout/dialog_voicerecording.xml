@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bluetoothbac"
+    android:orientation="vertical"
+    	android:layout_gravity="center_horizontal|center_vertical"
+    android:paddingBottom="20dip">
+    <TextView
+        android:id="@+id/recording_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+       android:textColor="@color/heading"
+        android:gravity="center"
+        android:text="@string/recording_audio"
+        android:paddingLeft = "5dp"
+        android:paddingRight = "5dp"
+      
+        android:textSize="18dip">
+    </TextView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dip"
+        android:src="@drawable/mic">
+    </ImageView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/voiceRecordingDialog_secondsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:textColor="@color/heading"
+            android:layout_marginRight="5dip"
+            android:text="01:00"
+          
+            android:textSize="18dip">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/secs_left"
+          android:textColor="@color/heading"
+          
+            android:textSize="18dip">
+        </TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_margin="5dp"
+        android:background="@drawable/gradient">
+    </View>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dip"
+    
+        android:layout_gravity="top|center_horizontal"
+        >
+
+        <TextView
+            android:id="@+id/voiceRecordingDialog_cancel"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/roundedrectgradient_gray"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/cancel"
+            android:textColor="@color/white" >
+
+        </TextView>
+        <TextView
+            android:id="@+id/voiceRecordingDialog_done"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/rounded_yellow"
+            android:clickable="true"
+            android:layout_marginLeft="20dip"
+            android:gravity="center"
+            android:text="@string/send"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/white" >
+
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

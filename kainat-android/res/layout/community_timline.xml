@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+community_chat/community_chat_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title"
+        android:visibility="visible"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:id="@+id/headerpart_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".33"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/prev"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/x_arrows_left"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.kainat.app.android.uicontrol.CircleImageView
+                android:id="@+id/comm_profile_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="3dp"
+                android:onClick="@string/onClickHandleMethodName"
+                android:scaleType="centerCrop"
+                android:src="@drawable/attachicon"
+                android:visibility="visible" >
+            </com.kainat.app.android.uicontrol.CircleImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/headerpart_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/community_timeline_title"
+                style="@style/HeaderFontStyle"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/attachement"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/headerpart_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/headerpart_4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img_timeline_chat"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/icon_chatroom" />
+
+                <ImageView
+                    android:id="@+id/attachement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/menu"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:src="@drawable/attachment_unsel"
+                    android:textColor="@color/white"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/headerpart_5"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/menu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/x_options"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+community_chat/community_chat_header"
+        android:background="#FFFFFF" >
+
+        <ListView
+            android:id="@+id/chatList_timline"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:listSelector="@drawable/list_selector"
+            android:paddingLeft="1dip"
+            android:dividerHeight="8dp"
+            android:paddingTop="0px" />
+
+        <ImageView
+            android:id="@+id/img_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/start_timeline" />
+
+        <ImageView
+            android:id="@+id/img_add_timeline"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/add_plus" />
+        <TextView
+            android:id="@+id/new_refresh_feed_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/new_feed"
+            android:textColor="#ffffff"
+            android:background="@drawable/rounded_timeline"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layout_broadcast"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/new_message_color"
+            android:gravity="bottom|center"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:background="#d4d0c8"
+                android:gravity="center"
+                android:text="@string/broadcast_mode"
+                android:textColor="@color/sub_heading"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    
+    <RelativeLayout
+        android:id="@+id/rel_lay_firttime_help"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+         >
+
+        <ImageView
+            android:id="@+id/img_firsttime"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/timelieescreen"
+             />
+
+    </RelativeLayout>
+</RelativeLayout>

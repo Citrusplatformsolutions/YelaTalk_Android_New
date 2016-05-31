@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dip"
+    android:layout_marginLeft="0dip"
+    android:layout_marginRight="10dip"
+    android:layout_marginTop="10dip"
+    
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/main_Left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <!--
+            <LinearLayout android:layout_width="wrap_content"
+		    android:id="@+id/secon_main_layout"
+			android:layout_height="wrap_content" 
+			android:visibility="visible"
+			android:orientation="horizontal"
+			android:layout_gravity="left"
+			android:gravity="center">
+			
+			<com.kainat.app.android.uicontrol.CImageView
+					android:id="@+id/UserIcon"									 
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:onClick="@string/onClickHandleMethodName"
+					android:src="@drawable/profile_left"
+					android:scaleType="fitCenter">
+				</com.kainat.app.android.uicontrol.CImageView>
+			</LinearLayout>
+        -->
+<LinearLayout
+            android:id="@+id/secon_main_layout"
+            android:layout_width="@dimen/thumb_height"
+                android:layout_height="@dimen/thumb_widht"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+          
+            android:orientation="horizontal"
+            >
+       
+            <com.kainat.app.android.uicontrol.CImageView
+                xmlns:rocketalk="http://schemas.android.com/apk/res/com.kainat.app.android"
+rocketalk:imagetype="THUMB"
+                android:id="@+id/UserIcon"
+               android:layout_width="@dimen/thumb_height"
+                android:layout_height="@dimen/thumb_widht"
+                android:onClick="@string/onClickHandleMethodName"
+         		android:scaleType="fitCenter"
+         		android:adjustViewBounds="true"
+                android:visibility="visible"
+               android:src="@drawable/def2"
+                >
+            </com.kainat.app.android.uicontrol.CImageView>
+       
+ </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/user_Name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dip"
+                    android:singleLine="true"
+                    android:text="Alen Code"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" >
+                </TextView>
+                
+  <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/wats_thinking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@drawable/watsiamthinking"
+                    android:gravity="center"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight=".75"
+                    android:layout_marginRight="20dp"
+                    android:singleLine="true"
+                    android:text="What&apos;s i am thinking?"
+                    android:textColor="@color/black"
+                    android:textSize="12dip" >
+                </TextView>
+                <ImageView
+                    android:id="@+id/verify"
+                   
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   
+                    android:src="@drawable/verify"
+                    android:scaleType="center"
+                    android:visibility="visible" >
+                </ImageView>
+            </LinearLayout>
+                
+            </LinearLayout>
+
+          
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/list_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding='utf-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:rt="http://feeds.rocketalk.com/schemas/2012">
+		<title>Advertisement Feed</title>
+			<statsUrl>http://124.153.95.166:28080/tejas/feeds/api/advt/advt</statsUrl>
+			<advtHitInSec>200</advtHitInSec>
+				<advtCount>3</advtCount>
+		<advt>
+					<advtName>contest</advtName>
+							<advtId>674</advtId>
+							<advtViewId>advtView674</advtViewId>
+								<advtClickId>advtClick674</advtClickId>
+					
+					<advtType>CPM</advtType>
+							<advtLocation>BOTTOM</advtLocation>
+									<screenId>CON</screenId>
+																				
+				  <content>
+		   <setId>1</setId>
+					<contentType>TEXT</contentType>								
+							
+																								<advtText>Contest</advtText>
+															<contestUrl>rt::http://124.153.95.166:28080/tejas/feeds/api/advt/contest?contestId=95&amp;advtCode=674</contestUrl>
+						 </content>
+		 		
+	</advt>
+		<advt>
+					<advtName>advt</advtName>
+							<advtId>673</advtId>
+							<advtViewId>advtView673</advtViewId>
+								<advtClickId>advtClick673</advtClickId>
+					
+					<advtType>CPLINPUT</advtType>
+							<advtLocation>TOP</advtLocation>
+									<screenId>SRCH</screenId>
+																				
+				  <content>
+		   <setId>1</setId>
+					<contentType>PICTURE</contentType>
+									<contentUrl>http://media-rtd4.onetouchstar.com/get/54724_1_4_D_I_I1_db5s8cpfxe.gif</contentUrl>
+						
+							
+										<clickUrl>rt::http://124.153.95.166:28080/tejas/feeds/api/advt/lead?advtCode=673&amp;leadId=13</clickUrl>
+									<clickId>imgClick54724_1_4_D_I_I1_db5s8cpfxe</clickId>
+									<viewId>imgView54724_1_4_D_I_I1_db5s8cpfxe</viewId>
+																									 </content>
+		 		
+	</advt>
+		<advt>
+					<advtName>text advt</advtName>
+							<advtId>675</advtId>
+							<advtViewId>advtView675</advtViewId>
+								<advtClickId>advtClick675</advtClickId>
+					
+					<advtType>CPC</advtType>
+							<advtLocation>TOP</advtLocation>
+									<screenId>GRID</screenId>
+																				
+				  <content>
+		   <setId>1</setId>
+					<contentType>TEXT</contentType>
+								
+							
+																								<advtText>this is add for ajay</advtText>
+																 </content>
+		 		
+	</advt>
+	 	</feed>

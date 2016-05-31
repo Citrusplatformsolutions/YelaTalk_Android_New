@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding='utf-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+    xmlns:openSearch="http://a9.com/-/spec/opensearch/1.1/"
+    xmlns:rt="http://feeds.rocketalk.com/schemas/2010">
+    <id>tag:rt,2011:category:categoryId</id>
+    <updated>2011-04-08T05:39:37+00:00</updated>
+    <category scheme="http://schemas.rocketalk.com/#kind" term="entry-list"/>
+    <title>RocketTalk&apos;s feed - category (categoryId) </title>
+    <subtitle>Mobile Social Networking site</subtitle>
+    <logo>http://124.153.95.131/tejas/images/logo.gif</logo>
+    <link rel="self" type="application/atom+xml" href="http://124.153.95.131/tejas/feeds/api/category/49?locale=en_US&amp;limit=20&amp;categoryId=49"/>
+    <link rel="first" type="application/atom+xml" href="http://124.153.95.131/tejas/feeds/api/category/49?locale=en_US&amp;limit=20&amp;categoryId=49&amp;v=0.1&amp;pg=0" />
+    <link rel="next" type="application/atom+xml" href="http://124.153.95.131/tejas/feeds/api/category/49?locale=en_US&amp;limit=20&amp;categoryId=49&amp;v=0.1&amp;pg=1" />
+    <author>
+        <name>RocketTalk</name>
+        <uri>http://m.rocketalk.com</uri>
+    </author>
+    <generator uri="http://124.153.95.131/tejas" version="1.0">FeedRocket - RocketTalk Feed Generator</generator>
+    <openSearch:totalResults>51225</openSearch:totalResults>
+    <openSearch:startIndex>0</openSearch:startIndex>
+    <openSearch:itemsPerPage>20</openSearch:itemsPerPage>
+    <rt:tracking code="GLY" />
+    <entry>
+        <id>1065588227</id>
+        <published>2011-04-08 05:01:39</published>        
+        <updated>2011-04-08 05:01:39</updated>
+        <!-- Use this to define the type for the message -->
+        <category scheme="http://schemas.rocketalk.com/2010/mediatype.cat" term="TEXT"/>
+        <category scheme="http://schemas.rocketalk.com/2010/mediatype.cat" term="MEDIA"/>
+        <category scheme="http://schemas.rocketalk.com/2010/mediatype.cat" term="PICTURE"/>
+        <category scheme="http://schemas.rocketalk.com/2010#keywords.cat" term="/Bollywood" label="Bollywood"/>
+        <category scheme="http://schemas.rocketalk.com/2010#collection.cat" term="media"/>
+        <category scheme="http://schemas.rocketalk.com/#kind" term="leaf"/>
+        <title>hi</title>
+        <content type="image/jpeg" src="http://124.153.95.131/tejas/image/resource/repository/2011/04/08/05/1883887054263388160.jpg"/>
+         <summary></summary>
+        <author>
+            <name>mehrdad.tafakori</name>
+            <uri>http://iphone.rocketalk.com/mypage/defaultpage/mehrdad.tafakori</uri>
+        </author>
+        <!-- use this for the detailed media url -->
+        <link rel="http://schemas.rocketalk.com/2010#collection.url" type="application/octet-stream" href="http://124.153.95.131/tejas/feeds/api/mediacollection/1065588227?rep=iphone/rt&amp;v=0.1" />
+        <link rel="http://schemas.rocketalk.com/2010#collection.related" type="application/atom+xml" href="http://124.153.95.131/tejas/feeds/api/list/searched/user?user=mehrdad.tafakori&amp;ex=1065588227&amp;myg=PUBLIC&amp;v=0.1"/>
+        <link rel="http://schemas.rocketalk.com/2010#collection.subscribe" type="application/rtml"  href="msgto:MediaManager&lt;a:MediaMgr&gt;?text=Subscribe::S##mehrdad.tafakori::SID##5205914" />
+        <link rel="http://schemas.rocketalk.com/2010#collection.report" type="application/rtml"  href="msgto:RTModerator&lt;a:rtmoderator&gt;?text=ymsg::msgid##1065588227::medMsg##m" />
+        <link rel="http://schemas.rocketalk.com/2010#collection.rating" type="application/rtml"  href="msgto:Media Store&lt;a:MediaMgr&gt;?text=Rate::Value##{0}::msgid##1065588227::UGC## " />
+        <rt:statistics viewCount="8" mediaCount="1"/>
+        <rt:rating votecount="0" averagerating="0.0" />
+        <rt:voting voteupcount="0" votedowncount="0" />
+		<_url>http://124.153.95.131/tejas/feeds/s?_type=media&amp;object_id=1065588227&amp;start_page=1&amp;num_s=20</_url>
+		<_count>0</_count>
+		<fburl>http://demo.rocketalk.com/rtgallery/fcconnect/3f839603</fburl>
+    </entry>
+    <entry>
+        <id>1065440864</id>
+        <published>2011-04-08 03:21:55</published>        
+        <updated>2011-04-08 03:21:55</updated>
+        <!-- Use this to define the type for the message -->
+        <category scheme="http://schemas.rocketalk.com/2010/mediatype.cat" term="TEXT"/>
+        <category scheme="http://schemas.rocketalk.com/2010/mediatype.cat" term="MEDIA"/>
+        <category scheme="http://schemas.rocketalk.com/2010/mediatype.cat" term="PICTURE"/>
+        <category scheme="http://schemas.rocketalk.com/2010#keywords.cat" term="/Bollywood" label="Bollywood"/>
+        <category scheme="http://schemas.rocketalk.com/2010#collection.cat" term="slideshow"/>
+        <category scheme="http://schemas.rocketalk.com/#kind" term="leaf"/>
+        <title>G</title>
+        <content type="image/jpeg" src="http://124.153.95.131/tejas/image/resource/repository/2011/04/08/04/6960632926334432256.jpg"/>
+         <summary>J</summary>
+        <author>
+            <name>Yusufsaifi</name>
+            <uri>http://iphone.rocketalk.com/mypage/defaultpage/Yusufsaifi</uri>
+        </author>
+        <!-- use this for the detailed media url -->
+        <link rel="http://schemas.rocketalk.com/2010#collection.url" type="application/octet-stream" href="http://124.153.95.131/tejas/feeds/api/mediacollection/1065440864?rep=iphone/rt&amp;v=0.1" />
+        <link rel="http://schemas.rocketalk.com/2010#collection.related" type="application/atom+xml" href="http://124.153.95.131/tejas/feeds/api/list/searched/user?user=Yusufsaifi&amp;ex=1065440864&amp;myg=PUBLIC&amp;v=0.1"/>
+        <link rel="http://schemas.rocketalk.com/2010#collection.subscribe" type="application/rtml"  href="msgto:MediaManager&lt;a:MediaMgr&gt;?text=Subscribe::S##Yusufsaifi::SID##5068957" />
+        <link rel="http://schemas.rocketalk.com/2010#collection.report" type="application/rtml"  href="msgto:RTModerator&lt;a:rtmoderator&gt;?text=ymsg::msgid##1065440864::medMsg##m" />
+        <link rel="http://schemas.rocketalk.com/2010#collection.rating" type="application/rtml"  href="msgto:Media Store&lt;a:MediaMgr&gt;?text=Rate::Value##{0}::msgid##1065440864::UGC## " />
+        <rt:statistics viewCount="138" mediaCount="3"/>
+        <rt:rating votecount="3" averagerating="3.0" />
+        <rt:voting voteupcount="2" votedowncount="1" />
+		<_url>http://124.153.95.131/tejas/feeds/s?_type=media&amp;object_id=1065440864&amp;start_page=1&amp;num_s=20</_url>
+		<_count>0</_count>
+		<fburl>http://demo.rocketalk.com/rtgallery/fcconnect/3f815660</fburl>
+    </entry>
+    <entry>
+        <id>1065229239</id>
+        <published>2011-04-07 23:30:33</published>        
+        <updated>2011-04-07 23:30:33</updated>
+        <!-- Use this to define the type for the message -->
+        <category scheme="http://schemas.rocketalk.com/2010/mediatype.cat" term="TEXT"/>
+        <category scheme="http://schemas.rocketalk.com/2010/mediatype.cat" term="MEDIA"/>
+        <category scheme="http://schemas.rocketalk.com/2010/mediatype.cat" term="PICTURE"/>
+        <category scheme="http://schemas.rocketalk.com/2010#keywords.cat" term="/Bollywood" label="Bollywood"/>
+        <category scheme="http://schemas.rocketalk.com/2010#collection.cat" term="media"/>
+        <category scheme="http://schemas.rocketalk.com/2010#tags.cat" term="Happiness"/>
+        <category scheme="http://schemas.rocketalk.com/#kind" term="leaf"/>
+        <title>Happiness</title>
+        <content type="image/jpeg" src="http://124.153.95.131/tejas/image/resource/repository/2011/04/08/02/6935874810521703424.jpg"/>
+         <summary></summary>
+        <author>
+            <name>Aayaan...</name>
+            <uri>http://iphone.rocketalk.com/mypage/defaultpage/Aayaan...</uri>
+        </author>
+        <!-- use this for the detailed media url -->
+        <link rel="http://schemas.rocketalk.com/2010#collection.url" type="application/octet-stream" href="http://124.153.95.131/tejas/feeds/api/mediacollection/1065229239?rep=iphone/rt&amp;v=0.1" />
+        <link rel="http://schemas.rocketalk.com/2010#collection.related" type="application/atom+xml" href="http://124.153.95.131/tejas/feeds/api/list/searched/user?user=Aayaan...&amp;ex=1065229239&amp;myg=PUBLIC&amp;v=0.1"/>
+        <link rel="http://schemas.rocketalk.com/2010#collection.subscribe" type="application/rtml"  href="msgto:MediaManager&lt;a:MediaMgr&gt;?text=Subscribe::S##Aayaan...::SID##382743" />
+        <link rel="http://schemas.rocketalk.com/2010#collection.report" type="application/rtml"  href="msgto:RTModerator&lt;a:rtmoderator&gt;?text=ymsg::msgid##1065229239::medMsg##m" />
+        <link rel="http://schemas.rocketalk.com/2010#collection.rating" type="application/rtml"  href="msgto:Media Store&lt;a:MediaMgr&gt;?text=Rate::Value##{0}::msgid##1065229239::UGC## " />
+        <rt:statistics viewCount="19" mediaCount="1"/>
+        <rt:rating votecount="1" averagerating="5.0" />
+        <rt:voting voteupcount="1" votedowncount="0" />
+		<_url>http://124.153.95.131/tejas/feeds/s?_type=media&amp;object_id=1065229239&amp;start_page=1&amp;num_s=20</_url>
+		<_count>0</_count>
+		<fburl>http://demo.rocketalk.com/rtgallery/fcconnect/3f7e1bb7</fburl>
+    </entry>
+</feed>    

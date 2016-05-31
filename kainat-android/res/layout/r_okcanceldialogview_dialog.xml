@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|center_vertical"
+
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/con"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:gravity="center_horizontal"
+        android:background="@color/darkgray"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dip"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="16dip" />
+
+        <LinearLayout
+             android:id="@+id/dialog_message_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip" >
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateBehavior="cycle"
+                android:indeterminateDrawable="@drawable/circulor_progressbar" >
+            </ProgressBar>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+             android:id="@+id/loading_div1"
+            android:layout_marginBottom="2dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/border_dialog" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginBottom="2dip"
+            android:layout_marginLeft="5dip"
+            android:id="@+id/loading_div2"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/border_dialog" />
+
+        <LinearLayout
+            android:id="@+id/buttonContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="0dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/header_button_height"
+                android:layout_gravity="left"
+                android:layout_marginRight="10dip"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="2dp"
+              
+                android:text="Cancel"
+                android:textColor="@color/white_new"
+                android:textStyle="bold"
+                android:visibility="gone" />
+		<TextView  android:layout_width="1dp" android:id="@+id/divider" android:visibility="gone"
+            android:layout_height="@dimen/header_button_height" android:background="@color/gray" />
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/header_button_height"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dip"
+                 android:layout_marginRight="2dip"
+                android:layout_weight="0.5"
+              
+                android:text="OK"
+                android:textColor="@color/white_new"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

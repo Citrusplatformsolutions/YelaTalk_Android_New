@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="header_height">50dip</dimen> 
+        <dimen name="header_button_height">42dip</dimen> 
+    <dimen name="pill_button_corner">1dip</dimen>   
+    <dimen name="pill_button_border">1dip</dimen>  
+    <dimen name="pill_button_border_1px">1px</dimen>  
+     <dimen name="corner_radius">4dp</dimen>
+    <dimen name="tab_space_top">0dp</dimen>
+    <dimen name="tab_space">1dp</dimen>
+    <dimen name="tab_space_plus1">2dp</dimen>
+    <dimen name="media_button">55dp</dimen>
+    <dimen name="title_hight">20dp</dimen>
+    <dimen name="follow_button_width">105dp</dimen>
+     <dimen name="button_height">35dp</dimen>
+     <dimen name="button_text">16dip</dimen>
+     <dimen name="text_box_width">300dp</dimen>
+    
+     <dimen name="thumb_widht">70dip</dimen> 
+     <dimen name="thumb_height">70dip</dimen>
+     <dimen name="thumb_width_medium">65dp</dimen> 
+     <dimen name="thumb_height_medium">65dp</dimen>
+     <dimen name="thumb_widht2">50dip</dimen> 
+     <dimen name="thumb_height2">50dip</dimen>
+     
+     <dimen name="thumb_height_spacing">55dp</dimen> 
+     
+     <dimen name="ambilwarna_hsvHeight">240dp</dimen>
+	<dimen name="ambilwarna_hsvWidth">240dp</dimen>
+	<dimen name="ambilwarna_hueWidth">30dp</dimen>
+	<dimen name="ambilwarna_spacer">8dp</dimen>
+
+</resources>

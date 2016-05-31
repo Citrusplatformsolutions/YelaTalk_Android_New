@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/landingpagebackground"
+	android:orientation="vertical">
+<LinearLayout
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:layout_above="@+id/landing_discovery_tabBar">
+	<RelativeLayout 
+		android:layout_width="fill_parent" android:layout_height="@dimen/header_height"
+		android:background="@drawable/title">
+		<ImageView android:id="@+id/home_icon" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_centerVertical="true"
+			android:visibility="gone"
+			android:layout_margin="3dip" android:onClick="@string/onClickHandleMethodName"
+			android:src="@drawable/home" />
+		<TextView android:id="@+id/title" style="@style/HeaderFontStyle"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true" android:layout_centerVertical="true"
+			android:layout_weight="1" android:text="Sharing Settings" />
+	</RelativeLayout>
+	<include layout="@layout/notificationdiloag" android:id="@+id/notificationdiloags" />
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginLeft="10dip"
+		android:layout_marginTop="20dip" android:fillViewport="true">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_marginRight="10dip"
+			android:orientation="vertical">
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginBottom="20dip"
+				android:background="@drawable/roundedrectgradient"
+				android:orientation="vertical">
+				<LinearLayout android:id="@+id/facebook_configure"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_margin="5dip" android:layout_weight="1"
+					android:gravity="center_vertical" android:onClick="@string/onClickHandleMethodName"
+					android:orientation="horizontal">
+					
+					<LinearLayout android:id="@+id/facebook_logined"
+						android:visibility="visible" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:layout_weight="1"
+						android:gravity="center_vertical" android:onClick="@string/onClickHandleMethodName"
+						android:orientation="horizontal">
+						<ImageView android:layout_height="50dip" android:id="@+id/user_pic"
+							android:layout_width="50dip" android:scaleType="fitXY"
+							android:adjustViewBounds="true"
+							android:src = "@drawable/def2"
+							android:background="@drawable/im_avatar_picture_border_normal"></ImageView>
+						<LinearLayout android:id="@+id/facebook_logined"
+							android:visibility="visible" android:layout_width="wrap_content"
+							android:layout_height="50dip" android:layout_weight="1"
+							android:gravity="center_vertical" android:onClick="@string/onClickHandleMethodName"
+							android:orientation="vertical">
+							<TextView android:id="@+id/facebook_status"
+								android:gravity="center_vertical"
+								android:text ="Link your Facebook account"
+								android:layout_weight="1" android:textColor="@color/heading"
+								android:ellipsize ="end"								
+								android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+							<TextView    android:background="@drawable/pillgreen_sel"
+								android:text="Unlink" android:id="@+id/facebook_logout"
+								 android:gravity="center_vertical|center_horizontal"
+								android:onClick="@string/onClickHandleMethodName"
+								android:layout_marginLeft="2dp"
+								android:typeface="sans"
+								android:textStyle="bold"
+								android:textSize="15dp"
+								android:textColor="@color/white" android:layout_width="65dp"
+								android:layout_height="30dp"></TextView>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+	
+</LinearLayout>
+<!--  <LinearLayout android:id="@+id/landing_discovery_tabBar"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" android:background="@drawable/bottomlanding"
+		android:orientation="horizontal">
+		<ImageView android:id="@+id/landing_discovery_BtnSlideLeft"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:padding="0px" android:layout_margin="0px"
+			android:src="@drawable/slideleft_menu" />
+		<LinearLayout android:id="@+id/landing_discovery_tabBar1"
+			android:background="@drawable/bottomlanding" android:layout_height="wrap_content"
+			android:gravity="right" android:layout_gravity="right"
+			android:layout_width="fill_parent">
+			<ImageView android:layout_width="wrap_content" android:id="@+id/landing_discovery_BtnSlideRight"
+				android:layout_height="wrap_content" android:src="@drawable/rightsearch_menu"></ImageView>
+
+		</LinearLayout>
+		
+
+	</LinearLayout>-->
+</RelativeLayout>

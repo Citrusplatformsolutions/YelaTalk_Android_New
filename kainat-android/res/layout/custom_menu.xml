@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_menu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+ 	android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent_new"
+        android:gravity="center"
+        android:text="@string/options"
+        android:textColor="@color/white"
+        android:textSize="20dip"
+        android:textStyle="bold" >
+    </TextView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      android:scrollbars="vertical"
+      android:scrollbarDefaultDelayBeforeFade="500000"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/custom_menu_table"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:stretchColumns="*" >
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/optiontostrip"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:text="Options"
+        android:textColor="@color/heading"
+        android:textSize="10dip"
+        android:textStyle="bold" >
+    </TextView>
+</LinearLayout>

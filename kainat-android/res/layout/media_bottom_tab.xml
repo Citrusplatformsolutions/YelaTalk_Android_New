@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+		<LinearLayout
+			
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/m_bottom_bar"
+			android:id="@+id/buddy_menuLayout_bottom1"
+			android:visibility="gone"
+			android:layout_alignParentBottom="true" 
+		
+			android:orientation="horizontal">
+			<TextView
+				android:padding="0dp"
+				android:id="@+id/media_home"
+				android:layout_width="0dip"
+				android:layout_height="fill_parent"
+				android:layout_weight=".20"
+				android:clickable="true"
+				android:drawableTop="@drawable/m_home"
+				android:focusable="true"
+				android:textSize="11dp"
+				android:gravity="center"
+				
+				android:text="Media+"
+				android:textColor="#ffffff">
+			</TextView>
+			<TextView
+				android:padding="0dp"
+				android:id="@+id/bottom_following"
+				android:layout_width="0dip"
+				android:layout_height="fill_parent"
+				android:layout_weight=".20"
+				android:clickable="true"
+				android:drawableTop="@drawable/m_following"
+				android:focusable="true"
+				android:textSize="11dp"
+				android:gravity="center"
+				android:onClick="onClick"
+				android:text="Following"
+				android:textColor="#ffffff">
+			</TextView>
+			<TextView
+				android:padding="0dp"
+				android:id="@+id/bottom_post"
+				android:layout_width="0dip"
+				android:layout_height="fill_parent"
+				android:layout_weight=".20"
+				android:clickable="true"
+				android:drawableTop="@drawable/post"
+				android:focusable="true"
+				android:textSize="11dp"
+				android:gravity="center"
+				android:onClick="onClick"
+				android:text="Post"
+				android:textColor="#ffffff">
+			</TextView>
+			<TextView
+				android:padding="0dp"
+				android:id="@+id/bottom_myalbum"
+				android:layout_width="0dip"
+				android:layout_height="fill_parent"
+				android:layout_weight=".20"
+				android:clickable="true"
+				android:textSize="11dp"
+				android:drawableTop="@drawable/myalbum_media"
+				android:focusable="true"
+				android:gravity="center"
+				android:onClick="onClick"
+				android:text="My Album"
+				android:textColor="#ffffff">
+			</TextView>
+			<TextView
+				android:padding="1dp"
+				android:id="@+id/bottom_followers"
+				android:layout_width="0dip"
+				android:layout_height="fill_parent"
+				android:layout_weight=".20"
+				android:textSize="11dp"
+				android:clickable="true"
+				android:drawableTop="@drawable/followrs"
+				android:focusable="true"
+				android:gravity="center"
+				android:onClick="onClick"
+				android:text="Followers"
+				android:textColor="#ffffff">
+			</TextView>
+		</LinearLayout>
+		<LinearLayout
+			
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/m_bottom_bar"
+			android:id="@+id/buddy_menuLayout_bottom"
+			android:visibility="visible"
+			android:layout_alignParentBottom="true" 
+		
+			android:orientation="horizontal">
+<LinearLayout android:id="@+id/landing_discovery_tabBar"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" android:background="@drawable/bottomlanding"
+		android:orientation="horizontal">
+
+		<ImageView
+		    android:id="@+id/landing_discovery_BtnSlideLeft"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="0px"
+		    android:padding="0px"
+		    android:src="@drawable/slideleft_menu" />
+
+			<LinearLayout
+			
+			android:layout_height="wrap_content"
+			android:background="@drawable/bottomlanding"
+			android:id="@+id/buddy_menuLayout_bottom"
+			
+			android:visibility="visible"
+			android:layout_alignParentBottom="true" 
+		
+			android:orientation="horizontal" android:layout_width="fill_parent">
+		<!-- 	<TextView
+				android:padding="0dp"
+				android:id="@+id/media_home"
+				android:layout_width="0dip"
+				android:layout_height="fill_parent"
+				android:layout_weight=".20"
+				android:clickable="true"
+				android:drawableTop="@drawable/m_home"
+				android:focusable="true"
+				android:textSize="11dp"
+				android:gravity="center"
+				
+				android:text="Media+"
+				android:textColor="#ffffff">
+			</TextView> -->
+		<!--  	<TextView
+				android:padding="0dp"
+				android:id="@+id/bottom_following"
+				android:layout_width="0dip"
+				android:layout_height="fill_parent"
+				android:layout_weight=".20"
+				android:clickable="true"
+				android:drawableTop="@drawable/m_following"
+				android:focusable="true"
+				android:textSize="11dp"
+				android:gravity="center"
+				android:onClick="onClick"
+				android:text="Following"
+				android:textColor="#ffffff">
+			</TextView>-->
+				<TextView
+				android:padding="0dp"
+				android:id="@+id/bottom_myalbum"
+				android:layout_width="0dip"
+				android:layout_height="fill_parent"
+				android:layout_weight=".20"
+				
+				android:clickable="true"
+				android:textSize="11dp"
+				android:drawableTop="@drawable/to_follow"
+				android:focusable="true"
+				android:gravity="center"
+				android:onClick="onClick"
+				android:visibility="visible"
+				android:text="To Follow"
+				android:textColor="#ffffff">
+			</TextView>
+			<TextView
+				android:padding="0dp"
+				android:id="@+id/bottom_post"
+				android:layout_width="0dip"
+				android:layout_height="fill_parent"
+				android:layout_weight=".20"
+				android:clickable="true"
+					android:visibility="visible"
+				android:drawableTop="@drawable/post"
+				android:focusable="true"
+				android:textSize="11dp"
+				android:gravity="center"
+				android:onClick="onClick"
+				android:text="Post"
+				android:textColor="#ffffff">
+			</TextView>
+		
+			<TextView
+				android:padding="1dp"
+				android:id="@+id/bottom_followers"
+				android:layout_width="0dip"
+				android:layout_height="fill_parent"
+				android:layout_weight=".20"
+				android:textSize="11dp"
+					android:visibility="visible"
+				android:clickable="true"
+				android:drawableTop="@drawable/followrs"
+				android:focusable="true"
+				android:gravity="center"
+				android:onClick="onClick"
+				android:text="Followers"
+				android:textColor="#ffffff">
+			</TextView>
+			<RelativeLayout android:id="@+id/landing_discovery_tabBar1"
+			android:background="@drawable/bottomlanding" android:layout_height="wrap_content"
+			android:gravity="right" android:layout_gravity="right"
+			android:layout_width="60dip">
+			
+			<ImageView android:layout_width="wrap_content" android:id="@+id/landing_discovery_BtnSlideRight"
+				android:layout_height="wrap_content" android:src="@drawable/rightsearch_menu"></ImageView>
+				<LinearLayout  android:layout_height="wrap_content"
+			   android:layout_marginLeft="14dip"
+			android:paddingTop="1dip"
+			android:gravity="top|right" android:layout_gravity="right"
+			android:layout_width="wrap_content">
+				<LinearLayout  android:layout_height="wrap_content"
+			   android:layout_marginLeft="14dip"
+			
+			android:gravity="top|right" android:layout_gravity="right"
+			android:layout_width="wrap_content">
+				<TextView android:id="@+id/landing_discovery_activity_notification" android:visibility ="gone"
+				android:text="0" android:gravity="center" android:textColor="@color/black"
+				
+				android:layout_height="wrap_content" android:background="@drawable/notification_slide_count" android:layout_width="wrap_content"></TextView>
+		</LinearLayout>
+		</LinearLayout>
+		</RelativeLayout>
+		</LinearLayout>
+		
+		<!-- <TextView android:text="&lt;- Press icon" android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" /> -->
+
+	</LinearLayout>
+	
+		</LinearLayout>
+		
+</merge>

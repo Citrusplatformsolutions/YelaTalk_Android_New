@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:gravity="left" android:orientation="horizontal"	
+	 android:background="@drawable/roundedrectgradient" 
+	 android:layout_marginRight = "20dp"
+	 android:layout_marginLeft = "20dp"
+	android:layout_gravity="left|center_vertical">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+		    android:id="@+id/composeScreen_photoButton"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:adjustViewBounds="true"
+		    android:background="@drawable/composescreen_videoiconfinal" />
+
+		<ImageView
+		    android:id="@+id/composeScreen_vert_line"
+		    android:layout_width="3px"
+		    android:layout_height="fill_parent"
+		    android:layout_marginLeft="8dp"
+		    android:adjustViewBounds="true"
+		    android:background="@color/gray" />
+
+		
+
+		<LinearLayout android:id="@+id/attacehd_button_dy"  android:gravity="center"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_margin="5dip" android:clickable="true"
+			android:onClick="@string/onClickHandleMethodName">
+			<ImageView
+		    android:id="@+id/attacehd_image_dy"
+		    android:layout_width="45dp"
+		    android:layout_height="45dp"
+		    android:layout_gravity="center_vertical|left"
+		    android:layout_marginLeft="5dp"
+		    android:adjustViewBounds="true"
+		    android:background="@drawable/tapicontoplayvideo"
+		    android:onClick="@string/onClickHandleMethodName"
+		    android:visibility="invisible" >
+
+		</ImageView>
+			<TextView android:id="@+id/composeScreen_addPhotoText"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:layout_gravity="center" android:clickable="false"
+				android:gravity="center" android:textColor="@color/black"
+				android:text="Tap to attach">
+			</TextView>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

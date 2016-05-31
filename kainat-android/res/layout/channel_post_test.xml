@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:onClick="@string/onClickHandleMethodName"
+    android:orientation="horizontal"
+    android:paddingBottom="1dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="1dp" >
+
+    <LinearLayout
+        android:id="@+community_chatlist_row/otherSenderLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.kainat.app.android.uicontrol.CircleImageView
+            xmlns:rocketalk="http://schemas.android.com/apk/res/com.kainat.app.android"
+            android:id="@+community_chatlist_row/senderImage"
+            android:layout_width="@dimen/thumb_height2"
+            android:layout_height="@dimen/thumb_widht2"
+            android:layout_marginTop="10dp"
+            android:onClick="@string/onClickHandleMethodName"
+            android:scaleType="centerCrop"
+            android:src="@drawable/female"
+            rocketalk:imagetype="THUMB" >
+        </com.kainat.app.android.uicontrol.CircleImageView>
+
+        <ImageView
+            android:id="@+community_chatlist_row/user_menus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:onClick="@string/onClickHandleMethodName"
+            android:src="@drawable/add"
+            android:visibility="gone" >
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:gravity="center|top"
+        android:onClick="@string/onClickHandleMethodName"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+community_chatlist_row/communityInfoLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left"
+            android:layout_weight="0"
+            android:addStatesFromChildren="true"
+            android:background="@drawable/green_bubble"
+            android:duplicateParentState="true"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+community_chatlist_row/fn_ln"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:paddingBottom="1dip"
+                android:singleLine="true"
+                android:text="fn ln"
+                android:textColor="@color/heading"
+                android:textSize="14dip"
+                android:textStyle="bold"
+                android:visibility="visible" >
+            </TextView>
+
+            <TextView
+                android:id="@+community_chatlist_row/senderName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dip"
+                android:singleLine="true"
+                android:text="Sender Name"
+                android:textColor="@color/chat_bubble_name"
+                android:textSize="16dip"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+community_chatlist_row/replyto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dip"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="12dip"
+                android:textStyle="bold" >
+            </TextView>
+
+            <HorizontalScrollView
+                android:id="@+id/inbox_horizontal_multimedia_view_image"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:id="@+id/inboxLayout_imageLayout_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left|center_vertical"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/inbox_horizontal_multimedia_view_video"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:id="@+id/inboxLayout_imageLayout_video"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical|left"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/inbox_horizontal_multimedia_view_voice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:id="@+id/inboxLayout_imageLayout_voice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/inboxLayout_imageLayout_voice_media_play_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/ll_media_play"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/play" >
+                </ImageView>
+
+                <AbsoluteLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="20"
+                    android:addStatesFromChildren="true"
+                    android:orientation="vertical"
+                    android:paddingLeft="8.0dip"
+                    android:paddingRight="8.0dip" >
+
+                    <SeekBar
+                        android:id="@+id/ll_mediavoicePlayingDialog_progressbar"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8.0dip"
+                        android:paddingRight="8.0dip"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/seekbarprogress"
+                        android:thumb="@drawable/seekthumb"
+                        android:thumbOffset="0.0dip" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:orientation="vertical"
+                        android:visibility="visible" >
+
+                        <TextView
+                            android:id="@+id/ll_streemStatus"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center"
+                            android:text="@string/please_wait_while_loadin"
+                            android:textColor="@color/heading"
+                            android:textSize="9sp"
+                            android:visibility="gone" >
+                        </TextView>
+
+                   </LinearLayout>
+                 <LinearLayout
+                            android:id="@+id/ll_time_panel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/graylight"
+                            android:orientation="horizontal"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:id="@+id/ll_total_autio_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="50dp"
+                                android:text="--:--"
+                                android:textColor="@color/heading"
+                                android:textSize="12dp"
+                                android:visibility="visible" >
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/ll_dummyp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="@color/heading"
+                                android:textSize="12dp"
+                                android:visibility="visible" >
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/ll_played_autio_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:paddingRight="48dp"
+                                android:text="--:--"
+                                android:textColor="@color/heading"
+                                android:textSize="12dp"
+                                android:visibility="visible" >
+                            </TextView>
+                        </LinearLayout>
+                    
+                </AbsoluteLayout>
+
+                <ImageView
+                    android:id="@+id/ll_media_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/closebutton"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:visibility="gone" >
+                </ImageView>
+            </LinearLayout>
+            
+       <RelativeLayout
+        android:id="@+id/video_view"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:gravity="center"
+        android:onClick="@string/onClickHandleMethodName"
+        android:orientation="vertical" 
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/video_img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:onClick="@string/onClickHandleMethodName"
+            android:src="@null"
+            android:visibility="visible" >
+        </ImageView>
+        <ImageView
+            android:id="@+id/video_download_down"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:src="@drawable/download_down"
+            android:visibility="visible" >
+        </ImageView>
+
+        <ProgressBar
+             android:id="@+id/download_circular_progress"
+             android:layout_width="160dp"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+             android:layout_margin="20dp"
+             android:paddingTop="60dp"
+             android:visibility="gone" />
+        
+    </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+community_chatlist_row/communityButtonLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+community_chatlist_row/audioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dip"
+                    android:background="@drawable/chat_audio"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:visibility="gone" >
+                </Button>
+
+                <Button
+                    android:id="@+community_chatlist_row/videoButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dip"
+                    android:background="@drawable/recordvideo"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:visibility="gone" >
+                </Button>
+
+                <Button
+                    android:id="@+community_chatlist_row/imageButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dip"
+                    android:background="@drawable/placeholder"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:visibility="gone" >
+                </Button>
+            </LinearLayout>
+
+            <com.rockerhieu.emojicon.EmojiconTextView
+                android:id="@+community_chatlist_row/chatMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dip"
+                android:autoLink="all"
+                android:singleLine="false"
+                android:text="Hi how are you doing!!"
+                android:textColor="@color/sub_heading"
+                android:textSize="15sp"
+                android:textStyle="normal" >
+            </com.rockerhieu.emojicon.EmojiconTextView>
+
+            <TextView
+                android:id="@+community_chatlist_row/createdDate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Created On"
+                android:textColor="@color/chat_bubble_date"
+                android:textSize="10sp" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+community_chatlist_row/myLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="0"
+        android:orientation="vertical" >
+
+        <com.kainat.app.android.uicontrol.CircleImageView
+            xmlns:rocketalk="http://schemas.android.com/apk/res/com.kainat.app.android"
+            android:id="@+community_chatlist_row/myImage"
+            android:layout_width="@dimen/thumb_height"
+            android:layout_height="@dimen/thumb_widht"
+            android:layout_gravity="right"
+            android:onClick="@string/onClickHandleMethodName"
+            android:scaleType="centerCrop"
+            android:src="@drawable/male"
+            android:visibility="gone"
+            rocketalk:imagetype="THUMB" >
+        </com.kainat.app.android.uicontrol.CircleImageView>
+
+        <ImageView
+            android:id="@+community_chatlist_row/my_menus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:onClick="@string/onClickHandleMethodName"
+            android:src="@drawable/add"
+            android:visibility="gone" >
+        </ImageView>
+    </LinearLayout>
+
+</LinearLayout>

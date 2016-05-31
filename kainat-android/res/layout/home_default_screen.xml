@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  	android:layout_gravity="center"
+  	android:background="@drawable/landingpagebackground"
+  	android:gravity="center"
+  android:layout_height="fill_parent">
+    <LinearLayout android:layout_width="fill_parent"
+					 android:id="@+id/discovery_rtLive_Arrow_layout"
+					android:layout_height="wrap_content" 
+					android:layout_margin="10dip"
+				android:layout_gravity="center"
+				   android:visibility="visible"
+					 android:onClick="onClick"
+					 
+					android:orientation="vertical">
+						<TextView
+					    android:id="@+id/discovery_friend_Arrow"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					 android:layout_gravity="center"
+					
+					    android:layout_weight="1"
+					  android:background="@drawable/defalut_text"
+					     android:gravity="center"
+					     android:onClick="@string/onClickHandleMethodName"
+					    android:text=""
+					    
+					    android:textColor="#ff000000"
+					    android:textSize="15sp"
+					    android:textStyle="bold" >
+
+					</TextView>
+					<TextView
+					    android:id="@+id/discovery_friend_Arrow"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					 android:layout_gravity="center"
+					    android:layout_weight="1"
+					  
+					     android:gravity="center"
+					     android:onClick="@string/onClickHandleMethodName"
+					    android:text="Welcome to RockeTalk, RockeTalk is a good social networking application for Mobile Users"
+					    
+					    android:textColor="#ff000000"
+					    android:textSize="15sp"
+					    android:textStyle="bold" >
+
+					</TextView>
+						<TextView
+					    android:id="@+id/discovery_friend_Arrow"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					 android:layout_gravity="center"
+					    android:layout_weight="1"
+					  android:background="@drawable/default_arrow_page"
+					     android:gravity="center"
+					     android:onClick="@string/onClickHandleMethodName"
+					    android:text=""
+					    
+					   
+					    android:textSize="15sp"
+					    android:textStyle="bold" >
+
+					</TextView>
+			<LinearLayout android:layout_width="fill_parent"
+					 android:id="@+id/discovery_rtLive_Arrow_layout"
+					android:layout_height="wrap_content" 
+					android:layout_margin="10dip"
+						
+					 android:onClick="onClick"
+					 
+					android:orientation="horizontal">
+ 					
+					<TextView
+					    android:id="@+id/discovery_friendsearch_Arrow"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:gravity="center"
+					    android:layout_weight="1"
+					  android:drawableTop="@drawable/friends_default"
+					      android:onClick="@string/onClickHandleMethodName"
+					    android:text="Search Users"
+					 android:textSize="12sp"
+					    android:textStyle="bold" >
+
+					</TextView>
+						<TextView
+					    android:id="@+id/discovery_community_Arrow"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:gravity="center"
+					    android:layout_weight="1"
+					    android:drawableTop="@drawable/community_defalut"
+					    android:onClick="onClick"
+					    android:text="Communities"
+					    
+					   
+					    android:textSize="12sp"
+					    android:textStyle="bold" >
+
+					</TextView>
+					<TextView
+					    android:id="@+id/discovery_media_Arrow"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:gravity="center"
+					    android:layout_weight="1"
+					    android:drawableTop="@drawable/media_defalut"
+					     android:onClick="@string/onClickHandleMethodName"
+					    android:text="Media"
+					   
+					   
+					    android:textSize="12sp"
+					    android:textStyle="bold" >
+
+					</TextView>
+					</LinearLayout>
+				</LinearLayout>	
+</LinearLayout>

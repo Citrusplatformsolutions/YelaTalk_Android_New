@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:gravity="fill_vertical" android:orientation="vertical">
+	<RelativeLayout 
+		android:layout_width="85dip" android:layout_height="85dip"
+		android:layout_gravity="center_vertical|center_horizontal|center">
+		<LinearLayout 
+			android:layout_width="fill_parent" android:gravity="center"
+			android:layout_height="fill_parent" android:layout_gravity="center_vertical|center_horizontal"
+			android:orientation="vertical">
+			<com.kainat.app.android.uicontrol.CImageView android:id="@+discovery/media_grid_image"
+				android:layout_width="85dip" android:layout_height="85dip"
+				android:layout_centerHorizontal="true" android:onClick="@string/onClickHandleMethodName"
+				android:visibility="visible" android:gravity="center"
+				android:scaleType="fitXY" 
+				android:background="@drawable/photo_frame" android:layout_gravity="center_vertical|center_horizontal">
+			</com.kainat.app.android.uicontrol.CImageView>
+		</LinearLayout>
+		
+	</RelativeLayout>
+	<TextView android:text="nameranameranamera" android:id="@+id/ablum_name"
+		android:gravity="top" android:visibility="gone" android:textColor="@color/translucent_red"
+		android:layout_gravity="bottom" android:textSize="12dp"
+		android:layout_alignParentBottom="true" android:layout_width="wrap_content"
+		android:layout_height="45dp"></TextView>
+</LinearLayout>

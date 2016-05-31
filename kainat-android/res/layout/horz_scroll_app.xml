@@ -1,0 +1,1001 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="0px"
+    android:background="@drawable/landingpagebackground"
+    android:orientation="vertical"
+    android:padding="0px" >
+    <LinearLayout
+	    android:id="@+id/landing_bottom_featured_linearLayout"
+	    android:layout_width="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_height="wrap_content" >
+	    
+	    <LinearLayout
+	    android:id="@+id/landing_bottom_featured_linearLayout"
+	    android:layout_width="fill_parent"
+	    android:orientation="vertical"
+	    android:layout_gravity="center"
+	    android:gravity="center"
+	    android:background="@drawable/homescreentabbar"
+	    android:layout_height="@dimen/header_height" >
+    <TextView
+            android:id="@+landingpage/rocketalk"
+            style="@style/HeaderFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/rtlogoforhome"
+           
+            android:gravity="center"
+            android:onClick="onClick"
+            android:visibility="visible"
+            android:text=""
+            android:textColor="@color/heading"
+            android:textStyle="bold" >
+        </TextView>
+   </LinearLayout>
+   <LinearLayout
+	    android:id="@+id/landing_bottom_featured_linearLayout"
+	    android:layout_width="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_height="35dp" >
+
+		<TextView
+		    android:id="@+landingpage/activity"
+		    style="@style/HeaderFontStyle"
+		    android:layout_width="wrap_content"
+		    android:layout_height="35dp"
+		    android:layout_weight="1"
+		    android:background="@drawable/tab_background"
+		    android:clickable="true"
+		    android:focusable="true"
+		    android:gravity="center"
+		    android:onClick="onClick"
+		    android:text="Activity"
+		    android:textColor="@color/heading"
+		    android:textStyle="bold" >
+
+		</TextView>
+   <TextView
+		    android:id="@+landingpage/activitydivider"
+		    style="@style/HeaderFontStyle"
+		    android:layout_width="wrap_content"
+		    android:layout_height="35dp"
+		   
+		    android:background="@drawable/dividerhome"
+		    android:clickable="true"
+		    android:focusable="true"
+		    android:gravity="center"
+		    android:onClick="onClick"
+		    android:text=""
+		    android:textColor="@color/heading"
+		    android:textStyle="bold" >
+
+		</TextView>
+<LinearLayout android:id="@+id/home_discovery"  android:layout_weight="1" android:orientation="horizontal"
+    android:background="@drawable/tabselection"
+		android:layout_width="wrap_content" android:layout_height="fill_parent">
+
+		<TextView
+		    android:id="@+landingpage/discovery"
+		    style="@style/HeaderFontStyle"
+		    android:layout_width="wrap_content"
+		    android:layout_height="35dp"
+		    android:layout_marginLeft="1px"
+		    android:layout_weight="1"
+		    android:background="@drawable/tabselection"
+		    android:clickable="true"
+		    android:focusable="true"
+		    android:gravity="center"
+		    android:onClick="onClick"
+		    android:text="Discover"
+		    android:textColor="@color/sub_heading"
+		    android:textStyle="bold" />
+
+		<ImageView android:layout_width="65dp" android:visibility = "gone" android:background="@drawable/tabselection" android:layout_weight="1" 
+      					android:layout_gravity="left|center_vertical"  android:gravity="center" android:src="@drawable/discovery_refresh"  android:onClick="onClick"
+      						android:layout_height="wrap_content" android:id="@+id/discover_globel_loading" />
+</LinearLayout>
+	</LinearLayout>
+	</LinearLayout>
+ <LinearLayout
+            android:id="@+id/landing_bottom_featured_linearLayout_noit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_below="@+id/landing_bottom_featured_linearLayout"
+            android:gravity="right" >
+    <include
+        android:id="@+id/notificationdiloags"
+        layout="@layout/notificationdiloag" />
+</LinearLayout>
+    <TextView
+        android:id="@+id/please_wait"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/landing_bottom_featured_linearLayout"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Loading please wait..."
+        android:textColor="@color/descovery_heading"
+        android:textSize="15dip"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/list_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/media_play_layout"
+        android:layout_below="@+id/landing_bottom_featured_linearLayout_noit"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <ScrollView
+            android:id="@+id/scroll_default"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:addStatesFromChildren="true"
+            android:cacheColorHint="#ffffffff"
+            android:scrollbars="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/home_default_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/landingpagebackground"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/default_rtLive_Arrow_layout_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dip"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/discovery_friend_Arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_page_belowtext"
+                        android:gravity="center"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:text=""
+                        android:textColor="#ff000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/activity_friend_information"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:text="Once you become active, your activity updates will show up here"
+                        android:textColor="@color/time_footnote"
+                        android:textSize="15sp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/discovery_friend_Arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_arrow_page"
+                        android:gravity="center"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:text=""
+                        android:textColor="@color/time_footnote"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/discovery_friend_default_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Go Ahead! Explore"
+                        android:textColor="@color/time_footnote"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" >
+                    </TextView>
+
+                    <LinearLayout
+                        android:id="@+id/activityfriendsearch"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/default_friendsearch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/friends_default"
+                            android:gravity="center"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:text="Featured Users"
+                            android:textColor="@color/time_footnote"
+                            android:textSize="12sp"
+                            android:textStyle="bold" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/default_community"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/community_defalut"
+                            android:gravity="center"
+                            android:onClick="onClick"
+                            android:text="Communities"
+                            android:textColor="@color/time_footnote"
+                            android:textSize="12sp"
+                            android:textStyle="bold" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/default_media"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/media_defalut"
+                            android:gravity="center"
+                            android:onClick="@string/onClickHandleMethodName"
+                            android:text="Media"
+                            android:textColor="@color/time_footnote"
+                            android:textSize="12sp"
+                            android:textStyle="bold" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <com.kainat.app.android.RTRefreshListView
+            android:id="@+landingpage/activity_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:addStatesFromChildren="true"
+            android:background="@drawable/landingpagebackground"
+            android:cacheColorHint="#ffffffff"
+            android:dividerHeight="-1dip"
+            android:scrollbars="@null"
+            android:visibility="visible" />
+
+        <ScrollView
+            android:id="@+landingpage/discovery_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:addStatesFromChildren="true"
+            android:cacheColorHint="#ffffffff"
+            android:scrollbars="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/discovery_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/landingpagebackground"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:id="@+id/discovery_rtLive_Arrow_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/hedaerdiscovery"
+                    android:onClick="onClick"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/discovery_rtLive_Arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="5dp"
+                        android:onClick="onClick"
+                        android:text="RT Events"
+                        android:textColor="@color/descovery_heading"
+                        android:textSize="15dip"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <ProgressBar
+                        android:id="@+id/rt_event_loading"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/arrow_new"
+                        android:onClick="onClick"
+                        android:text=""
+                        android:textColor="@color/descovery_heading"
+                        android:textSize="15dip"
+                        android:textStyle="bold" >
+                    </TextView>
+                </LinearLayout>
+
+                <com.kainat.app.android.uicontrol.SwipeInterceptingGallery
+                    android:id="@+landingpage/group_event"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="7dip"
+                    android:scrollbarAlwaysDrawHorizontalTrack="true"
+                    android:spacing="10dp" >
+                </com.kainat.app.android.uicontrol.SwipeInterceptingGallery>
+
+                <LinearLayout
+                    android:id="@+id/discovery_trandingMedia_Arrow_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/hedaerdiscovery"
+                    android:onClick="onClick"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/discovery_trandingMedia_Arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="5dp"
+                        android:onClick="onClick"
+                        android:text="Featured Media"
+                        android:textColor="@color/descovery_heading"
+                        android:textSize="15dip"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <ProgressBar
+                        android:id="@+id/rt_media_loading"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/arrow_new"
+                        android:onClick="onClick"
+                        android:text=""
+                        android:textColor="@color/descovery_heading"
+                        android:textSize="15dip"
+                        android:textStyle="bold" >
+                    </TextView>
+                </LinearLayout>
+
+                <com.kainat.app.android.uicontrol.SwipeInterceptingGallery
+                    android:id="@+landingpage/discovery_media"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="7dip"
+                    android:scrollbarAlwaysDrawHorizontalTrack="true"
+                    android:spacing="10dp" >
+                </com.kainat.app.android.uicontrol.SwipeInterceptingGallery>
+
+                <LinearLayout
+                    android:id="@+id/discovery_FeaturedUsers_Arrow_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/hedaerdiscovery"
+                    android:onClick="onClick"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/discovery_FeaturedUsers_Arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="5dp"
+                        android:onClick="onClick"
+                        android:text="Featured Users"
+                        android:textColor="@color/descovery_heading"
+                        android:textSize="15dip"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <ProgressBar
+                        android:id="@+id/rt_feature_user_loading"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/arrow_new"
+                        android:onClick="onClick"
+                        android:text=""
+                        android:textColor="@color/descovery_heading"
+                        android:textSize="15dip"
+                        android:textStyle="bold" >
+                    </TextView>
+                </LinearLayout>
+
+                <com.kainat.app.android.uicontrol.SwipeInterceptingGallery
+                    android:id="@+landingpage/feature_user"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="7dip"
+                    android:scrollbarAlwaysDrawHorizontalTrack="true"
+                    android:spacing="10dp" >
+                </com.kainat.app.android.uicontrol.SwipeInterceptingGallery>
+
+                <LinearLayout
+                    android:id="@+id/discovery_FeaturedCommunitys_Arrow_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/hedaerdiscovery"
+                    android:onClick="onClick"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/discovery_FeaturedCommunity_Arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="5dp"
+                        android:onClick="onClick"
+                        android:text="Featured Communities"
+                        android:textColor="@color/descovery_heading"
+                        android:textSize="15dip"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <ProgressBar
+                        android:id="@+id/rt_community_loading"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/arrow_new"
+                        android:onClick="onClick"
+                        android:text=""
+                        android:textColor="@color/descovery_heading"
+                        android:textSize="15dip"
+                        android:textStyle="bold" >
+                    </TextView>
+                </LinearLayout>
+
+                <com.kainat.app.android.uicontrol.SwipeInterceptingGallery
+                    android:id="@+landingpage/discovery_community"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="10dip"
+                    android:layout_marginBottom="20dp"
+                    android:spacing="10dp" >
+                </com.kainat.app.android.uicontrol.SwipeInterceptingGallery>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/transparent_image"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/landing_discovery_tabBar"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:background="@drawable/transparent_image"
+        android:gravity="left"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:visibility="gone" />
+    <!--
+    <LinearLayout android:id="@+id/media_play_layout"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_weight=".95" android:layout_above="@+id/tabBar"
+		
+		android:background="@drawable/audio_button" android:gravity="center_vertical|center_horizontal"
+		android:orientation="horizontal" android:visibility="visible">
+
+		<ImageView android:id="@+id/media_play"
+			android:layout_width="35dp" android:layout_height="35dp"
+			android:layout_marginLeft="5dp" android:layout_weight="1"
+			android:adjustViewBounds="true" android:background="@drawable/addplay"
+			android:onClick="@string/onClickHandleMethodName" />
+
+		<AbsoluteLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_weight="20"
+			android:layout_marginTop="8.0dip" android:addStatesFromChildren="true"
+			android:orientation="horizontal" android:paddingLeft="8.0dip"
+			android:paddingRight="8.0dip">
+
+			<SeekBar android:id="@+id/mediavoicePlayingDialog_progressbar"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_weight="1.0" android:paddingLeft="8.0dip"
+				android:paddingRight="8.0dip" android:progress="0"
+				android:progressDrawable="@drawable/seekbarprogress" android:thumb="@drawable/seekthumb"
+				android:thumbOffset="0.0dip" />
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="20dp" android:gravity="center_vertical|center_horizontal"
+				android:orientation="horizontal" android:visibility="visible">
+
+				<TextView android:id="@+id/streemStatus"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:paddingLeft="35dp" android:text="Please wait while getting audio..."
+					android:textColor="@color/sub_heading" android:textSize="9dp"
+					android:visibility="visible" />
+			</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="49dp" android:gravity="bottom"
+
+				android:orientation="vertical" android:visibility="visible">
+				<TextView android:id="@+id/audio_counter_time"
+					android:layout_height="20dip" android:textSize="9dp" android:text=""
+					android:layout_gravity="bottom" android:textColor="@color/sub_heading"
+					android:visibility="visible" android:layout_width="wrap_content">
+				</TextView>
+
+			</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="49dp" android:gravity="bottom|right"
+				android:orientation="vertical" android:visibility="visible">
+				<TextView android:id="@+id/audio_counter_max"
+					android:layout_height="20dip" android:textSize="9dp" android:text=""
+					android:textColor="@color/sub_heading" android:visibility="visible"
+					android:layout_width="wrap_content">
+				</TextView>
+			</LinearLayout>
+		</AbsoluteLayout>
+
+		<ImageView android:id="@+id/media_stop_play"
+			android:layout_width="35dp" android:layout_height="35dp"
+			android:layout_weight="1" android:background="@drawable/stop"
+			android:onClick="@string/onClickHandleMethodName" android:visibility="visible" />
+	</LinearLayout>
+    -->
+
+    <LinearLayout
+        android:id="@+id/media_play_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/landing_discovery_tabBar"
+        android:background="@drawable/audio_button"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="268dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/activity__message_audio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dip"
+                    android:background="@drawable/soundforaudiostrip"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/sub_heading"
+                    android:textSize="9dp"
+                    android:visibility="visible" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/audio_counter_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="00:00"
+                    android:textColor="@color/sub_heading"
+                    android:textSize="9dp"
+                    android:visibility="visible" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/audio_counter_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="@color/sub_heading"
+                    android:textSize="9dp"
+                    android:visibility="visible" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/media_stop_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/closevoiceplay"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity__message_media_play_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="false"
+            android:layout_margin="0dip"
+            android:layout_weight=".95"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <com.kainat.app.android.uicontrol.CImageView
+                android:id="@+id/media_play"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/addplay"
+                android:onClick="@string/onClickHandleMethodName" />
+
+            <AbsoluteLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:layout_weight="20"
+                android:addStatesFromChildren="true"
+                android:orientation="horizontal"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip" >
+
+                <SeekBar
+                    android:id="@+id/mediavoicePlayingDialog_progressbar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:paddingLeft="8.0dip"
+                    android:paddingRight="8.0dip"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/seekbarprogress"
+                    android:thumb="@drawable/seekthumb"
+                    android:thumbOffset="0.0dip" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/streemStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="35dp"
+                        android:text="Please wait while getting audio..."
+                        android:textColor="#6AABB4"
+                        android:textSize="9dp"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="49dp"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/activity__message_audio_counter_time1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dip"
+                        android:layout_gravity="bottom"
+                        android:text=""
+                        android:textColor="@color/sub_heading"
+                        android:textSize="12dp"
+                        android:visibility="visible" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="49dp"
+                    android:gravity="bottom|right"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/activity__message_audio_counter_max1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dip"
+                        android:text=""
+                        android:textColor="@color/sub_heading"
+                        android:textSize="12dp"
+                        android:visibility="visible" >
+                    </TextView>
+                </LinearLayout>
+            </AbsoluteLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--
+    <LinearLayout android:id="@+id/landing_discovery_tabBar"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" android:background="@drawable/bottomlanding"
+		android:orientation="horizontal">
+		<ImageView android:id="@+id/landing_discovery_BtnSlideLeft"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:padding="0px" android:layout_margin="0px"
+			android:src="@drawable/slideleft_menu" />
+			<LinearLayout android:id="@+id/layoutclickon_mystatus" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<ImageView android:id="@+id/clickon_mystatus"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:padding="0px" android:layout_margin="0px"
+			android:layout_gravity="center"
+			android:src="@drawable/iconinbox" />
+			</LinearLayout>
+		<RelativeLayout android:id="@+id/landing_discovery_tabBar1"
+			android:background="@drawable/bottomlanding" android:layout_height="wrap_content"
+			android:gravity="right" android:layout_gravity="right"
+			android:layout_width="fill_parent">
+			
+			<ImageView android:layout_width="wrap_content" android:id="@+id/landing_discovery_BtnSlideRight"
+				android:layout_height="wrap_content" android:src="@drawable/rightsearch_menu"></ImageView>
+				<LinearLayout  android:layout_height="wrap_content"
+			   android:layout_marginLeft="14dip"
+			android:paddingTop="1dip"
+			android:gravity="top|right" android:layout_gravity="right"
+			android:layout_width="wrap_content">
+				<LinearLayout  android:layout_height="wrap_content"
+			   android:layout_marginLeft="14dip"
+			
+			android:gravity="top|right" android:layout_gravity="right"
+			android:layout_width="wrap_content">
+				<TextView android:id="@+id/landing_discovery_activity_notification" android:visibility ="gone"
+				android:text="0" android:gravity="center" android:textColor="@color/black"
+				
+				android:layout_height="wrap_content" android:background="@drawable/notification_slide_count" android:layout_width="wrap_content"></TextView>
+		</LinearLayout>
+		</LinearLayout>
+		</RelativeLayout>
+		
+	</LinearLayout>
+    -->
+
+    <LinearLayout
+        android:id="@+id/landing_discovery_tabBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottomlanding"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/landing_discovery_BtnSlideLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0px"
+            android:padding="0px"
+            android:src="@drawable/slideleft_menu" />
+
+        <LinearLayout
+            android:id="@+id/bottom_featured_linearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:background="@drawable/bottomlanding"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/bottom_tab_mycommunities"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawableTop="@drawable/mycommunities_sel"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:padding="3dip"
+                android:text="Communities"
+                android:textColor="#ffffff"
+                android:textSize="9dp"
+                android:visibility="invisible" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/clickon_mystatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/audiopoststuts"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text=""
+                android:textColor="#D9DCDE"
+                android:textSize="9dp" />
+
+            <TextView
+                android:id="@+id/bottom_tab_pending_request"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawableTop="@drawable/pending_request_unsel"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:padding="3dip"
+                android:text="Requests"
+                android:textColor="#D9DCDE"
+                android:textSize="9dp"
+                android:visibility="invisible" >
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/landing_discovery_tabBar1"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/bottomlanding"
+                android:gravity="right" >
+
+                <ImageView
+                    android:id="@+id/landing_discovery_BtnSlideRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rightsearch_menu" >
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="14dip"
+                    android:gravity="top|right"
+                    android:paddingTop="1dip" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="14dip"
+                        android:gravity="top|right" >
+
+                        <TextView
+                            android:id="@+id/landing_discovery_activity_notification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/notification_slide_count"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:visibility="gone" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_guid_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/activity_guid_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+              android:layout_marginTop="50dp"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/activity_guid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+              
+                android:onClick="@string/onClickHandleMethodName"
+                android:textColor="#fff"
+                android:textSize="16dip"
+                android:textStyle="bold" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

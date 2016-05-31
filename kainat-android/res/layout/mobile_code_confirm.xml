@@ -1,0 +1,334 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/app_blue_txt_color"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/prev"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/x_arrows_left"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="@string/prev"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/x_arrows_right"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="@string/edit"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/header_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/header_logo"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <com.kainat.android.widgets.MyriadRegularTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:paddingTop="5.0dip"
+            android:singleLine="true"
+            android:text="@string/verification_code_sent"
+            android:textColor="@color/text_color_grayblack"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <com.kainat.android.widgets.MyriadRegularTextView
+                android:id="@+id/id_mobile_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:paddingTop="5.0dip"
+                android:text="+919910968484"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <com.kainat.android.widgets.MyriadRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_ViewTopHeader"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="5.0dip"
+                android:text=" | "
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+
+            <com.kainat.android.widgets.MyriadRegularTextView
+                android:id="@+id/id_edit_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_ViewTopHeader"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dip"
+                android:gravity="center_horizontal"
+                android:text="@string/edit"
+                android:textColor="@color/heading_text_green"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <com.kainat.android.widgets.MyriadRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_ViewTopHeader"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:gravity="center_horizontal"
+            android:text="@string/please_make_sure"
+            android:textColor="@color/text_color_grayblack"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip" >
+
+        <com.kainat.android.widgets.MyriadRegularEditText
+            android:id="@+id/m_number_field"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:inputType="number"
+             android:digits="0,1,2,3,4,5,6,7,8,9"
+            android:maxLength="4" />
+
+        <LinearLayout
+            android:id="@+id/num_block_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:onClick="OnKeyBoardOpen"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <com.kainat.android.widgets.MyriadSemiboldTextView
+                android:id="@+id/m_number_etxt01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dialer_new_normal"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="14.0sp" />
+
+            <com.kainat.android.widgets.MyriadSemiboldTextView
+                android:id="@+id/m_number_etxt02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:background="@drawable/dialer_new_normal"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="14.0sp" />
+
+            <com.kainat.android.widgets.MyriadSemiboldTextView
+                android:id="@+id/m_number_etxt03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:background="@drawable/dialer_new_normal"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="14.0sp" />
+
+            <com.kainat.android.widgets.MyriadSemiboldTextView
+                android:id="@+id/m_number_etxt04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:background="@drawable/dialer_new_normal"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/time_clock" />
+
+    <com.kainat.android.widgets.MyriadRegularTextView
+        android:id="@+id/id_timer_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_ViewTopHeader"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="30:00"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="25dip"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_yellow"
+        android:onClick="onConfirmClick"
+        android:padding="10dip"
+        android:text="@string/confirm_txt"
+        android:textColor="@color/white" />
+<ScrollView android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.kainat.android.widgets.MyriadRegularTextView
+            android:id="@+id/id_invalid_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_ViewTopHeader"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/invalid_pin_please_try_again"
+            android:textColor="@color/header_color"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <com.kainat.android.widgets.MyriadRegularTextView
+            android:id="@+id/id_didnt_receive_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_ViewTopHeader"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/didnt_receive_pin"
+            android:textColor="@color/text_color_grayblack"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+        <com.kainat.android.widgets.MyriadRegularTextView
+            android:id="@+id/id_resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/resend"
+            android:textColor="@color/header_color"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+        <com.kainat.android.widgets.MyriadRegularTextView
+            android:id="@+id/id_or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="or"
+            android:textColor="@color/text_color_grayblack"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+        <com.kainat.android.widgets.MyriadRegularTextView
+            android:id="@+id/id_receive_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/self_verify"
+            android:textColor="@color/header_color"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

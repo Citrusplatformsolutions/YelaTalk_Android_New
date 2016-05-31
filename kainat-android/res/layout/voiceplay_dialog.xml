@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	
+	android:background="@drawable/diloag_bg"
+	android:orientation="vertical"
+	android:layout_gravity="bottom|center_vertical|center_horizontal">
+	<TextView
+		android:id="@+id/playing_voice"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/playing"
+	android:textColor="@color/heading"
+		android:layout_margin = "10dp"
+		android:textSize="18dip"
+		android:textStyle="bold">
+	</TextView>
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="5dip"
+		android:contentDescription="@string/sound_play_icon"
+		android:src="@drawable/soundplayicon">
+	</ImageView>
+	<!--<SeekBar
+		android:id="@+id/voicePlayingDialog_progressbar"
+		android:layout_width="fill_parent"
+		android:layout_height="20dip"
+		android:layout_marginBottom="10dip"
+		android:layout_marginLeft="20dip"
+		android:layout_marginRight="20dip"
+		android:layout_marginTop="8dip"
+		android:indeterminateOnly="false"
+		android:progress="40"
+		android:max="100"
+		
+		android:progressDrawable="@drawable/seekbarprogress"
+		android:thumbOffset="0.0dip"
+		android:layout_weight="1.0"
+		android:thumb="@drawable/seekthumb"
+		>
+	</SeekBar>
+	-->
+	<SeekBar android:id="@+id/voicePlayingDialog_progressbar"
+								android:paddingLeft="8.0dip" android:paddingRight="8.0dip"
+								android:layout_width="fill_parent" android:layout_height="wrap_content"
+								android:progressDrawable="@drawable/seekbarprogress"
+								android:progress = "0"
+								android:layout_marginBottom = "20dp"
+								android:thumbOffset="0.0dip" android:layout_weight="1.0"
+								android:thumb="@drawable/seekthumb" />
+	<View
+		android:layout_width="fill_parent"
+		android:layout_height="2dip"
+		android:layout_margin = "5dp"
+			
+		android:background="@drawable/gradient">
+	</View>
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="40dp"
+		android:layout_marginBottom = "3dp"
+		android:layout_gravity="top|center_horizontal"
+	>
+		<TextView
+			android:id="@+id/voicePlayingDialog_Stop"
+			android:layout_width="40dp"
+			android:layout_height="40dp"			
+			android:clickable="true"
+			android:gravity="center"
+			android:text=""
+			android:background = "@drawable/stop"
+			android:textColor="@color/transprent"			
+			android:textStyle="bold">
+		</TextView>
+		<TextView
+			android:id="@+id/voicePlayingDialog_pause"
+			android:layout_width="40dp"
+			android:layout_height="40dp"			
+			android:clickable="true"
+			android:gravity="center"
+			android:text=""
+			android:background = "@drawable/pause"
+			android:textColor="@color/transprent"			
+			android:textStyle="bold">
+		</TextView>
+	
+	</LinearLayout>
+	
+</LinearLayout>

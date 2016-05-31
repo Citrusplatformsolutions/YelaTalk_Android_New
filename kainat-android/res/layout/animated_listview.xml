@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+ 
+  android:layout_height="fill_parent">
+  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    	android:layout_marginTop="45dip"
+        android:gravity="right"
+       
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+  <TextView
+                android:id="@+id/animtextclosedefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+             
+                android:gravity="right"
+                android:visibility="gone"
+                android:layout_gravity="right"
+                android:background="@drawable/closeanim"
+                android:textColor="@color/heading"
+                android:textStyle="bold" />
+     
+     
+    </LinearLayout>
+    
+  <LinearLayout   android:id="@+animated/grideviewanimated" android:layout_width="fill_parent"  android:layout_height="fill_parent"  >
+   <RelativeLayout   android:id="@+animated/grideviewanimated" android:layout_width="fill_parent"  android:layout_height="fill_parent" >
+ 
+       <GridView 
+   android:id="@+animated/grideview"
+    android:layout_width="fill_parent"
+    android:numColumns="2"
+    android:columnWidth="70dp"
+    android:background="@drawable/animbackground"
+    
+    android:gravity="center"
+    android:listSelector="@drawable/bluetoothbac"
+    
+    android:layout_above="@+id/animatedloadmore"
+    android:stretchMode="columnWidth" android:layout_height="fill_parent">  
+ 
+</GridView>
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       android:id="@+id/animtextcloselay"
+        android:gravity="right"
+      
+         android:onClick="@string/onClickHandleMethodName"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+  <TextView
+                android:id="@+id/animtextclose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:gravity="right"
+                android:visibility="visible"
+                android:layout_gravity="right"
+                android:onClick="@string/onClickHandleMethodName"
+                android:background="@drawable/closeanim"
+                android:textColor="@color/heading"
+                android:textStyle="bold" />
+     
+     
+    </LinearLayout>
+    <Button android:id="@+id/animatedloadmore" android:layout_width="fill_parent"
+						android:layout_height="@dimen/header_button_height"
+						android:background="@drawable/roundedrectgradient_green"
+						
+						android:layout_alignParentBottom="true" android:layout_margin="5dp"
+						android:gravity="center_vertical|center_horizontal" android:text="Load more"
+						android:visibility="gone" android:onClick="@string/onClickHandleMethodName"
+						android:textColor="@color/black" android:textStyle="bold" />
+    	<ProgressBar
+				android:indeterminateDrawable="@drawable/circulor_progressbar"
+				android:id="@+id/progressBar1"
+				android:visibility="gone"
+				android:layout_marginTop="50dip"
+				android:paddingLeft="10dip"
+				
+				android:layout_alignParentBottom="true"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical|center_horizontal"></ProgressBar>
+						</RelativeLayout>
+						</LinearLayout>
+						
+</LinearLayout>

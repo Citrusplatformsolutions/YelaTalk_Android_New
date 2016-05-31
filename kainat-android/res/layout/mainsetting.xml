@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/landingpagebackground"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/home_icon_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@drawable/title" >
+<TextView
+            android:id="@+id/prev"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            
+            android:textColor="@color/white"
+            android:drawablePadding="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/x_arrows_left"
+            android:gravity="center"
+             />
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dip"
+            android:onClick="@string/onClickHandleMethodName"
+            android:src="@drawable/home"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/HeaderFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_height"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:text="@string/settings" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/notificationdiloags"
+        layout="@layout/notificationdiloag" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/landing_discovery_tabBar"
+        android:layout_below="@+id/home_icon_layout"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="20dip"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:background="@drawable/roundedrectgradient"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/settingui_profile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Profile"
+                        android:textColor="@color/heading"
+                        android:textSize="17dip"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/alert_none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_sett" >
+                    </ImageView>
+                </LinearLayout>
+            </LinearLayout>
+<!-- android:background="@drawable/roundedrectgradient" -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/settingui_accountSettings"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/account_settings"
+                        android:textColor="@color/heading"
+                        android:textSize="14dip"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/alert_none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_sett" >
+                    </ImageView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dip"
+                    android:visibility="gone"
+                    android:background="#ffDCDAD9" >
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/settingui_privacySettings"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:onClick="@string/onClickHandleMethodName" >
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:layout_weight="1"
+                        android:text="@string/privacy_settings"
+                        android:textColor="@color/heading"
+                        android:textSize="17dip"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/ImageView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_sett" >
+                    </ImageView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dip"
+                    android:background="#ffDCDAD9"
+                    android:visibility="gone" >
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/settingui_other_social"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Sharing Settings"
+                        android:textColor="@color/heading"
+                        android:textSize="17dip"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/alert_none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_sett" >
+                    </ImageView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dip"
+                    android:background="#ffDCDAD9"                    
+                    android:visibility="gone" >
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/settingui_push"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:orientation="horizontal"
+                     >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/push_notification_settings"
+                        android:textColor="@color/heading"
+                        android:textSize="17dip"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/alert_none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_sett" >
+                    </ImageView>
+                </LinearLayout>
+                
+                 <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dip"
+                    android:background="#ffDCDAD9"
+                    
+                    android:visibility="gone" >
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/choose_your_language"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/choose_your_language"
+                        android:textColor="@color/heading"
+                        android:textSize="14dip"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/alert_none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:src="@drawable/arrow_sett" >
+                    </ImageView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/settingui_aboutRT"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/about_app"
+                        android:textColor="@color/heading"
+                        android:textSize="14dip"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/alert_none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:src="@drawable/arrow_sett" >
+                    </ImageView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:visibility="gone"
+                    android:background="#ffDCDAD9" >
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/settingui_help"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/help"
+                        android:textColor="@color/heading"
+                        android:textSize="17dip"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/alert_beep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_sett" >
+                    </ImageView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:background="@drawable/roundedrectgradient"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/settingui_alert"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Alerts"
+                        android:textColor="@color/heading"
+                        android:textSize="17dip"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/alert_none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_sett" >
+                    </ImageView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#ffDCDAD9"
+                    android:visibility="gone" >
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/settingui_autoRes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Inbox/Auto Response"
+                        android:textColor="@color/heading"
+                        android:textSize="17dip"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/alert_beep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_sett" >
+                    </ImageView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:background="@drawable/roundedrectgradient"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/settingui_bluetooth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Bluetooth"
+                        android:textColor="@color/heading"
+                        android:textSize="17dip"
+                        android:textStyle="bold" >
+                    </TextView>
+                    <!--
+                    <ImageView
+                        android:id="@+id/alert_none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_sett">
+                    </ImageView>
+                    -->
+
+                    <ToggleButton
+                        android:id="@+id/btonoff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bgtoggle"
+                        android:onClick="@string/onClickHandleMethodName"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textOff=""
+                        android:textOn="" >
+                    </ToggleButton>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/settingui_logout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/pillgreen_sel"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/delete_account"
+                        android:textColor="@color/white"
+                        android:textSize="17dip"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/alert_none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_sett"
+                        android:visibility="gone" >
+                    </ImageView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/transparent_image"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/landing_discovery_tabBar"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:background="@drawable/transparent_image"
+        android:gravity="left"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/landing_discovery_tabBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottomlanding"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/landing_discovery_BtnSlideLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0px"
+            android:padding="0px"
+            android:src="@drawable/slideleft_menu" />
+
+        <RelativeLayout
+            android:id="@+id/landing_discovery_tabBar1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/bottomlanding"
+            android:gravity="right" >
+
+            <ImageView
+                android:id="@+id/landing_discovery_BtnSlideRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rightsearch_menu" >
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="14dip"
+                android:gravity="top|right"
+                android:paddingTop="1dip" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="14dip"
+                    android:gravity="top|right" >
+
+                    <TextView
+                        android:id="@+id/landing_discovery_activity_notification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/notification_slide_count"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:visibility="gone" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/language_spinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="50dp"
+        android:entries="@array/language"
+        android:gravity="center"
+        android:visibility="invisible" />
+
+   <!--  <Button
+        android:id="@+id/choose_your_language"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/header_button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/app_blue_txt_color"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/choose_your_language"
+        android:textColor="@color/white" /> -->
+
+</RelativeLayout>

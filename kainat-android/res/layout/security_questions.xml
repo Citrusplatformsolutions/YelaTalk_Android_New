@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+      
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@drawable/title">
+        <Button
+            android:id="@+id/sq_cancel_Buttonone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:layout_centerVertical="true"
+            android:layout_margin="3dip"
+            android:background="@drawable/skip_button"
+            android:onClick="@string/onClickHandleMethodName"
+            android:text=""
+            android:visibility="gone"
+          
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+        <TextView
+            style="@style/HeaderFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_height"
+            android:layout_centerVertical="true"
+           android:maxLines="1"
+            android:text="Security Questions" android:layout_toRightOf="@+id/sq_cancel_Buttonone" android:layout_toLeftOf="@+id/sq_cancel_Button"/>
+        <Button
+            android:id="@+id/sq_cancel_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dip"
+            android:background="@drawable/cancelnewbutton"
+            android:onClick="@string/onClickHandleMethodName"
+            android:text=""
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+    <include
+        layout="@layout/notificationdiloag"        
+        android:id="@+id/notificationdiloags" />
+    <ScrollView
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Tap to select question"
+                android:textColor="@color/black"
+                android:typeface="sans"/>
+            <Spinner
+                android:id="@+id/sq_question1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:prompt="@string/question">
+            </Spinner>
+            <EditText
+                android:id="@+id/ownquestion1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:digits="@string/constraints_question_answer"
+                android:hint="Enter your own question"
+                android:imeOptions="actionNext"
+                android:maxLength="140"
+                android:textSize="14dip"
+                android:visibility="gone"/>
+            <EditText
+                android:id="@+id/answer1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:digits="@string/constraints_question_answer"
+                android:hint="Enter your answer"
+                android:imeOptions="actionNext"
+                android:maxLength="40"
+                android:textSize="14dip"/>
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Tap to select question"
+                android:textColor="@color/black"
+                android:typeface="sans"/>
+            <Spinner
+                android:id="@+id/sq_question2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:prompt="@string/question">
+            </Spinner>
+            <EditText
+                android:id="@+id/ownquestion2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:digits="@string/constraints_question_answer"
+                android:hint="Enter your own question"
+                android:imeOptions="actionNext"
+                android:maxLength="140"
+                android:textSize="14dip"
+                android:visibility="gone"/>
+            <EditText
+                android:id="@+id/answer2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:digits="@string/constraints_question_answer"
+                android:hint="Enter your answer"
+                android:imeOptions="actionDone"
+                android:maxLength="40"
+                android:textSize="14dip"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip">
+                <Button
+                    android:id="@+id/sq_submitButton"
+                    android:layout_width="0dip"
+                    android:layout_height="@dimen/header_button_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/pillgreen_sel"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:text="Submit"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="16dip"
+                    android:textStyle="bold">
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

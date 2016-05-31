@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="#d4d0c8"
+	android:orientation="horizontal">
+	    
+            <TextView  android:padding = "0dp"
+		android:id="@+id/bottom_tab_med_featured"
+		android:layout_width="0dip"
+		android:layout_height="fill_parent"
+		android:layout_weight=".20"
+		android:background="#595959"
+		android:clickable="true"
+		android:drawableTop="@drawable/b_msg"
+		android:focusable="true"
+		android:gravity="center"
+		android:onClick="onClick"
+		android:text="Message"
+		android:textColor="#ffffff">
+	</TextView>
+	<TextView android:paddingLeft = "1dp"
+		android:id="@+id/bottom_tab_med_categories"
+		android:layout_width="0dip"
+		android:layout_height="fill_parent"
+		android:layout_weight=".20"
+		android:background="#595959"
+		android:clickable="true"
+		android:drawableTop="@drawable/b_rt"
+		android:focusable="true"
+		
+		android:gravity="center"
+		android:onClick="onClick"
+		android:text = "@string/app_name"
+		android:textColor="#D9DCDE">
+	</TextView>
+	<TextView  android:padding = "0dp"
+		android:id="@+id/bottom_tab_med_myalbum"
+		android:layout_width="0dip"
+		android:layout_height="fill_parent"
+		android:layout_weight=".20"
+		android:background="#595959"
+		android:clickable="true"
+		android:drawableTop="@drawable/b_chat"
+		android:focusable="true"
+		android:gravity="center"
+		android:onClick="onClick"
+		android:text="Chat"
+		android:textColor="#D9DCDE">
+	</TextView>
+	<TextView  android:padding = "0dp"
+		android:id="@+id/bottom_tab_med_search"
+		android:layout_width="0dip"
+		android:layout_height="fill_parent"
+		android:layout_weight=".20"
+		android:background="#595959"
+		android:clickable="true"
+		android:drawableTop="@drawable/b_buzz"
+		android:focusable="true"
+		android:gravity="center"
+		android:onClick="onClick"
+		android:text="Buzz"
+		android:textColor="#D9DCDE">
+	</TextView>
+	<TextView  android:padding = "1dp"
+		android:id="@+id/bottom_tab_med_search"
+		android:layout_width="0dip"
+		android:layout_height="fill_parent"
+		android:layout_weight=".20"
+		android:background="#595959"
+		android:clickable="true"
+		android:drawableTop="@drawable/b_report"
+		android:focusable="true"
+		android:gravity="center"
+		android:onClick="onClick"
+		android:text="Report"
+		android:textColor="#D9DCDE">
+	</TextView>
+</LinearLayout>

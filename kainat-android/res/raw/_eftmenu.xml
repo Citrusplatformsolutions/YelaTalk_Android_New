@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding='utf-8'?>
+<leftMenu>
+
+    <userThumbUrl>
+http://media.rocketalk.com/get/icon.jpg?height=130&amp;width=130
+    </userThumbUrl>
+
+    <userProfileUrl>
+http://iphone.rocketalk.com/mypage/defaultpage/rocketalk
+    </userProfileUrl>
+
+    <userDisplayName>
+Nagendra Kumar
+    </userDisplayName>
+
+    <userStatus>
+What I&apos;m Thinking
+    </userStatus>
+
+    <grid>
+        <grow>
+            <entry>
+                <caption>
+Friends
+                </caption>
+
+                <action>
+goto:Friends
+                </action>
+            </entry>
+            <entry>
+                <caption>
+Media
+                </caption>
+
+                <action>
+goto:Media
+                </action>
+            </entry>
+        </grow>
+        <grow>
+            <entry>
+                <caption>
+Message Box
+                </caption>
+
+                <action>
+goto:Inbox
+                </action>
+            </entry>
+            <entry>
+                <caption>
+Home Feed
+                </caption>
+
+                <action>
+goto:Rtlive
+                </action>
+            </entry>
+        </grow>
+    </grid>
+
+    <entry>
+        <caption>
+Search
+        </caption>
+
+        <action>
+goto:Search
+        </action>
+    </entry>
+    <entry>
+        <caption>
+Post Media
+        </caption>
+
+        <action>
+goto:PostMedia
+        </action>
+    </entry>
+     <entry>
+        <caption>
+My Profile
+        </caption>
+
+        <action>
+goto:MyProfile
+        </action>
+    </entry> 
+    <entry>
+        <caption>
+RT Events
+        </caption>
+
+        <action>
+goto:Rtevents
+        </action>
+    </entry>
+    <entry>
+        <caption>
+Send RT Invite
+        </caption>
+
+        <action>
+goto:Invite
+        </action>
+    </entry>
+    <entry>
+        <caption>
+Communities
+        </caption>
+
+        <action>
+goto:Communities
+        </action>
+    </entry>
+    <entry>
+        <caption>
+Settings
+        </caption>
+
+        <action>
+goto:Settings
+        </action>
+    </entry>
+
+</leftMenu>

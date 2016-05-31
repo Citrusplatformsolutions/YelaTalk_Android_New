@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:layout_marginBottom="70dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="70dp"
+    android:background="@drawable/diloag_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+invite/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/user_name_login_no_longer"
+        android:textColor="@color/sub_heading"
+        android:textSize="15sp" />
+
+   
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/contactLayout_itemLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:orientation="vertical" >
+            </LinearLayout>
+            
+            
+            <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+invite/cancelButton"
+            android:layout_width="200dp"
+			android:layout_height="35dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/pillgreen_sel"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Ok"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white" />
+
+        
+    </LinearLayout>
+    
+        </LinearLayout>
+   
+
+</LinearLayout>

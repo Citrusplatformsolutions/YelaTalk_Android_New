@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+message_row/left"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white_new"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+message_row/notification"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="notification"
+        android:textColor="#AEB404"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:visibility="gone" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+message_row/all_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+message_row/me_image_layout"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dip"
+            android:visibility="visible" >
+
+            <com.kainat.app.android.uicontrol.CImageView
+                android:id="@+message_row/me_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@string/onClickHandleMethodName"
+                android:scaleType="fitCenter"
+                android:src="@drawable/profile"
+                android:visibility="visible" >
+            </com.kainat.app.android.uicontrol.CImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+message_row/datacontainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:paddingRight="5dp"
+                    android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+message_row/conversation_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textColor="@color/heading"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:visibility="visible" >
+            </TextView>
+
+            <TextView
+                android:id="@+message_row/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:text="message"
+                android:maxLines="2"
+                android:textColor="@color/sub_heading"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:visibility="visible" >
+            </TextView>
+
+            <TextView
+                android:id="@+message_row/view_Friend_Request"
+                android:layout_width="wrap_content"
+                android:layout_height="20dip"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/red"
+                android:gravity="right"
+                android:onClick="@string/onClickHandleMethodName"
+                android:paddingLeft="2dip"
+                android:paddingRight="2dip"
+                android:singleLine="true"
+                android:text="Friend Request Message"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+message_row/view_rtml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/follow"
+                android:gravity="right"
+                android:onClick="@string/onClickHandleMethodName"
+                android:paddingLeft="2dip"
+                android:paddingRight="2dip"
+                android:singleLine="true"
+                android:text="View"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone" >
+            </TextView>
+            <!--
+              <LinearLayout
+                    android:id="@+message_row/landing_activity_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" >
+
+                    <com.kainat.app.android.uicontrol.CImageView
+                        android:id="@+message_row/video"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/border"
+                        android:src="@drawable/video_overlay"
+                        android:visibility="gone" >
+                    </com.kainat.app.android.uicontrol.CImageView>
+
+                    
+                </LinearLayout>
+            -->
+
+            <HorizontalScrollView
+                android:id="@+message_row/landing_activity_videoHLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:scrollbars="none"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:id="@+message_row/landing_activity_videoLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+message_row/landing_activity_ImageHLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingTop="5dp"
+                android:scrollbars="none"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:id="@+message_row/landing_activity_ImageLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+message_row/landing_activity_ImageHLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingTop="5dp"
+                android:scrollbars="none"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:id="@+message_row/landing_activity_ImageLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <com.kainat.app.android.uicontrol.CImageView
+                android:id="@+message_row/voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.62"
+                android:adjustViewBounds="true"
+                android:background="@drawable/audio_activity"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+message_row/receving_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/unfollow"
+                android:gravity="right"
+                android:onClick="@string/onClickHandleMethodName"
+                android:paddingLeft="2dip"
+                android:paddingRight="2dip"
+                android:singleLine="true"
+                android:text="Reciving voice..."
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+message_row/receving_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/unfollow"
+                android:gravity="right"
+                android:onClick="@string/onClickHandleMethodName"
+                android:paddingLeft="2dip"
+                android:paddingRight="2dip"
+                android:singleLine="true"
+                android:text="Reciving video..."
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/linearLayout123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <com.kainat.app.android.uicontrol.CImageView
+                    android:id="@+id/inboxLayout_arrowImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginRight="5dip"
+                    android:gravity="right"
+                    android:onClick="@string/onClickHandleMethodName"
+                    android:src="@drawable/arrow_chat_new"
+                    android:visibility="gone" >
+                </com.kainat.app.android.uicontrol.CImageView>
+            </LinearLayout>
+
+
+                <TextView
+                    android:id="@+message_row/date_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="left"
+                    android:text="date"
+                    android:textColor="@color/time_footnote"
+                    android:textSize="10sp"
+                    android:textStyle="normal" >
+                </TextView>
+
+                
+        </LinearLayout>
+        
+        <ImageView
+                    android:id="@+message_row/multiselect_imgeview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/animtagicon"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:onClick="@string/onClickHandleMethodName">
+                </ImageView>
+        <ImageView
+                    android:id="@+message_row/menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/retake"
+                    android:gravity="center"
+                    android:onClick="@string/onClickHandleMethodName">
+                </ImageView>
+                
+        
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+activity_list_row/line"
+        android:layout_width="wrap_content"
+        android:layout_height="2dip"
+        android:background="@drawable/hor_line"
+        android:textSize="10dip"
+        android:visibility="gone" >
+    </TextView>
+
+</LinearLayout>

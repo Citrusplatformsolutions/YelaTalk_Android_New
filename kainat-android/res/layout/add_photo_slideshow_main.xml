@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	
+	android:orientation="vertical">
+	<RelativeLayout android:id="@+id/add_viewfliper" android:visibility ="visible"
+							android:layout_width="fill_parent" android:layout_height="fill_parent"
+							android:layout_margin="30dip"
+							android:orientation="vertical">
+	<ViewFlipper android:id="@+id/add_imageFrames"
+		android:layout_width="fill_parent" android:layout_height="fill_parent" />
+		
+			<LinearLayout android:id="@+id/media_navigation"
+								android:layout_width="fill_parent" android:layout_height="fill_parent"
+								android:orientation="horizontal" android:gravity="center_vertical|center_horizontal">
+								<TableRow android:id="@+id/st" android:layout_width="fill_parent"
+								    android:visibility ="visible"
+									android:layout_height="wrap_content" android:padding="0dip">
+									<ImageView android:id="@+id/mediaVideoPlay_galleryImage_prev"
+										android:onClick="@string/onClickHandleMethodName"
+										android:visibility="visible" android:layout_width="35dp"
+										android:layout_height="35dp" android:gravity="left"
+										android:paddingLeft="5dip" android:textSize="14dp"
+										android:scaleType="fitXY" android:background="@drawable/btn_back" />
+									<ImageView android:id="@+id/dummy" android:gravity="center"
+										android:layout_gravity="center" android:layout_weight="1"
+										android:visibility="invisible" android:layout_width="35dp"
+										android:layout_height="35dp" android:background="@drawable/btn_next"
+										android:textSize="14dp" />
+									<ImageView android:id="@+id/mediaVideoPlay_galleryImage_next"
+										android:gravity="right" android:layout_gravity="right"
+										android:onClick="@string/onClickHandleMethodName"
+										android:visibility="visible" android:layout_width="35dp"
+										android:layout_height="35dp" android:background="@drawable/btn_next"
+										android:textSize="14dp" />
+								</TableRow>
+							</LinearLayout>
+						</RelativeLayout>
+	<RelativeLayout android:id="@+id/slideShowBtnsss"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" android:gravity="center"
+		android:visibility="visible">
+		<Gallery android:id="@+id/add_gallery1" android:layout_width="fill_parent"
+			android:gravity ="center_vertical|center_horizontal"
+			android:spacing="5dp"
+			android:visibility="visible" android:layout_height="wrap_content"></Gallery>
+	</RelativeLayout>
+</LinearLayout>

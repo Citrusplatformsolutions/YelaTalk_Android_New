@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/rtlivelist" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:orientation="vertical"
+	android:background="#ffffffff" android:padding="2px"
+	android:layout_margin="2px">
+	<LinearLayout android:id="@+id/rtlivelist_header"
+		android:layout_width="wrap_content" android:layout_height="@dimen/header_height">
+		<TextView android:id="@+landingpage/activity"
+			android:layout_width="wrap_content" android:layout_height="60dip"
+			android:layout_weight="1" android:background="@drawable/tab_background"
+			android:clickable="true" android:focusable="true" android:gravity="center"
+			android:onClick="onClick" android:text="" android:textSize="12dp"
+			android:textColor="@color/black">
+		</TextView>
+
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/rtlive_list_layout"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:visibility="visible" android:orientation="vertical"
+		 android:layout_below="@+id/rtlivelist_header">
+		<ListView android:id="@+landingpage/rtlivelist_list"
+			android:layout_width="fill_parent" android:scrollbars="none"
+			android:layout_height="wrap_content" android:addStatesFromChildren="true"
+			android:cacheColorHint="#ffffffff">
+		</ListView>
+		</LinearLayout>
+
+</RelativeLayout>

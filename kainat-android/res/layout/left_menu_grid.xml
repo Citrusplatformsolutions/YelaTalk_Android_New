@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_tableView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="1" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right" >
+
+            <com.kainat.app.android.uicontrol.CImageView
+                android:id="@+id/left_ImageGrid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dip"
+                android:layout_marginTop="10dip"
+                
+                android:scaleType="fitCenter"
+                android:visibility="gone" >
+            </com.kainat.app.android.uicontrol.CImageView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/left_ImageGrid"
+                android:layout_gravity="top|right"
+                android:gravity="right" >
+
+                <com.kainat.app.android.uicontrol.CImageView
+                    android:id="@+id/home_notification_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/notification_slide_count"
+                    android:visibility="gone" >
+                </com.kainat.app.android.uicontrol.CImageView>
+
+                <TextView
+                    android:id="@+id/home_notification_count_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/leftmenu_box"
+                    android:textSize="10dp"
+                    android:visibility="gone" >
+                </TextView>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.40"
+            android:gravity="center_horizontal"
+            android:text="inbox"
+            android:textColor="@color/leftmenu_box"
+            android:textSize="11dip"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="1" >
+
+        <com.kainat.app.android.uicontrol.CImageView
+            android:id="@+id/left_ImageView"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="left"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon"
+            android:visibility="gone" >
+        </com.kainat.app.android.uicontrol.CImageView>
+
+        <TextView
+            android:id="@+id/textOnly"
+            style="?android:attr/dropDownItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dip"
+            android:ellipsize="marquee"
+            android:padding="1dip"
+            android:singleLine="false"
+            android:text="Inbox"
+            android:textColor="@color/leftmenu_list"
+            android:textSize="17sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="5dip"
+            android:gravity="right" >
+
+            <com.kainat.app.android.uicontrol.CImageView
+                android:id="@+id/home_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/notification_slide_count"
+                android:visibility="gone" >
+            </com.kainat.app.android.uicontrol.CImageView>
+
+            <TextView
+                android:id="@+id/home_notification_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:paddingBottom="8dip"
+                android:text="0"
+                android:textColor="@color/leftmenu_box"
+                android:textSize="10dp"
+                android:visibility="gone" >
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

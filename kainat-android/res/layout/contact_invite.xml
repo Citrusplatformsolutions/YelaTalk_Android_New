@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:layout_marginBottom="70dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="70dp"
+    android:background="@drawable/diloag_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+invite/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text="@string/mobile_selection"
+        android:textColor="@color/heading"
+        android:textSize="12dp" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/contactLayout_itemLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:orientation="vertical" >
+            </LinearLayout>
+            
+            
+            <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+invite/invite"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/greenbutt"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Send"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+invite/cancelButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/blackbutton"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Cancel"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <Button
+            android:id="@+invite/dummy"
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/blackbutton"
+            android:gravity="center"
+            android:padding="5dp"
+            android:visibility="invisible"
+            android:text="Cancel"
+            android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    
+
+</LinearLayout>
