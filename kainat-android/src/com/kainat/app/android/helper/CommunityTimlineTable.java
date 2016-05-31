@@ -51,7 +51,7 @@ public class CommunityTimlineTable {
 		Log.w(CommunityTimlineTable.class.getName(), "Upgrading database from version "
 				+ oldVersion + " to " + newVersion
 				+ ", which will destroy all old data");
-		database.execSQL("DROP TABLE IF EXISTS " + CREATE_COMMUNITY_TIMELINE);
+		database.execSQL("DROP TABLE IF EXISTS " + TABLE);
 		onCreate(database);
 	}
 }

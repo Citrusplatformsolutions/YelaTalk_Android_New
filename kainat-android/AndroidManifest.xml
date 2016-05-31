@@ -7,8 +7,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kainat.app.android"
     android:installLocation="preferExternal"
-    android:versionCode="152"
-    android:versionName="1.5.2" >
+    android:versionCode="153"
+    android:versionName="1.5.3" >
 
     <!--
          <supports-screens android:anyDensity="true"

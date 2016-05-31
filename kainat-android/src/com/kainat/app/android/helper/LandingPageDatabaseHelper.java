@@ -7,7 +7,7 @@ import com.kainat.app.android.util.Constants;
 
 public class LandingPageDatabaseHelper extends SQLiteOpenHelper {
 //  private static final String DATABASE_NAME = "kainat123";////"NAGEDNRAROCKETALK090";//+System.currentTimeMillis()+".db";//"nagenerss9gffghghj9899898s3.db";
-  private static final int DATABASE_VERSION = 2;
+  private static final int DATABASE_VERSION = 4;
 
   public LandingPageDatabaseHelper(Context context) {
     super(context, Constants.DATABASE_NAME_2, null, DATABASE_VERSION);
@@ -34,5 +34,6 @@ public class LandingPageDatabaseHelper extends SQLiteOpenHelper {
       int newVersion) {
 	  LandingPageTable.onUpgrade(database, oldVersion, newVersion);
 	  CommunityTable.onUpgrade(database, oldVersion, newVersion);
+	  CommunityTimlineTable.onUpgrade(database, oldVersion, newVersion);
   }
 }	

@@ -2,7 +2,7 @@
 <resources>
 
     <string name="hello">Hello World, SplashActivity!</string>
-    <string name="version">Version 1.5.2(Beta)</string>
+    <string name="version">Version 1.5.3(Beta)</string>
     <string name="msg_error_with_rt_help">Opps! you cannot send message to system and other user at the same time</string>
     <string name="app_name">YelaTalk</string>
     <!-- <string name="constraints_password">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-.</string> -->
@@ -380,7 +380,7 @@ TELKOMSEL
     <string name="search_by_community_creator">Search by name of owner/creator</string>
     <string name="slectc_contact_to_start_chat">Please select friends to start a group conversation!</string>
     <string name="creating_account">Creating your account</string>
-    <string name="about_app_version">Version 1.5.2</string>
+    <string name="about_app_version">Version 1.5.3</string>
     <string name="about_app_text1">Discover people and posts around your interests. Share your thoughts in interest-specific channels and talk to people who share your interest.</string>
     <string name="about_app_text2">Release Date December 13 2014</string>
     <string name="go">Go</string>
